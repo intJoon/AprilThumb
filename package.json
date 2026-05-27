@@ -1,0 +1,9 @@
+{
+  "name": "aprilstumb",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate-all-content.mjs",
+    "build": "node scripts/generate-all-content.mjs && node scripts/build-content.mjs",
+    "dev": "npm run build && npx serve public -l 3456"
+  }
+}
