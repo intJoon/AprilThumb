@@ -1,0 +1,10 @@
+{
+  "name": "AprilThumb",
+  "short_name": "AprilThumb",
+  "description": "ChatGPT·Gemini prompts — 16 disciplines, 6 languages",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf7f2",
+  "theme_color": "#faf7f2",
+  "lang": "ko"
+}

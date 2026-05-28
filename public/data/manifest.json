@@ -1,0 +1,598 @@
+{
+  "siteTitle": "AprilThumb",
+  "siteUrl": "https://aprilstumb.vercel.app",
+  "tracks": [
+    {
+      "id": "pharmacy",
+      "order": 1
+    },
+    {
+      "id": "general",
+      "order": 2
+    },
+    {
+      "id": "cs",
+      "order": 3
+    },
+    {
+      "id": "medicine",
+      "order": 4
+    },
+    {
+      "id": "chemical-engineering",
+      "order": 5
+    },
+    {
+      "id": "law",
+      "order": 6
+    },
+    {
+      "id": "veterinary",
+      "order": 7
+    },
+    {
+      "id": "linguistics",
+      "order": 8
+    },
+    {
+      "id": "design",
+      "order": 9
+    },
+    {
+      "id": "cultural-arts",
+      "order": 10
+    },
+    {
+      "id": "philosophy",
+      "order": 11
+    },
+    {
+      "id": "sports",
+      "order": 12
+    },
+    {
+      "id": "economics",
+      "order": 13
+    },
+    {
+      "id": "architecture",
+      "order": 14
+    },
+    {
+      "id": "electrical-engineering",
+      "order": 15
+    },
+    {
+      "id": "home-economics",
+      "order": 16
+    }
+  ],
+  "locales": [
+    "ko",
+    "en-GB",
+    "zh-TW",
+    "ja",
+    "fr",
+    "es"
+  ],
+  "prompts": [
+    {
+      "id": "academic-review",
+      "order": 1,
+      "titleKey": "prompts.academicReview.title",
+      "descKey": "prompts.academicReview.desc"
+    },
+    {
+      "id": "source-check",
+      "order": 2,
+      "titleKey": "prompts.sourceCheck.title",
+      "descKey": "prompts.sourceCheck.desc"
+    },
+    {
+      "id": "concise-mode",
+      "order": 3,
+      "titleKey": "prompts.conciseMode.title",
+      "descKey": "prompts.conciseMode.desc"
+    },
+    {
+      "id": "writing-review",
+      "order": 4,
+      "titleKey": "prompts.writingReview.title",
+      "descKey": "prompts.writingReview.desc"
+    },
+    {
+      "id": "presentation",
+      "order": 5,
+      "titleKey": "prompts.presentation.title",
+      "descKey": "prompts.presentation.desc"
+    },
+    {
+      "id": "study-companion",
+      "order": 6,
+      "titleKey": "prompts.studyCompanion.title",
+      "descKey": "prompts.studyCompanion.desc"
+    }
+  ],
+  "bundles": [
+    {
+      "trackId": "pharmacy",
+      "locale": "ko",
+      "file": "pharmacy-ko.json"
+    },
+    {
+      "trackId": "pharmacy",
+      "locale": "en-GB",
+      "file": "pharmacy-en-GB.json"
+    },
+    {
+      "trackId": "pharmacy",
+      "locale": "zh-TW",
+      "file": "pharmacy-zh-TW.json"
+    },
+    {
+      "trackId": "pharmacy",
+      "locale": "ja",
+      "file": "pharmacy-ja.json"
+    },
+    {
+      "trackId": "pharmacy",
+      "locale": "fr",
+      "file": "pharmacy-fr.json"
+    },
+    {
+      "trackId": "pharmacy",
+      "locale": "es",
+      "file": "pharmacy-es.json"
+    },
+    {
+      "trackId": "general",
+      "locale": "ko",
+      "file": "general-ko.json"
+    },
+    {
+      "trackId": "general",
+      "locale": "en-GB",
+      "file": "general-en-GB.json"
+    },
+    {
+      "trackId": "general",
+      "locale": "zh-TW",
+      "file": "general-zh-TW.json"
+    },
+    {
+      "trackId": "general",
+      "locale": "ja",
+      "file": "general-ja.json"
+    },
+    {
+      "trackId": "general",
+      "locale": "fr",
+      "file": "general-fr.json"
+    },
+    {
+      "trackId": "general",
+      "locale": "es",
+      "file": "general-es.json"
+    },
+    {
+      "trackId": "cs",
+      "locale": "ko",
+      "file": "cs-ko.json"
+    },
+    {
+      "trackId": "cs",
+      "locale": "en-GB",
+      "file": "cs-en-GB.json"
+    },
+    {
+      "trackId": "cs",
+      "locale": "zh-TW",
+      "file": "cs-zh-TW.json"
+    },
+    {
+      "trackId": "cs",
+      "locale": "ja",
+      "file": "cs-ja.json"
+    },
+    {
+      "trackId": "cs",
+      "locale": "fr",
+      "file": "cs-fr.json"
+    },
+    {
+      "trackId": "cs",
+      "locale": "es",
+      "file": "cs-es.json"
+    },
+    {
+      "trackId": "medicine",
+      "locale": "ko",
+      "file": "medicine-ko.json"
+    },
+    {
+      "trackId": "medicine",
+      "locale": "en-GB",
+      "file": "medicine-en-GB.json"
+    },
+    {
+      "trackId": "medicine",
+      "locale": "zh-TW",
+      "file": "medicine-zh-TW.json"
+    },
+    {
+      "trackId": "medicine",
+      "locale": "ja",
+      "file": "medicine-ja.json"
+    },
+    {
+      "trackId": "medicine",
+      "locale": "fr",
+      "file": "medicine-fr.json"
+    },
+    {
+      "trackId": "medicine",
+      "locale": "es",
+      "file": "medicine-es.json"
+    },
+    {
+      "trackId": "chemical-engineering",
+      "locale": "ko",
+      "file": "chemical-engineering-ko.json"
+    },
+    {
+      "trackId": "chemical-engineering",
+      "locale": "en-GB",
+      "file": "chemical-engineering-en-GB.json"
+    },
+    {
+      "trackId": "chemical-engineering",
+      "locale": "zh-TW",
+      "file": "chemical-engineering-zh-TW.json"
+    },
+    {
+      "trackId": "chemical-engineering",
+      "locale": "ja",
+      "file": "chemical-engineering-ja.json"
+    },
+    {
+      "trackId": "chemical-engineering",
+      "locale": "fr",
+      "file": "chemical-engineering-fr.json"
+    },
+    {
+      "trackId": "chemical-engineering",
+      "locale": "es",
+      "file": "chemical-engineering-es.json"
+    },
+    {
+      "trackId": "law",
+      "locale": "ko",
+      "file": "law-ko.json"
+    },
+    {
+      "trackId": "law",
+      "locale": "en-GB",
+      "file": "law-en-GB.json"
+    },
+    {
+      "trackId": "law",
+      "locale": "zh-TW",
+      "file": "law-zh-TW.json"
+    },
+    {
+      "trackId": "law",
+      "locale": "ja",
+      "file": "law-ja.json"
+    },
+    {
+      "trackId": "law",
+      "locale": "fr",
+      "file": "law-fr.json"
+    },
+    {
+      "trackId": "law",
+      "locale": "es",
+      "file": "law-es.json"
+    },
+    {
+      "trackId": "veterinary",
+      "locale": "ko",
+      "file": "veterinary-ko.json"
+    },
+    {
+      "trackId": "veterinary",
+      "locale": "en-GB",
+      "file": "veterinary-en-GB.json"
+    },
+    {
+      "trackId": "veterinary",
+      "locale": "zh-TW",
+      "file": "veterinary-zh-TW.json"
+    },
+    {
+      "trackId": "veterinary",
+      "locale": "ja",
+      "file": "veterinary-ja.json"
+    },
+    {
+      "trackId": "veterinary",
+      "locale": "fr",
+      "file": "veterinary-fr.json"
+    },
+    {
+      "trackId": "veterinary",
+      "locale": "es",
+      "file": "veterinary-es.json"
+    },
+    {
+      "trackId": "linguistics",
+      "locale": "ko",
+      "file": "linguistics-ko.json"
+    },
+    {
+      "trackId": "linguistics",
+      "locale": "en-GB",
+      "file": "linguistics-en-GB.json"
+    },
+    {
+      "trackId": "linguistics",
+      "locale": "zh-TW",
+      "file": "linguistics-zh-TW.json"
+    },
+    {
+      "trackId": "linguistics",
+      "locale": "ja",
+      "file": "linguistics-ja.json"
+    },
+    {
+      "trackId": "linguistics",
+      "locale": "fr",
+      "file": "linguistics-fr.json"
+    },
+    {
+      "trackId": "linguistics",
+      "locale": "es",
+      "file": "linguistics-es.json"
+    },
+    {
+      "trackId": "design",
+      "locale": "ko",
+      "file": "design-ko.json"
+    },
+    {
+      "trackId": "design",
+      "locale": "en-GB",
+      "file": "design-en-GB.json"
+    },
+    {
+      "trackId": "design",
+      "locale": "zh-TW",
+      "file": "design-zh-TW.json"
+    },
+    {
+      "trackId": "design",
+      "locale": "ja",
+      "file": "design-ja.json"
+    },
+    {
+      "trackId": "design",
+      "locale": "fr",
+      "file": "design-fr.json"
+    },
+    {
+      "trackId": "design",
+      "locale": "es",
+      "file": "design-es.json"
+    },
+    {
+      "trackId": "cultural-arts",
+      "locale": "ko",
+      "file": "cultural-arts-ko.json"
+    },
+    {
+      "trackId": "cultural-arts",
+      "locale": "en-GB",
+      "file": "cultural-arts-en-GB.json"
+    },
+    {
+      "trackId": "cultural-arts",
+      "locale": "zh-TW",
+      "file": "cultural-arts-zh-TW.json"
+    },
+    {
+      "trackId": "cultural-arts",
+      "locale": "ja",
+      "file": "cultural-arts-ja.json"
+    },
+    {
+      "trackId": "cultural-arts",
+      "locale": "fr",
+      "file": "cultural-arts-fr.json"
+    },
+    {
+      "trackId": "cultural-arts",
+      "locale": "es",
+      "file": "cultural-arts-es.json"
+    },
+    {
+      "trackId": "philosophy",
+      "locale": "ko",
+      "file": "philosophy-ko.json"
+    },
+    {
+      "trackId": "philosophy",
+      "locale": "en-GB",
+      "file": "philosophy-en-GB.json"
+    },
+    {
+      "trackId": "philosophy",
+      "locale": "zh-TW",
+      "file": "philosophy-zh-TW.json"
+    },
+    {
+      "trackId": "philosophy",
+      "locale": "ja",
+      "file": "philosophy-ja.json"
+    },
+    {
+      "trackId": "philosophy",
+      "locale": "fr",
+      "file": "philosophy-fr.json"
+    },
+    {
+      "trackId": "philosophy",
+      "locale": "es",
+      "file": "philosophy-es.json"
+    },
+    {
+      "trackId": "sports",
+      "locale": "ko",
+      "file": "sports-ko.json"
+    },
+    {
+      "trackId": "sports",
+      "locale": "en-GB",
+      "file": "sports-en-GB.json"
+    },
+    {
+      "trackId": "sports",
+      "locale": "zh-TW",
+      "file": "sports-zh-TW.json"
+    },
+    {
+      "trackId": "sports",
+      "locale": "ja",
+      "file": "sports-ja.json"
+    },
+    {
+      "trackId": "sports",
+      "locale": "fr",
+      "file": "sports-fr.json"
+    },
+    {
+      "trackId": "sports",
+      "locale": "es",
+      "file": "sports-es.json"
+    },
+    {
+      "trackId": "economics",
+      "locale": "ko",
+      "file": "economics-ko.json"
+    },
+    {
+      "trackId": "economics",
+      "locale": "en-GB",
+      "file": "economics-en-GB.json"
+    },
+    {
+      "trackId": "economics",
+      "locale": "zh-TW",
+      "file": "economics-zh-TW.json"
+    },
+    {
+      "trackId": "economics",
+      "locale": "ja",
+      "file": "economics-ja.json"
+    },
+    {
+      "trackId": "economics",
+      "locale": "fr",
+      "file": "economics-fr.json"
+    },
+    {
+      "trackId": "economics",
+      "locale": "es",
+      "file": "economics-es.json"
+    },
+    {
+      "trackId": "architecture",
+      "locale": "ko",
+      "file": "architecture-ko.json"
+    },
+    {
+      "trackId": "architecture",
+      "locale": "en-GB",
+      "file": "architecture-en-GB.json"
+    },
+    {
+      "trackId": "architecture",
+      "locale": "zh-TW",
+      "file": "architecture-zh-TW.json"
+    },
+    {
+      "trackId": "architecture",
+      "locale": "ja",
+      "file": "architecture-ja.json"
+    },
+    {
+      "trackId": "architecture",
+      "locale": "fr",
+      "file": "architecture-fr.json"
+    },
+    {
+      "trackId": "architecture",
+      "locale": "es",
+      "file": "architecture-es.json"
+    },
+    {
+      "trackId": "electrical-engineering",
+      "locale": "ko",
+      "file": "electrical-engineering-ko.json"
+    },
+    {
+      "trackId": "electrical-engineering",
+      "locale": "en-GB",
+      "file": "electrical-engineering-en-GB.json"
+    },
+    {
+      "trackId": "electrical-engineering",
+      "locale": "zh-TW",
+      "file": "electrical-engineering-zh-TW.json"
+    },
+    {
+      "trackId": "electrical-engineering",
+      "locale": "ja",
+      "file": "electrical-engineering-ja.json"
+    },
+    {
+      "trackId": "electrical-engineering",
+      "locale": "fr",
+      "file": "electrical-engineering-fr.json"
+    },
+    {
+      "trackId": "electrical-engineering",
+      "locale": "es",
+      "file": "electrical-engineering-es.json"
+    },
+    {
+      "trackId": "home-economics",
+      "locale": "ko",
+      "file": "home-economics-ko.json"
+    },
+    {
+      "trackId": "home-economics",
+      "locale": "en-GB",
+      "file": "home-economics-en-GB.json"
+    },
+    {
+      "trackId": "home-economics",
+      "locale": "zh-TW",
+      "file": "home-economics-zh-TW.json"
+    },
+    {
+      "trackId": "home-economics",
+      "locale": "ja",
+      "file": "home-economics-ja.json"
+    },
+    {
+      "trackId": "home-economics",
+      "locale": "fr",
+      "file": "home-economics-fr.json"
+    },
+    {
+      "trackId": "home-economics",
+      "locale": "es",
+      "file": "home-economics-es.json"
+    }
+  ]
+}
