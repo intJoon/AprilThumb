@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## Consejos de ingeniería eléctrica\n\n- Un buen trabajo en ingeniería eléctrica une **términos, evidencia y límites**.\n",
+  "academic-rubric": "\n## Criterios ingeniería eléctrica\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de ingeniería eléctrica\n8. **Aplicación** — más allá de la teoría\n\n9. **회로·신호** — 단위·대역·노이즈·안전 마진\n10. **실험·시뮬** — 측정 조건·오차\n",
+  "academic-fail": "\n### Señales de fallo ingeniería eléctrica\n\n- Texto IA genérico sin conceptos ingeniería eléctrica\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
+  "source-keywords": "\n## Palabras clave ingeniería eléctrica\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto ingeniería eléctrica\n\n- bandwidth | SNR | transfer function | EMC | sampling\n",
+  "concise-examples": "\n## Ejemplo ingeniería eléctrica\n\n- 「Concepto ingeniería eléctrica, más corto」\n- No acortar nombres propios, cifras ni términos\n",
+  "writing-examples": "\n## Ejemplo ingeniería eléctrica\n\n✅ `§2.1: importante — afirmación ingeniería eléctrica sin fuente. Añadir manual o artículo §.`\n",
+  "presentation-context": "\n## Contexto ingeniería eléctrica\n\n- p. ej. trabajo, seminario, TFG en ingeniería eléctrica\n- Público: compañeros, profesores, profesionales\n",
+  "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de ingeniería eléctrica\n",
+  "study-examples": "\n## Ejemplos ingeniería eléctrica\n\n- 「Examen ingeniería eléctrica mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ingeniería eléctrica」→ 2 siguientes pasos\n"
+}

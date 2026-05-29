@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## Conseils économie\n\n- Un bon travail en économie lie **termes, preuves et limites**.\n",
+  "academic-rubric": "\n## Critères économie\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de économie\n8. **Application** — au-delà de la théorie seule\n\n9. **모델·가정** — 가정 명시와 한계\n10. **데이터·식별** — 내생성·표본·단위\n",
+  "academic-fail": "\n### Signaux d'échec économie\n\n- Texte IA générique sans concepts économie\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "source-keywords": "\n## Mots-clés économie\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte économie\n\n- elasticity | identification | welfare | externality | IV | DiD\n",
+  "concise-examples": "\n## Exemple économie\n\n- 「Concept économie, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
+  "writing-examples": "\n## Exemple économie\n\n✅ `§2.1: majeur — affirmation économie sans source. Ajouter manuel ou article §.`\n",
+  "presentation-context": "\n## Contexte économie\n\n- ex. devoir, séminaire, mémoire en économie\n- Public : pairs, enseignants, praticiens\n",
+  "study-role": "\n- Aide en économie : concepts, examens, projets\n",
+  "study-examples": "\n## Exemples économie\n\n- 「Examen économie demain」→ plan 25 min + 5 points\n- 「Blocage devoir économie」→ 2 actions suivantes\n"
+}

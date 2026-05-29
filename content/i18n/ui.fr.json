@@ -1,0 +1,69 @@
+{
+  "siteTitle": "AprilThumb",
+  "heroLabel": "ChatGPT · Gemini",
+  "landingTitle": "Choisissez d'abord la langue, puis la filière",
+  "landingLanguages": "1. Langue",
+  "landingTracks": "2. Filière",
+  "landingTracksHint": "Sélectionnez d'abord une langue ci-dessus",
+  "enter": "Voir les prompts",
+  "changeTrack": "Changer de filière",
+  "changeLang": "Changer de langue",
+  "promptsLabel": "Prompts",
+  "copy": "Copier",
+  "copied": "Copié",
+  "toastCopied": "Copié",
+  "loadError": "Impossible de charger le contenu.",
+  "footerDisclaimer": "L'IA ne remplace pas un avis professionnel.",
+  "tracks": {
+    "pharmacy": "Pharmacie",
+    "general": "Général",
+    "cs": "Informatique",
+    "medicine": "Médecine",
+    "chemical-engineering": "Génie chimique",
+    "law": "Droit",
+    "veterinary": "Médecine vétérinaire",
+    "linguistics": "Linguistique",
+    "design": "Design",
+    "cultural-arts": "Arts et culture",
+    "philosophy": "Philosophie",
+    "sports": "Sciences du sport",
+    "economics": "Économie",
+    "architecture": "Architecture",
+    "electrical-engineering": "Génie électrique",
+    "home-economics": "Sciences du foyer"
+  },
+  "locales": {
+    "ko": "한국어",
+    "en-GB": "English (UK)",
+    "zh-TW": "繁體中文（台灣）",
+    "ja": "日本語",
+    "fr": "Français",
+    "es": "Español"
+  },
+  "prompts": {
+    "academicReview": {
+      "title": "Évaluation académique",
+      "desc": "Devoirs — grille, texte IA et superficialité"
+    },
+    "sourceCheck": {
+      "title": "Vérification des sources",
+      "desc": "Les références et URL soutiennent-elles les affirmations"
+    },
+    "conciseMode": {
+      "title": "Mode concis",
+      "desc": "Avant examen — compresser les réponses longues"
+    },
+    "writingReview": {
+      "title": "Relecture",
+      "desc": "Rapports — failles de logique et de preuves"
+    },
+    "presentation": {
+      "title": "Présentation",
+      "desc": "Structure de diapositives et affiches"
+    },
+    "studyCompanion": {
+      "title": "Compagnon d'étude",
+      "desc": "Études, travail et préoccupations quotidiennes"
+    }
+  }
+}

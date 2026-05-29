@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## Conseils médecine vétérinaire\n\n- Un bon travail en médecine vétérinaire lie **termes, preuves et limites**.\n",
+  "academic-rubric": "\n## Critères médecine vétérinaire\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de médecine vétérinaire\n8. **Application** — au-delà de la théorie seule\n\n9. **종·체중·투여경로** — 수의학 맥락 명시\n10. **잔류·식용동물** — MRL·철회기간·오프라벨 한계\n",
+  "academic-fail": "\n### Signaux d'échec médecine vétérinaire\n\n- Texte IA générique sans concepts médecine vétérinaire\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- 인용약·용량을 사람 기준으로만 서술\n- 종 간 약동학 차이 무시\n",
+  "source-keywords": "\n## Mots-clés médecine vétérinaire\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte médecine vétérinaire\n\n- species | dose mg/kg | withdrawal | pharmacokinetics | zoonosis\n",
+  "concise-examples": "\n## Exemple médecine vétérinaire\n\n- 「Concept médecine vétérinaire, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
+  "writing-examples": "\n## Exemple médecine vétérinaire\n\n✅ `§2.1: majeur — affirmation médecine vétérinaire sans source. Ajouter manuel ou article §.`\n",
+  "presentation-context": "\n## Contexte médecine vétérinaire\n\n- ex. devoir, séminaire, mémoire en médecine vétérinaire\n- Public : pairs, enseignants, praticiens\n",
+  "study-role": "\n- Aide en médecine vétérinaire : concepts, examens, projets\n",
+  "study-examples": "\n## Exemples médecine vétérinaire\n\n- 「Examen médecine vétérinaire demain」→ plan 25 min + 5 points\n- 「Blocage devoir médecine vétérinaire」→ 2 actions suivantes\n\n- 「수의 약리 시험」→ 종별 용량표 5개 + 금기 2개\n"
+}

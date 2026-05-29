@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## Consejos de medicina veterinaria\n\n- Un buen trabajo en medicina veterinaria une **términos, evidencia y límites**.\n",
+  "academic-rubric": "\n## Criterios medicina veterinaria\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de medicina veterinaria\n8. **Aplicación** — más allá de la teoría\n\n9. **종·체중·투여경로** — 수의학 맥락 명시\n10. **잔류·식용동물** — MRL·철회기간·오프라벨 한계\n",
+  "academic-fail": "\n### Señales de fallo medicina veterinaria\n\n- Texto IA genérico sin conceptos medicina veterinaria\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- 인용약·용량을 사람 기준으로만 서술\n- 종 간 약동학 차이 무시\n",
+  "source-keywords": "\n## Palabras clave medicina veterinaria\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto medicina veterinaria\n\n- species | dose mg/kg | withdrawal | pharmacokinetics | zoonosis\n",
+  "concise-examples": "\n## Ejemplo medicina veterinaria\n\n- 「Concepto medicina veterinaria, más corto」\n- No acortar nombres propios, cifras ni términos\n",
+  "writing-examples": "\n## Ejemplo medicina veterinaria\n\n✅ `§2.1: importante — afirmación medicina veterinaria sin fuente. Añadir manual o artículo §.`\n",
+  "presentation-context": "\n## Contexto medicina veterinaria\n\n- p. ej. trabajo, seminario, TFG en medicina veterinaria\n- Público: compañeros, profesores, profesionales\n",
+  "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de medicina veterinaria\n",
+  "study-examples": "\n## Ejemplos medicina veterinaria\n\n- 「Examen medicina veterinaria mañana」→ plan 25 min + 5 puntos\n- 「Atascado en medicina veterinaria」→ 2 siguientes pasos\n\n- 「수의 약리 시험」→ 종별 용량표 5개 + 금기 2개\n"
+}

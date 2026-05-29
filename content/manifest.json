@@ -1,0 +1,61 @@
+{
+  "siteTitle": "AprilThumb",
+  "siteUrl": "https://aprilstumb.vercel.app",
+  "tracks": [
+    { "id": "pharmacy", "order": 1 },
+    { "id": "general", "order": 2 },
+    { "id": "cs", "order": 3 },
+    { "id": "medicine", "order": 4 },
+    { "id": "chemical-engineering", "order": 5 },
+    { "id": "law", "order": 6 },
+    { "id": "veterinary", "order": 7 },
+    { "id": "linguistics", "order": 8 },
+    { "id": "design", "order": 9 },
+    { "id": "cultural-arts", "order": 10 },
+    { "id": "philosophy", "order": 11 },
+    { "id": "sports", "order": 12 },
+    { "id": "economics", "order": 13 },
+    { "id": "architecture", "order": 14 },
+    { "id": "electrical-engineering", "order": 15 },
+    { "id": "home-economics", "order": 16 }
+  ],
+  "locales": ["ko", "en-GB", "zh-TW", "ja", "fr", "es"],
+  "prompts": [
+    {
+      "id": "academic-review",
+      "order": 1,
+      "titleKey": "prompts.academicReview.title",
+      "descKey": "prompts.academicReview.desc"
+    },
+    {
+      "id": "source-check",
+      "order": 2,
+      "titleKey": "prompts.sourceCheck.title",
+      "descKey": "prompts.sourceCheck.desc"
+    },
+    {
+      "id": "concise-mode",
+      "order": 3,
+      "titleKey": "prompts.conciseMode.title",
+      "descKey": "prompts.conciseMode.desc"
+    },
+    {
+      "id": "writing-review",
+      "order": 4,
+      "titleKey": "prompts.writingReview.title",
+      "descKey": "prompts.writingReview.desc"
+    },
+    {
+      "id": "presentation",
+      "order": 5,
+      "titleKey": "prompts.presentation.title",
+      "descKey": "prompts.presentation.desc"
+    },
+    {
+      "id": "study-companion",
+      "order": 6,
+      "titleKey": "prompts.studyCompanion.title",
+      "descKey": "prompts.studyCompanion.desc"
+    }
+  ]
+}

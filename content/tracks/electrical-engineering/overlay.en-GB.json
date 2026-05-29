@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## electrical engineering assignment tips\n\n- Strong electrical engineering work ties **discipline terms, evidence, and limits** together.\n",
+  "academic-rubric": "\n## electrical engineering extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to electrical engineering\n8. **Application** — implications beyond theory alone\n\n9. **Circuits & signals** — units, bandwidth, noise, safety margins\n10. **Lab & simulation** — measurement conditions and error\n",
+  "academic-fail": "\n### electrical engineering fail signals\n\n- Generic AI text without electrical engineering core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n",
+  "source-keywords": "\n## electrical engineering keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the electrical engineering context\n\n- bandwidth | SNR | transfer function | EMC | sampling\n",
+  "concise-examples": "\n## electrical engineering example\n\n- 「Explain a electrical engineering concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
+  "writing-examples": "\n## electrical engineering example\n\n✅ `§2.1: major — electrical engineering claim lacks source. Add textbook or paper §.`\n",
+  "presentation-context": "\n## electrical engineering presentation context\n\n- e.g. electrical engineering coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "study-role": "\n- Study help in electrical engineering concepts, exams, and projects\n",
+  "study-examples": "\n## electrical engineering study examples\n\n- 「electrical engineering exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on electrical engineering assignment」→ 2 next actions\n"
+}

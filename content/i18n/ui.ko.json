@@ -1,0 +1,69 @@
+{
+  "siteTitle": "AprilThumb",
+  "heroLabel": "ChatGPT · Gemini",
+  "landingTitle": "언어를 먼저 고른 뒤 전공을 선택하세요",
+  "landingLanguages": "1. 언어",
+  "landingTracks": "2. 전공",
+  "landingTracksHint": "먼저 위에서 언어를 선택하세요",
+  "enter": "프롬프트 보기",
+  "changeTrack": "전공 변경",
+  "changeLang": "언어 변경",
+  "promptsLabel": "프롬프트",
+  "copy": "복사",
+  "copied": "복사됨",
+  "toastCopied": "복사됨",
+  "loadError": "불러오지 못했습니다.",
+  "footerDisclaimer": "AI는 전문가 상담을 대체하지 않습니다.",
+  "tracks": {
+    "pharmacy": "약학",
+    "general": "일반",
+    "cs": "컴퓨터공학",
+    "medicine": "의학",
+    "chemical-engineering": "화학공학",
+    "law": "법률",
+    "veterinary": "수의학",
+    "linguistics": "언어학",
+    "design": "디자인",
+    "cultural-arts": "문화예술",
+    "philosophy": "철학",
+    "sports": "체육학",
+    "economics": "경제학",
+    "architecture": "건축학",
+    "electrical-engineering": "전기전자공학",
+    "home-economics": "생활과학"
+  },
+  "locales": {
+    "ko": "한국어",
+    "en-GB": "English (UK)",
+    "zh-TW": "繁體中文（台灣）",
+    "ja": "日本語",
+    "fr": "Français",
+    "es": "Español"
+  },
+  "prompts": {
+    "academicReview": {
+      "title": "학술 채점",
+      "desc": "과제·레포트 — 루브릭 채점, AI 냄새·피상적 서술 잡기"
+    },
+    "sourceCheck": {
+      "title": "출처 검증",
+      "desc": "참고문헌·URL이 본문 주장을 뒷받침하는지"
+    },
+    "conciseMode": {
+      "title": "간결 모드",
+      "desc": "시험 전 요약 — 장황한 답 압축"
+    },
+    "writingReview": {
+      "title": "글 리뷰",
+      "desc": "보고서·케이스 — 논리·근거 빈틈"
+    },
+    "presentation": {
+      "title": "발표 구조",
+      "desc": "PPT·포스터 구조·가독성"
+    },
+    "studyCompanion": {
+      "title": "학습 동반자",
+      "desc": "공부·업무·일상 고민"
+    }
+  }
+}

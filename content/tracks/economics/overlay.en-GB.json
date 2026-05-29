@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## economics assignment tips\n\n- Strong economics work ties **discipline terms, evidence, and limits** together.\n",
+  "academic-rubric": "\n## economics extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to economics\n8. **Application** — implications beyond theory alone\n\n9. **Model & assumptions** — assumptions stated and limits discussed\n10. **Data & identification** — endogeneity, sample, and units addressed\n",
+  "academic-fail": "\n### economics fail signals\n\n- Generic AI text without economics core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n",
+  "source-keywords": "\n## economics keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the economics context\n\n- elasticity | identification | welfare | externality | IV | DiD\n",
+  "concise-examples": "\n## economics example\n\n- 「Explain a economics concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
+  "writing-examples": "\n## economics example\n\n✅ `§2.1: major — economics claim lacks source. Add textbook or paper §.`\n",
+  "presentation-context": "\n## economics presentation context\n\n- e.g. economics coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "study-role": "\n- Study help in economics concepts, exams, and projects\n",
+  "study-examples": "\n## economics study examples\n\n- 「economics exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on economics assignment」→ 2 next actions\n"
+}

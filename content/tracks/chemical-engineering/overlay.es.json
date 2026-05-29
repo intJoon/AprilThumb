@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## Consejos de ingeniería química\n\n- Un buen trabajo en ingeniería química une **términos, evidencia y límites**.\n",
+  "academic-rubric": "\n## Criterios ingeniería química\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de ingeniería química\n8. **Aplicación** — más allá de la teoría\n\n9. **물질·에너지 수지** — 단위·평형·보존 법칙\n10. **공정·안전** — 반응기 설계·HAZOP·스케일업 한계\n",
+  "academic-fail": "\n### Señales de fallo ingeniería química\n\n- Texto IA genérico sin conceptos ingeniería química\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
+  "source-keywords": "\n## Palabras clave ingeniería química\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto ingeniería química\n\n- mass balance | heat duty | Reynolds | yield | separation\n",
+  "concise-examples": "\n## Ejemplo ingeniería química\n\n- 「Concepto ingeniería química, más corto」\n- No acortar nombres propios, cifras ni términos\n",
+  "writing-examples": "\n## Ejemplo ingeniería química\n\n✅ `§2.1: importante — afirmación ingeniería química sin fuente. Añadir manual o artículo §.`\n",
+  "presentation-context": "\n## Contexto ingeniería química\n\n- p. ej. trabajo, seminario, TFG en ingeniería química\n- Público: compañeros, profesores, profesionales\n\n- 예: 공정 설계 발표, 실험실 안전·PFD 리뷰\n- 슬라이드: 문제 → PFD/실험 → 수치 → 한계\n",
+  "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de ingeniería química\n",
+  "study-examples": "\n## Ejemplos ingeniería química\n\n- 「Examen ingeniería química mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ingeniería química」→ 2 siguientes pasos\n"
+}

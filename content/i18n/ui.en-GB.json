@@ -1,0 +1,69 @@
+{
+  "siteTitle": "AprilThumb",
+  "heroLabel": "ChatGPT · Gemini",
+  "landingTitle": "Choose a language, then your discipline",
+  "landingLanguages": "1. Language",
+  "landingTracks": "2. Discipline",
+  "landingTracksHint": "Select a language above first",
+  "enter": "View prompts",
+  "changeTrack": "Change discipline",
+  "changeLang": "Change language",
+  "promptsLabel": "Prompts",
+  "copy": "Copy",
+  "copied": "Copied",
+  "toastCopied": "Copied",
+  "loadError": "Could not load content.",
+  "footerDisclaimer": "AI does not replace professional advice.",
+  "tracks": {
+    "pharmacy": "Pharmacy",
+    "general": "General",
+    "cs": "Computer Science",
+    "medicine": "Medicine",
+    "chemical-engineering": "Chemical Engineering",
+    "law": "Law",
+    "veterinary": "Veterinary Medicine",
+    "linguistics": "Linguistics",
+    "design": "Design",
+    "cultural-arts": "Cultural Arts",
+    "philosophy": "Philosophy",
+    "sports": "Sports Science",
+    "economics": "Economics",
+    "architecture": "Architecture",
+    "electrical-engineering": "Electrical Engineering",
+    "home-economics": "Home Economics"
+  },
+  "locales": {
+    "ko": "한국어",
+    "en-GB": "English (UK)",
+    "zh-TW": "繁體中文（台灣）",
+    "ja": "日本語",
+    "fr": "Français",
+    "es": "Español"
+  },
+  "prompts": {
+    "academicReview": {
+      "title": "Academic review",
+      "desc": "Assignments — rubric grading, AI slop and shallow writing"
+    },
+    "sourceCheck": {
+      "title": "Source check",
+      "desc": "Whether references and URLs support claims"
+    },
+    "conciseMode": {
+      "title": "Concise mode",
+      "desc": "Pre-exam summaries — compress long answers"
+    },
+    "writingReview": {
+      "title": "Writing review",
+      "desc": "Reports — logic and evidence gaps"
+    },
+    "presentation": {
+      "title": "Presentation",
+      "desc": "Slides and poster structure"
+    },
+    "studyCompanion": {
+      "title": "Study companion",
+      "desc": "Study, work, and everyday concerns"
+    }
+  }
+}

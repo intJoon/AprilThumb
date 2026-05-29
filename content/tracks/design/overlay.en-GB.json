@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## design assignment tips\n\n- Strong design work ties **discipline terms, evidence, and limits** together.\n",
+  "academic-rubric": "\n## design extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to design\n8. **Application** — implications beyond theory alone\n\n9. **User & context** — persona, journey, constraints tied to decisions\n10. **Critique response** — alternatives, trade-offs, limits\n",
+  "academic-fail": "\n### design fail signals\n\n- Generic AI text without design core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n",
+  "source-keywords": "\n## design keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the design context\n",
+  "concise-examples": "\n## design example\n\n- 「Explain a design concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
+  "writing-examples": "\n## design example\n\n✅ `§2.1: major — design claim lacks source. Add textbook or paper §.`\n",
+  "presentation-context": "\n## design presentation context\n\n- e.g. design coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. portfolio review, user-journey pitch, critique session\n- Slides: problem → research → concepts → iteration\n",
+  "study-role": "\n- Study help in design concepts, exams, and projects\n",
+  "study-examples": "\n## design study examples\n\n- 「design exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on design assignment」→ 2 next actions\n"
+}

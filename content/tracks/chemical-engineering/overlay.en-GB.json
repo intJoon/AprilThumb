@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## chemical engineering assignment tips\n\n- Strong chemical engineering work ties **discipline terms, evidence, and limits** together.\n",
+  "academic-rubric": "\n## chemical engineering extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to chemical engineering\n8. **Application** — implications beyond theory alone\n\n9. **Material & energy balance** — units, equilibrium, conservation\n10. **Process & safety** — reactor design, HAZOP, scale-up limits\n",
+  "academic-fail": "\n### chemical engineering fail signals\n\n- Generic AI text without chemical engineering core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n",
+  "source-keywords": "\n## chemical engineering keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the chemical engineering context\n\n- mass balance | heat duty | Reynolds | yield | separation\n",
+  "concise-examples": "\n## chemical engineering example\n\n- 「Explain a chemical engineering concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
+  "writing-examples": "\n## chemical engineering example\n\n✅ `§2.1: major — chemical engineering claim lacks source. Add textbook or paper §.`\n",
+  "presentation-context": "\n## chemical engineering presentation context\n\n- e.g. chemical engineering coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "study-role": "\n- Study help in chemical engineering concepts, exams, and projects\n",
+  "study-examples": "\n## chemical engineering study examples\n\n- 「chemical engineering exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on chemical engineering assignment」→ 2 next actions\n"
+}

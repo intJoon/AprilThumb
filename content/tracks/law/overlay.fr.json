@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## Conseils droit\n\n- Un bon travail en droit lie **termes, preuves et limites**.\n",
+  "academic-rubric": "\n## Critères droit\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de droit\n8. **Application** — au-delà de la théorie seule\n\n9. **법원·조문** — 판례·법조문이 주장과 대응\n10. **논증 구조** — 사실·법률·결론 분리(IRAC 등)\n",
+  "academic-fail": "\n### Signaux d'échec droit\n\n- Texte IA générique sans concepts droit\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- 법조문 번호 없이 「법적으로 문제」만 반복\n- 판례 요지만 있고 본인 적용 논증 없음\n",
+  "source-keywords": "\n## Mots-clés droit\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte droit\n\n- statute | ratio decidendi | burden of proof | remedy | precedent\n",
+  "concise-examples": "\n## Exemple droit\n\n- 「Concept droit, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
+  "writing-examples": "\n## Exemple droit\n\n✅ `§2.1: majeur — affirmation droit sans source. Ajouter manuel ou article §.`\n\n✅ `§2: major — 「위법」 주장에 조문·판례 없음. 해당 법조문 § 추가.`\n",
+  "presentation-context": "\n## Contexte droit\n\n- ex. devoir, séminaire, mémoire en droit\n- Public : pairs, enseignants, praticiens\n",
+  "study-role": "\n- Aide en droit : concepts, examens, projets\n",
+  "study-examples": "\n## Exemples droit\n\n- 「Examen droit demain」→ plan 25 min + 5 points\n- 「Blocage devoir droit」→ 2 actions suivantes\n"
+}

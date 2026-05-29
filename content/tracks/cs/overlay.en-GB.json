@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## computer science assignment tips\n\n- Strong computer science work ties **discipline terms, evidence, and limits** together.\n",
+  "academic-rubric": "\n## computer science extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to computer science\n8. **Application** — implications beyond theory alone\n\n9. **Algorithm & complexity** — asymptotic bounds and edge cases\n10. **Security & ethics** — threat model or data handling where relevant\n",
+  "academic-fail": "\n### computer science fail signals\n\n- Generic AI text without computer science core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n\n- 「Efficient」 with no Big-O or data-structure argument\n- Security claims without source, CVE, or threat model\n",
+  "source-keywords": "\n## computer science keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the computer science context\n\n- e.g. Big-O | data structures | concurrency | test coverage\n- Verify CVE, OWASP, and RFC numbers in primary sources\n",
+  "concise-examples": "\n## computer science example\n\n- 「Explain a computer science concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
+  "writing-examples": "\n## computer science example\n\n✅ `§2.1: major — computer science claim lacks source. Add textbook or paper §.`\n",
+  "presentation-context": "\n## computer science presentation context\n\n- e.g. computer science coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "study-role": "\n- Study help in computer science concepts, exams, and projects\n",
+  "study-examples": "\n## computer science study examples\n\n- 「computer science exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on computer science assignment」→ 2 next actions\n"
+}

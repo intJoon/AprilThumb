@@ -1,0 +1,11 @@
+{
+  "guide-extra": "\n## Conseils génie électrique\n\n- Un bon travail en génie électrique lie **termes, preuves et limites**.\n",
+  "academic-rubric": "\n## Critères génie électrique\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de génie électrique\n8. **Application** — au-delà de la théorie seule\n\n9. **회로·신호** — 단위·대역·노이즈·안전 마진\n10. **실험·시뮬** — 측정 조건·오차\n",
+  "academic-fail": "\n### Signaux d'échec génie électrique\n\n- Texte IA générique sans concepts génie électrique\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "source-keywords": "\n## Mots-clés génie électrique\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte génie électrique\n\n- bandwidth | SNR | transfer function | EMC | sampling\n",
+  "concise-examples": "\n## Exemple génie électrique\n\n- 「Concept génie électrique, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
+  "writing-examples": "\n## Exemple génie électrique\n\n✅ `§2.1: majeur — affirmation génie électrique sans source. Ajouter manuel ou article §.`\n",
+  "presentation-context": "\n## Contexte génie électrique\n\n- ex. devoir, séminaire, mémoire en génie électrique\n- Public : pairs, enseignants, praticiens\n",
+  "study-role": "\n- Aide en génie électrique : concepts, examens, projets\n",
+  "study-examples": "\n## Exemples génie électrique\n\n- 「Examen génie électrique demain」→ plan 25 min + 5 points\n- 「Blocage devoir génie électrique」→ 2 actions suivantes\n"
+}
