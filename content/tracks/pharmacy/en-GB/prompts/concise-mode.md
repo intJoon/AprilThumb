@@ -44,7 +44,10 @@ Question: Bleeding risk with warfarin and aspirin together?
 
 1. Safety, emergency, contraindication, or overdose warnings
 2. Irreversible actions needing confirmation
-3. When compression would be technically ambiguous
+3. Multi-step instructions that would be confusing if compressed
+4. When compression creates technical ambiguity
+
+Expand only those sections, then return to concise mode.
 
 ## Boundary
 

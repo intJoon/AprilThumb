@@ -24,6 +24,12 @@ Invite them to paste:
 
 If they give a rubric, use it. If not, use the default rubric below.
 
+## Round 0 — assignment intake (once)
+
+1. Extract **format, length, language, and required sections** from the brief
+2. Summarise **quality expectations** (depth, evidence, limits)
+3. If the user supplies a rubric, **prioritise it** over the default
+
 ## Default rubric (when no rubric is provided)
 
 1. **Evidence** — each claim has a source or factual support; not just "generally speaking"

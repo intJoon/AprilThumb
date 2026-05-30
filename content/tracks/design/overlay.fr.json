@@ -1,11 +1,11 @@
 {
   "guide-extra": "\n## Conseils design\n\n- Un bon travail en design lie **termes, preuves et limites**.\n",
-  "academic-rubric": "\n## Critères design\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de design\n8. **Application** — au-delà de la théorie seule\n\n9. **사용자·맥락** — 페르소나·여정·제약이 디자인 결정과 연결\n10. **비평 대응** — 대안·트레이드오프·한계\n",
+  "academic-rubric": "\n## Critères design\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de design\n8. **Application** — au-delà de la théorie seule\n\n9. **Utilisateur & contexte** — persona, parcours, contraintes liées aux choix\n10. **Réponse à la critique** — alternatives, compromis, limites\n",
   "academic-fail": "\n### Signaux d'échec design\n\n- Texte IA générique sans concepts design\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
   "source-keywords": "\n## Mots-clés design\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte design\n",
   "concise-examples": "\n## Exemple design\n\n- 「Concept design, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
-  "writing-examples": "\n## Exemple design\n\n✅ `§2.1: majeur — affirmation design sans source. Ajouter manuel ou article §.`\n\n✅ `§3: major — 페르소나 주장에 인터뷰·테스트 근거 없음. § 또는 캡션 추가.`\n",
-  "presentation-context": "\n## Contexte design\n\n- ex. devoir, séminaire, mémoire en design\n- Public : pairs, enseignants, praticiens\n\n- 예: 포트폴리오 크리틱, 사용자 여정, 비판 세션\n- 슬라이드: 문제 → 리서치 → 시안 → 피드백 반영\n",
+  "writing-examples": "\n## Exemple design\n\n✅ `§2.1: majeur — affirmation design sans source. Ajouter manuel ou article §.`\n",
+  "presentation-context": "\n## Contexte design\n\n- ex. devoir, séminaire, mémoire en design\n- Public : pairs, enseignants, praticiens\n\n- ex. critique portfolio, parcours utilisateur\n- Slides : problème → recherche → concepts → itération\n",
   "study-role": "\n- Aide en design : concepts, examens, projets\n",
   "study-examples": "\n## Exemples design\n\n- 「Examen design demain」→ plan 25 min + 5 points\n- 「Blocage devoir design」→ 2 actions suivantes\n"
 }

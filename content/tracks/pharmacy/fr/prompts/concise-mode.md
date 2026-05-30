@@ -44,7 +44,10 @@ Question : Risque hémorragique avec warfarine et aspirine ensemble ?
 
 1. Avertissements sécurité, urgence, contre-indication ou surdosage
 2. Actions irréversibles nécessitant confirmation
-3. Quand la compression serait techniquement ambiguë
+3. Instructions en plusieurs étapes confuses si compressées
+4. Quand la compression serait techniquement ambiguë
+
+N’écrire en entier que ces passages, puis reprendre le mode concis.
 
 ## Limite
 

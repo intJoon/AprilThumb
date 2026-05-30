@@ -1,11 +1,11 @@
 {
   "guide-extra": "\n## Consejos de medicina\n\n- Un buen trabajo en medicina une **términos, evidencia y límites**.\n",
-  "academic-rubric": "\n## Criterios medicina\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de medicina\n8. **Aplicación** — más allá de la teoría\n\n9. **병태생리·근거 수준** — RCT·가이드라인·전문가 견해 구분\n10. **안전** — 금기·부작용·감별(해당 시)\n",
-  "academic-fail": "\n### Señales de fallo medicina\n\n- Texto IA genérico sin conceptos medicina\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- 진단·처방 확정 어조\n- n수·연구 설계·일반화 한계 미언급\n",
-  "source-keywords": "\n## Palabras clave medicina\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto medicina\n\n- pathophysiology | RCT | NNT | contraindication | adverse event\n",
+  "academic-rubric": "\n## Criterios medicina\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de medicina\n8. **Aplicación** — más allá de la teoría\n\n9. **Fisiopatología y nivel de evidencia** — ECA vs guías vs opinión experta\n10. **Seguridad** — contraindicaciones, efectos adversos, diagnósticos diferenciales\n",
+  "academic-fail": "\n### Señales de fallo medicina\n\n- Texto IA genérico sin conceptos medicina\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
+  "source-keywords": "\n## Palabras clave medicina\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto medicina\n\n- fisiopatología | ECA | NNT | contraindicación | evento adverso\n",
   "concise-examples": "\n## Ejemplo medicina\n\n- 「Concepto medicina, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo medicina\n\n✅ `§2.1: importante — afirmación medicina sin fuente. Añadir manual o artículo §.`\n",
   "presentation-context": "\n## Contexto medicina\n\n- p. ej. trabajo, seminario, TFG en medicina\n- Público: compañeros, profesores, profesionales\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de medicina\n",
-  "study-examples": "\n## Ejemplos medicina\n\n- 「Examen medicina mañana」→ plan 25 min + 5 puntos\n- 「Atascado en medicina」→ 2 siguientes pasos\n\n- 「OSCE D-3」→ 체크리스트 10개 + 모의 1회\n- 「병태 암기」→ 기전 3단계 + 한계 1줄\n"
+  "study-examples": "\n## Ejemplos medicina\n\n- 「Examen medicina mañana」→ plan 25 min + 5 puntos\n- 「Atascado en medicina」→ 2 siguientes pasos\n"
 }

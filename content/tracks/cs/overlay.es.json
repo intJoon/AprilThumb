@@ -1,11 +1,11 @@
 {
   "guide-extra": "\n## Consejos de informática\n\n- Un buen trabajo en informática une **términos, evidencia y límites**.\n",
-  "academic-rubric": "\n## Criterios informática\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de informática\n8. **Aplicación** — más allá de la teoría\n\n9. **알고리즘·복잡도** — 시간·공간 복잡도, 엣지 케이스\n10. **보안·윤리** — 위협 모델·개인정보·취약점(해당 시)\n",
-  "academic-fail": "\n### Señales de fallo informática\n\n- Texto IA genérico sin conceptos informática\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- Big-O·자료구조 없이 「효율적」만 반복\n- CVE·취약점 주장에 PoC·출처 없음\n",
-  "source-keywords": "\n## Palabras clave informática\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto informática\n\n- 예: Big-O | 자료구조 | 동시성 | 테스트·커버리지\n- CVE·OWASP·RFC는 원문·공식 문서 확인\n",
+  "academic-rubric": "\n## Criterios informática\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de informática\n8. **Aplicación** — más allá de la teoría\n\n9. **Algoritmo y complejidad** — cotas asintóticas y casos límite\n10. **Seguridad y ética** — modelo de amenaza o datos sensibles si aplica\n",
+  "academic-fail": "\n### Señales de fallo informática\n\n- Texto IA genérico sin conceptos informática\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- « Eficiente » sin Big-O ni estructuras de datos\n- Afirmaciones de seguridad sin CVE, PoC o modelo de amenaza\n",
+  "source-keywords": "\n## Palabras clave informática\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto informática\n\n- p. ej. Big-O | estructuras de datos | concurrencia | cobertura de tests\n- Verificar CVE, OWASP y RFC en fuentes primarias\n",
   "concise-examples": "\n## Ejemplo informática\n\n- 「Concepto informática, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo informática\n\n✅ `§2.1: importante — afirmación informática sin fuente. Añadir manual o artículo §.`\n",
   "presentation-context": "\n## Contexto informática\n\n- p. ej. trabajo, seminario, TFG en informática\n- Público: compañeros, profesores, profesionales\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de informática\n",
-  "study-examples": "\n## Ejemplos informática\n\n- 「Examen informática mañana」→ plan 25 min + 5 puntos\n- 「Atascado en informática」→ 2 siguientes pasos\n\n- 「자료구조 시험 D-2」→ 20분 복습 플랜 + 핵심 5개\n- 「디버깅 막힘」→ 가설 2개 + 다음 실험 1개\n"
+  "study-examples": "\n## Ejemplos informática\n\n- 「Examen informática mañana」→ plan 25 min + 5 puntos\n- 「Atascado en informática」→ 2 siguientes pasos\n"
 }

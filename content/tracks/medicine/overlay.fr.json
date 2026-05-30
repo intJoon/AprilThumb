@@ -1,11 +1,11 @@
 {
   "guide-extra": "\n## Conseils médecine\n\n- Un bon travail en médecine lie **termes, preuves et limites**.\n",
-  "academic-rubric": "\n## Critères médecine\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de médecine\n8. **Application** — au-delà de la théorie seule\n\n9. **병태생리·근거 수준** — RCT·가이드라인·전문가 견해 구분\n10. **안전** — 금기·부작용·감별(해당 시)\n",
-  "academic-fail": "\n### Signaux d'échec médecine\n\n- Texte IA générique sans concepts médecine\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- 진단·처방 확정 어조\n- n수·연구 설계·일반화 한계 미언급\n",
-  "source-keywords": "\n## Mots-clés médecine\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte médecine\n\n- pathophysiology | RCT | NNT | contraindication | adverse event\n",
+  "academic-rubric": "\n## Critères médecine\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de médecine\n8. **Application** — au-delà de la théorie seule\n\n9. **Physiopathologie & niveau de preuve** — ECR vs recommandations vs avis d'expert\n10. **Sécurité** — contre-indications, effets indésirables, diagnostics différentiels\n",
+  "academic-fail": "\n### Signaux d'échec médecine\n\n- Texte IA générique sans concepts médecine\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "source-keywords": "\n## Mots-clés médecine\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte médecine\n\n- physiopathologie | ECR | NNT | contre-indication | effet indésirable\n",
   "concise-examples": "\n## Exemple médecine\n\n- 「Concept médecine, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple médecine\n\n✅ `§2.1: majeur — affirmation médecine sans source. Ajouter manuel ou article §.`\n",
   "presentation-context": "\n## Contexte médecine\n\n- ex. devoir, séminaire, mémoire en médecine\n- Public : pairs, enseignants, praticiens\n",
   "study-role": "\n- Aide en médecine : concepts, examens, projets\n",
-  "study-examples": "\n## Exemples médecine\n\n- 「Examen médecine demain」→ plan 25 min + 5 points\n- 「Blocage devoir médecine」→ 2 actions suivantes\n\n- 「OSCE D-3」→ 체크리스트 10개 + 모의 1회\n- 「병태 암기」→ 기전 3단계 + 한계 1줄\n"
+  "study-examples": "\n## Exemples médecine\n\n- 「Examen médecine demain」→ plan 25 min + 5 points\n- 「Blocage devoir médecine」→ 2 actions suivantes\n"
 }

@@ -44,7 +44,10 @@ Pregunta: ¿Riesgo hemorrágico con warfarina y aspirina juntas?
 
 1. Avisos de seguridad, urgencia, contraindicación o sobredosis
 2. Acciones irreversibles que requieren confirmación
-3. Cuando comprimir sería técnicamente ambiguo
+3. Instrucciones en varios pasos confusas si se comprimen
+4. Cuando comprimir sería técnicamente ambiguo
+
+Solo expandir esos tramos y volver al modo conciso.
 
 ## Límite
 

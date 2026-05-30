@@ -4,6 +4,7 @@
   "scripts": {
     "generate": "node scripts/generate-all-content.mjs",
     "build": "node scripts/generate-all-content.mjs && node scripts/build-content.mjs",
+    "vercel-build": "npm run build",
     "dev": "npm run build && npx serve public -l 3456"
   }
 }

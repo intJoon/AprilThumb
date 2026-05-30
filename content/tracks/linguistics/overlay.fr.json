@@ -1,10 +1,10 @@
 {
   "guide-extra": "\n## Conseils linguistique\n\n- Un bon travail en linguistique lie **termes, preuves et limites**.\n",
-  "academic-rubric": "\n## Critères linguistique\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de linguistique\n8. **Application** — au-delà de la théorie seule\n\n9. **데이터·예시** — 자연어 예문·코퍼스·통계 근거\n10. **이론 적합** — 프레임워크와 분석 단위 일치\n",
+  "academic-rubric": "\n## Critères linguistique\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de linguistique\n8. **Application** — au-delà de la théorie seule\n\n9. **Données & exemples** — exemples naturels, corpus ou statistiques\n10. **Adéquation théorique** — cadre et unité d'analyse alignés\n",
   "academic-fail": "\n### Signaux d'échec linguistique\n\n- Texte IA générique sans concepts linguistique\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
-  "source-keywords": "\n## Mots-clés linguistique\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte linguistique\n\n- phoneme | morpheme | syntax | pragmatics | corpus | gloss\n",
-  "concise-examples": "\n## Exemple linguistique\n\n- 「Concept linguistique, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n\n- 「통사 트리, 간결 ultra」— 기호·라벨은 축약하지 말 것\n",
-  "writing-examples": "\n## Exemple linguistique\n\n✅ `§2.1: majeur — affirmation linguistique sans source. Ajouter manuel ou article §.`\n\n✅ `§4: major — 예문 (1)에 gloss·출처 없음. 인용 논문 또는 코퍼스 ID 추가.`\n",
+  "source-keywords": "\n## Mots-clés linguistique\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte linguistique\n\n- phonème | morphème | syntaxe | pragmatique | corpus | gloss\n",
+  "concise-examples": "\n## Exemple linguistique\n\n- 「Concept linguistique, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
+  "writing-examples": "\n## Exemple linguistique\n\n✅ `§2.1: majeur — affirmation linguistique sans source. Ajouter manuel ou article §.`\n",
   "presentation-context": "\n## Contexte linguistique\n\n- ex. devoir, séminaire, mémoire en linguistique\n- Public : pairs, enseignants, praticiens\n",
   "study-role": "\n- Aide en linguistique : concepts, examens, projets\n",
   "study-examples": "\n## Exemples linguistique\n\n- 「Examen linguistique demain」→ plan 25 min + 5 points\n- 「Blocage devoir linguistique」→ 2 actions suivantes\n"

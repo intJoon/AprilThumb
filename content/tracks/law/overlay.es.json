@@ -1,10 +1,10 @@
 {
   "guide-extra": "\n## Consejos de derecho\n\n- Un buen trabajo en derecho une **términos, evidencia y límites**.\n",
-  "academic-rubric": "\n## Criterios derecho\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de derecho\n8. **Aplicación** — más allá de la teoría\n\n9. **법원·조문** — 판례·법조문이 주장과 대응\n10. **논증 구조** — 사실·법률·결론 분리(IRAC 등)\n",
-  "academic-fail": "\n### Señales de fallo derecho\n\n- Texto IA genérico sin conceptos derecho\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- 법조문 번호 없이 「법적으로 문제」만 반복\n- 판례 요지만 있고 본인 적용 논증 없음\n",
-  "source-keywords": "\n## Palabras clave derecho\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto derecho\n\n- statute | ratio decidendi | burden of proof | remedy | precedent\n",
+  "academic-rubric": "\n## Criterios derecho\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de derecho\n8. **Aplicación** — más allá de la teoría\n\n9. **Autoridad** — jurisprudencia y leyes ligadas a cada afirmación\n10. **Estructura IRAC** — hechos, derecho y conclusión separados\n",
+  "academic-fail": "\n### Señales de fallo derecho\n\n- Texto IA genérico sin conceptos derecho\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
+  "source-keywords": "\n## Palabras clave derecho\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto derecho\n\n- estatuto | ratio decidendi | carga de la prueba | remedio\n",
   "concise-examples": "\n## Ejemplo derecho\n\n- 「Concepto derecho, más corto」\n- No acortar nombres propios, cifras ni términos\n",
-  "writing-examples": "\n## Ejemplo derecho\n\n✅ `§2.1: importante — afirmación derecho sin fuente. Añadir manual o artículo §.`\n\n✅ `§2: major — 「위법」 주장에 조문·판례 없음. 해당 법조문 § 추가.`\n",
+  "writing-examples": "\n## Ejemplo derecho\n\n✅ `§2.1: importante — afirmación derecho sin fuente. Añadir manual o artículo §.`\n",
   "presentation-context": "\n## Contexto derecho\n\n- p. ej. trabajo, seminario, TFG en derecho\n- Público: compañeros, profesores, profesionales\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de derecho\n",
   "study-examples": "\n## Ejemplos derecho\n\n- 「Examen derecho mañana」→ plan 25 min + 5 puntos\n- 「Atascado en derecho」→ 2 siguientes pasos\n"

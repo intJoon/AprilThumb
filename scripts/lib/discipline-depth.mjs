@@ -1,3 +1,5 @@
+import { LOCALE_DEPTH } from "./discipline-depth-i18n.mjs";
+
 export const TRACK_DEPTH = {
   cs: {
     ko: {
@@ -221,6 +223,13 @@ export const TRACK_DEPTH = {
     },
   },
 };
+
+for (const [trackId, locales] of Object.entries(LOCALE_DEPTH)) {
+  if (!TRACK_DEPTH[trackId]) continue;
+  for (const [locale, patch] of Object.entries(locales)) {
+    TRACK_DEPTH[trackId][locale] = patch;
+  }
+}
 
 const LOCALE_FALLBACK = ["ko", "en-GB", "zh-TW", "ja", "fr", "es"];
 

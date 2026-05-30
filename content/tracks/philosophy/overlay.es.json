@@ -1,10 +1,10 @@
 {
   "guide-extra": "\n## Consejos de filosofía\n\n- Un buen trabajo en filosofía une **términos, evidencia y límites**.\n",
-  "academic-rubric": "\n## Criterios filosofía\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de filosofía\n8. **Aplicación** — más allá de la teoría\n\n9. **논증 구조** — 전제·결론·반례·반박\n10. **텍스트 근거** — 인용이 해석을 실제로 지지\n",
-  "academic-fail": "\n### Señales de fallo filosofía\n\n- Texto IA genérico sin conceptos filosofía\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- 인용만 나열하고 본인 논지 없음\n- straw man·확증 편향만 비판하고 핵심 반례 회피\n",
+  "academic-rubric": "\n## Criterios filosofía\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de filosofía\n8. **Aplicación** — más allá de la teoría\n\n9. **Estructura argumentativa** — premisas, conclusión, objeción, réplica\n10. **Soporte textual** — citas que respaldan la interpretación\n",
+  "academic-fail": "\n### Señales de fallo filosofía\n\n- Texto IA genérico sin conceptos filosofía\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
   "source-keywords": "\n## Palabras clave filosofía\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto filosofía\n",
   "concise-examples": "\n## Ejemplo filosofía\n\n- 「Concepto filosofía, más corto」\n- No acortar nombres propios, cifras ni términos\n",
-  "writing-examples": "\n## Ejemplo filosofía\n\n✅ `§2.1: importante — afirmación filosofía sin fuente. Añadir manual o artículo §.`\n\n✅ `§2: major — 반례 제시 후 재반박 없음. 한 단락으로 반박 추가.`\n",
+  "writing-examples": "\n## Ejemplo filosofía\n\n✅ `§2.1: importante — afirmación filosofía sin fuente. Añadir manual o artículo §.`\n",
   "presentation-context": "\n## Contexto filosofía\n\n- p. ej. trabajo, seminario, TFG en filosofía\n- Público: compañeros, profesores, profesionales\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de filosofía\n",
   "study-examples": "\n## Ejemplos filosofía\n\n- 「Examen filosofía mañana」→ plan 25 min + 5 puntos\n- 「Atascado en filosofía」→ 2 siguientes pasos\n"
