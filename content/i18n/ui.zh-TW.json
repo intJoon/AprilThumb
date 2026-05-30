@@ -9,8 +9,10 @@
   "changeLang": "更換語言",
   "promptsLabel": "提示詞",
   "copy": "複製",
+  "copyLink": "複製連結",
   "copied": "已複製",
   "toastCopied": "已複製",
+  "toastLinkCopied": "連結已複製",
   "loadError": "無法載入內容。",
   "footerDisclaimer": "AI 不能取代專業諮詢。",
   "tracks": {

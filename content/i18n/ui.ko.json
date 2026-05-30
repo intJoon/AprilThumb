@@ -9,8 +9,10 @@
   "changeLang": "언어 변경",
   "promptsLabel": "프롬프트",
   "copy": "복사",
+  "copyLink": "링크 복사",
   "copied": "복사됨",
   "toastCopied": "복사됨",
+  "toastLinkCopied": "링크가 복사됨",
   "loadError": "불러오지 못했습니다.",
   "footerDisclaimer": "AI는 전문가 상담을 대체하지 않습니다.",
   "tracks": {

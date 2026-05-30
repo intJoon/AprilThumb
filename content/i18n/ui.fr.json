@@ -9,8 +9,10 @@
   "changeLang": "Changer de langue",
   "promptsLabel": "Prompts",
   "copy": "Copier",
+  "copyLink": "Copier le lien",
   "copied": "Copié",
   "toastCopied": "Copié",
+  "toastLinkCopied": "Lien copié",
   "loadError": "Impossible de charger le contenu.",
   "footerDisclaimer": "L'IA ne remplace pas un avis professionnel.",
   "tracks": {

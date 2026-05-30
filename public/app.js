@@ -11,6 +11,8 @@ const btnChangeTrack = document.getElementById("btn-change-track");
 const btnChangeLang = document.getElementById("btn-change-lang");
 const btnLabelLang = document.getElementById("btn-label-lang");
 const btnLabelTrack = document.getElementById("btn-label-track");
+const btnCopyLink = document.getElementById("btn-copy-link");
+const btnLabelCopyLink = document.getElementById("btn-label-copy-link");
 
 let toastTimer;
 let manifest;
@@ -106,7 +108,16 @@ function showToast(text) {
   }, 1800);
 }
 
-async function copyText(text, btn) {
+function getShareUrl() {
+  const base = (manifest?.siteUrl || location.origin).replace(/\/$/, "");
+  const p = new URLSearchParams();
+  if (selectedTrack) p.set("track", selectedTrack);
+  if (selectedLang) p.set("lang", selectedLang);
+  const qs = p.toString();
+  return qs ? `${base}/?${qs}` : `${base}/`;
+}
+
+async function copyText(text, btn, toastKey = "toastCopied") {
   try {
     await navigator.clipboard.writeText(text);
   } catch {
@@ -119,16 +130,21 @@ async function copyText(text, btn) {
     document.execCommand("copy");
     document.body.removeChild(ta);
   }
-  const prev = btn.textContent;
-  btn.textContent = ui("copied");
+  const label = btn.querySelector(".btn-label");
+  const prev = label ? label.textContent : btn.textContent;
+  const next = ui("copied");
+  if (label) label.textContent = next;
+  else btn.textContent = next;
   btn.classList.add("copied");
-  btn.setAttribute("aria-label", ui("copied"));
+  btn.setAttribute("aria-label", next);
   setTimeout(() => {
-    btn.textContent = prev;
+    if (label) label.textContent = prev;
+    else btn.textContent = prev;
     btn.classList.remove("copied");
     btn.removeAttribute("aria-label");
+    updateHeaderButtons();
   }, 1400);
-  showToast(ui("toastCopied"));
+  showToast(ui(toastKey));
 }
 
 function renderPrompt(item) {
@@ -173,6 +189,8 @@ function updateHeaderButtons() {
   btnChangeTrack.setAttribute("aria-label", src.changeTrack);
   btnChangeLang.setAttribute("aria-expanded", pickerMode === "lang" ? "true" : "false");
   btnChangeTrack.setAttribute("aria-expanded", pickerMode === "track" ? "true" : "false");
+  btnLabelCopyLink.textContent = src.copyLink;
+  btnCopyLink.setAttribute("aria-label", src.copyLink);
 }
 
 function renderPicker(mode) {
@@ -304,6 +322,7 @@ async function init() {
 
   btnChangeLang.addEventListener("click", () => openPicker("lang"));
   btnChangeTrack.addEventListener("click", () => openPicker("track"));
+  btnCopyLink.addEventListener("click", () => copyText(getShareUrl(), btnCopyLink, "toastLinkCopied"));
 
   await tryLoadContent();
 }

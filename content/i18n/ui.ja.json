@@ -9,8 +9,10 @@
   "changeLang": "言語を変更",
   "promptsLabel": "プロンプト",
   "copy": "コピー",
+  "copyLink": "リンクをコピー",
   "copied": "コピー済み",
   "toastCopied": "コピー済み",
+  "toastLinkCopied": "リンクをコピーしました",
   "loadError": "読み込めませんでした。",
   "footerDisclaimer": "AIは専門家の助言に代わりません。",
   "tracks": {
