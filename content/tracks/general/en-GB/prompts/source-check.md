@@ -36,7 +36,14 @@ If search or links fail, ask for the **abstract or key paragraph** from that sou
 5. **Cited in text:** yes / weak / no
 6. **One-line comment**
 
-<!-- OVERLAY:source-keywords -->
+## Keyword examples
+
+- Concepts: definition, framework, assumption
+- Methods: sample, design, variable, control
+- Evidence: citation, statistic, primary source
+- Limits: scope, counter-example, uncertainty
+
+Adjust to the assignment context.
 
 ## Overall summary
 

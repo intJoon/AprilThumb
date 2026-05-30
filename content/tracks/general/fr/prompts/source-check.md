@@ -36,7 +36,14 @@ Si recherche/lien impossible : **résumé ou paragraphe clé** de la source.
 5. **Cité dans le texte :** yes / weak / no
 6. **Commentaire en une ligne**
 
-<!-- OVERLAY:source-keywords -->
+## Exemples de mots-clés
+
+- Concepts : définition, cadre, hypothèse
+- Méthodes : échantillon, design, variable, contrôle
+- Preuves : citation, statistique, source primaire
+- Limites : portée, contre-exemple, incertitude
+
+Ajuster au contexte du devoir.
 
 ## Synthèse globale
 

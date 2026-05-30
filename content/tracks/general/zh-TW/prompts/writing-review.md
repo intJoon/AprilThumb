@@ -31,8 +31,6 @@
 
 ✅ `§5.2: 注意 — 僅 n=24。補檢定力、α 或 post-hoc 限制一句。`
 
-<!-- OVERLAY:writing-examples -->
-
 ## 輸出
 
 1. 評語列表勿用 Markdown 表或程式碼區塊

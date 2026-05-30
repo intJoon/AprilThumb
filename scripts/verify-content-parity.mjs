@@ -221,6 +221,16 @@ function checkBundle(trackId, locale) {
     if (presBullets < 3) issues.push(`bundle presentation bullets=${presBullets}`);
   }
 
+  for (const p of bundle.prompts || []) {
+    if (p.copyText && /<!-- OVERLAY:\w+ -->/.test(p.copyText)) {
+      issues.push(`bundle ${p.id} copyText has OVERLAY marker`);
+    }
+  }
+  const guideText = bundle.guide?.markdown || "";
+  if (/<!-- OVERLAY:\w+ -->/.test(guideText)) {
+    issues.push("bundle guide has OVERLAY marker");
+  }
+
   return issues;
 }
 

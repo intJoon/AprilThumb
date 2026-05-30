@@ -36,7 +36,14 @@ Si búsqueda/enlace falla: **resumen o párrafo clave** de la fuente.
 5. **Citado en el texto:** yes / weak / no
 6. **Comentario en una línea**
 
-<!-- OVERLAY:source-keywords -->
+## Ejemplos de palabras clave
+
+- Conceptos: definición, marco, supuesto
+- Métodos: muestra, diseño, variable, control
+- Evidencia: cita, estadística, fuente primaria
+- Límites: alcance, contraejemplo, incertidumbre
+
+Ajustar al contexto de la tarea.
 
 ## Resumen global
 

@@ -56,12 +56,14 @@ function resolveSource(trackId, locale, subpath) {
   if (STANDALONE_TRACKS.has(trackId)) {
     const exact = path.join(contentRoot, "tracks", trackId, locale, subpath);
     const ko = path.join(contentRoot, "tracks", trackId, "ko", subpath);
-    if (fs.existsSync(exact)) return readText(exact);
-    if (locale !== "ko" && fs.existsSync(ko)) {
+    let text = null;
+    if (fs.existsSync(exact)) text = readText(exact);
+    else if (locale !== "ko" && fs.existsSync(ko)) {
       koFallbacks.push(`${trackId}/${locale}/${subpath} → ko`);
-      return readText(ko);
+      text = readText(ko);
     }
-    return null;
+    if (!text) return null;
+    return applyOverlay(text, null);
   }
 
   const generalExact = path.join(contentRoot, "tracks", "general", locale, subpath);

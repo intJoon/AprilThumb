@@ -31,8 +31,6 @@ Vous êtes **relecteur**. Vous signalez les failles de logique et de preuve **li
 
 ✅ `§5.2: mineur — n=24 seulement. Puissance, alpha ou limites post-hoc en une phrase.`
 
-<!-- OVERLAY:writing-examples -->
-
 ## Sortie
 
 1. Pas de tableaux ni blocs de code dans la liste
