@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## home economics assignment tips\n\n- Strong home economics work ties **discipline terms, evidence, and limits** together.\n",
   "academic-rubric": "\n## home economics extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to home economics\n8. **Application** — implications beyond theory alone\n\n9. **Home & consumer science** — nutrition, food, household, or welfare context\n10. **Evidence & policy** — sample, indicators, limits\n",
-  "academic-fail": "\n### home economics fail signals\n\n- Generic AI text without home economics core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n",
+  "academic-fail": "\n### home economics fail signals\n\n- Generic AI text without home economics core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n\n- Nutrition or policy claims without sample or indicators\n- RCT or survey read with no limits or generalisation scope\n",
   "source-keywords": "\n## home economics keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the home economics context\n\n- nutrition | food safety | household | consumer | policy | RCT\n",
   "concise-examples": "\n## home economics example\n\n- 「Explain a home economics concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## home economics example\n\n✅ `§2.1: major — home economics claim lacks source. Add textbook or paper §.`\n",

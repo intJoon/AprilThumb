@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Consejos de diseño\n\n- Un buen trabajo en diseño une **términos, evidencia y límites**.\n",
   "academic-rubric": "\n## Criterios diseño\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de diseño\n8. **Aplicación** — más allá de la teoría\n\n9. **Usuario y contexto** — persona, journey, restricciones ligadas a decisiones\n10. **Respuesta a la crítica** — alternativas, trade-offs, límites\n",
-  "academic-fail": "\n### Señales de fallo diseño\n\n- Texto IA genérico sin conceptos diseño\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
+  "academic-fail": "\n### Señales de fallo diseño\n\n- Texto IA genérico sin conceptos diseño\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- UX/persona sin evidencia de investigación\n- Concepto único sin alternativas ni compensaciones\n",
   "source-keywords": "\n## Palabras clave diseño\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto diseño\n",
   "concise-examples": "\n## Ejemplo diseño\n\n- 「Concepto diseño, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo diseño\n\n✅ `§2.1: importante — afirmación diseño sin fuente. Añadir manual o artículo §.`\n",

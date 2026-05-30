@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Conseils sciences du sport\n\n- Un bon travail en sciences du sport lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères sciences du sport\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de sciences du sport\n8. **Application** — au-delà de la théorie seule\n\n9. **Physiologie & charge** — charge d'entraînement et preuves d'adaptation\n10. **Mesure & stats** — échantillon, taille d'effet, limites\n",
-  "academic-fail": "\n### Signaux d'échec sciences du sport\n\n- Texte IA générique sans concepts sciences du sport\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "academic-fail": "\n### Signaux d'échec sciences du sport\n\n- Texte IA générique sans concepts sciences du sport\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- « Amélioration significative » sans n ni taille d'effet\n- Programme sans charge ou récupération justifiées\n",
   "source-keywords": "\n## Mots-clés sciences du sport\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte sciences du sport\n\n- VO2max | périodisation | blessure | biomécanique | charge | récupération\n",
   "concise-examples": "\n## Exemple sciences du sport\n\n- 「Concept sciences du sport, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple sciences du sport\n\n✅ `§2.1: majeur — affirmation sciences du sport sans source. Ajouter manuel ou article §.`\n",

@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## linguistics assignment tips\n\n- Strong linguistics work ties **discipline terms, evidence, and limits** together.\n",
   "academic-rubric": "\n## linguistics extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to linguistics\n8. **Application** — implications beyond theory alone\n\n9. **Data & examples** — natural examples, corpus, or statistics\n10. **Theory fit** — framework matches the unit of analysis\n",
-  "academic-fail": "\n### linguistics fail signals\n\n- Generic AI text without linguistics core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n",
+  "academic-fail": "\n### linguistics fail signals\n\n- Generic AI text without linguistics core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n\n- Syntax or phonology claims without glossed, sourced examples\n- Framework mismatched to the unit of analysis\n",
   "source-keywords": "\n## linguistics keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the linguistics context\n\n- phoneme | morpheme | syntax | pragmatics | corpus | gloss\n",
   "concise-examples": "\n## linguistics example\n\n- 「Explain a linguistics concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## linguistics example\n\n✅ `§2.1: major — linguistics claim lacks source. Add textbook or paper §.`\n",

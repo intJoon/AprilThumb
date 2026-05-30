@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## sports science assignment tips\n\n- Strong sports science work ties **discipline terms, evidence, and limits** together.\n",
   "academic-rubric": "\n## sports science extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to sports science\n8. **Application** — implications beyond theory alone\n\n9. **Physiology & load** — training load and adaptation evidence\n10. **Measurement & stats** — sample, effect size, limits\n",
-  "academic-fail": "\n### sports science fail signals\n\n- Generic AI text without sports science core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n",
+  "academic-fail": "\n### sports science fail signals\n\n- Generic AI text without sports science core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n\n- \"Significant improvement\" with no n or effect size\n- Training programme advice with no load or recovery rationale\n",
   "source-keywords": "\n## sports science keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the sports science context\n\n- VO2max | periodization | injury | biomechanics | load | recovery\n",
   "concise-examples": "\n## sports science example\n\n- 「Explain a sports science concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## sports science example\n\n✅ `§2.1: major — sports science claim lacks source. Add textbook or paper §.`\n",

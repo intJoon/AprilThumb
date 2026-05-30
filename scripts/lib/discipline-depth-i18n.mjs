@@ -396,3 +396,77 @@ export const LOCALE_DEPTH = {
     },
   },
 };
+
+const FAIL_I18N = {
+  "chemical-engineering": {
+    "zh-TW":
+      "\n- 無物料／能量平衡或單位，只重複「高效製程」\n- 無 HAZOP 或放大限制的安全主張\n",
+    ja: "\n- 物質・エネルギー収支・単位なしで「効率的プロセス」のみ\n- HAZOP・スケールアップ限界なしの安全主張\n",
+    fr: "\n- Affirmations procédé sans bilan matière/énergie ni unités\n- Sécurité sans HAZOP ni limites de scale-up\n",
+    es: "\n- Proceso sin balance material/energético ni unidades\n- Seguridad sin HAZOP ni límites de escala\n",
+  },
+  linguistics: {
+    "zh-TW":
+      "\n- 無 gloss、出處的例句卻做句法／音韻主張\n- 理論框架與分析單位不一致\n",
+    ja: "\n- gloss・出典なし例文で統語・音韻を主張\n- 理論と分析単位の不一致\n",
+    fr: "\n- Syntaxe/phonologie sans exemples glossés et sourcés\n- Cadre théorique incompatible avec l'unité d'analyse\n",
+    es: "\n- Sintaxis/fonología sin ejemplos con gloss y fuente\n- Marco teórico incompatible con la unidad de análisis\n",
+  },
+  design: {
+    "zh-TW":
+      "\n- 無訪談／測試依據的 UX、人物誌主張\n- 無替代方案與權衡，只推單一方案\n",
+    ja: "\n- リサーチ根拠なしの UX・ペルソナ主張\n- 代替案・トレードオフなしの単一案押し\n",
+    fr: "\n- UX/persona sans preuves de recherche\n- Concept unique sans alternatives ni compromis\n",
+    es: "\n- UX/persona sin evidencia de investigación\n- Concepto único sin alternativas ni compensaciones\n",
+  },
+  "cultural-arts": {
+    "zh-TW":
+      "\n- 無一手資料或檔案卻反覆詮釋\n- 無時代、社會脈絡的作品／政策說明\n",
+    ja: "\n- 一次資料・アーカイブなしの解釈のみ\n- 時代・社会文脈なしの作品・政策説明\n",
+    fr: "\n- Interprétation sans sources primaires ou archives\n- Œuvre/politique sans contexte historique\n",
+    es: "\n- Interpretación sin fuentes primarias o archivo\n- Obra/política sin contexto histórico\n",
+  },
+  sports: {
+    "zh-TW":
+      "\n- 無 n、效果量卻稱「顯著改善」\n- 無訓練負荷、恢復依據的計畫建議\n",
+    ja: "\n- n・効果量なしの「有意な改善」\n- 負荷・回復根拠なしのプログラム助言\n",
+    fr: "\n- « Amélioration significative » sans n ni taille d'effet\n- Programme sans charge ou récupération justifiées\n",
+    es: "\n- « Mejora significativa » sin n ni tamaño del efecto\n- Programa sin carga o recuperación justificadas\n",
+  },
+  economics: {
+    "zh-TW":
+      "\n- 未明示假設與限制卻下模型結論\n- 未提識別策略、內生性\n",
+    ja: "\n- 仮定・限界なしのモデル結論\n- 識別戦略・内生性への言及なし\n",
+    fr: "\n- Conclusions de modèle sans hypothèses ni limites\n- Pas de stratégie d'identification ni d'endogénéité\n",
+    es: "\n- Conclusiones del modelo sin supuestos ni límites\n- Sin estrategia de identificación ni endogeneidad\n",
+  },
+  architecture: {
+    "zh-TW":
+      "\n- 無比例、材料、結構依據的設計主張\n- 無日照、能源、法規分析\n",
+    ja: "\n- スケール・材料・構造根拠なしの設計主張\n- 日照・エネルギー・法規分析なし\n",
+    fr: "\n- Design sans échelle, matériaux ou logique structurelle\n- Pas d'analyse lumière, énergie ou normes\n",
+    es: "\n- Diseño sin escala, materiales o lógica estructural\n- Sin análisis de luz, energía o normativa\n",
+  },
+  "electrical-engineering": {
+    "zh-TW":
+      "\n- 無單位、頻寬、SNR 卻談「訊號處理」\n- 實驗／模擬數值無量測條件、誤差\n",
+    ja: "\n- 単位・帯域・SNR なしの「信号処理」\n- 測定条件・誤差なしの実験・シミュ数値\n",
+    fr: "\n- Traitement du signal sans unités, bande passante ou SNR\n- Mesures/simulation sans conditions ni erreur\n",
+    es: "\n- Procesado de señal sin unidades, ancho de banda o SNR\n- Lab/simulación sin condiciones de medición ni error\n",
+  },
+  "home-economics": {
+    "zh-TW":
+      "\n- 無樣本、指標的營養／政策主張\n- 未提 RCT、調查的限制與外推範圍\n",
+    ja: "\n- サンプル・指標なしの栄養・政策主張\n- RCT・調査の限界・一般化範囲の未言及\n",
+    fr: "\n- Nutrition/politique sans échantillon ni indicateurs\n- ECR/enquête sans limites ni généralisation\n",
+    es: "\n- Nutrición/política sin muestra ni indicadores\n- ECA/encuesta sin límites ni generalización\n",
+  },
+};
+
+for (const [trackId, locales] of Object.entries(FAIL_I18N)) {
+  for (const [locale, fail] of Object.entries(locales)) {
+    if (LOCALE_DEPTH[trackId]?.[locale]) {
+      LOCALE_DEPTH[trackId][locale]["academic-fail"] = fail;
+    }
+  }
+}

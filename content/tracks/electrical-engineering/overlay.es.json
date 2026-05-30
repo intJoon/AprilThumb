@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Consejos de ingeniería eléctrica\n\n- Un buen trabajo en ingeniería eléctrica une **términos, evidencia y límites**.\n",
   "academic-rubric": "\n## Criterios ingeniería eléctrica\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de ingeniería eléctrica\n8. **Aplicación** — más allá de la teoría\n\n9. **Circuitos y señales** — unidades, ancho de banda, ruido, márgenes de seguridad\n10. **Laboratorio y simulación** — condiciones de medición y error\n",
-  "academic-fail": "\n### Señales de fallo ingeniería eléctrica\n\n- Texto IA genérico sin conceptos ingeniería eléctrica\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
+  "academic-fail": "\n### Señales de fallo ingeniería eléctrica\n\n- Texto IA genérico sin conceptos ingeniería eléctrica\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- Procesado de señal sin unidades, ancho de banda o SNR\n- Lab/simulación sin condiciones de medición ni error\n",
   "source-keywords": "\n## Palabras clave ingeniería eléctrica\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto ingeniería eléctrica\n\n- ancho de banda | SNR | función de transferencia | EMC | muestreo\n",
   "concise-examples": "\n## Ejemplo ingeniería eléctrica\n\n- 「Concepto ingeniería eléctrica, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo ingeniería eléctrica\n\n✅ `§2.1: importante — afirmación ingeniería eléctrica sin fuente. Añadir manual o artículo §.`\n",

@@ -62,6 +62,8 @@ export const TRACK_DEPTH = {
     ko: {
       "academic-rubric":
         "\n9. **물질·에너지 수지** — 단위·평형·보존 법칙\n10. **공정·안전** — 반응기 설계·HAZOP·스케일업 한계\n",
+      "academic-fail":
+        "\n- 물질·에너지 수지·단위 없이 「효율적 공정」만 반복\n- HAZOP·스케일업 한계 없이 안전·위험 주장\n",
       "source-keywords":
         "\n- mass balance | heat duty | Reynolds | yield | separation\n",
       "presentation-context":
@@ -70,6 +72,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Material & energy balance** — units, equilibrium, conservation\n10. **Process & safety** — reactor design, HAZOP, scale-up limits\n",
+      "academic-fail":
+        "\n- Process claims with no mass/energy balance or units\n- Safety or risk claims with no HAZOP or scale-up limits\n",
       "source-keywords":
         "\n- mass balance | heat duty | Reynolds | yield | separation\n",
     },
@@ -98,6 +102,8 @@ export const TRACK_DEPTH = {
     ko: {
       "academic-rubric":
         "\n9. **데이터·예시** — 자연어 예문·코퍼스·통계 근거\n10. **이론 적합** — 프레임워크와 분석 단위 일치\n",
+      "academic-fail":
+        "\n- gloss·출처 없는 예문으로 통사·음운 주장\n- 선택 이론과 분석 단위(어절·발화 등) 불일치\n",
       "source-keywords":
         "\n- phoneme | morpheme | syntax | pragmatics | corpus | gloss\n",
       "writing-examples":
@@ -108,6 +114,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Data & examples** — natural examples, corpus, or statistics\n10. **Theory fit** — framework matches the unit of analysis\n",
+      "academic-fail":
+        "\n- Syntax or phonology claims without glossed, sourced examples\n- Framework mismatched to the unit of analysis\n",
       "source-keywords":
         "\n- phoneme | morpheme | syntax | pragmatics | corpus | gloss\n",
     },
@@ -120,18 +128,24 @@ export const TRACK_DEPTH = {
         "\n✅ `§3: major — 페르소나 주장에 인터뷰·테스트 근거 없음. § 또는 캡션 추가.`\n",
       "academic-rubric":
         "\n9. **사용자·맥락** — 페르소나·여정·제약이 디자인 결정과 연결\n10. **비평 대응** — 대안·트레이드오프·한계\n",
+      "academic-fail":
+        "\n- 인터뷰·테스트 근거 없는 UX·페르소나 주장\n- 대안·트레이드오프 없이 단일 시안만 옹호\n",
     },
     "en-GB": {
       "presentation-context":
         "\n- e.g. portfolio review, user-journey pitch, critique session\n- Slides: problem → research → concepts → iteration\n",
       "academic-rubric":
         "\n9. **User & context** — persona, journey, constraints tied to decisions\n10. **Critique response** — alternatives, trade-offs, limits\n",
+      "academic-fail":
+        "\n- UX or persona claims without research evidence\n- Single concept pushed with no alternatives or trade-offs\n",
     },
   },
   "cultural-arts": {
     ko: {
       "academic-rubric":
         "\n9. **맥락·시대** — 작품·공연·정책의 역사·사회 맥락\n10. **비평·해석** — 1차 자료·리뷰·이론 프레임 구분\n",
+      "academic-fail":
+        "\n- 1차 자료·아카이브 없이 해석만 반복\n- 시대·사회 맥락 없이 작품·정책 설명\n",
       "source-keywords":
         "\n- curatorial | reception | canon | policy | archive | performance\n",
       "presentation-context":
@@ -140,6 +154,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Context & period** — historical and social framing\n10. **Critique & interpretation** — primary sources vs reviews vs theory\n",
+      "academic-fail":
+        "\n- Interpretation without primary sources or archive evidence\n- Work or policy discussed with no historical context\n",
       "source-keywords":
         "\n- curatorial | reception | canon | policy | archive | performance\n",
     },
@@ -164,6 +180,8 @@ export const TRACK_DEPTH = {
     ko: {
       "academic-rubric":
         "\n9. **생리·부하** — 훈련·경기 부하와 적응 근거\n10. **측정·통계** — 표본·효과크기·한계\n",
+      "academic-fail":
+        "\n- n·효과크기 없이 「유의미한 개선」만 주장\n- 훈련 부하·회복 근거 없는 프로그램 권고\n",
       "source-keywords":
         "\n- VO2max | periodization | injury | biomechanics | load | recovery\n",
       "study-examples":
@@ -172,6 +190,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Physiology & load** — training load and adaptation evidence\n10. **Measurement & stats** — sample, effect size, limits\n",
+      "academic-fail":
+        "\n- \"Significant improvement\" with no n or effect size\n- Training programme advice with no load or recovery rationale\n",
       "source-keywords":
         "\n- VO2max | periodization | injury | biomechanics | load | recovery\n",
     },
@@ -180,11 +200,15 @@ export const TRACK_DEPTH = {
     ko: {
       "academic-rubric":
         "\n9. **모델·가정** — 가정 명시와 한계\n10. **데이터·식별** — 내생성·표본·단위\n",
+      "academic-fail":
+        "\n- 가정·한계 없이 모형 결론만 제시\n- IV·DiD 등 식별 전략·내생성 미언급\n",
       "source-keywords": "\n- elasticity | identification | welfare | externality | IV | DiD\n",
     },
     "en-GB": {
       "academic-rubric":
         "\n9. **Model & assumptions** — assumptions stated and limits discussed\n10. **Data & identification** — endogeneity, sample, and units addressed\n",
+      "academic-fail":
+        "\n- Model conclusions with unstated assumptions or limits\n- No identification strategy or endogeneity discussion\n",
       "source-keywords": "\n- elasticity | identification | welfare | externality | IV | DiD\n",
     },
   },
@@ -194,23 +218,31 @@ export const TRACK_DEPTH = {
         "\n- 예: 스튜디오 핀업, 구조·환경 통합 발표\n- 슬라이드마다 도면 스케일·재료·근거 1줄\n",
       "academic-rubric":
         "\n9. **공간·구조** — 스케일·동선·구조 논리\n10. **환경·규범** — 일조·에너지·법규·맥락\n",
+      "academic-fail":
+        "\n- 스케일·재료·구조 근거 없는 설계 주장\n- 일조·에너지·법규 분석 없음\n",
     },
     "en-GB": {
       "presentation-context":
         "\n- e.g. studio pin-up, structural/environment integration\n- One line per slide on drawing scale and material rationale\n",
       "academic-rubric":
         "\n9. **Space & structure** — scale, circulation, structural logic\n10. **Environment & code** — daylight, energy, regulations, context\n",
+      "academic-fail":
+        "\n- Design claims with no scale, material, or structural rationale\n- No daylight, energy, or code analysis\n",
     },
   },
   "electrical-engineering": {
     ko: {
       "academic-rubric":
         "\n9. **회로·신호** — 단위·대역·노이즈·안전 마진\n10. **실험·시뮬** — 측정 조건·오차\n",
+      "academic-fail":
+        "\n- 단위·대역·SNR 없이 「신호 처리」만 반복\n- 측정 조건·오차 없는 실험·시뮬 수치\n",
       "source-keywords": "\n- bandwidth | SNR | transfer function | EMC | sampling\n",
     },
     "en-GB": {
       "academic-rubric":
         "\n9. **Circuits & signals** — units, bandwidth, noise, safety margins\n10. **Lab & simulation** — measurement conditions and error\n",
+      "academic-fail":
+        "\n- Signal-processing claims with no units, bandwidth, or SNR\n- Lab or simulation numbers with no measurement conditions or error\n",
       "source-keywords": "\n- bandwidth | SNR | transfer function | EMC | sampling\n",
     },
   },
@@ -218,6 +250,8 @@ export const TRACK_DEPTH = {
     ko: {
       "academic-rubric":
         "\n9. **가정·소비자 과학** — 영양·식품·가정·복지 맥락 명시\n10. **실증·정책** — 표본·지표·한계\n",
+      "academic-fail":
+        "\n- 표본·지표 없는 영양·정책 주장\n- RCT·설문 한계·일반화 범위 미언급\n",
       "source-keywords":
         "\n- nutrition | food safety | household | consumer | policy | RCT\n",
       "study-examples":
@@ -226,6 +260,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Home & consumer science** — nutrition, food, household, or welfare context\n10. **Evidence & policy** — sample, indicators, limits\n",
+      "academic-fail":
+        "\n- Nutrition or policy claims without sample or indicators\n- RCT or survey read with no limits or generalisation scope\n",
       "source-keywords":
         "\n- nutrition | food safety | household | consumer | policy | RCT\n",
     },

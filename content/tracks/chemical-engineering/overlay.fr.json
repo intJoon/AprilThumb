@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Conseils génie chimique\n\n- Un bon travail en génie chimique lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères génie chimique\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de génie chimique\n8. **Application** — au-delà de la théorie seule\n\n9. **Bilan matière & énergie** — unités, équilibre, conservation\n10. **Procédé & sécurité** — réacteur, HAZOP, limites de scale-up\n",
-  "academic-fail": "\n### Signaux d'échec génie chimique\n\n- Texte IA générique sans concepts génie chimique\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "academic-fail": "\n### Signaux d'échec génie chimique\n\n- Texte IA générique sans concepts génie chimique\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Affirmations procédé sans bilan matière/énergie ni unités\n- Sécurité sans HAZOP ni limites de scale-up\n",
   "source-keywords": "\n## Mots-clés génie chimique\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte génie chimique\n\n- bilan matière | duty thermique | Reynolds | rendement | séparation\n",
   "concise-examples": "\n## Exemple génie chimique\n\n- 「Concept génie chimique, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple génie chimique\n\n✅ `§2.1: majeur — affirmation génie chimique sans source. Ajouter manuel ou article §.`\n",

@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Consejos de ingeniería química\n\n- Un buen trabajo en ingeniería química une **términos, evidencia y límites**.\n",
   "academic-rubric": "\n## Criterios ingeniería química\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de ingeniería química\n8. **Aplicación** — más allá de la teoría\n\n9. **Balance material y energético** — unidades, equilibrio, conservación\n10. **Proceso y seguridad** — diseño de reactor, HAZOP, límites de escala\n",
-  "academic-fail": "\n### Señales de fallo ingeniería química\n\n- Texto IA genérico sin conceptos ingeniería química\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
+  "academic-fail": "\n### Señales de fallo ingeniería química\n\n- Texto IA genérico sin conceptos ingeniería química\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- Proceso sin balance material/energético ni unidades\n- Seguridad sin HAZOP ni límites de escala\n",
   "source-keywords": "\n## Palabras clave ingeniería química\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto ingeniería química\n\n- balance de masa | duty térmico | Reynolds | rendimiento | separación\n",
   "concise-examples": "\n## Ejemplo ingeniería química\n\n- 「Concepto ingeniería química, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo ingeniería química\n\n✅ `§2.1: importante — afirmación ingeniería química sin fuente. Añadir manual o artículo §.`\n",

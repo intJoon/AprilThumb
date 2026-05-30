@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Conseils linguistique\n\n- Un bon travail en linguistique lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères linguistique\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de linguistique\n8. **Application** — au-delà de la théorie seule\n\n9. **Données & exemples** — exemples naturels, corpus ou statistiques\n10. **Adéquation théorique** — cadre et unité d'analyse alignés\n",
-  "academic-fail": "\n### Signaux d'échec linguistique\n\n- Texte IA générique sans concepts linguistique\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "academic-fail": "\n### Signaux d'échec linguistique\n\n- Texte IA générique sans concepts linguistique\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Syntaxe/phonologie sans exemples glossés et sourcés\n- Cadre théorique incompatible avec l'unité d'analyse\n",
   "source-keywords": "\n## Mots-clés linguistique\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte linguistique\n\n- phonème | morphème | syntaxe | pragmatique | corpus | gloss\n",
   "concise-examples": "\n## Exemple linguistique\n\n- 「Concept linguistique, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple linguistique\n\n✅ `§2.1: majeur — affirmation linguistique sans source. Ajouter manuel ou article §.`\n",
