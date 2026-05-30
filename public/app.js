@@ -9,12 +9,10 @@ const app = document.getElementById("app");
 const toast = document.getElementById("toast");
 const btnChangeTrack = document.getElementById("btn-change-track");
 const btnChangeLang = document.getElementById("btn-change-lang");
-const tutorial = document.getElementById("tutorial");
-const tutorialStepLang = document.getElementById("tutorial-step-lang");
-const tutorialStepTrack = document.getElementById("tutorial-step-track");
-const tutorialHintLang = document.getElementById("tutorial-hint-lang");
-const tutorialHintTrack = document.getElementById("tutorial-hint-track");
-const tutorialNote = document.getElementById("tutorial-note");
+const btnLabelLang = document.getElementById("btn-label-lang");
+const btnLabelTrack = document.getElementById("btn-label-track");
+const btnStepLang = document.getElementById("btn-step-lang");
+const btnStepTrack = document.getElementById("btn-step-track");
 
 let toastTimer;
 let manifest;
@@ -169,42 +167,16 @@ function renderPrompt(item) {
 function updateHeaderButtons() {
   const src = uiSource();
   if (!src) return;
-  btnChangeLang.textContent = selectedLang ? langLabel(selectedLang) : src.pickLanguage;
-  btnChangeTrack.textContent = selectedTrack ? trackLabel(selectedTrack) : src.pickTrack;
+  btnLabelLang.textContent = selectedLang ? langLabel(selectedLang) : src.pickLanguage;
+  btnLabelTrack.textContent = selectedTrack ? trackLabel(selectedTrack) : src.pickTrack;
   btnChangeLang.classList.toggle("is-empty", !selectedLang);
   btnChangeTrack.classList.toggle("is-empty", !selectedTrack);
+  btnStepLang.hidden = !!selectedLang;
+  btnStepTrack.hidden = !!selectedTrack;
   btnChangeLang.setAttribute("aria-label", src.changeLang);
   btnChangeTrack.setAttribute("aria-label", src.changeTrack);
   btnChangeLang.setAttribute("aria-expanded", pickerMode === "lang" ? "true" : "false");
   btnChangeTrack.setAttribute("aria-expanded", pickerMode === "track" ? "true" : "false");
-  updateTutorial();
-}
-
-function updateTutorial() {
-  const needsTutorial = !selectedTrack || !selectedLang;
-  tutorial.hidden = !needsTutorial;
-  if (!needsTutorial) return;
-
-  tutorialStepLang.classList.toggle("is-done", !!selectedLang);
-  tutorialStepTrack.classList.toggle("is-done", !!selectedTrack);
-  tutorialStepLang.classList.toggle("is-active", !selectedLang);
-  tutorialStepTrack.classList.toggle("is-active", !!selectedLang && !selectedTrack);
-
-  if (selectedLang) {
-    const src = uiSource();
-    tutorialHintLang.textContent = src?.pickLanguage ?? "";
-    tutorialHintTrack.textContent = src?.pickTrack ?? "";
-    tutorialNote.textContent = src?.tutorialTapAbove ?? "";
-    tutorialNote.hidden = !src?.tutorialTapAbove;
-    tutorialStepLang.setAttribute("aria-label", src?.changeLang ?? "");
-    tutorialStepTrack.setAttribute("aria-label", src?.changeTrack ?? "");
-  } else {
-    tutorialHintLang.textContent = "";
-    tutorialHintTrack.textContent = "";
-    tutorialNote.hidden = true;
-    tutorialStepLang.setAttribute("aria-label", "1");
-    tutorialStepTrack.setAttribute("aria-label", "2");
-  }
 }
 
 function renderPicker(mode) {
@@ -336,8 +308,6 @@ async function init() {
 
   btnChangeLang.addEventListener("click", () => openPicker("lang"));
   btnChangeTrack.addEventListener("click", () => openPicker("track"));
-  tutorialStepLang.addEventListener("click", () => openPicker("lang"));
-  tutorialStepTrack.addEventListener("click", () => openPicker("track"));
 
   await tryLoadContent();
 }

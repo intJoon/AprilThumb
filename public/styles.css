@@ -87,6 +87,9 @@ body {
 }
 
 .btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   border: 1px solid var(--border);
   background: var(--card);
   color: var(--accent);
@@ -97,6 +100,40 @@ body {
   border-radius: 999px;
   cursor: pointer;
   transition: border-color 0.15s, background 0.15s;
+}
+
+.btn-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.15rem;
+  height: 1.15rem;
+  padding: 0 0.2rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1;
+  background: rgba(120, 113, 108, 0.14);
+}
+
+.btn-ghost.is-empty .btn-step {
+  background: rgba(15, 118, 110, 0.14);
+  color: var(--accent);
+}
+
+.btn-ghost[aria-expanded="true"] .btn-step {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.btn-label {
+  line-height: 1.2;
 }
 
 .btn-ghost:hover {
@@ -118,136 +155,6 @@ body {
   border-color: rgba(15, 118, 110, 0.45);
   background: var(--accent-soft);
   color: var(--accent);
-}
-
-.tutorial {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.15rem 1.25rem 1.25rem;
-  margin-bottom: 1.35rem;
-  box-shadow: var(--shadow);
-  text-align: center;
-}
-
-.tutorial-aim {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 0.65rem;
-}
-
-.tutorial-aim-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 5.5rem;
-  font-size: 1.15rem;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--accent);
-  opacity: 0.75;
-}
-
-.tutorial-steps {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  gap: 0.65rem;
-}
-
-.tutorial-arrow {
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--muted);
-  opacity: 0.55;
-  padding-top: 0.35rem;
-}
-
-.tutorial-step {
-  appearance: none;
-  flex: 1;
-  max-width: 9.5rem;
-  border: 1px dashed var(--border);
-  background: var(--bg);
-  color: var(--muted);
-  font: inherit;
-  padding: 0.85rem 0.65rem 0.75rem;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.35rem;
-  transition: border-color 0.15s, background 0.15s, color 0.15s, box-shadow 0.15s;
-}
-
-.tutorial-step:hover {
-  border-color: rgba(15, 118, 110, 0.35);
-  background: var(--accent-soft);
-}
-
-.tutorial-step:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.tutorial-step.is-active {
-  border-style: solid;
-  border-color: rgba(15, 118, 110, 0.45);
-  background: var(--accent-soft);
-  color: var(--accent);
-  box-shadow: 0 4px 16px rgba(15, 118, 110, 0.1);
-}
-
-.tutorial-step.is-done {
-  border-style: solid;
-  border-color: rgba(21, 128, 61, 0.35);
-  background: rgba(21, 128, 61, 0.06);
-  color: #15803d;
-}
-
-.tutorial-num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.55rem;
-  height: 1.55rem;
-  border-radius: 999px;
-  font-size: 0.82rem;
-  font-weight: 700;
-  background: rgba(120, 113, 108, 0.12);
-}
-
-.tutorial-step.is-active .tutorial-num {
-  background: var(--accent);
-  color: #fff;
-}
-
-.tutorial-step.is-done .tutorial-num {
-  background: #15803d;
-  color: #fff;
-}
-
-.tutorial-icon {
-  width: 1.85rem;
-  height: 1.85rem;
-}
-
-.tutorial-hint {
-  min-height: 1.1em;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  line-height: 1.25;
-}
-
-.tutorial-note {
-  margin: 0.85rem 0 0;
-  font-size: 0.82rem;
-  color: var(--muted);
 }
 
 .picker {
