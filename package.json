@@ -5,7 +5,15 @@
     "generate": "node scripts/generate-all-content.mjs",
     "build": "node scripts/generate-all-content.mjs && node scripts/build-content.mjs",
     "verify": "node scripts/verify-content-parity.mjs",
+    "instagram:export": "node scripts/export-instagram-slides.mjs",
+    "instagram:export:ko": "node scripts/export-instagram-slides.mjs --locale=ko",
+    "instagram:export:en": "node scripts/export-instagram-slides.mjs --locale=en",
+    "instagram:export:zh": "node scripts/export-instagram-slides.mjs --locale=zh-TW",
     "vercel-build": "npm run build",
     "dev": "npm run build && npx serve public -l 3456"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0",
+    "qrcode": "^1.5.4"
   }
 }

@@ -1,0 +1,41 @@
+게시할 때 슬라이드는 언어 하나만 올리세요 (docs/instagram-carousel/export/ko · en · zh-TW 중 택1).
+캡션은 아래에서 해당 블록만 쓰거나, 다국어 팔로워면 블록 3개 모두.
+
+---
+
+[한국어 게시 — export/ko 슬라이드 + 이 블록]
+
+과제·시험 전 ChatGPT/Gemini에 뭐라고 붙여넣을지, 매번 새로 쓰고 있나요?
+
+AprilThumb — 16개 전공 × 6개 언어 × 6가지 역할 프롬프트. 웹에서 골라 복사만 하면 됩니다.
+
+👉 스와이프 · 마지막 장 QR
+🔗 https://aprilstumb.vercel.app (프로필 링크에도 넣기)
+
+#대학생 #ChatGPT #Gemini #과제 #공부법 #프롬프트
+
+---
+
+[English post — export/en slides + this block]
+
+Rewriting AI instructions every new chat?
+
+AprilThumb — 16 majors × 6 languages × 6 role prompts. Copy from the web, paste into ChatGPT or Gemini.
+
+👉 Swipe · QR on last slide
+🔗 https://aprilstumb.vercel.app (link in bio)
+
+#university #ChatGPT #Gemini #studygram #prompts
+
+---
+
+[中文貼文 — export/zh-TW 投圖 + 此段]
+
+每次新對話都要重寫 AI 指示嗎？
+
+AprilThumb — 16 科系 × 6 語言 × 6 種角色提示詞。網頁複製，貼到 ChatGPT / Gemini。
+
+👉 滑動 · 最後一張 QR
+🔗 https://aprilstumb.vercel.app（個人檔案連結）
+
+#大學生 #ChatGPT #Gemini #作業 #提示詞
