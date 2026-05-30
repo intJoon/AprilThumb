@@ -34,6 +34,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Authority** — cases and statutes tied to each claim\n10. **IRAC-style structure** — facts, law, and conclusion separated\n",
+      "academic-fail":
+        "\n- Legal conclusion with no statute or case citation\n- Case summary only with no application to the facts\n",
       "source-keywords": "\n- statute | ratio decidendi | burden of proof | remedy\n",
     },
   },
@@ -50,6 +52,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Pathophysiology & evidence level** — RCT vs guideline vs expert opinion\n10. **Safety** — contraindications, adverse effects, differentials where relevant\n",
+      "academic-fail":
+        "\n- Definitive diagnosis or prescription tone\n- No n, study design, or generalisation limits\n",
       "source-keywords":
         "\n- pathophysiology | RCT | NNT | contraindication | adverse event\n",
     },
@@ -84,6 +88,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Species & route** — veterinary context explicit\n10. **Residues & food animals** — MRL, withdrawal, off-label limits\n",
+      "academic-fail":
+        "\n- Human drug doses only with no species context\n- Ignores pharmacokinetic differences between species\n",
       "source-keywords":
         "\n- species | dose mg/kg | withdrawal | pharmacokinetics | zoonosis\n",
     },
@@ -150,6 +156,8 @@ export const TRACK_DEPTH = {
     "en-GB": {
       "academic-rubric":
         "\n9. **Argument structure** — premises, conclusion, objection, reply\n10. **Textual support** — citations actually support the interpretation\n",
+      "academic-fail":
+        "\n- Citation stacking with no author thesis\n- Straw man only; core objection not addressed\n",
     },
   },
   sports: {

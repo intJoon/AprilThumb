@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Conseils philosophie\n\n- Un bon travail en philosophie lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères philosophie\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de philosophie\n8. **Application** — au-delà de la théorie seule\n\n9. **Structure argumentative** — prémisses, conclusion, objection, réplique\n10. **Appui textuel** — citations soutenant l'interprétation\n",
-  "academic-fail": "\n### Signaux d'échec philosophie\n\n- Texte IA générique sans concepts philosophie\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "academic-fail": "\n### Signaux d'échec philosophie\n\n- Texte IA générique sans concepts philosophie\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Empilement de citations sans thèse auteur\n- Homme de paille seule ; objection centrale esquivée\n",
   "source-keywords": "\n## Mots-clés philosophie\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte philosophie\n",
   "concise-examples": "\n## Exemple philosophie\n\n- 「Concept philosophie, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple philosophie\n\n✅ `§2.1: majeur — affirmation philosophie sans source. Ajouter manuel ou article §.`\n",

@@ -1,18 +1,14 @@
 const STORAGE_KEY = "aprilstumb";
 
-const landing = document.getElementById("landing");
+const picker = document.getElementById("picker");
+const pickerLabel = document.getElementById("picker-label");
+const pickerOptions = document.getElementById("picker-options");
 const appView = document.getElementById("app-view");
 const guideEl = document.getElementById("guide");
 const app = document.getElementById("app");
 const toast = document.getElementById("toast");
-const headerActions = document.getElementById("header-actions");
 const btnChangeTrack = document.getElementById("btn-change-track");
 const btnChangeLang = document.getElementById("btn-change-lang");
-const btnEnter = document.getElementById("btn-enter");
-const trackGrid = document.getElementById("track-grid");
-const langRow = document.getElementById("lang-row");
-const panelTracks = document.getElementById("panel-tracks");
-const landingTracksHint = document.getElementById("landing-tracks-hint");
 
 let toastTimer;
 let manifest;
@@ -20,6 +16,7 @@ let selectedTrack = null;
 let selectedLang = null;
 let currentBundle = null;
 let landingUi = null;
+let pickerMode = null;
 
 const CHEVRON = `<svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
   <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -64,8 +61,12 @@ function loadSelection() {
   return null;
 }
 
+function uiSource() {
+  return currentBundle?.ui ?? landingUi;
+}
+
 function ui(key) {
-  return currentBundle?.ui?.[key] ?? key;
+  return currentBundle?.ui?.[key] ?? landingUi?.[key] ?? key;
 }
 
 function trackLabel(id) {
@@ -78,14 +79,16 @@ function langLabel(code) {
 
 async function loadLandingUi(lang) {
   const locale = lang || "ko";
-  const entry = manifest.bundles.find((b) => b.trackId === "general" && b.locale === locale)
-    ?? manifest.bundles.find((b) => b.trackId === "general" && b.locale === "ko");
+  const entry =
+    manifest.bundles.find((b) => b.trackId === "general" && b.locale === locale) ??
+    manifest.bundles.find((b) => b.trackId === "general" && b.locale === "ko");
   if (!entry) return;
   const res = await fetch(`/data/bundles/${entry.file}`);
   if (!res.ok) return;
   const bundle = await res.json();
   landingUi = bundle.ui;
-  updateLandingLabels(landingUi);
+  document.getElementById("footer-text").textContent = landingUi.footerDisclaimer;
+  document.getElementById("site-title").textContent = landingUi.siteTitle;
 }
 
 function showToast(text) {
@@ -157,82 +160,84 @@ function renderPrompt(item) {
   return details;
 }
 
-function updateLandingLabels(bundleUi) {
-  document.getElementById("landing-title").textContent = bundleUi.landingTitle;
-  document.getElementById("landing-tracks-label").textContent = bundleUi.landingTracks;
-  document.getElementById("landing-langs-label").textContent = bundleUi.landingLanguages;
-  landingTracksHint.textContent = bundleUi.landingTracksHint ?? "";
-  btnEnter.textContent = bundleUi.enter;
-}
-
-function renderLandingGrid() {
-  const langReady = Boolean(selectedLang);
-
-  langRow.replaceChildren();
-  for (const locale of manifest.locales) {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "lang-chip";
-    if (locale === selectedLang) btn.classList.add("selected");
-    btn.textContent = langLabel(locale);
-    btn.dataset.lang = locale;
-    btn.addEventListener("click", async () => {
-      if (selectedLang !== locale) {
-        selectedTrack = null;
-      }
-      selectedLang = locale;
-      await loadLandingUi(selectedLang);
-      renderLandingGrid();
-      updateEnterState();
-    });
-    langRow.appendChild(btn);
-  }
-
-  panelTracks.classList.toggle("is-locked", !langReady);
-  landingTracksHint.hidden = langReady;
-
-  trackGrid.replaceChildren();
-  for (const track of manifest.tracks) {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "track-card";
-    btn.disabled = !langReady;
-    if (track.id === selectedTrack) btn.classList.add("selected");
-    btn.textContent = trackLabel(track.id);
-    btn.dataset.track = track.id;
-    btn.addEventListener("click", () => {
-      if (!selectedLang) return;
-      selectedTrack = track.id;
-      renderLandingGrid();
-      updateEnterState();
-    });
-    trackGrid.appendChild(btn);
-  }
-}
-
-function updateEnterState() {
-  btnEnter.disabled = !(selectedTrack && selectedLang);
-}
-
 function updateHeaderButtons() {
-  if (!currentBundle || !selectedLang || !selectedTrack) return;
-  btnChangeLang.textContent = langLabel(selectedLang);
-  btnChangeTrack.textContent = trackLabel(selectedTrack);
-  btnChangeLang.setAttribute("aria-label", currentBundle.ui.changeLang);
-  btnChangeTrack.setAttribute("aria-label", currentBundle.ui.changeTrack);
+  const src = uiSource();
+  if (!src) return;
+  btnChangeLang.textContent = selectedLang ? langLabel(selectedLang) : src.pickLanguage;
+  btnChangeTrack.textContent = selectedTrack ? trackLabel(selectedTrack) : src.pickTrack;
+  btnChangeLang.classList.toggle("is-empty", !selectedLang);
+  btnChangeTrack.classList.toggle("is-empty", !selectedTrack);
+  btnChangeLang.setAttribute("aria-label", src.changeLang);
+  btnChangeTrack.setAttribute("aria-label", src.changeTrack);
+  btnChangeLang.setAttribute("aria-expanded", pickerMode === "lang" ? "true" : "false");
+  btnChangeTrack.setAttribute("aria-expanded", pickerMode === "track" ? "true" : "false");
 }
 
-function showLanding() {
-  landing.hidden = false;
-  appView.hidden = true;
-  headerActions.hidden = true;
-}
+function renderPicker(mode) {
+  pickerMode = mode;
+  const src = uiSource();
+  picker.hidden = false;
+  pickerOptions.className = mode === "lang" ? "lang-row" : "track-grid";
+  pickerOptions.replaceChildren();
 
-function showApp() {
-  landing.hidden = true;
-  appView.hidden = false;
-  headerActions.hidden = false;
+  if (mode === "lang") {
+    pickerLabel.textContent = src.landingLanguages;
+    for (const locale of manifest.locales) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "lang-chip";
+      if (locale === selectedLang) btn.classList.add("selected");
+      btn.textContent = langLabel(locale);
+      btn.dataset.lang = locale;
+      btn.addEventListener("click", () => onPickLang(locale));
+      pickerOptions.appendChild(btn);
+    }
+  } else {
+    pickerLabel.textContent = src.landingTracks;
+    for (const track of manifest.tracks) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "track-card";
+      if (track.id === selectedTrack) btn.classList.add("selected");
+      btn.textContent = trackLabel(track.id);
+      btn.dataset.track = track.id;
+      btn.addEventListener("click", () => onPickTrack(track.id));
+      pickerOptions.appendChild(btn);
+    }
+  }
+
   updateHeaderButtons();
+}
+
+function closePicker() {
+  pickerMode = null;
+  picker.hidden = true;
+  updateHeaderButtons();
+}
+
+function openPicker(mode) {
+  if (pickerMode === mode) {
+    closePicker();
+    return;
+  }
+  renderPicker(mode);
+}
+
+async function onPickLang(locale) {
+  selectedLang = locale;
+  if (!currentBundle || currentBundle.locale !== locale) {
+    await loadLandingUi(selectedLang);
+  }
+  closePicker();
+  updateHeaderButtons();
+  await tryLoadContent();
+}
+
+async function onPickTrack(trackId) {
+  selectedTrack = trackId;
+  closePicker();
+  updateHeaderButtons();
+  await tryLoadContent();
 }
 
 async function loadBundle(track, lang) {
@@ -247,9 +252,7 @@ async function loadBundle(track, lang) {
   document.getElementById("hero-label").textContent = currentBundle.ui.heroLabel;
   document.getElementById("footer-text").textContent = currentBundle.ui.footerDisclaimer;
   document.getElementById("prompts-label").textContent = currentBundle.ui.promptsLabel;
-  updateHeaderButtons();
-
-  updateLandingLabels(currentBundle.ui);
+  landingUi = currentBundle.ui;
 
   guideEl.replaceChildren();
   guideEl.appendChild(renderMd(currentBundle.guide.markdown));
@@ -262,13 +265,25 @@ async function loadBundle(track, lang) {
   document.documentElement.lang = lang === "en-GB" ? "en" : lang.split("-")[0];
 }
 
-async function enterApp(track, lang) {
-  selectedTrack = track;
-  selectedLang = lang;
-  saveSelection(track, lang);
-  setParams(track, lang);
-  await loadBundle(track, lang);
-  showApp();
+async function tryLoadContent() {
+  if (selectedTrack && selectedLang) {
+    saveSelection(selectedTrack, selectedLang);
+    setParams(selectedTrack, selectedLang);
+    try {
+      await loadBundle(selectedTrack, selectedLang);
+      appView.hidden = false;
+    } catch {
+      appView.hidden = true;
+      showToast(ui("loadError"));
+    }
+  } else {
+    appView.hidden = true;
+    setParams(selectedTrack, selectedLang);
+    if (selectedTrack || selectedLang) {
+      saveSelection(selectedTrack, selectedLang);
+    }
+  }
+  updateHeaderButtons();
 }
 
 async function init() {
@@ -282,37 +297,15 @@ async function init() {
   selectedLang = params.lang || stored?.lang || null;
 
   await loadLandingUi(selectedLang || "ko");
-  renderLandingGrid();
-  updateEnterState();
+  updateHeaderButtons();
+  picker.hidden = true;
 
-  btnEnter.addEventListener("click", () => {
-    if (selectedTrack && selectedLang) enterApp(selectedTrack, selectedLang);
-  });
+  btnChangeLang.addEventListener("click", () => openPicker("lang"));
+  btnChangeTrack.addEventListener("click", () => openPicker("track"));
 
-  btnChangeTrack.addEventListener("click", () => {
-    renderLandingGrid();
-    updateEnterState();
-    showLanding();
-  });
-
-  btnChangeLang.addEventListener("click", () => {
-    renderLandingGrid();
-    updateEnterState();
-    showLanding();
-  });
-
-  if (selectedTrack && selectedLang && params.track && params.lang) {
-    try {
-      await enterApp(selectedTrack, selectedLang);
-      return;
-    } catch {
-      showLanding();
-    }
-  }
-
-  showLanding();
+  await tryLoadContent();
 }
 
 init().catch(() => {
-  landing.innerHTML = `<p class="loading">${landingUi?.loadError ?? "Could not load."}</p>`;
+  document.body.innerHTML = `<main class="wrap"><p class="loading">${landingUi?.loadError ?? "Could not load."}</p></main>`;
 });

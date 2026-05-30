@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Conseils droit\n\n- Un bon travail en droit lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères droit\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de droit\n8. **Application** — au-delà de la théorie seule\n\n9. **Autorité** — jurisprudence et textes liés à chaque prétention\n10. **Structure IRAC** — faits, droit et conclusion séparés\n",
-  "academic-fail": "\n### Signaux d'échec droit\n\n- Texte IA générique sans concepts droit\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "academic-fail": "\n### Signaux d'échec droit\n\n- Texte IA générique sans concepts droit\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Conclusion juridique sans texte ni jurisprudence\n- Résumé de jurisprudence sans application aux faits\n",
   "source-keywords": "\n## Mots-clés droit\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte droit\n\n- texte | ratio decidendi | charge de la preuve | recours\n",
   "concise-examples": "\n## Exemple droit\n\n- 「Concept droit, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple droit\n\n✅ `§2.1: majeur — affirmation droit sans source. Ajouter manuel ou article §.`\n",

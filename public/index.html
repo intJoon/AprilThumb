@@ -33,26 +33,17 @@
       <div class="wrap">
         <p class="hero-label" id="hero-label">ChatGPT · Gemini</p>
         <h1 id="site-title">AprilThumb</h1>
-        <div class="header-actions" id="header-actions" hidden>
-          <button type="button" class="btn-ghost" id="btn-change-lang"></button>
-          <button type="button" class="btn-ghost" id="btn-change-track"></button>
+        <div class="header-actions">
+          <button type="button" class="btn-ghost is-empty" id="btn-change-lang" aria-haspopup="listbox"></button>
+          <button type="button" class="btn-ghost is-empty" id="btn-change-track" aria-haspopup="listbox"></button>
         </div>
       </div>
     </header>
 
     <main class="wrap">
-      <section id="landing" class="landing" aria-label="Selection">
-        <h2 class="landing-title" id="landing-title"></h2>
-        <div class="panel">
-          <h3 class="panel-label" id="landing-langs-label"></h3>
-          <div class="lang-row" id="lang-row"></div>
-        </div>
-        <div class="panel panel-tracks" id="panel-tracks">
-          <h3 class="panel-label" id="landing-tracks-label"></h3>
-          <p class="panel-hint" id="landing-tracks-hint" hidden></p>
-          <div class="track-grid" id="track-grid"></div>
-        </div>
-        <button type="button" class="btn-enter" id="btn-enter" disabled></button>
+      <section id="picker" class="picker" hidden aria-label="Selection">
+        <h2 class="picker-label" id="picker-label"></h2>
+        <div id="picker-options"></div>
       </section>
 
       <div id="app-view" hidden>

@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Consejos de medicina\n\n- Un buen trabajo en medicina une **términos, evidencia y límites**.\n",
   "academic-rubric": "\n## Criterios medicina\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de medicina\n8. **Aplicación** — más allá de la teoría\n\n9. **Fisiopatología y nivel de evidencia** — ECA vs guías vs opinión experta\n10. **Seguridad** — contraindicaciones, efectos adversos, diagnósticos diferenciales\n",
-  "academic-fail": "\n### Señales de fallo medicina\n\n- Texto IA genérico sin conceptos medicina\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n",
+  "academic-fail": "\n### Señales de fallo medicina\n\n- Texto IA genérico sin conceptos medicina\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- Tono diagnóstico o prescriptivo demasiado categórico\n- Sin n, diseño del estudio ni límites de generalización\n",
   "source-keywords": "\n## Palabras clave medicina\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto medicina\n\n- fisiopatología | ECA | NNT | contraindicación | evento adverso\n",
   "concise-examples": "\n## Ejemplo medicina\n\n- 「Concepto medicina, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo medicina\n\n✅ `§2.1: importante — afirmación medicina sin fuente. Añadir manual o artículo §.`\n",

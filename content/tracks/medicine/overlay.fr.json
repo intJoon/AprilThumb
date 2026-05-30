@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Conseils médecine\n\n- Un bon travail en médecine lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères médecine\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de médecine\n8. **Application** — au-delà de la théorie seule\n\n9. **Physiopathologie & niveau de preuve** — ECR vs recommandations vs avis d'expert\n10. **Sécurité** — contre-indications, effets indésirables, diagnostics différentiels\n",
-  "academic-fail": "\n### Signaux d'échec médecine\n\n- Texte IA générique sans concepts médecine\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "academic-fail": "\n### Signaux d'échec médecine\n\n- Texte IA générique sans concepts médecine\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Ton diagnostique ou prescriptif trop catégorique\n- Pas de n, de design d'étude ni de limites de généralisation\n",
   "source-keywords": "\n## Mots-clés médecine\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte médecine\n\n- physiopathologie | ECR | NNT | contre-indication | effet indésirable\n",
   "concise-examples": "\n## Exemple médecine\n\n- 「Concept médecine, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple médecine\n\n✅ `§2.1: majeur — affirmation médecine sans source. Ajouter manuel ou article §.`\n",

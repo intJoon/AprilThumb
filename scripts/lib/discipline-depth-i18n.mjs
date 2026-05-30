@@ -37,21 +37,29 @@ export const LOCALE_DEPTH = {
     "zh-TW": {
       "academic-rubric":
         "\n9. **法院與法條** — 判例、法條與主張對應\n10. **論證結構** — 事實、法律、結論分離（IRAC 等）\n",
+      "academic-fail":
+        "\n- 無法條或判例即下「違法」結論\n- 僅判例摘要而無套用本案事實\n",
       "source-keywords": "\n- 法條 | ratio decidendi | 舉證責任 | 救濟 | 先例\n",
     },
     ja: {
       "academic-rubric":
         "\n9. **裁判例・法令** — 判例・条文が主張と対応\n10. **論証構造** — 事実・法・結論の分離（IRAC 等）\n",
+      "academic-fail":
+        "\n- 法令・判例なしで「違法」のみ\n- 判例要約のみで本人の当てはめ論証なし\n",
       "source-keywords": "\n- 法令 | ratio decidendi | 立証責任 | 救済 | 先例\n",
     },
     fr: {
       "academic-rubric":
         "\n9. **Autorité** — jurisprudence et textes liés à chaque prétention\n10. **Structure IRAC** — faits, droit et conclusion séparés\n",
+      "academic-fail":
+        "\n- Conclusion juridique sans texte ni jurisprudence\n- Résumé de jurisprudence sans application aux faits\n",
       "source-keywords": "\n- texte | ratio decidendi | charge de la preuve | recours\n",
     },
     es: {
       "academic-rubric":
         "\n9. **Autoridad** — jurisprudencia y leyes ligadas a cada afirmación\n10. **Estructura IRAC** — hechos, derecho y conclusión separados\n",
+      "academic-fail":
+        "\n- Conclusión legal sin estatuto ni jurisprudencia\n- Solo resumen de caso sin aplicación a los hechos\n",
       "source-keywords": "\n- estatuto | ratio decidendi | carga de la prueba | remedio\n",
     },
   },
@@ -59,24 +67,32 @@ export const LOCALE_DEPTH = {
     "zh-TW": {
       "academic-rubric":
         "\n9. **病理生理與證據等級** — RCT、指引、專家意見之區分\n10. **安全** — 禁忌、不良反應、鑑別（若適用）\n",
+      "academic-fail":
+        "\n- 診斷或處方語氣過於確定\n- 未提及樣本數、研究設計或外推限制\n",
       "source-keywords":
         "\n- 病理生理 | RCT | NNT | 禁忌 | 不良事件\n",
     },
     ja: {
       "academic-rubric":
         "\n9. **病態生理・エビデンス** — RCT・ガイドライン・専門家見解の区別\n10. **安全** — 禁忌・副作用・鑑別（該当時）\n",
+      "academic-fail":
+        "\n- 診断・処方を確定調で記述\n- n 数・研究デザイン・一般化限界の欠如\n",
       "source-keywords":
         "\n- 病態生理 | RCT | NNT | 禁忌 | 有害事象\n",
     },
     fr: {
       "academic-rubric":
         "\n9. **Physiopathologie & niveau de preuve** — ECR vs recommandations vs avis d'expert\n10. **Sécurité** — contre-indications, effets indésirables, diagnostics différentiels\n",
+      "academic-fail":
+        "\n- Ton diagnostique ou prescriptif trop catégorique\n- Pas de n, de design d'étude ni de limites de généralisation\n",
       "source-keywords":
         "\n- physiopathologie | ECR | NNT | contre-indication | effet indésirable\n",
     },
     es: {
       "academic-rubric":
         "\n9. **Fisiopatología y nivel de evidencia** — ECA vs guías vs opinión experta\n10. **Seguridad** — contraindicaciones, efectos adversos, diagnósticos diferenciales\n",
+      "academic-fail":
+        "\n- Tono diagnóstico o prescriptivo demasiado categórico\n- Sin n, diseño del estudio ni límites de generalización\n",
       "source-keywords":
         "\n- fisiopatología | ECA | NNT | contraindicación | evento adverso\n",
     },
@@ -119,24 +135,32 @@ export const LOCALE_DEPTH = {
     "zh-TW": {
       "academic-rubric":
         "\n9. **物種・體重・給藥途徑** — 獸醫脈絡明確\n10. **殘留・食用動物** — MRL、停藥期、標外使用限制\n",
+      "academic-fail":
+        "\n- 僅以人類劑量與用藥標準敘述\n- 忽略物種間藥動學差異\n",
       "source-keywords":
         "\n- 物種 | 劑量 mg/kg | 停藥期 | 藥動學 | 人畜共通傳染\n",
     },
     ja: {
       "academic-rubric":
         "\n9. **種・体重・投与経路** — 獣医学的文脈を明示\n10. **残留・食用動物** — MRL、休薬期間、オフラベル限界\n",
+      "academic-fail":
+        "\n- 人間基準の薬・用量のみ\n- 種間薬物動態の差異を無視\n",
       "source-keywords":
         "\n- 種 | 用量 mg/kg | 休薬 | 薬物動態 | 人獣共通感染\n",
     },
     fr: {
       "academic-rubric":
         "\n9. **Espèce & voie** — contexte vétérinaire explicite\n10. **Résidus & animaux alimentaires** — LMR, délai d'attente, hors AMM\n",
+      "academic-fail":
+        "\n- Posologie humaine seule sans espèce\n- Différences pharmacocinétiques inter-espèces ignorées\n",
       "source-keywords":
         "\n- espèce | dose mg/kg | délai d'attente | pharmacocinétique | zoonose\n",
     },
     es: {
       "academic-rubric":
         "\n9. **Especie y vía** — contexto veterinario explícito\n10. **Residuos y animales de consumo** — LMR, período de retiro, uso off-label\n",
+      "academic-fail":
+        "\n- Solo dosis humana sin contexto de especie\n- Ignora diferencias farmacocinéticas entre especies\n",
       "source-keywords":
         "\n- especie | dosis mg/kg | retiro | farmacocinética | zoonosis\n",
     },
@@ -227,18 +251,26 @@ export const LOCALE_DEPTH = {
     "zh-TW": {
       "academic-rubric":
         "\n9. **論證結構** — 前提、結論、反例、再反駁\n10. **文本依據** — 引用支持詮釋\n",
+      "academic-fail":
+        "\n- 僅列引用而無作者論旨\n- 稻草人式反駁；核心反例未回應\n",
     },
     ja: {
       "academic-rubric":
         "\n9. **論証構造** — 前提、結論、反論、再反駁\n10. **テキスト根拠** — 引用が解釈を実際に支持\n",
+      "academic-fail":
+        "\n- 引用の羅列のみで本人の論旨なし\n- ストローマンのみ；核心の反論に未応答\n",
     },
     fr: {
       "academic-rubric":
         "\n9. **Structure argumentative** — prémisses, conclusion, objection, réplique\n10. **Appui textuel** — citations soutenant l'interprétation\n",
+      "academic-fail":
+        "\n- Empilement de citations sans thèse auteur\n- Homme de paille seule ; objection centrale esquivée\n",
     },
     es: {
       "academic-rubric":
         "\n9. **Estructura argumentativa** — premisas, conclusión, objeción, réplica\n10. **Soporte textual** — citas que respaldan la interpretación\n",
+      "academic-fail":
+        "\n- Solo citas sin tesis propia\n- Hombre de paja únicamente; objeción central sin responder\n",
     },
   },
   sports: {

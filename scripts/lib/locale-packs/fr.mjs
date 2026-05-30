@@ -1,3 +1,5 @@
+import { ACADEMIC_REVIEW_GENERAL, CONCISE_MODE_GENERAL } from "./shared-general-prompts.mjs";
+
 export default {
   general: {
     guide: `# Comment utiliser ceci

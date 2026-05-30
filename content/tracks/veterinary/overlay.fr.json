@@ -1,7 +1,7 @@
 {
   "guide-extra": "\n## Conseils médecine vétérinaire\n\n- Un bon travail en médecine vétérinaire lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères médecine vétérinaire\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de médecine vétérinaire\n8. **Application** — au-delà de la théorie seule\n\n9. **Espèce & voie** — contexte vétérinaire explicite\n10. **Résidus & animaux alimentaires** — LMR, délai d'attente, hors AMM\n",
-  "academic-fail": "\n### Signaux d'échec médecine vétérinaire\n\n- Texte IA générique sans concepts médecine vétérinaire\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n",
+  "academic-fail": "\n### Signaux d'échec médecine vétérinaire\n\n- Texte IA générique sans concepts médecine vétérinaire\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Posologie humaine seule sans espèce\n- Différences pharmacocinétiques inter-espèces ignorées\n",
   "source-keywords": "\n## Mots-clés médecine vétérinaire\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte médecine vétérinaire\n\n- espèce | dose mg/kg | délai d'attente | pharmacocinétique | zoonose\n",
   "concise-examples": "\n## Exemple médecine vétérinaire\n\n- 「Concept médecine vétérinaire, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple médecine vétérinaire\n\n✅ `§2.1: majeur — affirmation médecine vétérinaire sans source. Ajouter manuel ou article §.`\n",
