@@ -11,8 +11,6 @@ const btnChangeTrack = document.getElementById("btn-change-track");
 const btnChangeLang = document.getElementById("btn-change-lang");
 const btnLabelLang = document.getElementById("btn-label-lang");
 const btnLabelTrack = document.getElementById("btn-label-track");
-const btnStepLang = document.getElementById("btn-step-lang");
-const btnStepTrack = document.getElementById("btn-step-track");
 
 let toastTimer;
 let manifest;
@@ -171,8 +169,6 @@ function updateHeaderButtons() {
   btnLabelTrack.textContent = selectedTrack ? trackLabel(selectedTrack) : src.pickTrack;
   btnChangeLang.classList.toggle("is-empty", !selectedLang);
   btnChangeTrack.classList.toggle("is-empty", !selectedTrack);
-  btnStepLang.hidden = !!selectedLang;
-  btnStepTrack.hidden = !!selectedTrack;
   btnChangeLang.setAttribute("aria-label", src.changeLang);
   btnChangeTrack.setAttribute("aria-label", src.changeTrack);
   btnChangeLang.setAttribute("aria-expanded", pickerMode === "lang" ? "true" : "false");

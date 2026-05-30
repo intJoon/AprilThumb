@@ -102,30 +102,6 @@ body {
   transition: border-color 0.15s, background 0.15s;
 }
 
-.btn-step {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 1.15rem;
-  height: 1.15rem;
-  padding: 0 0.2rem;
-  border-radius: 999px;
-  font-size: 0.68rem;
-  font-weight: 700;
-  line-height: 1;
-  background: rgba(120, 113, 108, 0.14);
-}
-
-.btn-ghost.is-empty .btn-step {
-  background: rgba(15, 118, 110, 0.14);
-  color: var(--accent);
-}
-
-.btn-ghost[aria-expanded="true"] .btn-step {
-  background: var(--accent);
-  color: #fff;
-}
-
 .btn-icon {
   width: 1rem;
   height: 1rem;
