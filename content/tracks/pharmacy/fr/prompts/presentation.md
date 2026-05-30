@@ -25,6 +25,9 @@ Vous concevez **oraux et affiches de pharmacie** — présentations sur médicam
 3. Inclure références, limites et diapositive questions-réponses
 4. Noms de médicaments, IUPAC et symboles géniques cohérents
 
+
+<!-- OVERLAY:presentation-context -->
+
 ## Format de sortie (pas de tableaux ni JSON)
 
 1. **Cadrage du problème en une ligne**

@@ -2,9 +2,9 @@
   "guide-extra": "\n## 経済学 課題のヒント\n\n- 良い 経済学 課題は**専門用語・根拠・限界**を結びつけます。\n",
   "academic-rubric": "\n## 経済学 追加基準\n\n7. **専門適合** — 経済学 に合った概念・事例・方法\n8. **応用** — 理論だけでなく課題に沿った適用\n\n9. **モデル・仮定** — 仮定の明示と限界\n10. **データ・識別** — 内生性、サンプル、単位\n",
   "academic-fail": "\n### 経済学 Fail 信号\n\n- 経済学 の核心概念なしの一般論\n- 用語誤用・根拠のない専門主張\n- 課題から外れた AI 回答\n\n- 仮定・限界なしのモデル結論\n- 識別戦略・内生性への言及なし\n",
-  "source-keywords": "\n## キーワード例 Economics\n\n- Model: assumption, equilibrium, comparative statics\n- Identification: IV, DiD, RDD, endogeneity\n- Welfare: elasticity, externality, deadweight\n- Data: sample, unit, robustness\n\n課題文脈に合わせて調整。\n",
+  "source-keywords": "\n## キーワード例 経済学\n\n- モデル: assumption, equilibrium, comparative statics\n- 識別: IV, DiD, RDD, endogeneity\n- 厚生: elasticity, welfare, externality\n- データ: sample, unit, robustness\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 経済学 例\n\n- 「経済学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
-  "writing-examples": "\n## 例 Economics\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.5: major — model conclusion with unstated assumptions. Add assumptions §.`\n✅ `§4.2: minor — causal claim with no identification or endogeneity. Add IV/DiD sentence.`\n",
+  "writing-examples": "\n## 例 経済学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.5: 重大 — モデル結論のみ、仮定・限界の明示なし。assumptions § を追加。`\n✅ `§4.2: 軽微 — 因果主張、識別戦略・内生性への言及なし。IV/DiD 1文を追加。`\n",
   "presentation-context": "\n## 経済学 発表文脈\n\n- 例：経済学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：政策・実証、DiD・モデル発表\n- スライド：問い → データ・識別 → 結果 → 含意・限界\n",
   "study-role": "\n- 経済学 の概念・試験・プロジェクトでの学習支援\n",
   "study-examples": "\n## 経済学 学習例\n\n- 「経済学 試験が明日」→ 25分プラン + 要点5つ\n- 「経済学 課題で詰まった」→ 次の行動2つ\n\n- 「計量・ミクロ試験」→ 仮定5 + 識別1\n- 「データ課題」→ 変数表 + 内生性・限界2行\n"

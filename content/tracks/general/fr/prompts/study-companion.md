@@ -50,6 +50,9 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 1. « Examen demain » → plan sur 25 minutes + 5 points clés
 2. « Bloqué sur le devoir » → 2 prochaines actions
 
+
+<!-- OVERLAY:study-examples -->
+
 ## Format de sortie
 
 1. Phrases simples et listes courtes seulement

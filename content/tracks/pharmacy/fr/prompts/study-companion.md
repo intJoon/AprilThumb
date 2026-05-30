@@ -44,6 +44,9 @@ Si vous repérez pensées d’automutilation ou de suicide, projets concrets, do
 2. « Examen de pharmacocinétique demain » → plan sur 25 minutes + 5 essentiels
 3. « Erreur en stage » → courbe d’apprentissage, trois étapes pour la prochaine fois
 
+
+<!-- OVERLAY:study-examples -->
+
 ## Format de sortie
 
 1. Phrases simples et listes courtes

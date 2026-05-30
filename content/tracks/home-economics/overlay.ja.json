@@ -2,9 +2,9 @@
   "guide-extra": "\n## 生活科学 課題のヒント\n\n- 良い 生活科学 課題は**専門用語・根拠・限界**を結びつけます。\n",
   "academic-rubric": "\n## 生活科学 追加基準\n\n7. **専門適合** — 生活科学 に合った概念・事例・方法\n8. **応用** — 理論だけでなく課題に沿った適用\n\n9. **家庭・消費科学** — 栄養、食品、家庭、福祉の文脈\n10. **実証・政策** — サンプル、指標、限界\n",
   "academic-fail": "\n### 生活科学 Fail 信号\n\n- 生活科学 の核心概念なしの一般論\n- 用語誤用・根拠のない専門主張\n- 課題から外れた AI 回答\n\n- サンプル・指標なしの栄養・政策主張\n- RCT・調査の限界・一般化範囲の未言及\n",
-  "source-keywords": "\n## キーワード例 Home economics\n\n- Nutrition: RDA, macro, bioavailability\n- Food: HACCP, shelf-life, allergen\n- Household: budget, lifecycle, welfare\n- Policy: RCT, survey, indicator\n\n課題文脈に合わせて調整。\n",
+  "source-keywords": "\n## キーワード例 生活科学\n\n- 栄養: RDA, macro, bioavailability\n- 食品: HACCP, shelf-life, allergen\n- 家庭: household budget, lifecycle\n- 政策: RCT, survey, indicator\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 生活科学 例\n\n- 「生活科学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
-  "writing-examples": "\n## 例 Home economics\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.4: major — nutrition or policy claim with no sample or indicators. Add data source §.`\n✅ `§4.3: minor — RCT generalised with no survey limits. Add limits sentence.`\n",
+  "writing-examples": "\n## 例 生活科学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.4: 重大 — 栄養・政策主張、サンプル・指標なし。data source § を追加。`\n✅ `§4.3: 軽微 — RCT 一般化、調査限界の言及なし。limits 1文を追加。`\n",
   "presentation-context": "\n## 生活科学 発表文脈\n\n- 例：生活科学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：栄養・食品安全、家庭・福祉政策発表\n- スライド：問題 → データ・指標 → 結果 → 政策・限界\n",
   "study-role": "\n- 生活科学 の概念・試験・プロジェクトでの学習支援\n",
   "study-examples": "\n## 生活科学 学習例\n\n- 「生活科学 試験が明日」→ 25分プラン + 要点5つ\n- 「生活科学 課題で詰まった」→ 次の行動2つ\n\n- 「栄養・食品試験」→ 指標5 + 誤解2\n- 「家庭・消費調査」→ サンプル・指標 + RCT・調査限界2行\n"

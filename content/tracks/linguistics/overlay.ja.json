@@ -2,9 +2,9 @@
   "guide-extra": "\n## 言語学 課題のヒント\n\n- 良い 言語学 課題は**専門用語・根拠・限界**を結びつけます。\n",
   "academic-rubric": "\n## 言語学 追加基準\n\n7. **専門適合** — 言語学 に合った概念・事例・方法\n8. **応用** — 理論だけでなく課題に沿った適用\n\n9. **データ・例** — 自然言語例、コーパス、統計的根拠\n10. **理論適合** — フレームワークと分析単位の一致\n",
   "academic-fail": "\n### 言語学 Fail 信号\n\n- 言語学 の核心概念なしの一般論\n- 用語誤用・根拠のない専門主張\n- 課題から外れた AI 回答\n\n- gloss・出典なし例文で統語・音韻を主張\n- 理論と分析単位の不一致\n",
-  "source-keywords": "\n## キーワード例 Linguistics\n\n- Phonology: phoneme, allophone, minimal pair\n- Morpho-syntax: morpheme, constituency, gloss\n- Semantics-pragmatics: implicature, presupposition\n- Data: corpus, elicitation, statistics\n\n課題文脈に合わせて調整。\n",
+  "source-keywords": "\n## キーワード例 言語学\n\n- 音韻: phoneme, allophone, minimal pair\n- 形態·統語: morpheme, constituency, gloss\n- 語用: implicature, presupposition\n- データ: corpus, elicitation, statistics\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 言語学 例\n\n- 「言語学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
-  "writing-examples": "\n## 例 Linguistics\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§4: major — example (1) lacks gloss and source. Add paper or corpus ID.`\n✅ `§6.2: minor — framework mismatched to unit (word vs utterance). State unit explicitly.`\n",
+  "writing-examples": "\n## 例 言語学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§4: 重大 — 例文 (1) に gloss・出典なし。論文またはコーパス ID を追加。`\n✅ `§6.2: 軽微 — 理論と分析単位の不一致。単位を1文で明示。`\n",
   "presentation-context": "\n## 言語学 発表文脈\n\n- 例：言語学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：分析発表、コーパス・フィールドワーク\n- スライド：問い → データ → 分析 → 限界\n",
   "study-role": "\n- 言語学 の概念・試験・プロジェクトでの学習支援\n",
   "study-examples": "\n## 言語学 学習例\n\n- 「言語学 試験が明日」→ 25分プラン + 要点5つ\n- 「言語学 課題で詰まった」→ 次の行動2つ\n\n- 「音韻・統語試験 D-5」→ gloss 例8 + 枠組み1\n- 「コーパス課題」→ 検索式1 + 頻度表1\n"

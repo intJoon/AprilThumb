@@ -19,7 +19,8 @@ const PROMPT_MARKERS = {
   presentation: [
     {
       marker: "presentation-context",
-      before: /^## (Core principles|핵심|核心|原則|Principes clés|Principios)/m,
+      before:
+        /^## (Output format|답 형식|輸出格式|出力形式|Format de sortie|Formato de salida)/m,
     },
   ],
   "study-companion": [
@@ -29,7 +30,8 @@ const PROMPT_MARKERS = {
     },
     {
       marker: "study-examples",
-      before: /^## (Output format|답 형식|輸出格式|出力形式|Format de réponse|Formato de salida)/m,
+      before:
+        /^## (Output format|답 형식|輸出格式|出力形式|Format de réponse|Format de sortie|Formato de salida)/m,
     },
   ],
 };
