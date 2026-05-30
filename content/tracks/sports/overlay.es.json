@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Sports science\n\n- Physiology: VO2max, lactate, HR zones\n- Load: periodization, load, recovery\n- Measurement: biomechanics, force plate, reliability\n- Stats: effect size, n, intervention\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo ciencias del deporte\n\n- 「Concepto ciencias del deporte, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Sports science\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§3.1: major — significant improvement claim with no n or effect size. Add stats §.`\n✅ `§5.2: minor — training programme with no load or recovery rationale. Add load sentence.`\n",
-  "presentation-context": "\n## Contexto ciencias del deporte\n\n- p. ej. trabajo, seminario, TFG en ciencias del deporte\n- Público: compañeros, profesores, profesionales\n",
+  "presentation-context": "\n## Contexto ciencias del deporte\n\n- p. ej. trabajo, seminario, TFG en ciencias del deporte\n- Público: compañeros, profesores, profesionales\n\n- p. ej. análisis entreno/partido, pitch investigación o programa\n- Diapositivas: objetivo → carga/medición → resultados → límites\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de ciencias del deporte\n",
-  "study-examples": "\n## Ejemplos ciencias del deporte\n\n- 「Examen ciencias del deporte mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ciencias del deporte」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos ciencias del deporte\n\n- 「Examen ciencias del deporte mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ciencias del deporte」→ 2 siguientes pasos\n\n- 「Examen fitness D-5」→ carga semanal + 3 reglas recuperación\n- 「Biomecánica」→ 2 medidas + 1 límite\n"
 }

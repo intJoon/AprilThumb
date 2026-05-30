@@ -5,7 +5,7 @@
   "source-keywords": "\n## キーワード例 Sports science\n\n- Physiology: VO2max, lactate, HR zones\n- Load: periodization, load, recovery\n- Measurement: biomechanics, force plate, reliability\n- Stats: effect size, n, intervention\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 体育学 例\n\n- 「体育学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 Sports science\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§3.1: major — significant improvement claim with no n or effect size. Add stats §.`\n✅ `§5.2: minor — training programme with no load or recovery rationale. Add load sentence.`\n",
-  "presentation-context": "\n## 体育学 発表文脈\n\n- 例：体育学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n",
+  "presentation-context": "\n## 体育学 発表文脈\n\n- 例：体育学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：トレーニング・試合分析、研究・プログラム提案\n- スライド：目標 → 負荷・測定 → 結果 → 応用・限界\n",
   "study-role": "\n- 体育学 の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## 体育学 学習例\n\n- 「体育学 試験が明日」→ 25分プラン + 要点5つ\n- 「体育学 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## 体育学 学習例\n\n- 「体育学 試験が明日」→ 25分プラン + 要点5つ\n- 「体育学 課題で詰まった」→ 次の行動2つ\n\n- 「体力試験 D-5」→ 週負荷 + 回復3原則\n- 「バイオメカ課題」→ 測定2種 + 解釈・限界1行\n"
 }

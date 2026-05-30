@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Economics\n\n- Model: assumption, equilibrium, comparative statics\n- Identification: IV, DiD, RDD, endogeneity\n- Welfare: elasticity, externality, deadweight\n- Data: sample, unit, robustness\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo economía\n\n- 「Concepto economía, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Economics\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.5: major — model conclusion with unstated assumptions. Add assumptions §.`\n✅ `§4.2: minor — causal claim with no identification or endogeneity. Add IV/DiD sentence.`\n",
-  "presentation-context": "\n## Contexto economía\n\n- p. ej. trabajo, seminario, TFG en economía\n- Público: compañeros, profesores, profesionales\n",
+  "presentation-context": "\n## Contexto economía\n\n- p. ej. trabajo, seminario, TFG en economía\n- Público: compañeros, profesores, profesionales\n\n- p. ej. resultados política/empíricos, briefing DiD/modelo\n- Diapositivas: pregunta → datos/identificación → resultados → límites\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de economía\n",
-  "study-examples": "\n## Ejemplos economía\n\n- 「Examen economía mañana」→ plan 25 min + 5 puntos\n- 「Atascado en economía」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos economía\n\n- 「Examen economía mañana」→ plan 25 min + 5 puntos\n- 「Atascado en economía」→ 2 siguientes pasos\n\n- 「Examen econometría」→ 5 supuestos + 1 identificación\n- 「Datos」→ tabla + 2 líneas endogeneidad\n"
 }

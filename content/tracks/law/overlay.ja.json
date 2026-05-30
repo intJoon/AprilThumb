@@ -5,7 +5,7 @@
   "source-keywords": "\n## キーワード例 Law\n\n- Statutes: article, amendment, commencement\n- Cases: ratio decidendi, obiter, dissent\n- Procedure: burden of proof, standing, remedy\n- Interpretation: literal, purposive, precedent\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 法学 例\n\n- 「法学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 Law\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2: major — illegality claim with no statute or case. Add provision §.`\n✅ `§4.1: minor — case summary only, no application to facts. Add IRAC paragraph.`\n",
-  "presentation-context": "\n## 法学 発表文脈\n\n- 例：法学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n",
+  "presentation-context": "\n## 法学 発表文脈\n\n- 例：法学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：模擬裁判、判例ブリーフィング、政策提案\n- スライド：事実 → 争点 → 法 → 結論\n",
   "study-role": "\n- 法学 の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## 法学 学習例\n\n- 「法学 試験が明日」→ 25分プラン + 要点5つ\n- 「法学 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## 法学 学習例\n\n- 「法学 試験が明日」→ 25分プラン + 要点5つ\n- 「法学 課題で詰まった」→ 次の行動2つ\n\n- 「法学試験 D-3」→ 判例3件 IRAC + 法令5項目\n- 「論文で詰まった」→ 争点1つ + 判例2件\n"
 }

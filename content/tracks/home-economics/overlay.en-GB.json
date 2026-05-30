@@ -5,7 +5,7 @@
   "source-keywords": "\n## Home economics keyword examples\n\n- Nutrition: RDA, macro, bioavailability\n- Food: HACCP, shelf-life, allergen\n- Household: budget, lifecycle, welfare\n- Policy: RCT, survey, indicator\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## home economics example\n\n- 「Explain a home economics concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## Home economics example\n\n❌ \"Section 2 discusses home economics but seems to lack concrete evidence.\"\n\n✅ `§2.4: major — nutrition or policy claim with no sample or indicators. Add data source §.`\n✅ `§4.3: minor — RCT generalised with no survey limits. Add limits sentence.`\n",
-  "presentation-context": "\n## home economics presentation context\n\n- e.g. home economics coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "presentation-context": "\n## home economics presentation context\n\n- e.g. home economics coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. nutrition/food safety or household/welfare policy pitch\n- Slides: problem → data/indicators → results → policy and limits\n",
   "study-role": "\n- Study help in home economics concepts, exams, and projects\n",
-  "study-examples": "\n## home economics study examples\n\n- 「home economics exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on home economics assignment」→ 2 next actions\n"
+  "study-examples": "\n## home economics study examples\n\n- 「home economics exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on home economics assignment」→ 2 next actions\n\n- 「Nutrition/food exam」→ 5 key indicators + 2 misconceptions\n- 「Household survey」→ sample/indicator defs + 2 lines on RCT/survey limits\n"
 }

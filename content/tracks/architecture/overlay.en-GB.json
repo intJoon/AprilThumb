@@ -7,5 +7,5 @@
   "writing-examples": "\n## Architecture example\n\n❌ \"Section 2 discusses architecture but seems to lack concrete evidence.\"\n\n✅ `§2.3: major — design claim with no scale, material, or structure rationale. Add drawing caption §.`\n✅ `§4.1: minor — no daylight or energy analysis. Add one sentence.`\n",
   "presentation-context": "\n## architecture presentation context\n\n- e.g. architecture coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. studio pin-up, structural/environment integration\n- One line per slide on drawing scale and material rationale\n",
   "study-role": "\n- Study help in architecture concepts, exams, and projects\n",
-  "study-examples": "\n## architecture study examples\n\n- 「architecture exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on architecture assignment」→ 2 next actions\n"
+  "study-examples": "\n## architecture study examples\n\n- 「architecture exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on architecture assignment」→ 2 next actions\n\n- 「Studio mid-review」→ 3 drawings + 1 scale/material rationale each\n- 「Environmental study」→ 3 daylight/energy metrics + 1 code item\n"
 }

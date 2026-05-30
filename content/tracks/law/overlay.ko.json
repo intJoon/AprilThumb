@@ -5,7 +5,7 @@
   "source-keywords": "\n## 법학 키워드 예\n\n- 법조문: statute, article, amendment\n- 판례: ratio decidendi, obiter, dissent\n- 절차: burden of proof, standing, remedy\n- 해석: literal, purposive, precedent\n\n과제 맥락에 맞게 조정하세요.\n",
   "concise-examples": "\n## 법률 예\n\n- 「법률 핵심 개념, 더 짧게」\n- 고유명사·수치·전공 용어는 축약하지 말 것\n",
   "writing-examples": "\n## 법학 예\n\n❌ 「2장에서 법학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2: 중요 — 「위법」 주장에 조문·판례 없음. 해당 법조문 § 추가.`\n✅ `§4.1: 주의 — 판례 요지만 인용, 본 사건 적용 논증 없음. IRAC 한 단락 추가.`\n",
-  "presentation-context": "\n## 법률 발표 맥락\n\n- 예: 법률 과제·세미나·캡스톤 발표\n- 청중: 동기·교수·실무자\n",
+  "presentation-context": "\n## 법률 발표 맥락\n\n- 예: 법률 과제·세미나·캡스톤 발표\n- 청중: 동기·교수·실무자\n\n- 예: 모의법정, 판례 브리핑, 정책 제안 발표\n- 슬라이드: 사실 → 쟁점 → 법리 → 결론\n",
   "study-role": "\n- 법률 개념·시험·프로젝트 맥락에서 공부 도움\n",
-  "study-examples": "\n## 법률 공부 예\n\n- 「법률 시험 D-1」→ 25분 플랜 + 핵심 5개\n- 「법률 과제 막힘」→ 다음 행동 2개\n"
+  "study-examples": "\n## 법률 공부 예\n\n- 「법률 시험 D-1」→ 25분 플랜 + 핵심 5개\n- 「법률 과제 막힘」→ 다음 행동 2개\n\n- 「법학 시험 D-3」→ 사례 3개 IRAC 골격 + 조문 5개\n- 「논문 막힘」→ 쟁점 1개 + 근거 판례 2개\n"
 }

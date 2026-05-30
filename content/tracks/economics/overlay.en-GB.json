@@ -5,7 +5,7 @@
   "source-keywords": "\n## Economics keyword examples\n\n- Model: assumption, equilibrium, comparative statics\n- Identification: IV, DiD, RDD, endogeneity\n- Welfare: elasticity, externality, deadweight\n- Data: sample, unit, robustness\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## economics example\n\n- 「Explain a economics concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## Economics example\n\n❌ \"Section 2 discusses economics but seems to lack concrete evidence.\"\n\n✅ `§2.5: major — model conclusion with unstated assumptions. Add assumptions §.`\n✅ `§4.2: minor — causal claim with no identification or endogeneity. Add IV/DiD sentence.`\n",
-  "presentation-context": "\n## economics presentation context\n\n- e.g. economics coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "presentation-context": "\n## economics presentation context\n\n- e.g. economics coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. policy or empirical results, model/DiD briefing\n- Slides: question → data/identification → results → implications and limits\n",
   "study-role": "\n- Study help in economics concepts, exams, and projects\n",
-  "study-examples": "\n## economics study examples\n\n- 「economics exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on economics assignment」→ 2 next actions\n"
+  "study-examples": "\n## economics study examples\n\n- 「economics exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on economics assignment」→ 2 next actions\n\n- 「Metrics/micro exam」→ 5 model assumptions + 1 identification strategy\n- 「Data assignment」→ variable table + 2 lines on endogeneity/limits\n"
 }

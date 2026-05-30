@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Electrical engineering\n\n- Circuits: bandwidth, impedance, transfer function\n- Signals: SNR, sampling, aliasing\n- Power/EMC: grounding, safety margin\n- Lab: measurement setup, error, calibration\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo ingeniería eléctrica\n\n- 「Concepto ingeniería eléctrica, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Electrical engineering\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§3.2: major — signal-processing claim with no units, bandwidth, or SNR. Add measurement §.`\n✅ `§5.1: minor — lab numbers with no error or calibration. Add error sentence.`\n",
-  "presentation-context": "\n## Contexto ingeniería eléctrica\n\n- p. ej. trabajo, seminario, TFG en ingeniería eléctrica\n- Público: compañeros, profesores, profesionales\n",
+  "presentation-context": "\n## Contexto ingeniería eléctrica\n\n- p. ej. trabajo, seminario, TFG en ingeniería eléctrica\n- Público: compañeros, profesores, profesionales\n\n- p. ej. circuitos/PCB/procesado señal, resultados lab/sim\n- Diapositivas: spec → diseño → medición/forma → límites\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de ingeniería eléctrica\n",
-  "study-examples": "\n## Ejemplos ingeniería eléctrica\n\n- 「Examen ingeniería eléctrica mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ingeniería eléctrica」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos ingeniería eléctrica\n\n- 「Examen ingeniería eléctrica mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ingeniería eléctrica」→ 2 siguientes pasos\n\n- 「Examen circuitos/señales」→ 2 funciones + unidades/banda\n- 「Informe lab」→ condiciones, error, SNR\n"
 }

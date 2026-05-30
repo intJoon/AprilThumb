@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Philosophy\n\n- Argument: premise, conclusion, validity\n- Objection: counterexample, reply\n- Text: citation, page, interpretation\n- Concept: definition, distinction, thought experiment\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo filosofía\n\n- 「Concepto filosofía, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Philosophy\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2: major — objection raised with no reply. Add reply paragraph.`\n✅ `§3.4: minor — citation stacking with no author thesis. Add thesis sentence.`\n",
-  "presentation-context": "\n## Contexto filosofía\n\n- p. ej. trabajo, seminario, TFG en filosofía\n- Público: compañeros, profesores, profesionales\n",
+  "presentation-context": "\n## Contexto filosofía\n\n- p. ej. trabajo, seminario, TFG en filosofía\n- Público: compañeros, profesores, profesionales\n\n- p. ej. exposición, seminario de texto o idea\n- Diapositivas: tesis → premisas → objeción → réplica → conclusión\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de filosofía\n",
-  "study-examples": "\n## Ejemplos filosofía\n\n- 「Examen filosofía mañana」→ plan 25 min + 5 puntos\n- 「Atascado en filosofía」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos filosofía\n\n- 「Examen filosofía mañana」→ plan 25 min + 5 puntos\n- 「Atascado en filosofía」→ 2 siguientes pasos\n\n- 「Examen filosofía D-4」→ 1 mapa argumental + objeción/réplica\n- 「Lectura」→ 3 citas + 1 tesis\n"
 }

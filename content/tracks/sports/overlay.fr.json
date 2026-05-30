@@ -5,7 +5,7 @@
   "source-keywords": "\n## Mots-clés Sports science\n\n- Physiology: VO2max, lactate, HR zones\n- Load: periodization, load, recovery\n- Measurement: biomechanics, force plate, reliability\n- Stats: effect size, n, intervention\n\nAjuster au contexte du devoir.\n",
   "concise-examples": "\n## Exemple sciences du sport\n\n- 「Concept sciences du sport, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple Sports science\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§3.1: major — significant improvement claim with no n or effect size. Add stats §.`\n✅ `§5.2: minor — training programme with no load or recovery rationale. Add load sentence.`\n",
-  "presentation-context": "\n## Contexte sciences du sport\n\n- ex. devoir, séminaire, mémoire en sciences du sport\n- Public : pairs, enseignants, praticiens\n",
+  "presentation-context": "\n## Contexte sciences du sport\n\n- ex. devoir, séminaire, mémoire en sciences du sport\n- Public : pairs, enseignants, praticiens\n\n- ex. analyse entraînement/match, pitch recherche ou programme\n- Slides : objectif → charge/mesure → résultats → limites\n",
   "study-role": "\n- Aide en sciences du sport : concepts, examens, projets\n",
-  "study-examples": "\n## Exemples sciences du sport\n\n- 「Examen sciences du sport demain」→ plan 25 min + 5 points\n- 「Blocage devoir sciences du sport」→ 2 actions suivantes\n"
+  "study-examples": "\n## Exemples sciences du sport\n\n- 「Examen sciences du sport demain」→ plan 25 min + 5 points\n- 「Blocage devoir sciences du sport」→ 2 actions suivantes\n\n- 「Examen fitness J-5」→ charge hebdo + 3 règles récup\n- 「Bioméca」→ 2 mesures + 1 limite\n"
 }

@@ -5,7 +5,7 @@
   "source-keywords": "\n## キーワード例 Chemical engineering\n\n- Balances: mass, energy, units, closure\n- Transport: heat duty, Reynolds, mass transfer\n- Reaction: yield, selectivity, kinetics\n- Safety: HAZOP, scale-up, relief\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 化学工学 例\n\n- 「化学工学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 Chemical engineering\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.4: major — efficient process claim with no balance or units. Add mass/energy balance §.`\n✅ `§5.1: minor — pilot results generalised with no scale-up limits. Add HAZOP sentence.`\n",
-  "presentation-context": "\n## 化学工学 発表文脈\n\n- 例：化学工学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：プロセス設計発表、ラボ安全・PFD レビュー\n",
+  "presentation-context": "\n## 化学工学 発表文脈\n\n- 例：化学工学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：プロセス設計発表、ラボ安全・PFD レビュー\n- スライド：問題 → PFD／実験 → 数値 → 限界\n",
   "study-role": "\n- 化学工学 の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## 化学工学 学習例\n\n- 「化学工学 試験が明日」→ 25分プラン + 要点5つ\n- 「化学工学 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## 化学工学 学習例\n\n- 「化学工学 試験が明日」→ 25分プラン + 要点5つ\n- 「化学工学 課題で詰まった」→ 次の行動2つ\n\n- 「反応工学試験 D-4」→ 収支チェック + 単位確認\n- 「実験設計」→ 変数2つ + HAZOP・安全1項目\n"
 }

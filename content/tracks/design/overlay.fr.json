@@ -7,5 +7,5 @@
   "writing-examples": "\n## Exemple Design\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§3: major — persona claim with no interview or test evidence. Add § or caption.`\n✅ `§5.2: minor — single concept with no alternatives or trade-offs. Add one alternative §.`\n",
   "presentation-context": "\n## Contexte design\n\n- ex. devoir, séminaire, mémoire en design\n- Public : pairs, enseignants, praticiens\n\n- ex. critique portfolio, parcours utilisateur\n- Slides : problème → recherche → concepts → itération\n",
   "study-role": "\n- Aide en design : concepts, examens, projets\n",
-  "study-examples": "\n## Exemples design\n\n- 「Examen design demain」→ plan 25 min + 5 points\n- 「Blocage devoir design」→ 2 actions suivantes\n"
+  "study-examples": "\n## Exemples design\n\n- 「Examen design demain」→ plan 25 min + 5 points\n- 「Blocage devoir design」→ 2 actions suivantes\n\n- 「Examen UX/recherche」→ 1 persona + 1 parcours + 2 validations\n- 「Prototype bloqué」→ 1 hypothèse + 1 test\n"
 }

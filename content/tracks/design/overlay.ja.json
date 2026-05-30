@@ -7,5 +7,5 @@
   "writing-examples": "\n## 例 Design\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§3: major — persona claim with no interview or test evidence. Add § or caption.`\n✅ `§5.2: minor — single concept with no alternatives or trade-offs. Add one alternative §.`\n",
   "presentation-context": "\n## デザイン 発表文脈\n\n- 例：デザイン 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：ポートフォリオ批評、ユーザージャーニー\n- スライド：問題 → リサーチ → 案 → フィードバック\n",
   "study-role": "\n- デザイン の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## デザイン 学習例\n\n- 「デザイン 試験が明日」→ 25分プラン + 要点5つ\n- 「デザイン 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## デザイン 学習例\n\n- 「デザイン 試験が明日」→ 25分プラン + 要点5つ\n- 「デザイン 課題で詰まった」→ 次の行動2つ\n\n- 「UX・リサーチ試験」→ ペルソナ・ジャーニー各1 + 検証2項目\n- 「プロトタイプで詰まった」→ 仮説1 + テスト1回\n"
 }

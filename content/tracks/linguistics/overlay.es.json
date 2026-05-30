@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Linguistics\n\n- Phonology: phoneme, allophone, minimal pair\n- Morpho-syntax: morpheme, constituency, gloss\n- Semantics-pragmatics: implicature, presupposition\n- Data: corpus, elicitation, statistics\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo lingüística\n\n- 「Concepto lingüística, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Linguistics\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§4: major — example (1) lacks gloss and source. Add paper or corpus ID.`\n✅ `§6.2: minor — framework mismatched to unit (word vs utterance). State unit explicitly.`\n",
-  "presentation-context": "\n## Contexto lingüística\n\n- p. ej. trabajo, seminario, TFG en lingüística\n- Público: compañeros, profesores, profesionales\n",
+  "presentation-context": "\n## Contexto lingüística\n\n- p. ej. trabajo, seminario, TFG en lingüística\n- Público: compañeros, profesores, profesionales\n\n- p. ej. análisis, corpus o trabajo de campo\n- Diapositivas: pregunta → datos → análisis → límites\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de lingüística\n",
-  "study-examples": "\n## Ejemplos lingüística\n\n- 「Examen lingüística mañana」→ plan 25 min + 5 puntos\n- 「Atascado en lingüística」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos lingüística\n\n- 「Examen lingüística mañana」→ plan 25 min + 5 puntos\n- 「Atascado en lingüística」→ 2 siguientes pasos\n\n- 「Examen fonética/sintaxis D-5」→ 8 ejemplos con gloss + 1 marco\n- 「Corpus」→ 1 consulta + 1 tabla\n"
 }

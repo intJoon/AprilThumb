@@ -5,7 +5,7 @@
   "source-keywords": "\n## Mots-clés Electrical engineering\n\n- Circuits: bandwidth, impedance, transfer function\n- Signals: SNR, sampling, aliasing\n- Power/EMC: grounding, safety margin\n- Lab: measurement setup, error, calibration\n\nAjuster au contexte du devoir.\n",
   "concise-examples": "\n## Exemple génie électrique\n\n- 「Concept génie électrique, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple Electrical engineering\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§3.2: major — signal-processing claim with no units, bandwidth, or SNR. Add measurement §.`\n✅ `§5.1: minor — lab numbers with no error or calibration. Add error sentence.`\n",
-  "presentation-context": "\n## Contexte génie électrique\n\n- ex. devoir, séminaire, mémoire en génie électrique\n- Public : pairs, enseignants, praticiens\n",
+  "presentation-context": "\n## Contexte génie électrique\n\n- ex. devoir, séminaire, mémoire en génie électrique\n- Public : pairs, enseignants, praticiens\n\n- ex. circuits/PCB/traitement signal, résultats labo/simu\n- Slides : spec → conception → mesure/forme → limites\n",
   "study-role": "\n- Aide en génie électrique : concepts, examens, projets\n",
-  "study-examples": "\n## Exemples génie électrique\n\n- 「Examen génie électrique demain」→ plan 25 min + 5 points\n- 「Blocage devoir génie électrique」→ 2 actions suivantes\n"
+  "study-examples": "\n## Exemples génie électrique\n\n- 「Examen génie électrique demain」→ plan 25 min + 5 points\n- 「Blocage devoir génie électrique」→ 2 actions suivantes\n\n- 「Examen circuits/signaux」→ 2 fonctions + unités/bande\n- 「Rapport labo」→ conditions, erreur, SNR\n"
 }

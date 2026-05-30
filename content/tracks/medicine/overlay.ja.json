@@ -5,7 +5,7 @@
   "source-keywords": "\n## キーワード例 Medicine\n\n- Pathophysiology: mechanism, biomarker, staging\n- Evidence: RCT, NNT, guideline, meta-analysis\n- Safety: contraindication, adverse event, interaction\n- Stats: n, CI, primary endpoint, inclusion\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 医学 例\n\n- 「医学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 Medicine\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§3.2: major — definitive diagnosis tone with no differential. Add two differentials + source §.`\n✅ `§6.1: minor — n=18 only. Add power or generalisation limit sentence.`\n",
-  "presentation-context": "\n## 医学 発表文脈\n\n- 例：医学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n",
+  "presentation-context": "\n## 医学 発表文脈\n\n- 例：医学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：ケースプレゼン、OSCE、ジャーナルクラブ\n- スライド：症例 → 鑑別 → エビデンス → 治療・限界\n",
   "study-role": "\n- 医学 の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## 医学 学習例\n\n- 「医学 試験が明日」→ 25分プラン + 要点5つ\n- 「医学 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## 医学 学習例\n\n- 「医学 試験が明日」→ 25分プラン + 要点5つ\n- 「医学 課題で詰まった」→ 次の行動2つ\n\n- 「OSCE D-3」→ チェックリスト10 + 模擬1回\n- 「病態暗記」→ 機序3段 + 限界1行\n"
 }

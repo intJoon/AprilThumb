@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Computer science\n\n- Algorithms: Big-O, amortized, edge cases\n- Data structures: hash, heap, graph traversal\n- Security: CVE, OWASP, threat model\n- Systems: concurrency, deadlock, CAP\n- Verification: unit tests, coverage, fuzzing\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo informática\n\n- 「Concepto informática, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Computer science\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.3: major — O(n²) claim with no Big-O or structure analysis. Add textbook § or paper.`\n✅ `§4.1: minor — CVE cited with no NVD or PoC link.`\n",
-  "presentation-context": "\n## Contexto informática\n\n- p. ej. trabajo, seminario, TFG en informática\n- Público: compañeros, profesores, profesionales\n",
+  "presentation-context": "\n## Contexto informática\n\n- p. ej. trabajo, seminario, TFG en informática\n- Público: compañeros, profesores, profesionales\n\n- p. ej. defensa algoritmos/sistemas, demo capstone seguridad\n- Diapositivas: problema → diseño/complejidad → demo → límites\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de informática\n",
-  "study-examples": "\n## Ejemplos informática\n\n- 「Examen informática mañana」→ plan 25 min + 5 puntos\n- 「Atascado en informática」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos informática\n\n- 「Examen informática mañana」→ plan 25 min + 5 puntos\n- 「Atascado en informática」→ 2 siguientes pasos\n\n- 「Examen estructuras D-2」→ repaso 20 min + 5 puntos clave\n- 「Depuración atascada」→ 2 hipótesis + 1 experimento\n"
 }

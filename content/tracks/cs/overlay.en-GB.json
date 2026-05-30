@@ -5,7 +5,7 @@
   "source-keywords": "\n## Computer science keyword examples\n\n- Algorithms: Big-O, amortized, edge cases\n- Data structures: hash, heap, graph traversal\n- Security: CVE, OWASP, threat model\n- Systems: concurrency, deadlock, CAP\n- Verification: unit tests, coverage, fuzzing\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## computer science example\n\n- 「Explain a computer science concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## Computer science example\n\n❌ \"Section 2 discusses computer science but seems to lack concrete evidence.\"\n\n✅ `§2.3: major — O(n²) claim with no Big-O or structure analysis. Add textbook § or paper.`\n✅ `§4.1: minor — CVE cited with no NVD or PoC link.`\n",
-  "presentation-context": "\n## computer science presentation context\n\n- e.g. computer science coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "presentation-context": "\n## computer science presentation context\n\n- e.g. computer science coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. algorithms/system design defence, security capstone demo\n- Slides: problem → design/complexity → demo → limits\n",
   "study-role": "\n- Study help in computer science concepts, exams, and projects\n",
-  "study-examples": "\n## computer science study examples\n\n- 「computer science exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on computer science assignment」→ 2 next actions\n"
+  "study-examples": "\n## computer science study examples\n\n- 「computer science exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on computer science assignment」→ 2 next actions\n\n- 「Data structures exam D-2」→ 20-min review plan + 5 key points\n- 「Debugging blocked」→ 2 hypotheses + 1 next experiment\n"
 }

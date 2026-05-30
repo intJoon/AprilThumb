@@ -5,7 +5,7 @@
   "source-keywords": "\n## Mots-clés Economics\n\n- Model: assumption, equilibrium, comparative statics\n- Identification: IV, DiD, RDD, endogeneity\n- Welfare: elasticity, externality, deadweight\n- Data: sample, unit, robustness\n\nAjuster au contexte du devoir.\n",
   "concise-examples": "\n## Exemple économie\n\n- 「Concept économie, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple Economics\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2.5: major — model conclusion with unstated assumptions. Add assumptions §.`\n✅ `§4.2: minor — causal claim with no identification or endogeneity. Add IV/DiD sentence.`\n",
-  "presentation-context": "\n## Contexte économie\n\n- ex. devoir, séminaire, mémoire en économie\n- Public : pairs, enseignants, praticiens\n",
+  "presentation-context": "\n## Contexte économie\n\n- ex. devoir, séminaire, mémoire en économie\n- Public : pairs, enseignants, praticiens\n\n- ex. résultats politique/empirique, briefing DiD/modèle\n- Slides : question → données/identification → résultats → limites\n",
   "study-role": "\n- Aide en économie : concepts, examens, projets\n",
-  "study-examples": "\n## Exemples économie\n\n- 「Examen économie demain」→ plan 25 min + 5 points\n- 「Blocage devoir économie」→ 2 actions suivantes\n"
+  "study-examples": "\n## Exemples économie\n\n- 「Examen économie demain」→ plan 25 min + 5 points\n- 「Blocage devoir économie」→ 2 actions suivantes\n\n- 「Examen économétrie J」→ 5 hypothèses + 1 identification\n- 「Données」→ tableau + 2 lignes endogénéité\n"
 }

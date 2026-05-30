@@ -5,7 +5,7 @@
   "source-keywords": "\n## キーワード例 Veterinary medicine\n\n- Species: breed, body weight, physiology\n- Dosing: mg/kg, route, interval\n- PK: withdrawal, MRL, off-label\n- Public health: zoonosis, AMR stewardship\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 獣医学 例\n\n- 「獣医学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 Veterinary medicine\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.1: major — human dose with no species or weight context. Add mg/kg table.`\n✅ `§4.3: minor — food-animal drug with no withdrawal or MRL. Add withdrawal §.`\n",
-  "presentation-context": "\n## 獣医学 発表文脈\n\n- 例：獣医学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n",
+  "presentation-context": "\n## 獣医学 発表文脈\n\n- 例：獣医学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：臨床ケース、食用動物・MRL 発表\n- スライド：種・体重 → 診断 → 用量 → 残留・限界\n",
   "study-role": "\n- 獣医学 の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## 獣医学 学習例\n\n- 「獣医学 試験が明日」→ 25分プラン + 要点5つ\n- 「獣医学 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## 獣医学 学習例\n\n- 「獣医学 試験が明日」→ 25分プラン + 要点5つ\n- 「獣医学 課題で詰まった」→ 次の行動2つ\n\n- 「獣医薬理試験」→ 種別用量表5 + 禁忌2\n- 「臨床実習」→ 種チェック + MRL・休薬3項目\n"
 }

@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Chemical engineering\n\n- Balances: mass, energy, units, closure\n- Transport: heat duty, Reynolds, mass transfer\n- Reaction: yield, selectivity, kinetics\n- Safety: HAZOP, scale-up, relief\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo ingeniería química\n\n- 「Concepto ingeniería química, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Chemical engineering\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.4: major — efficient process claim with no balance or units. Add mass/energy balance §.`\n✅ `§5.1: minor — pilot results generalised with no scale-up limits. Add HAZOP sentence.`\n",
-  "presentation-context": "\n## Contexto ingeniería química\n\n- p. ej. trabajo, seminario, TFG en ingeniería química\n- Público: compañeros, profesores, profesionales\n\n- p. ej. presentación de diseño de proceso, revisión PFD\n",
+  "presentation-context": "\n## Contexto ingeniería química\n\n- p. ej. trabajo, seminario, TFG en ingeniería química\n- Público: compañeros, profesores, profesionales\n\n- p. ej. diseño de proceso, revisión PFD y seguridad\n- Diapositivas: problema → PFD/experimento → datos → límites\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de ingeniería química\n",
-  "study-examples": "\n## Ejemplos ingeniería química\n\n- 「Examen ingeniería química mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ingeniería química」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos ingeniería química\n\n- 「Examen ingeniería química mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ingeniería química」→ 2 siguientes pasos\n\n- 「Examen reacción D-4」→ balance + unidades\n- 「Diseño lab」→ 2 variables + 1 HAZOP\n"
 }

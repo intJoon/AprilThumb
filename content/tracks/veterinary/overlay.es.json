@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Veterinary medicine\n\n- Species: breed, body weight, physiology\n- Dosing: mg/kg, route, interval\n- PK: withdrawal, MRL, off-label\n- Public health: zoonosis, AMR stewardship\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo medicina veterinaria\n\n- 「Concepto medicina veterinaria, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Veterinary medicine\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.1: major — human dose with no species or weight context. Add mg/kg table.`\n✅ `§4.3: minor — food-animal drug with no withdrawal or MRL. Add withdrawal §.`\n",
-  "presentation-context": "\n## Contexto medicina veterinaria\n\n- p. ej. trabajo, seminario, TFG en medicina veterinaria\n- Público: compañeros, profesores, profesionales\n",
+  "presentation-context": "\n## Contexto medicina veterinaria\n\n- p. ej. trabajo, seminario, TFG en medicina veterinaria\n- Público: compañeros, profesores, profesionales\n\n- p. ej. caso clínico, briefing MRL animales de consumo\n- Diapositivas: especie/peso → diagnóstico → dosis → residuos/límites\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de medicina veterinaria\n",
-  "study-examples": "\n## Ejemplos medicina veterinaria\n\n- 「Examen medicina veterinaria mañana」→ plan 25 min + 5 puntos\n- 「Atascado en medicina veterinaria」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos medicina veterinaria\n\n- 「Examen medicina veterinaria mañana」→ plan 25 min + 5 puntos\n- 「Atascado en medicina veterinaria」→ 2 siguientes pasos\n\n- 「Examen farmaco vet」→ 5 dosis/especie + 2 contraindicaciones\n- 「Rotación clínica」→ checklist + 3 MRL\n"
 }

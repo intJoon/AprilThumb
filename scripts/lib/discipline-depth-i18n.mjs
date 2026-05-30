@@ -399,6 +399,357 @@ export const LOCALE_DEPTH = {
   },
 };
 
+const STUDY_PRESENTATION_I18N = {
+  cs: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「資料結構考試 D-2」→ 20 分鐘複習 + 5 要點\n- 「除錯卡住」→ 2 個假設 + 下一步實驗\n",
+      "presentation-context":
+        "\n- 例：演算法·系統設計報告、資安專題展示\n- 投影片：問題 → 設計·複雜度 → 示範 → 限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「データ構造試験 D-2」→ 20分復習 + 要点5つ\n- 「デバッグで詰まった」→ 仮説2つ + 次の実験\n",
+      "presentation-context":
+        "\n- 例：アルゴリズム・システム設計発表、セキュリティ capstone\n- スライド：問題 → 設計・計算量 → デモ → 限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen structures D-2」→ plan 20 min + 5 points clés\n- 「Débogage bloqué」→ 2 hypothèses + 1 expérience\n",
+      "presentation-context":
+        "\n- ex. soutenance algo/système, démo sécurité capstone\n- Slides : problème → conception/complexité → démo → limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen estructuras D-2」→ repaso 20 min + 5 puntos clave\n- 「Depuración atascada」→ 2 hipótesis + 1 experimento\n",
+      "presentation-context":
+        "\n- p. ej. defensa algoritmos/sistemas, demo capstone seguridad\n- Diapositivas: problema → diseño/complejidad → demo → límites\n",
+    },
+  },
+  law: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「法學考試 D-3」→ 3 則 IRAC 骨架 + 5 個法條\n- 「論文卡住」→ 1 爭點 + 2 則判例\n",
+      "presentation-context":
+        "\n- 例：模擬法庭、判例簡報、政策提案\n- 投影片：事實 → 爭點 → 法理 → 結論\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「法学試験 D-3」→ 判例3件 IRAC + 法令5項目\n- 「論文で詰まった」→ 争点1つ + 判例2件\n",
+      "presentation-context":
+        "\n- 例：模擬裁判、判例ブリーフィング、政策提案\n- スライド：事実 → 争点 → 法 → 結論\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen droit D-3」→ 3 IRAC + 5 textes\n- 「Mémoire bloqué」→ 1 question + 2 autorités\n",
+      "presentation-context":
+        "\n- ex. plaidoirie, briefing jurisprudence, pitch politique\n- Slides : faits → question → règle → conclusion\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen derecho D-3」→ 3 IRAC + 5 normas\n- 「Ensayo atascado」→ 1 cuestión + 2 precedentes\n",
+      "presentation-context":
+        "\n- p. ej. juicio simulado, briefing, propuesta política\n- Diapositivas: hechos → cuestión → norma → conclusión\n",
+    },
+  },
+  medicine: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「OSCE D-3」→ 檢核表 10 項 + 模擬 1 次\n- 「病理複習」→ 機轉 3 步 + 限制 1 句\n",
+      "presentation-context":
+        "\n- 例：病例報告、OSCE 簡報、期刊俱樂部\n- 投影片：病例 → 鑑別 → 證據等級 → 治療·限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「OSCE D-3」→ チェックリスト10 + 模擬1回\n- 「病態暗記」→ 機序3段 + 限界1行\n",
+      "presentation-context":
+        "\n- 例：ケースプレゼン、OSCE、ジャーナルクラブ\n- スライド：症例 → 鑑別 → エビデンス → 治療・限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「OSCE J-3」→ liste 10 items + 1 simulation\n- 「Physiopatho」→ 3 étapes + 1 limite\n",
+      "presentation-context":
+        "\n- ex. présentation de cas, OSCE, journal club\n- Slides : cas → différentiel → niveau de preuve → plan et limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「OSCE D-3」→ lista 10 ítems + 1 simulación\n- 「Fisiopatología」→ 3 pasos + 1 límite\n",
+      "presentation-context":
+        "\n- p. ej. caso clínico, OSCE, club de revistas\n- Diapositivas: caso → diferencial → evidencia → plan y límites\n",
+    },
+  },
+  "chemical-engineering": {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「反應工程考試 D-4」→ 物料平衡檢核 + 單位一致\n- 「實驗設計」→ 2 變數 + 1 項 HAZOP·安全\n",
+      "presentation-context":
+        "\n- 例：製程設計報告、實驗室安全與 PFD 審查\n- 投影片：問題 → PFD／實驗 → 數值 → 限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「反応工学試験 D-4」→ 収支チェック + 単位確認\n- 「実験設計」→ 変数2つ + HAZOP・安全1項目\n",
+      "presentation-context":
+        "\n- 例：プロセス設計発表、ラボ安全・PFD レビュー\n- スライド：問題 → PFD／実験 → 数値 → 限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen réaction J-4」→ bilan + unités\n- 「Design labo」→ 2 variables + 1 HAZOP\n",
+      "presentation-context":
+        "\n- ex. présentation procédé, revue PFD et sécurité labo\n- Slides : problème → PFD/expérience → chiffres → limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen reacción D-4」→ balance + unidades\n- 「Diseño lab」→ 2 variables + 1 HAZOP\n",
+      "presentation-context":
+        "\n- p. ej. diseño de proceso, revisión PFD y seguridad\n- Diapositivas: problema → PFD/experimento → datos → límites\n",
+    },
+  },
+  veterinary: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「獸醫藥理考試」→ 5 種劑量表 + 2 禁忌\n- 「臨床實習」→ 物種檢核 + MRL·停藥 3 項\n",
+      "presentation-context":
+        "\n- 例：臨床病例、食用動物藥物·MRL 簡報\n- 投影片：物種·體重 → 診斷 → 劑量 → 殘留·限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「獣医薬理試験」→ 種別用量表5 + 禁忌2\n- 「臨床実習」→ 種チェック + MRL・休薬3項目\n",
+      "presentation-context":
+        "\n- 例：臨床ケース、食用動物・MRL 発表\n- スライド：種・体重 → 診断 → 用量 → 残留・限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen pharma véto」→ 5 lignes dose/espèce + 2 CI\n- 「Stage clinique」→ checklist + 3 MRL\n",
+      "presentation-context":
+        "\n- ex. cas clinique, briefing MRL animaux alimentaires\n- Slides : espèce/poids → diagnostic → dose → résidus/limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen farmaco vet」→ 5 dosis/especie + 2 contraindicaciones\n- 「Rotación clínica」→ checklist + 3 MRL\n",
+      "presentation-context":
+        "\n- p. ej. caso clínico, briefing MRL animales de consumo\n- Diapositivas: especie/peso → diagnóstico → dosis → residuos/límites\n",
+    },
+  },
+  linguistics: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「音韻·句法考試 D-5」→ 8 則 gloss 例句 + 1 框架\n- 「語料庫作業」→ 1 檢索式 + 1 頻率表\n",
+      "presentation-context":
+        "\n- 例：分析報告、語料·田野結果分享\n- 投影片：問題 → 資料 → 分析 → 限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「音韻・統語試験 D-5」→ gloss 例8 + 枠組み1\n- 「コーパス課題」→ 検索式1 + 頻度表1\n",
+      "presentation-context":
+        "\n- 例：分析発表、コーパス・フィールドワーク\n- スライド：問い → データ → 分析 → 限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen phonéo/syntaxe J-5」→ 8 exemples glossés + 1 cadre\n- 「Corpus」→ 1 requête + 1 tableau\n",
+      "presentation-context":
+        "\n- ex. exposé d'analyse, corpus ou terrain\n- Slides : question → données → analyse → limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen fonética/sintaxis D-5」→ 8 ejemplos con gloss + 1 marco\n- 「Corpus」→ 1 consulta + 1 tabla\n",
+      "presentation-context":
+        "\n- p. ej. análisis, corpus o trabajo de campo\n- Diapositivas: pregunta → datos → análisis → límites\n",
+    },
+  },
+  design: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「UX·研究考試」→ 人物誌·旅程各 1 張 + 驗證 2 項\n- 「原型卡住」→ 1 假設 + 1 次測試設計\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「UX・リサーチ試験」→ ペルソナ・ジャーニー各1 + 検証2項目\n- 「プロトタイプで詰まった」→ 仮説1 + テスト1回\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen UX/recherche」→ 1 persona + 1 parcours + 2 validations\n- 「Prototype bloqué」→ 1 hypothèse + 1 test\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen UX/investigación」→ 1 persona + 1 journey + 2 validaciones\n- 「Prototipo atascado」→ 1 hipótesis + 1 prueba\n",
+    },
+  },
+  "cultural-arts": {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「藝術史·評論考試」→ 3 作品 + 各 1 一手資料\n- 「展覽企劃」→ 概念 1 句 + 檔案·政策 2 則\n",
+      "presentation-context":
+        "\n- 例：作品分析報告、展覽計畫、演出評論\n- 投影片：脈絡 → 作品·一手資料 → 詮釋 → 評論\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「美術史・批評試験」→ 作品3 + 一次資料各1\n- 「展覧会企画」→ コンセプト1行 + 資料2件\n",
+      "presentation-context":
+        "\n- 例：作品分析発表、展覧会企画、公演レビュー\n- スライド：文脈 → 作品・一次資料 → 解釈 → 批評\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen histoire/critique」→ 3 œuvres + 1 source primaire chacune\n- 「Projet expo」→ 1 ligne concept + 2 sources\n",
+      "presentation-context":
+        "\n- ex. analyse d'œuvre, projet d'exposition, critique de spectacle\n- Slides : contexte → œuvre/source → interprétation → critique\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen historia/crítica」→ 3 obras + 1 fuente primaria c/u\n- 「Proyecto expo」→ 1 línea concepto + 2 fuentes\n",
+      "presentation-context":
+        "\n- p. ej. análisis de obra, proyecto de exposición, reseña escénica\n- Diapositivas: contexto → obra/fuente → interpretación → crítica\n",
+    },
+  },
+  philosophy: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「哲學考試 D-4」→ 論證圖 1 張 + 反例·再駁各 1\n- 「文本閱讀」→ 引用 3 則 + 作者論旨 1 句\n",
+      "presentation-context":
+        "\n- 例：論文報告、思想·文本研討\n- 投影片：論旨 → 前提 → 反例 → 再駁 → 結論\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「哲学試験 D-4」→ 論証マップ1 + 反論・再反駁\n- 「テキスト読解」→ 引用3 + 論旨1文\n",
+      "presentation-context":
+        "\n- 例：論文発表、思想・テキストゼミ\n- スライド：論旨 → 前提 → 反論 → 再反駁 → 結論\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen philo J-4」→ 1 carte d'argument + objection/réplique\n- 「Lecture」→ 3 citations + 1 thèse\n",
+      "presentation-context":
+        "\n- ex. exposé, séminaire texte ou idée\n- Slides : thèse → prémisses → objection → réplique → conclusion\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen filosofía D-4」→ 1 mapa argumental + objeción/réplica\n- 「Lectura」→ 3 citas + 1 tesis\n",
+      "presentation-context":
+        "\n- p. ej. exposición, seminario de texto o idea\n- Diapositivas: tesis → premisas → objeción → réplica → conclusión\n",
+    },
+  },
+  sports: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「體能考試 D-5」→ 每週負荷 + 恢復 3 原則\n- 「生物力學作業」→ 2 種測量 + 詮釋·限制 1 句\n",
+      "presentation-context":
+        "\n- 例：訓練·比賽分析、研究或計畫提案\n- 投影片：目標 → 負荷·測量 → 結果 → 應用·限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「体力試験 D-5」→ 週負荷 + 回復3原則\n- 「バイオメカ課題」→ 測定2種 + 解釈・限界1行\n",
+      "presentation-context":
+        "\n- 例：トレーニング・試合分析、研究・プログラム提案\n- スライド：目標 → 負荷・測定 → 結果 → 応用・限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen fitness J-5」→ charge hebdo + 3 règles récup\n- 「Bioméca」→ 2 mesures + 1 limite\n",
+      "presentation-context":
+        "\n- ex. analyse entraînement/match, pitch recherche ou programme\n- Slides : objectif → charge/mesure → résultats → limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen fitness D-5」→ carga semanal + 3 reglas recuperación\n- 「Biomecánica」→ 2 medidas + 1 límite\n",
+      "presentation-context":
+        "\n- p. ej. análisis entreno/partido, pitch investigación o programa\n- Diapositivas: objetivo → carga/medición → resultados → límites\n",
+    },
+  },
+  economics: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「計量·個體考試」→ 5 假設 + 1 識別策略\n- 「資料作業」→ 變數表 + 內生性·限制 2 句\n",
+      "presentation-context":
+        "\n- 例：政策·實證結果、DiD·模型簡報\n- 投影片：問題 → 資料·識別 → 結果 → 含義·限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「計量・ミクロ試験」→ 仮定5 + 識別1\n- 「データ課題」→ 変数表 + 内生性・限界2行\n",
+      "presentation-context":
+        "\n- 例：政策・実証、DiD・モデル発表\n- スライド：問い → データ・識別 → 結果 → 含意・限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen économétrie J」→ 5 hypothèses + 1 identification\n- 「Données」→ tableau + 2 lignes endogénéité\n",
+      "presentation-context":
+        "\n- ex. résultats politique/empirique, briefing DiD/modèle\n- Slides : question → données/identification → résultats → limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen econometría」→ 5 supuestos + 1 identificación\n- 「Datos」→ tabla + 2 líneas endogeneidad\n",
+      "presentation-context":
+        "\n- p. ej. resultados política/empíricos, briefing DiD/modelo\n- Diapositivas: pregunta → datos/identificación → resultados → límites\n",
+    },
+  },
+  architecture: {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「工作室期中」→ 3 張圖 + 比例·材料各 1 句\n- 「環境分析」→ 日照·能源 3 指標 + 法規 1 項\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「スタジオ中間」→ 図面3 + スケール・材料各1行\n- 「環境分析」→ 日照・エネルギー3 + 法規1\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Mi-parcours studio」→ 3 plans + échelle/matériau\n- 「Étude environnement」→ 3 indicateurs + 1 norme\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Revisión estudio」→ 3 láminas + escala/material\n- 「Estudio ambiental」→ 3 métricas + 1 norma\n",
+    },
+  },
+  "electrical-engineering": {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「電路·訊號考試」→ 2 轉移函數 + 單位·頻寬檢核\n- 「實驗報告」→ 量測條件·誤差·SNR 各 1 句\n",
+      "presentation-context":
+        "\n- 例：電路·PCB·訊號處理報告、實驗·模擬結果\n- 投影片：規格 → 設計 → 量測·波形 → 限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「回路・信号試験」→ 伝達関数2 + 単位・帯域\n- 「実験報告」→ 測定条件・誤差・SNR 各1行\n",
+      "presentation-context":
+        "\n- 例：回路・PCB・信号処理発表、実験・シミュ結果\n- スライド：仕様 → 設計 → 測定・波形 → 限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen circuits/signaux」→ 2 fonctions + unités/bande\n- 「Rapport labo」→ conditions, erreur, SNR\n",
+      "presentation-context":
+        "\n- ex. circuits/PCB/traitement signal, résultats labo/simu\n- Slides : spec → conception → mesure/forme → limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen circuitos/señales」→ 2 funciones + unidades/banda\n- 「Informe lab」→ condiciones, error, SNR\n",
+      "presentation-context":
+        "\n- p. ej. circuitos/PCB/procesado señal, resultados lab/sim\n- Diapositivas: spec → diseño → medición/forma → límites\n",
+    },
+  },
+  "home-economics": {
+    "zh-TW": {
+      "study-examples":
+        "\n- 「營養·食品考試」→ 5 指標 + 2 迷思\n- 「家庭·消費調查」→ 樣本·指標 + RCT·調查限制 2 句\n",
+      "presentation-context":
+        "\n- 例：營養·食安、家庭·福利政策報告\n- 投影片：問題 → 資料·指標 → 結果 → 政策·限制\n",
+    },
+    ja: {
+      "study-examples":
+        "\n- 「栄養・食品試験」→ 指標5 + 誤解2\n- 「家庭・消費調査」→ サンプル・指標 + RCT・調査限界2行\n",
+      "presentation-context":
+        "\n- 例：栄養・食品安全、家庭・福祉政策発表\n- スライド：問題 → データ・指標 → 結果 → 政策・限界\n",
+    },
+    fr: {
+      "study-examples":
+        "\n- 「Examen nutrition」→ 5 indicateurs + 2 idées reçues\n- 「Enquête foyer」→ échantillon + limites ECR/enquête\n",
+      "presentation-context":
+        "\n- ex. nutrition/sécurité alimentaire, politique foyer/bien-être\n- Slides : problème → données/indicateurs → résultats → politique/limites\n",
+    },
+    es: {
+      "study-examples":
+        "\n- 「Examen nutrición」→ 5 indicadores + 2 conceptos erróneos\n- 「Encuesta hogar」→ muestra + límites ECA/encuesta\n",
+      "presentation-context":
+        "\n- p. ej. nutrición/seguridad alimentaria, política hogar/bienestar\n- Diapositivas: problema → datos/indicadores → resultados → política/límites\n",
+    },
+  },
+};
+
 const FAIL_I18N = {
   "chemical-engineering": {
     "zh-TW":
@@ -474,6 +825,14 @@ for (const [trackId, locales] of Object.entries(FAIL_I18N)) {
 }
 
 for (const [trackId, locales] of Object.entries(LOCALE_EXAMPLES)) {
+  if (!LOCALE_DEPTH[trackId]) LOCALE_DEPTH[trackId] = {};
+  for (const [locale, patch] of Object.entries(locales)) {
+    if (!LOCALE_DEPTH[trackId][locale]) LOCALE_DEPTH[trackId][locale] = {};
+    Object.assign(LOCALE_DEPTH[trackId][locale], patch);
+  }
+}
+
+for (const [trackId, locales] of Object.entries(STUDY_PRESENTATION_I18N)) {
   if (!LOCALE_DEPTH[trackId]) LOCALE_DEPTH[trackId] = {};
   for (const [locale, patch] of Object.entries(locales)) {
     if (!LOCALE_DEPTH[trackId][locale]) LOCALE_DEPTH[trackId][locale] = {};

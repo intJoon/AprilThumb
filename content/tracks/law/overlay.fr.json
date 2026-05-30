@@ -5,7 +5,7 @@
   "source-keywords": "\n## Mots-clés Law\n\n- Statutes: article, amendment, commencement\n- Cases: ratio decidendi, obiter, dissent\n- Procedure: burden of proof, standing, remedy\n- Interpretation: literal, purposive, precedent\n\nAjuster au contexte du devoir.\n",
   "concise-examples": "\n## Exemple droit\n\n- 「Concept droit, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
   "writing-examples": "\n## Exemple Law\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2: major — illegality claim with no statute or case. Add provision §.`\n✅ `§4.1: minor — case summary only, no application to facts. Add IRAC paragraph.`\n",
-  "presentation-context": "\n## Contexte droit\n\n- ex. devoir, séminaire, mémoire en droit\n- Public : pairs, enseignants, praticiens\n",
+  "presentation-context": "\n## Contexte droit\n\n- ex. devoir, séminaire, mémoire en droit\n- Public : pairs, enseignants, praticiens\n\n- ex. plaidoirie, briefing jurisprudence, pitch politique\n- Slides : faits → question → règle → conclusion\n",
   "study-role": "\n- Aide en droit : concepts, examens, projets\n",
-  "study-examples": "\n## Exemples droit\n\n- 「Examen droit demain」→ plan 25 min + 5 points\n- 「Blocage devoir droit」→ 2 actions suivantes\n"
+  "study-examples": "\n## Exemples droit\n\n- 「Examen droit demain」→ plan 25 min + 5 points\n- 「Blocage devoir droit」→ 2 actions suivantes\n\n- 「Examen droit D-3」→ 3 IRAC + 5 textes\n- 「Mémoire bloqué」→ 1 question + 2 autorités\n"
 }

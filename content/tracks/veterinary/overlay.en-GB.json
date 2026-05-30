@@ -5,7 +5,7 @@
   "source-keywords": "\n## Veterinary medicine keyword examples\n\n- Species: breed, body weight, physiology\n- Dosing: mg/kg, route, interval\n- PK: withdrawal, MRL, off-label\n- Public health: zoonosis, AMR stewardship\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## veterinary medicine example\n\n- 「Explain a veterinary medicine concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## Veterinary medicine example\n\n❌ \"Section 2 discusses veterinary medicine but seems to lack concrete evidence.\"\n\n✅ `§2.1: major — human dose with no species or weight context. Add mg/kg table.`\n✅ `§4.3: minor — food-animal drug with no withdrawal or MRL. Add withdrawal §.`\n",
-  "presentation-context": "\n## veterinary medicine presentation context\n\n- e.g. veterinary medicine coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "presentation-context": "\n## veterinary medicine presentation context\n\n- e.g. veterinary medicine coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. clinical case presentation, food-animal drug and MRL briefing\n- Slides: species/weight → diagnosis → dose/route → residues and limits\n",
   "study-role": "\n- Study help in veterinary medicine concepts, exams, and projects\n",
-  "study-examples": "\n## veterinary medicine study examples\n\n- 「veterinary medicine exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on veterinary medicine assignment」→ 2 next actions\n"
+  "study-examples": "\n## veterinary medicine study examples\n\n- 「veterinary medicine exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on veterinary medicine assignment」→ 2 next actions\n\n- 「Veterinary pharmacology exam」→ 5 species dose rows + 2 contraindications\n- 「Clinical rotation」→ species checklist + 3 MRL/withdrawal items\n"
 }

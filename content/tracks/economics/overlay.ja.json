@@ -5,7 +5,7 @@
   "source-keywords": "\n## キーワード例 Economics\n\n- Model: assumption, equilibrium, comparative statics\n- Identification: IV, DiD, RDD, endogeneity\n- Welfare: elasticity, externality, deadweight\n- Data: sample, unit, robustness\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 経済学 例\n\n- 「経済学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 Economics\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.5: major — model conclusion with unstated assumptions. Add assumptions §.`\n✅ `§4.2: minor — causal claim with no identification or endogeneity. Add IV/DiD sentence.`\n",
-  "presentation-context": "\n## 経済学 発表文脈\n\n- 例：経済学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n",
+  "presentation-context": "\n## 経済学 発表文脈\n\n- 例：経済学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：政策・実証、DiD・モデル発表\n- スライド：問い → データ・識別 → 結果 → 含意・限界\n",
   "study-role": "\n- 経済学 の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## 経済学 学習例\n\n- 「経済学 試験が明日」→ 25分プラン + 要点5つ\n- 「経済学 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## 経済学 学習例\n\n- 「経済学 試験が明日」→ 25分プラン + 要点5つ\n- 「経済学 課題で詰まった」→ 次の行動2つ\n\n- 「計量・ミクロ試験」→ 仮定5 + 識別1\n- 「データ課題」→ 変数表 + 内生性・限界2行\n"
 }

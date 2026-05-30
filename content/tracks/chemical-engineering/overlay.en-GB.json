@@ -5,7 +5,7 @@
   "source-keywords": "\n## Chemical engineering keyword examples\n\n- Balances: mass, energy, units, closure\n- Transport: heat duty, Reynolds, mass transfer\n- Reaction: yield, selectivity, kinetics\n- Safety: HAZOP, scale-up, relief\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## chemical engineering example\n\n- 「Explain a chemical engineering concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## Chemical engineering example\n\n❌ \"Section 2 discusses chemical engineering but seems to lack concrete evidence.\"\n\n✅ `§2.4: major — efficient process claim with no balance or units. Add mass/energy balance §.`\n✅ `§5.1: minor — pilot results generalised with no scale-up limits. Add HAZOP sentence.`\n",
-  "presentation-context": "\n## chemical engineering presentation context\n\n- e.g. chemical engineering coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "presentation-context": "\n## chemical engineering presentation context\n\n- e.g. chemical engineering coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. process design defence, lab safety and PFD review\n- Slides: problem → PFD/experiment → numbers → limits\n",
   "study-role": "\n- Study help in chemical engineering concepts, exams, and projects\n",
-  "study-examples": "\n## chemical engineering study examples\n\n- 「chemical engineering exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on chemical engineering assignment」→ 2 next actions\n"
+  "study-examples": "\n## chemical engineering study examples\n\n- 「chemical engineering exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on chemical engineering assignment」→ 2 next actions\n\n- 「Reaction engineering exam D-4」→ balance checklist + unit check\n- 「Lab design」→ 2 variables + 1 HAZOP/safety item\n"
 }

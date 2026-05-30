@@ -7,5 +7,5 @@
   "writing-examples": "\n## Design example\n\n❌ \"Section 2 discusses design but seems to lack concrete evidence.\"\n\n✅ `§3: major — persona claim with no interview or test evidence. Add § or caption.`\n✅ `§5.2: minor — single concept with no alternatives or trade-offs. Add one alternative §.`\n",
   "presentation-context": "\n## design presentation context\n\n- e.g. design coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. portfolio review, user-journey pitch, critique session\n- Slides: problem → research → concepts → iteration\n",
   "study-role": "\n- Study help in design concepts, exams, and projects\n",
-  "study-examples": "\n## design study examples\n\n- 「design exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on design assignment」→ 2 next actions\n"
+  "study-examples": "\n## design study examples\n\n- 「design exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on design assignment」→ 2 next actions\n\n- 「UX/research exam」→ 1 persona + 1 journey sheet + 2 validation checks\n- 「Prototype blocked」→ 1 hypothesis + 1 test plan\n"
 }

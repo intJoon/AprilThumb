@@ -5,7 +5,7 @@
   "source-keywords": "\n## キーワード例 Philosophy\n\n- Argument: premise, conclusion, validity\n- Objection: counterexample, reply\n- Text: citation, page, interpretation\n- Concept: definition, distinction, thought experiment\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 哲学 例\n\n- 「哲学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 Philosophy\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2: major — objection raised with no reply. Add reply paragraph.`\n✅ `§3.4: minor — citation stacking with no author thesis. Add thesis sentence.`\n",
-  "presentation-context": "\n## 哲学 発表文脈\n\n- 例：哲学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n",
+  "presentation-context": "\n## 哲学 発表文脈\n\n- 例：哲学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：論文発表、思想・テキストゼミ\n- スライド：論旨 → 前提 → 反論 → 再反駁 → 結論\n",
   "study-role": "\n- 哲学 の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## 哲学 学習例\n\n- 「哲学 試験が明日」→ 25分プラン + 要点5つ\n- 「哲学 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## 哲学 学習例\n\n- 「哲学 試験が明日」→ 25分プラン + 要点5つ\n- 「哲学 課題で詰まった」→ 次の行動2つ\n\n- 「哲学試験 D-4」→ 論証マップ1 + 反論・再反駁\n- 「テキスト読解」→ 引用3 + 論旨1文\n"
 }

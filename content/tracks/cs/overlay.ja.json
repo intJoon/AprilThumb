@@ -5,7 +5,7 @@
   "source-keywords": "\n## キーワード例 Computer science\n\n- Algorithms: Big-O, amortized, edge cases\n- Data structures: hash, heap, graph traversal\n- Security: CVE, OWASP, threat model\n- Systems: concurrency, deadlock, CAP\n- Verification: unit tests, coverage, fuzzing\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## コンピュータ科学 例\n\n- 「コンピュータ科学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 Computer science\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.3: major — O(n²) claim with no Big-O or structure analysis. Add textbook § or paper.`\n✅ `§4.1: minor — CVE cited with no NVD or PoC link.`\n",
-  "presentation-context": "\n## コンピュータ科学 発表文脈\n\n- 例：コンピュータ科学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n",
+  "presentation-context": "\n## コンピュータ科学 発表文脈\n\n- 例：コンピュータ科学 課題・セミナー・卒論\n- 聴衆：同級生・教員・実務者\n\n- 例：アルゴリズム・システム設計発表、セキュリティ capstone\n- スライド：問題 → 設計・計算量 → デモ → 限界\n",
   "study-role": "\n- コンピュータ科学 の概念・試験・プロジェクトでの学習支援\n",
-  "study-examples": "\n## コンピュータ科学 学習例\n\n- 「コンピュータ科学 試験が明日」→ 25分プラン + 要点5つ\n- 「コンピュータ科学 課題で詰まった」→ 次の行動2つ\n"
+  "study-examples": "\n## コンピュータ科学 学習例\n\n- 「コンピュータ科学 試験が明日」→ 25分プラン + 要点5つ\n- 「コンピュータ科学 課題で詰まった」→ 次の行動2つ\n\n- 「データ構造試験 D-2」→ 20分復習 + 要点5つ\n- 「デバッグで詰まった」→ 仮説2つ + 次の実験\n"
 }

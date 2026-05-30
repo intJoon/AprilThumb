@@ -5,7 +5,7 @@
   "source-keywords": "\n## Palabras clave Medicine\n\n- Pathophysiology: mechanism, biomarker, staging\n- Evidence: RCT, NNT, guideline, meta-analysis\n- Safety: contraindication, adverse event, interaction\n- Stats: n, CI, primary endpoint, inclusion\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo medicina\n\n- 「Concepto medicina, más corto」\n- No acortar nombres propios, cifras ni términos\n",
   "writing-examples": "\n## Ejemplo Medicine\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§3.2: major — definitive diagnosis tone with no differential. Add two differentials + source §.`\n✅ `§6.1: minor — n=18 only. Add power or generalisation limit sentence.`\n",
-  "presentation-context": "\n## Contexto medicina\n\n- p. ej. trabajo, seminario, TFG en medicina\n- Público: compañeros, profesores, profesionales\n",
+  "presentation-context": "\n## Contexto medicina\n\n- p. ej. trabajo, seminario, TFG en medicina\n- Público: compañeros, profesores, profesionales\n\n- p. ej. caso clínico, OSCE, club de revistas\n- Diapositivas: caso → diferencial → evidencia → plan y límites\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de medicina\n",
-  "study-examples": "\n## Ejemplos medicina\n\n- 「Examen medicina mañana」→ plan 25 min + 5 puntos\n- 「Atascado en medicina」→ 2 siguientes pasos\n"
+  "study-examples": "\n## Ejemplos medicina\n\n- 「Examen medicina mañana」→ plan 25 min + 5 puntos\n- 「Atascado en medicina」→ 2 siguientes pasos\n\n- 「OSCE D-3」→ lista 10 ítems + 1 simulación\n- 「Fisiopatología」→ 3 pasos + 1 límite\n"
 }

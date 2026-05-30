@@ -5,7 +5,7 @@
   "source-keywords": "\n## 언어학 키워드 예\n\n- 음운: phoneme, allophone, minimal pair\n- 형태·통사: morpheme, constituency, gloss\n- 의미·화용: implicature, presupposition\n- 데이터: corpus, elicitation, statistics\n\n과제 맥락에 맞게 조정하세요.\n",
   "concise-examples": "\n## 언어학 예\n\n- 「언어학 핵심 개념, 더 짧게」\n- 고유명사·수치·전공 용어는 축약하지 말 것\n\n- 「통사 트리, 간결 ultra」— 기호·라벨은 축약하지 말 것\n",
   "writing-examples": "\n## 언어학 예\n\n❌ 「2장에서 언어학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§4: 중요 — 예문 (1) gloss·출처 없음. 인용 논문 또는 코퍼스 ID 추가.`\n✅ `§6.2: 주의 — 이론 프레임과 분석 단위(어절 vs 발화) 불일치. 단위 명시 1문장.`\n",
-  "presentation-context": "\n## 언어학 발표 맥락\n\n- 예: 언어학 과제·세미나·캡스톤 발표\n- 청중: 동기·교수·실무자\n",
+  "presentation-context": "\n## 언어학 발표 맥락\n\n- 예: 언어학 과제·세미나·캡스톤 발표\n- 청중: 동기·교수·실무자\n\n- 예: 분석 발표, 코퍼스·필드워크 결과 공유\n- 슬라이드: 연구 질문 → 데이터 → 분석 → 한계\n",
   "study-role": "\n- 언어학 개념·시험·프로젝트 맥락에서 공부 도움\n",
-  "study-examples": "\n## 언어학 공부 예\n\n- 「언어학 시험 D-1」→ 25분 플랜 + 핵심 5개\n- 「언어학 과제 막힘」→ 다음 행동 2개\n"
+  "study-examples": "\n## 언어학 공부 예\n\n- 「언어학 시험 D-1」→ 25분 플랜 + 핵심 5개\n- 「언어학 과제 막힘」→ 다음 행동 2개\n\n- 「음운·통사 시험 D-5」→ gloss 예문 8개 + 이론 1프레임\n- 「코퍼스 과제」→ 검색식 1개 + 빈도표 1장\n"
 }

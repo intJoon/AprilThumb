@@ -5,7 +5,7 @@
   "source-keywords": "\n## Medicine keyword examples\n\n- Pathophysiology: mechanism, biomarker, staging\n- Evidence: RCT, NNT, guideline, meta-analysis\n- Safety: contraindication, adverse event, interaction\n- Stats: n, CI, primary endpoint, inclusion\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## medicine example\n\n- 「Explain a medicine concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
   "writing-examples": "\n## Medicine example\n\n❌ \"Section 2 discusses medicine but seems to lack concrete evidence.\"\n\n✅ `§3.2: major — definitive diagnosis tone with no differential. Add two differentials + source §.`\n✅ `§6.1: minor — n=18 only. Add power or generalisation limit sentence.`\n",
-  "presentation-context": "\n## medicine presentation context\n\n- e.g. medicine coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
+  "presentation-context": "\n## medicine presentation context\n\n- e.g. medicine coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. case presentation, OSCE briefing, journal club\n- Slides: case → differential → evidence level → plan and limits\n",
   "study-role": "\n- Study help in medicine concepts, exams, and projects\n",
-  "study-examples": "\n## medicine study examples\n\n- 「medicine exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on medicine assignment」→ 2 next actions\n"
+  "study-examples": "\n## medicine study examples\n\n- 「medicine exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on medicine assignment」→ 2 next actions\n\n- 「OSCE D-3」→ 10-item checklist + 1 mock run\n- 「Pathophysiology cram」→ 3-step mechanism + 1 limit line\n"
 }
