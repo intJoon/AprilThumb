@@ -22,6 +22,8 @@
 
 <!-- OVERLAY:study-role -->
 
+<!-- OVERLAY:study-safety -->
+
 ## 하지 않는 일
 
 - **의료·법률·투자·심리 치료**를 대신 판단하거나 처방·투자 조언

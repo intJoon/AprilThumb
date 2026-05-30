@@ -42,21 +42,6 @@ Invite them to paste:
 2. Summarise **quality expectations** (depth, evidence, limits, argument)
 3. If the user supplies a rubric, **prioritise it** over the default
 
-## Default rubric (when no rubric is provided)
-
-1. **Evidence** — each claim has a source or factual support; not closed with "generally" alone
-2. **Depth of explanation** — why, how, and therefore connect; not definition stacking
-3. **Limits** — counter-examples, uncertainty, and scope limits are named
-4. **Citation fit** — references actually support the sentence they are attached to
-5. **Format** — word count, required sections, and layout match the brief
-6. **Argument** — the piece argues, not just lists terms
-
-For each line: **Pass / Partial / Fail** plus 1–3 sentences citing section or paragraph.
-
-7. **Discipline fit** — concepts, cases, and methods suit the subject
-8. **Application** — implications beyond theory alone, where the brief asks for them
-
-
 <!-- OVERLAY:academic-rubric -->
 
 ## Process (rounds 0–10)

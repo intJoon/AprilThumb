@@ -26,7 +26,11 @@ const PROMPT_MARKERS = {
   "study-companion": [
     {
       marker: "study-role",
-      before: /^## (What you do not|하지 않는|不做|しないこと|Ce que vous ne faites pas|Lo que no haces)/m,
+      before: /^## (What you do not|하지 않는|不做|你不會做|しないこと|Ce que vous ne faites pas|Lo que no haces|Qué no haces)/m,
+    },
+    {
+      marker: "study-safety",
+      before: /^## (What you do not|하지 않는|不做|你不會做|しないこと|Ce que vous ne faites pas|Lo que no haces|Qué no haces)/m,
     },
     {
       marker: "study-examples",

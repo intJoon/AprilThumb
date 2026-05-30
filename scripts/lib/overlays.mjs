@@ -1,18 +1,26 @@
 export const OVERLAY_TRACKS = [
   "cs",
   "medicine",
-  "chemical-engineering",
-  "law",
+  "nursing",
   "veterinary",
-  "linguistics",
-  "design",
-  "cultural-arts",
-  "philosophy",
-  "sports",
+  "engineering",
+  "physics",
+  "chemistry",
+  "life-sciences",
+  "mathematics-statistics",
+  "law",
   "economics",
+  "business-administration",
+  "social-sciences",
+  "psychology",
+  "education",
+  "philosophy",
+  "linguistics",
+  "cultural-arts",
+  "design",
   "architecture",
-  "electrical-engineering",
   "home-economics",
+  "sports",
 ];
 
 export const DISCIPLINE = {
@@ -32,21 +40,13 @@ export const DISCIPLINE = {
     fr: "médecine",
     es: "medicina",
   },
-  "chemical-engineering": {
-    ko: "화학공학",
-    "en-GB": "chemical engineering",
-    "zh-TW": "化學工程",
-    ja: "化学工学",
-    fr: "génie chimique",
-    es: "ingeniería química",
-  },
-  law: {
-    ko: "법률",
-    "en-GB": "law",
-    "zh-TW": "法律",
-    ja: "法学",
-    fr: "droit",
-    es: "derecho",
+  nursing: {
+    ko: "간호학",
+    "en-GB": "nursing",
+    "zh-TW": "護理",
+    ja: "看護学",
+    fr: "sciences infirmières",
+    es: "enfermería",
   },
   veterinary: {
     ko: "수의학",
@@ -56,45 +56,53 @@ export const DISCIPLINE = {
     fr: "médecine vétérinaire",
     es: "medicina veterinaria",
   },
-  linguistics: {
-    ko: "언어학",
-    "en-GB": "linguistics",
-    "zh-TW": "語言學",
-    ja: "言語学",
-    fr: "linguistique",
-    es: "lingüística",
+  engineering: {
+    ko: "공학",
+    "en-GB": "engineering",
+    "zh-TW": "工程",
+    ja: "工学",
+    fr: "ingénierie",
+    es: "ingeniería",
   },
-  design: {
-    ko: "디자인",
-    "en-GB": "design",
-    "zh-TW": "設計",
-    ja: "デザイン",
-    fr: "design",
-    es: "diseño",
+  physics: {
+    ko: "물리학",
+    "en-GB": "physics",
+    "zh-TW": "物理",
+    ja: "物理学",
+    fr: "physique",
+    es: "física",
   },
-  "cultural-arts": {
-    ko: "문화예술",
-    "en-GB": "cultural arts",
-    "zh-TW": "文化藝術",
-    ja: "文化芸術",
-    fr: "arts et culture",
-    es: "artes y cultura",
+  chemistry: {
+    ko: "화학",
+    "en-GB": "chemistry",
+    "zh-TW": "化學",
+    ja: "化学",
+    fr: "chimie",
+    es: "química",
   },
-  philosophy: {
-    ko: "철학",
-    "en-GB": "philosophy",
-    "zh-TW": "哲學",
-    ja: "哲学",
-    fr: "philosophie",
-    es: "filosofía",
+  "life-sciences": {
+    ko: "생명과학",
+    "en-GB": "life sciences",
+    "zh-TW": "生命科學",
+    ja: "生命科学",
+    fr: "sciences de la vie",
+    es: "ciencias de la vida",
   },
-  sports: {
-    ko: "체육학",
-    "en-GB": "sports science",
-    "zh-TW": "體育",
-    ja: "体育学",
-    fr: "sciences du sport",
-    es: "ciencias del deporte",
+  "mathematics-statistics": {
+    ko: "수학·통계",
+    "en-GB": "mathematics & statistics",
+    "zh-TW": "數學·統計",
+    ja: "数学・統計",
+    fr: "mathématiques et statistiques",
+    es: "matemáticas y estadística",
+  },
+  law: {
+    ko: "법률",
+    "en-GB": "law",
+    "zh-TW": "法律",
+    ja: "法学",
+    fr: "droit",
+    es: "derecho",
   },
   economics: {
     ko: "경제학",
@@ -104,6 +112,70 @@ export const DISCIPLINE = {
     fr: "économie",
     es: "economía",
   },
+  "business-administration": {
+    ko: "경영·회계",
+    "en-GB": "business & accounting",
+    "zh-TW": "經營·會計",
+    ja: "経営・会計",
+    fr: "gestion et comptabilité",
+    es: "administración y contabilidad",
+  },
+  "social-sciences": {
+    ko: "사회과학",
+    "en-GB": "social sciences",
+    "zh-TW": "社會科學",
+    ja: "社会科学",
+    fr: "sciences sociales",
+    es: "ciencias sociales",
+  },
+  psychology: {
+    ko: "심리학",
+    "en-GB": "psychology",
+    "zh-TW": "心理學",
+    ja: "心理学",
+    fr: "psychologie",
+    es: "psicología",
+  },
+  education: {
+    ko: "교육학",
+    "en-GB": "education",
+    "zh-TW": "教育學",
+    ja: "教育学",
+    fr: "sciences de l'éducation",
+    es: "ciencias de la educación",
+  },
+  philosophy: {
+    ko: "철학",
+    "en-GB": "philosophy",
+    "zh-TW": "哲學",
+    ja: "哲学",
+    fr: "philosophie",
+    es: "filosofía",
+  },
+  linguistics: {
+    ko: "언어학",
+    "en-GB": "linguistics",
+    "zh-TW": "語言學",
+    ja: "言語学",
+    fr: "linguistique",
+    es: "lingüística",
+  },
+  "cultural-arts": {
+    ko: "문화예술",
+    "en-GB": "cultural arts",
+    "zh-TW": "文化藝術",
+    ja: "文化芸術",
+    fr: "arts et culture",
+    es: "artes y cultura",
+  },
+  design: {
+    ko: "디자인",
+    "en-GB": "design",
+    "zh-TW": "設計",
+    ja: "デザイン",
+    fr: "design",
+    es: "diseño",
+  },
   architecture: {
     ko: "건축학",
     "en-GB": "architecture",
@@ -111,14 +183,6 @@ export const DISCIPLINE = {
     ja: "建築学",
     fr: "architecture",
     es: "arquitectura",
-  },
-  "electrical-engineering": {
-    ko: "전기전자공학",
-    "en-GB": "electrical engineering",
-    "zh-TW": "電機電子",
-    ja: "電気電子工学",
-    fr: "génie électrique",
-    es: "ingeniería eléctrica",
   },
   "home-economics": {
     ko: "생활과학",
@@ -128,19 +192,28 @@ export const DISCIPLINE = {
     fr: "sciences du foyer",
     es: "economía doméstica",
   },
+  sports: {
+    ko: "체육학",
+    "en-GB": "sports science",
+    "zh-TW": "體育",
+    ja: "体育学",
+    fr: "sciences du sport",
+    es: "ciencias del deporte",
+  },
 };
 
 import { depthFor } from "./discipline-depth.mjs";
+import { rubricFor } from "./discipline-rubrics.mjs";
+import { guideExtraFor } from "./discipline-guide.mjs";
 
 export function buildOverlay(trackId, locale) {
   const d = DISCIPLINE[trackId][locale] || DISCIPLINE[trackId].ko;
   const isKo = locale === "ko";
+  const guideExtra = guideExtraFor(trackId, locale);
 
   const templates = {
     ko: {
-      "guide-extra": `\n## ${DISCIPLINE[trackId].ko} 과제 팁\n\n- ${DISCIPLINE[trackId].ko} 과제는 **전공 용어·근거·한계**를 함께 쓰면 좋습니다.\n`,
-      "academic-rubric": `\n## ${DISCIPLINE[trackId].ko} 추가 기준\n\n7. **전공 적합** — ${DISCIPLINE[trackId].ko} 맥락에 맞는 개념·사례·방법론\n8. **실무/응용** — 이론만이 아니라 과제 주제에 맞는 적용·함의\n`,
-      "academic-fail": `\n### ${DISCIPLINE[trackId].ko} Fail 신호\n\n- ${DISCIPLINE[trackId].ko} 핵심 개념 없이 일반론만 반복\n- 전공 용어 오용·출처 없는 전공 주장\n- 과제 주제와 무관한 범용 AI 답변\n`,
+      "guide-extra": guideExtra,
       "source-keywords": `\n## ${DISCIPLINE[trackId].ko} 키워드 예\n\n- 전공 핵심 용어 2~4그룹 (개념 | 방법 | 결과 | 한계)\n- ${DISCIPLINE[trackId].ko} 맥락에 맞게 조정\n`,
       "concise-examples": `\n## ${DISCIPLINE[trackId].ko} 예\n\n- 「${DISCIPLINE[trackId].ko} 핵심 개념, 더 짧게」\n- 고유명사·수치·전공 용어는 축약하지 말 것\n`,
       "writing-examples": `\n## ${DISCIPLINE[trackId].ko} 예\n\n✅ \`§2.1: 중요 — ${DISCIPLINE[trackId].ko} 핵심 주장, 출처 없음. 해당 전공 교재·논문 § 추가.\`\n`,
@@ -149,9 +222,7 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## ${DISCIPLINE[trackId].ko} 공부 예\n\n- 「${DISCIPLINE[trackId].ko} 시험 D-1」→ 25분 플랜 + 핵심 5개\n- 「${DISCIPLINE[trackId].ko} 과제 막힘」→ 다음 행동 2개\n`,
     },
     "en-GB": {
-      "guide-extra": `\n## ${d} assignment tips\n\n- Strong ${d} work ties **discipline terms, evidence, and limits** together.\n`,
-      "academic-rubric": `\n## ${d} extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to ${d}\n8. **Application** — implications beyond theory alone\n`,
-      "academic-fail": `\n### ${d} fail signals\n\n- Generic AI text without ${d} core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n`,
+      "guide-extra": guideExtra,
       "source-keywords": `\n## ${d} keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the ${d} context\n`,
       "concise-examples": `\n## ${d} example\n\n- 「Explain a ${d} concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n`,
       "writing-examples": `\n## ${d} example\n\n✅ \`§2.1: major — ${d} claim lacks source. Add textbook or paper §.\`\n`,
@@ -160,9 +231,7 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## ${d} study examples\n\n- 「${d} exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on ${d} assignment」→ 2 next actions\n`,
     },
     "zh-TW": {
-      "guide-extra": `\n## ${d} 作業提示\n\n- 好的 ${d} 作業應結合**專業術語、證據與限制**。\n`,
-      "academic-rubric": `\n## ${d} 附加標準\n\n7. **專業契合** — 符合 ${d} 的概念、案例、方法\n8. **應用** — 不止理論，還有與主題相關的應用\n`,
-      "academic-fail": `\n### ${d} 未通過信號\n\n- 缺乏 ${d} 核心概念，只有空泛 AI 文\n- 誤用術語或無出處的專業主張\n- 偏離作業主題\n`,
+      "guide-extra": guideExtra,
       "source-keywords": `\n## ${d} 關鍵詞示例\n\n- 2–4 組關鍵詞（概念 | 方法 | 結果 | 限制）\n- 依 ${d} 情境調整\n`,
       "concise-examples": `\n## ${d} 示例\n\n- 「${d} 核心概念，更短」\n- 專有名詞、數字、術語不可縮寫\n`,
       "writing-examples": `\n## ${d} 示例\n\n✅ \`§2.1: 重要 — ${d} 主張無出處。補充教材或論文 §。\`\n`,
@@ -171,9 +240,7 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## ${d} 學習示例\n\n- 「${d} 考試明天」→ 25 分鐘計畫 + 5 重點\n- 「${d} 作業卡住」→ 2 個下一步\n`,
     },
     ja: {
-      "guide-extra": `\n## ${d} 課題のヒント\n\n- 良い ${d} 課題は**専門用語・根拠・限界**を結びつけます。\n`,
-      "academic-rubric": `\n## ${d} 追加基準\n\n7. **専門適合** — ${d} に合った概念・事例・方法\n8. **応用** — 理論だけでなく課題に沿った適用\n`,
-      "academic-fail": `\n### ${d} Fail 信号\n\n- ${d} の核心概念なしの一般論\n- 用語誤用・根拠のない専門主張\n- 課題から外れた AI 回答\n`,
+      "guide-extra": guideExtra,
       "source-keywords": `\n## ${d} キーワード例\n\n- 2–4 グループ（概念 | 方法 | 結果 | 限界）\n- ${d} 文脈に合わせて調整\n`,
       "concise-examples": `\n## ${d} 例\n\n- 「${d} の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n`,
       "writing-examples": `\n## ${d} 例\n\n✅ \`§2.1: 重要 — ${d} の主張に出典なし。教科書や論文 § を追加。\`\n`,
@@ -182,9 +249,7 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## ${d} 学習例\n\n- 「${d} 試験が明日」→ 25分プラン + 要点5つ\n- 「${d} 課題で詰まった」→ 次の行動2つ\n`,
     },
     fr: {
-      "guide-extra": `\n## Conseils ${d}\n\n- Un bon travail en ${d} lie **termes, preuves et limites**.\n`,
-      "academic-rubric": `\n## Critères ${d}\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de ${d}\n8. **Application** — au-delà de la théorie seule\n`,
-      "academic-fail": `\n### Signaux d'échec ${d}\n\n- Texte IA générique sans concepts ${d}\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n`,
+      "guide-extra": guideExtra,
       "source-keywords": `\n## Mots-clés ${d}\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte ${d}\n`,
       "concise-examples": `\n## Exemple ${d}\n\n- 「Concept ${d}, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n`,
       "writing-examples": `\n## Exemple ${d}\n\n✅ \`§2.1: majeur — affirmation ${d} sans source. Ajouter manuel ou article §.\`\n`,
@@ -193,9 +258,7 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## Exemples ${d}\n\n- 「Examen ${d} demain」→ plan 25 min + 5 points\n- 「Blocage devoir ${d}」→ 2 actions suivantes\n`,
     },
     es: {
-      "guide-extra": `\n## Consejos de ${d}\n\n- Un buen trabajo en ${d} une **términos, evidencia y límites**.\n`,
-      "academic-rubric": `\n## Criterios ${d}\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de ${d}\n8. **Aplicación** — más allá de la teoría\n`,
-      "academic-fail": `\n### Señales de fallo ${d}\n\n- Texto IA genérico sin conceptos ${d}\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n`,
+      "guide-extra": guideExtra,
       "source-keywords": `\n## Palabras clave ${d}\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto ${d}\n`,
       "concise-examples": `\n## Ejemplo ${d}\n\n- 「Concepto ${d}, más corto」\n- No acortar nombres propios, cifras ni términos\n`,
       "writing-examples": `\n## Ejemplo ${d}\n\n✅ \`§2.1: importante — afirmación ${d} sin fuente. Añadir manual o artículo §.\`\n`,
@@ -207,10 +270,19 @@ export function buildOverlay(trackId, locale) {
 
   const lang = templates[locale] ? locale : isKo ? "ko" : "en-GB";
   const base = { ...templates[lang] };
+
+  const rubric = rubricFor(trackId, locale);
+  if (rubric) {
+    base["academic-rubric"] = rubric["academic-rubric"];
+    base["academic-fail"] = rubric["academic-fail"];
+    base["study-safety"] = rubric["study-safety"];
+  }
+
   const replaceKeys = new Set(["source-keywords", "writing-examples"]);
   const extra = depthFor(trackId, locale);
   if (extra) {
     for (const [key, chunk] of Object.entries(extra)) {
+      if (key === "academic-rubric" || key === "academic-fail") continue;
       if (replaceKeys.has(key)) {
         base[key] = chunk;
       } else {

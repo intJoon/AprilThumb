@@ -29,14 +29,24 @@ export const EXAMPLE_DEPTH = {
       "writing-examples": "\n## Medicine example\n\n❌ \"Section 2 discusses medicine but seems to lack concrete evidence.\"\n\n✅ `§3.2: major — definitive diagnosis tone with no differential. Add two differentials + source §.`\n✅ `§6.1: minor — n=18 only. Add power or generalisation limit sentence.`\n"
     }
   },
-  "chemical-engineering": {
+  "engineering": {
     "ko": {
-      "source-keywords": "\n## 화학공학 키워드 예\n\n- 수지: mass balance, energy balance, units\n- 전달: heat duty, Reynolds, mass transfer\n- 반응: yield, selectivity, kinetics\n- 안전: HAZOP, scale-up, relief\n\n과제 맥락에 맞게 조정하세요.\n",
-      "writing-examples": "\n## 화학공학 예\n\n❌ 「2장에서 화학공학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.4: 중요 — 수지·단위 없이 「효율적 공정」 주장. 물질·에너지 수지 § 추가.`\n✅ `§5.1: 주의 — 스케일업 한계 없이 파일럿 결과 일반화. HAZOP·한계 1문장.`\n"
+      "source-keywords": "\n## 공학 키워드 예\n\n- 공정: mass balance, heat duty, Reynolds, HAZOP\n- 회로: bandwidth, SNR, transfer function, EMC\n- 구조: load path, material, scale-up\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 공학 예\n\n❌ 「2장에서 공학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.4: 중요 — 수지·단위 없이 「효율적 공정」 주장. 물질·에너지 수지 § 추가.`\n✅ `§3.2: 중요 — 신호 처리 주장, 단위·대역·SNR 없음. 측정 조건 § 추가.`\n"
     },
     "en-GB": {
-      "source-keywords": "\n## Chemical engineering keyword examples\n\n- Balances: mass, energy, units, closure\n- Transport: heat duty, Reynolds, mass transfer\n- Reaction: yield, selectivity, kinetics\n- Safety: HAZOP, scale-up, relief\n\nAdjust to the assignment context.\n",
-      "writing-examples": "\n## Chemical engineering example\n\n❌ \"Section 2 discusses chemical engineering but seems to lack concrete evidence.\"\n\n✅ `§2.4: major — efficient process claim with no balance or units. Add mass/energy balance §.`\n✅ `§5.1: minor — pilot results generalised with no scale-up limits. Add HAZOP sentence.`\n"
+      "source-keywords": "\n## Engineering keyword examples\n\n- Process: mass balance, heat duty, Reynolds, HAZOP\n- Circuits: bandwidth, SNR, transfer function, EMC\n- Structures: load path, material, scale-up\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Engineering example\n\n❌ \"Section 2 discusses engineering but seems to lack concrete evidence.\"\n\n✅ `§2.4: major — process claim with no balance or units. Add mass/energy balance §.`\n✅ `§3.2: major — signal claim with no units, bandwidth, or SNR. Add measurement §.`\n"
+    }
+  },
+  "nursing": {
+    "ko": {
+      "source-keywords": "\n## 간호학 키워드 예\n\n- 간호과정: assessment, diagnosis, intervention, evaluation\n- 근거: guideline, NANDA, care plan, safety\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 간호학 예\n\n❌ 「2장에서 간호 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.1: 중요 — 간호중재 근거 없음. NANDA·가이드라인 § 추가.`\n✅ `§3.3: 주의 — 환자 맥락(연령·동반질환) 없음. context 1단락.`\n"
+    },
+    "en-GB": {
+      "source-keywords": "\n## Nursing keyword examples\n\n- Process: assessment, diagnosis, intervention, evaluation\n- Evidence: guideline, NANDA, care plan, safety\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Nursing example\n\n❌ \"Section 2 discusses nursing but seems to lack concrete evidence.\"\n\n✅ `§2.1: major — intervention with no diagnosis rationale. Add NANDA/guideline §.`\n✅ `§3.3: minor — no patient context (age, comorbidity). Add context paragraph.`\n"
     }
   },
   "veterinary": {
@@ -119,14 +129,84 @@ export const EXAMPLE_DEPTH = {
       "writing-examples": "\n## Architecture example\n\n❌ \"Section 2 discusses architecture but seems to lack concrete evidence.\"\n\n✅ `§2.3: major — design claim with no scale, material, or structure rationale. Add drawing caption §.`\n✅ `§4.1: minor — no daylight or energy analysis. Add one sentence.`\n"
     }
   },
-  "electrical-engineering": {
-    "ko": {
-      "source-keywords": "\n## 전기공학 키워드 예\n\n- 회로: bandwidth, impedance, transfer function\n- 신호: SNR, sampling, aliasing\n- 전력: EMC, grounding, safety margin\n- 실험: measurement setup, error, calibration\n\n과제 맥락에 맞게 조정하세요.\n",
-      "writing-examples": "\n## 전기공학 예\n\n❌ 「2장에서 전기공학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§3.2: 중요 — 「신호 처리」 주장, 단위·대역·SNR 없음. 측정 조건 § 추가.`\n✅ `§5.1: 주의 — 시뮬·실험 수치, 오차·캘리브레이션 미기재. error bar 1문장.`\n"
+  physics: {
+    ko: {
+      "source-keywords": "\n## 물리학 키워드 예\n\n- 모형: assumption, approximation, validity\n- 실험: error, calibration, reproducibility\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 물리학 예\n\n❌ 「2장에서 물리 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.2: 중요 — 단위·차원 불일치. SI 일관성 § 추가.`\n✅ `§4.1: 주의 — 실험 데이터, 오차·계통 오차 없음. error analysis 1문장.`\n"
     },
     "en-GB": {
-      "source-keywords": "\n## Electrical engineering keyword examples\n\n- Circuits: bandwidth, impedance, transfer function\n- Signals: SNR, sampling, aliasing\n- Power/EMC: grounding, safety margin\n- Lab: measurement setup, error, calibration\n\nAdjust to the assignment context.\n",
-      "writing-examples": "\n## Electrical engineering example\n\n❌ \"Section 2 discusses electrical engineering but seems to lack concrete evidence.\"\n\n✅ `§3.2: major — signal-processing claim with no units, bandwidth, or SNR. Add measurement §.`\n✅ `§5.1: minor — lab numbers with no error or calibration. Add error sentence.`\n"
+      "source-keywords": "\n## Physics keyword examples\n\n- Model: assumption, approximation, validity\n- Lab: error, calibration, reproducibility\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Physics example\n\n❌ \"Section 2 discusses physics but seems to lack concrete evidence.\"\n\n✅ `§2.2: major — unit or dimensional inconsistency. Add SI consistency §.`\n✅ `§4.1: minor — data with no error or systematic uncertainty. Add error sentence.`\n"
+    }
+  },
+  chemistry: {
+    ko: {
+      "source-keywords": "\n## 화학 키워드 예\n\n- 반응: yield, selectivity, mechanism, conditions\n- 분석: NMR, IR, MS, SDS\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 화학 예\n\n❌ 「2장에서 화학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.3: 중요 — 반응 조건·수율 없이 「반응한다」만 서술. conditions § 추가.`\n✅ `§3.1: 주의 — 구조 주장, 스펙트럼 근거 없음. spectrum § 추가.`\n"
+    },
+    "en-GB": {
+      "source-keywords": "\n## Chemistry keyword examples\n\n- Reaction: yield, selectivity, mechanism, conditions\n- Analysis: NMR, IR, MS, SDS\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Chemistry example\n\n❌ \"Section 2 discusses chemistry but seems to lack concrete evidence.\"\n\n✅ `§2.3: major — 「reacts」 with no conditions or yield. Add conditions §.`\n✅ `§3.1: minor — structure claim with no spectral evidence. Add spectrum §.`\n"
+    }
+  },
+  "life-sciences": {
+    ko: {
+      "source-keywords": "\n## 생명과학 키워드 예\n\n- 메커니즘: pathway, gene, cell, ecology\n- 실험: control, n, stats, reproducibility\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 생명과학 예\n\n❌ 「2장에서 생명과학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§3.1: 중요 — 「유의미」 주장, n·통계 없음. stats § 추가.`\n✅ `§4.2: 주의 — in vitro 결과 in vivo 일반화. limits 1문장.`\n"
+    },
+    "en-GB": {
+      "source-keywords": "\n## Life sciences keyword examples\n\n- Mechanism: pathway, gene, cell, ecology\n- Experiment: control, n, stats, reproducibility\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Life sciences example\n\n❌ \"Section 2 discusses life sciences but seems to lack concrete evidence.\"\n\n✅ `§3.1: major — 「significant」 with no n or stats. Add stats §.`\n✅ `§4.2: minor — in vitro generalised to in vivo. Add limits sentence.`\n"
+    }
+  },
+  "mathematics-statistics": {
+    ko: {
+      "source-keywords": "\n## 수학·통계 키워드 예\n\n- 수학: definition, proof, counterexample\n- 통계: sample, CI, test, identification\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 수학·통계 예\n\n❌ 「2장에서 수학·통계 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.1: 중요 — 증명 단계·가정 누락. assumption § 추가.`\n✅ `§4.3: 주의 — p-value만, 효과크기·가정 검토 없음. effect size 1문장.`\n"
+    },
+    "en-GB": {
+      "source-keywords": "\n## Mathematics & statistics keyword examples\n\n- Math: definition, proof, counterexample\n- Stats: sample, CI, test, identification\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Mathematics & statistics example\n\n❌ \"Section 2 discusses mathematics but seems to lack concrete evidence.\"\n\n✅ `§2.1: major — missing proof step or assumption. Add assumption §.`\n✅ `§4.3: minor — p-value only, no effect size or assumption check. Add effect size sentence.`\n"
+    }
+  },
+  "business-administration": {
+    ko: {
+      "source-keywords": "\n## 경영·회계 키워드 예\n\n- 재무: ratio, cash flow, IFRS, audit\n- 전략: SWOT, stakeholder, risk, KPI\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 경영·회계 예\n\n❌ 「2장에서 경영 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.4: 중요 — 재무 수치 출처 없음. annual report § 추가.`\n✅ `§3.2: 주의 — 단일 권고, 대안·리스크 없음. alternative 1개 §.`\n"
+    },
+    "en-GB": {
+      "source-keywords": "\n## Business & accounting keyword examples\n\n- Finance: ratio, cash flow, IFRS, audit\n- Strategy: SWOT, stakeholder, risk, KPI\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Business & accounting example\n\n❌ \"Section 2 discusses business but seems to lack concrete evidence.\"\n\n✅ `§2.4: major — financial numbers without source. Add annual report §.`\n✅ `§3.2: minor — single recommendation, no alternatives or risks. Add one alternative §.`\n"
+    }
+  },
+  "social-sciences": {
+    ko: {
+      "source-keywords": "\n## 사회과학 키워드 예\n\n- 이론: operationalisation, framework, hypothesis\n- 방법: sample, survey, interview, bias\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 사회과학 예\n\n❌ 「2장에서 사회과학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.2: 중요 — 표본·방법 없이 정책 일반화. method § 추가.`\n✅ `§4.1: 주의 — 상관을 인과로 서술. causation caveat 1문장.`\n"
+    },
+    "en-GB": {
+      "source-keywords": "\n## Social sciences keyword examples\n\n- Theory: operationalisation, framework, hypothesis\n- Methods: sample, survey, interview, bias\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Social sciences example\n\n❌ \"Section 2 discusses social sciences but seems to lack concrete evidence.\"\n\n✅ `§2.2: major — policy claim with no sample or method. Add method §.`\n✅ `§4.1: minor — correlation stated as causation. Add caveat sentence.`\n"
+    }
+  },
+  psychology: {
+    ko: {
+      "source-keywords": "\n## 심리학 키워드 예\n\n- 설계: RCT, between/within, manipulation, control\n- 측정: validity, reliability, effect size, IRB\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 심리학 예\n\n❌ 「2장에서 심리학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§3.1: 중요 — 「유의미」 주장, n·효과크기 없음. stats § 추가.`\n✅ `§4.2: 주의 — 측정 타당도·통제 변수 미언급. validity 1문장.`\n"
+    },
+    "en-GB": {
+      "source-keywords": "\n## Psychology keyword examples\n\n- Design: RCT, between/within, manipulation, control\n- Measurement: validity, reliability, effect size, IRB\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Psychology example\n\n❌ \"Section 2 discusses psychology but seems to lack concrete evidence.\"\n\n✅ `§3.1: major — 「significant」 with no n or effect size. Add stats §.`\n✅ `§4.2: minor — no validity or control variables. Add validity sentence.`\n"
+    }
+  },
+  education: {
+    ko: {
+      "source-keywords": "\n## 교육학 키워드 예\n\n- 설계: objective, assessment, curriculum alignment\n- 근거: theory, observation, policy, reflection\n\n과제 맥락에 맞게 조정하세요.\n",
+      "writing-examples": "\n## 교육학 예\n\n❌ 「2장에서 교육학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.1: 중요 — 학습목표·평가 기준 없음. objective § 추가.`\n✅ `§3.3: 주의 — 「효과적」 주장, 관찰·증거 없음. evidence 1단락.`\n"
+    },
+    "en-GB": {
+      "source-keywords": "\n## Education keyword examples\n\n- Design: objective, assessment, curriculum alignment\n- Evidence: theory, observation, policy, reflection\n\nAdjust to the assignment context.\n",
+      "writing-examples": "\n## Education example\n\n❌ \"Section 2 discusses education but seems to lack concrete evidence.\"\n\n✅ `§2.1: major — no learning objectives or assessment criteria. Add objectives §.`\n✅ `§3.3: minor — 「effective」 with no observation or evidence. Add evidence paragraph.`\n"
     }
   },
   "home-economics": {

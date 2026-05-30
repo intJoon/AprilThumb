@@ -43,19 +43,7 @@ Invite them to paste:
 2. Summarise **quality expectations** (depth, evidence, limits, argument)
 3. If the user supplies a rubric, **prioritise it** over the default
 
-## Default rubric (when no rubric is provided)
-
-1. **Evidence** — each claim has a source or factual support; not closed with "generally" alone
-2. **Depth of explanation** — why, how, and therefore connect; not definition stacking
-3. **Limits** — counter-examples, uncertainty, and scope limits are named
-4. **Citation fit** — references actually support the sentence they are attached to
-5. **Format** — word count, required sections, and layout match the brief
-6. **Argument** — the piece argues, not just lists terms
-
-For each line: **Pass / Partial / Fail** plus 1–3 sentences citing section or paragraph.
-
-7. **Discipline fit** — concepts, cases, and methods suit the subject
-8. **Application** — implications beyond theory alone, where the brief asks for them
+<!-- OVERLAY:academic-rubric -->
 
 ## Process (rounds 0–10)
 
@@ -140,19 +128,7 @@ When the user sends the brief and draft, begin at round 0.`,
 2. 整理 **品質要求**（深度、證據、限制、論證）
 3. 若使用者提供規準，**優先** 於預設
 
-## 預設評量規準（未提供規準時）
-
-1. **證據** — 每項主張有來源或事實支持；不能只有「一般來說」
-2. **解釋深度** — why、how、therefore 有連結；不是堆疊定義
-3. **限制** — 反例、不確定性與適用範圍有明確說明
-4. **引用契合** — 參考文獻確實支持所附的句子
-5. **格式** — 字數、必要章節與版面符合作業要求
-6. **論證** — 作品在論述，而非只列名詞
-
-每項：**通過 / 部分通過 / 未通過**，外加 1–3 句理由，指出章節或段落。
-
-7. **學科契合** — 概念、案例與方法適合該科目
-8. **應用** — 作業要求時，不只談理論，也有延伸意涵
+<!-- OVERLAY:academic-rubric -->
 
 ## 流程（第 0–10 輪）
 
@@ -235,19 +211,7 @@ When the user sends the brief and draft, begin at round 0.`,
 2. **品質要求**（深さ、根拠、限界、論証）を整理
 3. ユーザールーブリックがあれば **優先**
 
-## デフォルトルーブリック（ルーブリックなし時）
-
-1. **根拠** — 各主張に出典・事実。 「一般的に」だけで終わらない
-2. **説明の深さ** — なぜ・どう・だからがつながる
-3. **限界** — 反例・不確実性・適用範囲
-4. **引用適合** — 文献が該当文を実際に支持
-5. **形式** — 分量・必須セクション・レイアウト
-6. **深さ** — 定義羅列でなく **論証**
-
-各軸: **Pass / Partial / Fail** + 1–3 文（段落引用）
-
-7. **学科適合** — 概念・事例・方法が科目に合う
-8. **応用** — 課題が求めるとき理論を超えた含意
+<!-- OVERLAY:academic-rubric -->
 
 ## 手順（ラウンド 0–10）
 
@@ -330,19 +294,7 @@ Vous êtes un **professeur exigeant**. Vous privilégiez la **profondeur de réf
 2. Résumer **attentes qualité** (profondeur, preuves, limites, argument)
 3. Rubrique utilisateur **prioritaire** sur le défaut
 
-## Rubrique par défaut (sans rubrique fournie)
-
-1. **Preuves** — chaque affirmation sourcée ; pas seulement « en général »
-2. **Profondeur** — pourquoi, comment, donc reliés ; pas empilement de définitions
-3. **Limites** — contre-exemples, incertitude, périmètre
-4. **Adéquation des citations** — les références soutiennent la phrase
-5. **Format** — volume, sections, mise en page conformes
-6. **Argument** — le texte argumente, ne liste pas seulement
-
-Par critère : **Pass / Partial / Fail** + 1–3 phrases (section citée)
-
-7. **Adéquation disciplinaire** — concepts et méthodes adaptés
-8. **Application** — implications au-delà de la théorie si demandé
+<!-- OVERLAY:academic-rubric -->
 
 ## Déroulement (tours 0–10)
 
@@ -425,19 +377,7 @@ Eres un **profesor estricto**. Priorizas la **profundidad de pensamiento** y det
 2. Resumir **expectativas de calidad** (profundidad, pruebas, límites, argumento)
 3. Rúbrica del usuario **prioritaria** sobre la predeterminada
 
-## Rúbrica predeterminada (sin rúbrica del usuario)
-
-1. **Pruebas** — cada afirmación con fuente; no solo «en general »
-2. **Profundidad** — por qué, cómo y por tanto conectados
-3. **Límites** — contraejemplos, incertidumbre, alcance
-4. **Ajuste de citas** — referencias que apoyan la frase
-5. **Formato** — extensión, secciones y diseño conformes
-6. **Argumento** — el texto argumenta, no solo enumera
-
-Por criterio: **Pass / Partial / Fail** + 1–3 frases (sección citada)
-
-7. **Ajuste disciplinar** — conceptos y métodos adecuados
-8. **Aplicación** — implicaciones más allá de la teoría si lo pide el encargo
+<!-- OVERLAY:academic-rubric -->
 
 ## Proceso (rondas 0–10)
 

@@ -79,30 +79,40 @@ export const TRACK_DEPTH = {
         "\n- e.g. case presentation, OSCE briefing, journal club\n- Slides: case → differential → evidence level → plan and limits\n",
     },
   },
-  "chemical-engineering": {
+  engineering: {
     ko: {
-      "academic-rubric":
-        "\n9. **물질·에너지 수지** — 단위·평형·보존 법칙\n10. **공정·안전** — 반응기 설계·HAZOP·스케일업 한계\n",
-      "academic-fail":
-        "\n- 물질·에너지 수지·단위 없이 「효율적 공정」만 반복\n- HAZOP·스케일업 한계 없이 안전·위험 주장\n",
       "source-keywords":
-        "\n- mass balance | heat duty | Reynolds | yield | separation\n",
+        "\n- mass balance | heat duty | bandwidth | SNR | Reynolds | yield | EMC\n",
       "presentation-context":
-        "\n- 예: 공정 설계 발표, 실험실 안전·PFD 리뷰\n- 슬라이드: 문제 → PFD/실험 → 수치 → 한계\n",
+        "\n- 예: 공정·회로·구조 설계 발표, PFD·실험·시뮬 결과\n- 슬라이드: 사양 → 설계 → 수치·파형 → 한계\n",
       "study-examples":
-        "\n- 「반응공학 시험 D-4」→ 수지 체크리스트 + 단위 일관성 1회\n- 「실험 설계」→ 변수 2개 + HAZOP·안전 1항\n",
+        "\n- 「반응공학·회로 시험 D-4」→ 수지·단위 체크 + 전달함수 1개\n- 「실험·PFD 과제」→ HAZOP·측정 조건·오차 각 1항\n",
     },
     "en-GB": {
-      "academic-rubric":
-        "\n9. **Material & energy balance** — units, equilibrium, conservation\n10. **Process & safety** — reactor design, HAZOP, scale-up limits\n",
-      "academic-fail":
-        "\n- Process claims with no mass/energy balance or units\n- Safety or risk claims with no HAZOP or scale-up limits\n",
       "source-keywords":
-        "\n- mass balance | heat duty | Reynolds | yield | separation\n",
+        "\n- mass balance | heat duty | bandwidth | SNR | Reynolds | yield | EMC\n",
       "presentation-context":
-        "\n- e.g. process design defence, lab safety and PFD review\n- Slides: problem → PFD/experiment → numbers → limits\n",
+        "\n- e.g. process, circuit, or structural design defence\n- Slides: spec → design → numbers/waveform → limits\n",
       "study-examples":
-        "\n- 「Reaction engineering exam D-4」→ balance checklist + unit check\n- 「Lab design」→ 2 variables + 1 HAZOP/safety item\n",
+        "\n- 「Reaction/circuits exam D-4」→ balance + units + 1 transfer function\n- 「Lab/PFD task」→ 1 HAZOP + measurement + error item\n",
+    },
+  },
+  nursing: {
+    ko: {
+      "source-keywords":
+        "\n- nursing process | NANDA | care plan | evidence | patient safety\n",
+      "study-examples":
+        "\n- 「간호과정 시험 D-3」→ 사정·진단·중재 각 3항\n- 「케어플랜 과제」→ 근거 2개 + 평가 지표 1개\n",
+      "presentation-context":
+        "\n- 예: 케이스 프레젠테이션, 케어플랜·시뮬 브리핑\n- 슬라이드: 사정 → 진단 → 중재 → 평가\n",
+    },
+    "en-GB": {
+      "source-keywords":
+        "\n- nursing process | NANDA | care plan | evidence | patient safety\n",
+      "study-examples":
+        "\n- 「Nursing process exam D-3」→ 3 items each assess/diagnose/intervene\n- 「Care plan task」→ 2 evidence sources + 1 evaluation metric\n",
+      "presentation-context":
+        "\n- e.g. case presentation, care plan or simulation briefing\n- Slides: assess → diagnose → intervene → evaluate\n",
     },
   },
   veterinary: {
@@ -307,28 +317,180 @@ export const TRACK_DEPTH = {
         "\n- 「Studio mid-review」→ 3 drawings + 1 scale/material rationale each\n- 「Environmental study」→ 3 daylight/energy metrics + 1 code item\n",
     },
   },
-  "electrical-engineering": {
+  physics: {
     ko: {
-      "academic-rubric":
-        "\n9. **회로·신호** — 단위·대역·노이즈·안전 마진\n10. **실험·시뮬** — 측정 조건·오차\n",
-      "academic-fail":
-        "\n- 단위·대역·SNR 없이 「신호 처리」만 반복\n- 측정 조건·오차 없는 실험·시뮬 수치\n",
-      "source-keywords": "\n- bandwidth | SNR | transfer function | EMC | sampling\n",
+      "source-keywords":
+        "\n- 모형: assumption | approximation | validity\n- 실험: error | calibration | reproducibility\n",
+      "writing-examples":
+        "\n## 물리학 예\n\n❌ 「2장에서 물리 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.2: 중요 — 단위·차원 불일치. SI 일관성 § 추가.`\n✅ `§4.1: 주의 — 실험 데이터, 오차·계통 오차 없음. error analysis 1문장.`\n",
       "study-examples":
-        "\n- 「회로·신호 시험」→ 전달함수 2개 + 단위·대역 체크\n- 「실험 보고」→ 측정 조건·오차·SNR 각 1줄\n",
+        "\n- 「역학·전자기 시험 D-5」→ 유도 2개 + 단위 체크\n- 「실험 보고」→ 측정 설정·오차 각 1줄\n",
       "presentation-context":
-        "\n- 예: 회로·PCB·신호처리 발표, 실험·시뮬 결과 공유\n- 슬라이드: 사양 → 설계/회로 → 측정·파형 → 한계\n",
+        "\n- 예: 실험·이론 발표, 포스터\n- 슬라이드: 가설 → 설정 → 결과 → 한계\n",
     },
     "en-GB": {
-      "academic-rubric":
-        "\n9. **Circuits & signals** — units, bandwidth, noise, safety margins\n10. **Lab & simulation** — measurement conditions and error\n",
-      "academic-fail":
-        "\n- Signal-processing claims with no units, bandwidth, or SNR\n- Lab or simulation numbers with no measurement conditions or error\n",
-      "source-keywords": "\n- bandwidth | SNR | transfer function | EMC | sampling\n",
+      "source-keywords":
+        "\n- Model: assumption | approximation | validity\n- Lab: error | calibration | reproducibility\n",
+      "writing-examples":
+        "\n## Physics example\n\n❌ \"Section 2 discusses physics but seems to lack concrete evidence.\"\n\n✅ `§2.2: major — unit or dimensional inconsistency. Add SI consistency §.`\n✅ `§4.1: minor — data with no error or systematic uncertainty. Add error sentence.`\n",
       "study-examples":
-        "\n- 「Circuits/signals exam」→ 2 transfer functions + unit/bandwidth check\n- 「Lab report」→ measurement conditions, error, SNR each 1 line\n",
+        "\n- 「Mechanics/EM exam D-5」→ 2 derivations + unit check\n- 「Lab report」→ setup and error each 1 line\n",
       "presentation-context":
-        "\n- e.g. circuit/PCB/signal-processing defence, lab or simulation results\n- Slides: spec → design/circuit → measurement/waveform → limits\n",
+        "\n- e.g. experiment or theory talk, poster\n- Slides: hypothesis → setup → results → limits\n",
+    },
+  },
+  chemistry: {
+    ko: {
+      "source-keywords":
+        "\n- 반응: yield | selectivity | mechanism | conditions\n- 분석: NMR | IR | MS | safety data sheet\n",
+      "writing-examples":
+        "\n## 화학 예\n\n❌ 「2장에서 화학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.3: 중요 — 반응 조건·수율 없이 「반응한다」만 서술. conditions § 추가.`\n✅ `§3.1: 주의 — 구조 주장, 스펙트럼 근거 없음. spectrum § 추가.`\n",
+      "study-examples":
+        "\n- 「유기·무기 시험 D-4」→ 메커니즘 3개 + 조건표\n- 「실험」→ 안전·폐기 2항\n",
+      "presentation-context":
+        "\n- 예: 합성·분석 실험 발표\n- 슬라이드: 목표 → 방법 → 결과 → 한계\n",
+    },
+    "en-GB": {
+      "source-keywords":
+        "\n- Reaction: yield | selectivity | mechanism | conditions\n- Analysis: NMR | IR | MS | SDS\n",
+      "writing-examples":
+        "\n## Chemistry example\n\n❌ \"Section 2 discusses chemistry but seems to lack concrete evidence.\"\n\n✅ `§2.3: major — 「reacts」 with no conditions or yield. Add conditions §.`\n✅ `§3.1: minor — structure claim with no spectral evidence. Add spectrum §.`\n",
+      "study-examples":
+        "\n- 「Organic/inorganic exam D-4」→ 3 mechanisms + conditions table\n- 「Lab」→ safety and disposal 2 items\n",
+      "presentation-context":
+        "\n- e.g. synthesis or analysis lab defence\n- Slides: aim → method → results → limits\n",
+    },
+  },
+  "life-sciences": {
+    ko: {
+      "source-keywords":
+        "\n- 메커니즘: pathway | gene | cell | ecology\n- 실험: control | n | stats | reproducibility\n",
+      "writing-examples":
+        "\n## 생명과학 예\n\n❌ 「2장에서 생명과학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§3.1: 중요 — 「유의미」 주장, n·통계 없음. stats § 추가.`\n✅ `§4.2: 주의 — in vitro 결과 in vivo 일반화. limits 1문장.`\n",
+      "study-examples":
+        "\n- 「세포·유전 시험 D-4」→ 경로 2개 + 실험 설계 1개\n- 「리뷰」→ 논문 3편 + 한계 각 1줄\n",
+      "presentation-context":
+        "\n- 예: 실험·리뷰·포스터 발표\n- 슬라이드: 가설 → 방법 → 데이터 → 한계\n",
+    },
+    "en-GB": {
+      "source-keywords":
+        "\n- Mechanism: pathway | gene | cell | ecology\n- Experiment: control | n | stats | reproducibility\n",
+      "writing-examples":
+        "\n## Life sciences example\n\n❌ \"Section 2 discusses life sciences but seems to lack concrete evidence.\"\n\n✅ `§3.1: major — 「significant」 with no n or stats. Add stats §.`\n✅ `§4.2: minor — in vitro generalised to in vivo. Add limits sentence.`\n",
+      "study-examples":
+        "\n- 「Cell/genetics exam D-4」→ 2 pathways + 1 experimental design\n- 「Review」→ 3 papers + 1 limit line each\n",
+      "presentation-context":
+        "\n- e.g. experiment, review, or poster\n- Slides: hypothesis → methods → data → limits\n",
+    },
+  },
+  "mathematics-statistics": {
+    ko: {
+      "source-keywords":
+        "\n- 수학: definition | proof | counterexample\n- 통계: sample | CI | test | identification\n",
+      "writing-examples":
+        "\n## 수학·통계 예\n\n❌ 「2장에서 수학·통계 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.1: 중요 — 증명 단계·가정 누락. assumption § 추가.`\n✅ `§4.3: 주의 — p-value만, 효과크기·가정 검토 없음. effect size 1문장.`\n",
+      "study-examples":
+        "\n- 「증명·계량 시험 D-5」→ 정리 2개 + 가정 목록\n- 「데이터 과제」→ 변수 정의표 + 검정 가정 2줄\n",
+      "presentation-context":
+        "\n- 예: 증명 발표, 실증·통계 결과 브리핑\n- 슬라이드: 정의 → 유도/모형 → 결과 → 한계\n",
+    },
+    "en-GB": {
+      "source-keywords":
+        "\n- Math: definition | proof | counterexample\n- Stats: sample | CI | test | identification\n",
+      "writing-examples":
+        "\n## Mathematics & statistics example\n\n❌ \"Section 2 discusses mathematics but seems to lack concrete evidence.\"\n\n✅ `§2.1: major — missing proof step or assumption. Add assumption §.`\n✅ `§4.3: minor — p-value only, no effect size or assumption check. Add effect size sentence.`\n",
+      "study-examples":
+        "\n- 「Proof/metrics exam D-5」→ 2 theorems + assumption list\n- 「Data assignment」→ variable table + 2 test-assumption lines\n",
+      "presentation-context":
+        "\n- e.g. proof talk or empirical/statistics briefing\n- Slides: definition → derivation/model → results → limits\n",
+    },
+  },
+  "business-administration": {
+    ko: {
+      "source-keywords":
+        "\n- 재무: ratio | cash flow | IFRS | audit\n- 전략: SWOT | stakeholder | risk | KPI\n",
+      "writing-examples":
+        "\n## 경영·회계 예\n\n❌ 「2장에서 경영 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.4: 중요 — 재무 수치 출처 없음. annual report § 추가.`\n✅ `§3.2: 주의 — 단일 권고, 대안·리스크 없음. alternative 1개 §.`\n",
+      "study-examples":
+        "\n- 「재무·전략 시험 D-3」→ 비율 5개 + SWOT 1장\n- 「케이스」→ 이해관계자·제약 각 2개\n",
+      "presentation-context":
+        "\n- 예: 케이스·재무·전략 발표\n- 슬라이드: 문제 → 분석 → 권고 → 리스크\n",
+    },
+    "en-GB": {
+      "source-keywords":
+        "\n- Finance: ratio | cash flow | IFRS | audit\n- Strategy: SWOT | stakeholder | risk | KPI\n",
+      "writing-examples":
+        "\n## Business & accounting example\n\n❌ \"Section 2 discusses business but seems to lack concrete evidence.\"\n\n✅ `§2.4: major — financial numbers without source. Add annual report §.`\n✅ `§3.2: minor — single recommendation, no alternatives or risks. Add one alternative §.`\n",
+      "study-examples":
+        "\n- 「Finance/strategy exam D-3」→ 5 ratios + 1 SWOT\n- 「Case」→ 2 stakeholders and 2 constraints each\n",
+      "presentation-context":
+        "\n- e.g. case, finance, or strategy pitch\n- Slides: problem → analysis → recommendation → risks\n",
+    },
+  },
+  "social-sciences": {
+    ko: {
+      "source-keywords":
+        "\n- 이론: operationalisation | framework | hypothesis\n- 방법: sample | survey | interview | bias\n",
+      "writing-examples":
+        "\n## 사회과학 예\n\n❌ 「2장에서 사회과학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.2: 중요 — 표본·방법 없이 정책 일반화. method § 추가.`\n✅ `§4.1: 주의 — 상관을 인과로 서술. causation caveat 1문장.`\n",
+      "study-examples":
+        "\n- 「조사·정책 시험 D-4」→ 개념 조작화 3개 + 표본 1단락\n- 「논문」→ 변수 정의표 + 편향 2줄\n",
+      "presentation-context":
+        "\n- 예: 조사·정책·이론 발표\n- 슬라이드: 질문 → 방법 → 결과 → 한계\n",
+    },
+    "en-GB": {
+      "source-keywords":
+        "\n- Theory: operationalisation | framework | hypothesis\n- Methods: sample | survey | interview | bias\n",
+      "writing-examples":
+        "\n## Social sciences example\n\n❌ \"Section 2 discusses social sciences but seems to lack concrete evidence.\"\n\n✅ `§2.2: major — policy claim with no sample or method. Add method §.`\n✅ `§4.1: minor — correlation stated as causation. Add caveat sentence.`\n",
+      "study-examples":
+        "\n- 「Survey/policy exam D-4」→ 3 operationalisations + 1 sample paragraph\n- 「Paper」→ variable table + 2 bias lines\n",
+      "presentation-context":
+        "\n- e.g. survey, policy, or theory talk\n- Slides: question → methods → results → limits\n",
+    },
+  },
+  psychology: {
+    ko: {
+      "source-keywords":
+        "\n- 설계: RCT | between/within | manipulation | control\n- 측정: validity | reliability | effect size | IRB\n",
+      "writing-examples":
+        "\n## 심리학 예\n\n❌ 「2장에서 심리학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§3.1: 중요 — 「유의미」 주장, n·효과크기 없음. stats § 추가.`\n✅ `§4.2: 주의 — 측정 타당도·통제 변수 미언급. validity 1문장.`\n",
+      "study-examples":
+        "\n- 「실험·통계 시험 D-4」→ 설계 1개 + 통제 3개\n- 「APA 과제」→ 가설·방법·한계 각 1단락\n",
+      "presentation-context":
+        "\n- 예: 실험·메타·임상 논의 발표\n- 슬라이드: 가설 → 방법 → 결과 → 한계\n",
+    },
+    "en-GB": {
+      "source-keywords":
+        "\n- Design: RCT | between/within | manipulation | control\n- Measurement: validity | reliability | effect size | IRB\n",
+      "writing-examples":
+        "\n## Psychology example\n\n❌ \"Section 2 discusses psychology but seems to lack concrete evidence.\"\n\n✅ `§3.1: major — 「significant」 with no n or effect size. Add stats §.`\n✅ `§4.2: minor — no validity or control variables. Add validity sentence.`\n",
+      "study-examples":
+        "\n- 「Experiment/stats exam D-4」→ 1 design + 3 controls\n- 「APA assignment」→ hypothesis, methods, limits each 1 paragraph\n",
+      "presentation-context":
+        "\n- e.g. experiment, meta, or clinical discussion\n- Slides: hypothesis → methods → results → limits\n",
+    },
+  },
+  education: {
+    ko: {
+      "source-keywords":
+        "\n- 설계: objective | assessment | curriculum alignment\n- 근거: theory | observation | policy | reflection\n",
+      "writing-examples":
+        "\n## 교육학 예\n\n❌ 「2장에서 교육학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.1: 중요 — 학습목표·평가 기준 없음. objective § 추가.`\n✅ `§3.3: 주의 — 「효과적」 주장, 관찰·증거 없음. evidence 1단락.`\n",
+      "study-examples":
+        "\n- 「수업설계 시험 D-3」→ 목표 3개 + 평가 2개\n- 「포트폴리오」→ 관찰 근거 2개 + 반성 1단락\n",
+      "presentation-context":
+        "\n- 예: 수업안·연구·정책 발표\n- 슬라이드: 목표 → 활동 → 평가 → 반성\n",
+    },
+    "en-GB": {
+      "source-keywords":
+        "\n- Design: objective | assessment | curriculum alignment\n- Evidence: theory | observation | policy | reflection\n",
+      "writing-examples":
+        "\n## Education example\n\n❌ \"Section 2 discusses education but seems to lack concrete evidence.\"\n\n✅ `§2.1: major — no learning objectives or assessment criteria. Add objectives §.`\n✅ `§3.3: minor — 「effective」 with no observation or evidence. Add evidence paragraph.`\n",
+      "study-examples":
+        "\n- 「Lesson design exam D-3」→ 3 objectives + 2 assessments\n- 「Portfolio」→ 2 observation hooks + 1 reflection paragraph\n",
+      "presentation-context":
+        "\n- e.g. lesson plan, research, or policy talk\n- Slides: objectives → activity → assessment → reflection\n",
     },
   },
   "home-economics": {

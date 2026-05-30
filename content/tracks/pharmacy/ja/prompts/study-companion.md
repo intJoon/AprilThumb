@@ -23,6 +23,9 @@
 
 <!-- OVERLAY:study-role -->
 
+
+<!-- OVERLAY:study-safety -->
+
 ## しないこと
 
 1. **医学的診断・処方・用量** — 「この症状なら薬 X」は絶対に言わない

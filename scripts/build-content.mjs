@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { OVERLAY_TRACKS } from "./lib/overlays.mjs";
+import { GENERIC_RUBRIC, genericRubricFor } from "./lib/discipline-rubrics.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -32,13 +33,19 @@ function copyText(raw) {
   return raw.replace(/^#.*\n+/m, "").trim();
 }
 
-function applyOverlay(text, overlay) {
-  if (!overlay) return text.replace(/<!-- OVERLAY:\w+ -->/g, "");
+function applyOverlay(text, overlay, trackId, locale) {
+  if (!overlay) {
+    let out = text;
+    if (trackId === "general") {
+      out = out.replace("<!-- OVERLAY:academic-rubric -->", genericRubricFor(locale));
+    }
+    return out.replace(/<!-- OVERLAY:[\w-]+ -->/g, "");
+  }
   let out = text;
   for (const [key, value] of Object.entries(overlay)) {
     out = out.replace(`<!-- OVERLAY:${key} -->`, value || "");
   }
-  return out.replace(/<!-- OVERLAY:\w+ -->/g, "");
+  return out.replace(/<!-- OVERLAY:[\w-]+ -->/g, "");
 }
 
 function resolveOverlay(trackId, locale) {
@@ -63,7 +70,7 @@ function resolveSource(trackId, locale, subpath) {
       text = readText(ko);
     }
     if (!text) return null;
-    return applyOverlay(text, null);
+    return applyOverlay(text, null, trackId, locale);
   }
 
   const generalExact = path.join(contentRoot, "tracks", "general", locale, subpath);
@@ -76,7 +83,7 @@ function resolveSource(trackId, locale, subpath) {
     koFallbacks.push(`${trackId}/${locale}/${subpath} general → ko`);
   }
   const overlay = resolveOverlay(trackId, locale);
-  return applyOverlay(base, overlay);
+  return applyOverlay(base, overlay, trackId, locale);
 }
 
 function loadUi(locale) {

@@ -66,47 +66,22 @@ export function renderSlidesHtml(localeId) {
     )
     .join("");
 
-  const stickerRot = [-14, 9, -11, 13, -8, 12, -10, 7, -13, 11, -6, 10, -15, 8, -12, 9];
-  const stickerLayout = [
-    { x: 0, y: 1 },
-    { x: 50, y: 0 },
-    { x: 22, y: 15 },
-    { x: 68, y: 3 },
-    { x: 2, y: 27 },
-    { x: 40, y: 31 },
-    { x: 64, y: 23 },
-    { x: 10, y: 45 },
-    { x: 52, y: 43 },
-    { x: 0, y: 57 },
-    { x: 34, y: 61 },
-    { x: 70, y: 53 },
-    { x: 6, y: 73 },
-    { x: 44, y: 77 },
-    { x: 66, y: 69 },
-    { x: 24, y: 88 },
-  ];
-  const stickerTier = (text) => {
-    const n = text.length;
-    if (n <= 2) return "xl";
-    if (n <= 4) return "lg";
-    if (n <= 6) return "md";
-    return "sm";
-  };
-  const sticker = (text, i) => {
-    const tier = stickerTier(text);
-    const acid = i % 3 !== 2;
-    const r = stickerRot[i % stickerRot.length];
-    const pos = stickerLayout[i % stickerLayout.length];
-    const scale = acid ? 1.06 : 1;
-    return `<span class="sticker sticker--${tier}${acid ? " sticker--acid" : ""}" style="--r:${r}deg;--x:${pos.x}%;--y:${pos.y}%;--s:${scale}">${esc(text)}</span>`;
-  };
-  const scopeMajors = `<div class="sticker-wall">${d.s6.majors.map((m, i) => sticker(m, i)).join("")}</div>`;
-  const langRot = [-10, 8, -7, 11, -9, 6];
+  const majorCount = d.s6.majors.length;
+  const langCount = d.s6.languages.length;
+
+  const majorChips = d.s6.majors
+    .map(
+      (m, i) =>
+        `<span class="major-chip${(Math.floor(i / 4) + (i % 4)) % 2 === 0 ? " major-chip--acid" : ""}">${esc(m)}</span>`
+    )
+    .join("");
+  const scopeMajors = `
+        <p class="scope-label scope-label--majors">${esc(d.s6.majorsLabel)}</p>
+        <div class="major-grid">${majorChips}</div>`;
   const scopeLangs = d.s6.languages
     .map((l, i) => {
-      const r = langRot[i % langRot.length];
       const acid = i % 2 === 0;
-      return `<span class="lang-pill${acid ? " lang-pill--acid" : ""}" style="--r:${r}deg">${esc(l)}</span>`;
+      return `<span class="lang-pill${acid ? " lang-pill--acid" : ""}">${esc(l)}</span>`;
     })
     .join("");
 
@@ -246,7 +221,8 @@ export function renderSlidesHtml(localeId) {
       .cta-text p,
       .stat-cell .l,
       .sticker,
-      .lang-pill {
+      .lang-pill,
+      .major-chip {
         font-family: ${body};
       }
       .head {
@@ -578,18 +554,18 @@ export function renderSlidesHtml(localeId) {
         margin-left: auto;
       }
       .scope-mega-a {
-        font-size: 128px;
+        font-size: 96px;
         color: var(--acid);
         text-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
       }
       .scope-mega-x {
-        font-size: 72px;
+        font-size: 52px;
         color: var(--fg);
         opacity: 0.45;
         margin: 0 4px;
       }
       .scope-mega-b {
-        font-size: 128px;
+        font-size: 96px;
         color: var(--fg);
         text-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
       }
@@ -647,63 +623,47 @@ export function renderSlidesHtml(localeId) {
         flex-direction: column;
         gap: 0;
         min-height: 0;
-        margin: 0 -28px;
       }
-      .sticker-wall {
-        position: relative;
+      .scope-label--majors {
+        margin: 0 0 10px;
+        padding: 0 4px;
+      }
+      .major-grid {
         flex: 1;
-        min-height: 720px;
-        margin-top: -6px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-rows: repeat(6, minmax(0, 1fr));
+        gap: 10px;
+        min-height: 0;
+        margin-bottom: 14px;
       }
-      .sticker {
-        position: absolute;
-        left: var(--x);
-        top: var(--y);
-        display: inline-block;
-        transform: rotate(var(--r)) scale(var(--s));
-        border: 3px solid rgba(245, 242, 235, 0.98);
-        background: #121110;
-        color: var(--fg);
-        font-weight: 800;
-        letter-spacing: -0.03em;
-        line-height: 1.12;
-        white-space: nowrap;
-        box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.55);
-        z-index: 1;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-      }
-      .sticker:nth-child(3n) { z-index: 2; }
-      .sticker:nth-child(5n) { z-index: 3; }
-      .sticker--xl {
-        font-size: 52px;
-        padding: 20px 34px;
-      }
-      .sticker--lg {
-        font-size: 46px;
-        padding: 18px 30px;
-      }
-      .sticker--md {
-        font-size: 36px;
-        padding: 16px 26px;
-      }
-      .sticker--sm {
-        font-size: 32px;
-        padding: 16px 24px;
-        white-space: normal;
-        max-width: 300px;
+      .major-chip {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+        padding: 8px 6px;
+        font-weight: 800;
+        font-size: 26px;
+        letter-spacing: -0.03em;
+        line-height: 1.14;
+        border: 2px solid rgba(245, 242, 235, 0.92);
+        background: #181614;
+        color: var(--fg);
+        box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45);
+        min-width: 0;
+        word-break: keep-all;
+        overflow: hidden;
       }
-      .sticker--acid {
+      .major-chip--acid {
         background: var(--acid);
         border-color: var(--fg);
         color: var(--bg);
-        box-shadow: 10px 10px 0 rgba(212, 255, 76, 0.4);
-        z-index: 4;
+        box-shadow: 4px 4px 0 rgba(212, 255, 76, 0.32);
       }
       .lang-rail-wrap {
         flex-shrink: 0;
-        padding: 22px 28px 0;
-        margin: 0 28px;
+        padding: 16px 0 0;
         border-top: 3px solid var(--acid);
         position: relative;
         z-index: 2;
@@ -716,13 +676,19 @@ export function renderSlidesHtml(localeId) {
         letter-spacing: 0.2em;
         text-transform: uppercase;
         color: var(--acid);
-        margin-bottom: 16px;
+        margin-bottom: 12px;
       }
-      .lang-rail {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px 16px;
+      .slide--scope .lang-rail {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .slide--scope .lang-pill {
+        transform: none;
+        padding: 14px 10px;
+        font-size: 26px;
+        text-align: center;
+        min-width: 0;
       }
       .lang-pill {
         display: inline-block;
@@ -744,14 +710,12 @@ export function renderSlidesHtml(localeId) {
         border-color: var(--fg);
         box-shadow: 10px 10px 0 rgba(212, 255, 76, 0.35);
       }
-      .locale-en .sticker--xl { font-size: 44px; }
-      .locale-en .sticker--lg { font-size: 38px; }
-      .locale-en .sticker--md { font-size: 30px; }
-      .locale-en .sticker--sm { font-size: 26px; max-width: 260px; }
+      .locale-en .major-chip { font-size: 22px; letter-spacing: -0.04em; }
       .locale-en .scope-mega-a,
-      .locale-en .scope-mega-b { font-size: 112px; }
-      .locale-en .lang-pill { font-size: 28px; padding: 18px 28px; }
-      .locale-zh-TW .sticker--sm { font-size: 28px; padding: 14px 20px; max-width: 320px; }
+      .locale-en .scope-mega-b { font-size: 88px; }
+      .locale-en .slide--scope .lang-pill { font-size: 22px; }
+      .locale-zh-TW .major-chip { font-size: 21px; letter-spacing: -0.04em; }
+      .locale-zh-TW .slide--scope .lang-pill { font-size: 24px; }
       .locale-en .panel-body strong { font-size: 26px; }
       .locale-en .panel-body em { font-size: 20px; }
       .cta-wrap {
@@ -878,16 +842,16 @@ export function renderSlidesHtml(localeId) {
         6,
         `
         <div class="scope-burst" aria-hidden="true"></div>
-        <div class="scope-bg" aria-hidden="true"><span class="scope-bg-n">16</span><span class="scope-bg-n scope-bg-n--2">6</span></div>
+        <div class="scope-bg" aria-hidden="true"><span class="scope-bg-n">${majorCount}</span><span class="scope-bg-n scope-bg-n--2">${langCount}</span></div>
         <div class="scope-head">
           <div class="scope-head-l">
             <span class="tag">${esc(d.s6.tag)}</span>
             <span class="scope-badge">${esc(d.s6.badge)}</span>
           </div>
           <div class="scope-mega" aria-label="${esc(d.s6.h2.replace(/<br\s*\/?>/gi, " "))}">
-            <span class="scope-mega-a">16</span>
+            <span class="scope-mega-a">${majorCount}</span>
             <span class="scope-mega-x">×</span>
-            <span class="scope-mega-b">6</span>
+            <span class="scope-mega-b">${langCount}</span>
           </div>
         </div>
         <div class="scope-body">

@@ -3,31 +3,21 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { OVERLAY_TRACKS, buildOverlay } from "./lib/overlays.mjs";
 import { depthFor } from "./lib/discipline-depth.mjs";
+import { ZH, JA, FR, ES } from "./lib/discipline-rubrics-i18n.mjs";
+import { GENERIC_GUIDE_MARKERS } from "./lib/discipline-guide.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 const bundlesDir = path.join(root, "public", "data", "bundles");
+const manifestPath = path.join(root, "content", "manifest.json");
 
 const LOCALES = ["ko", "en-GB", "zh-TW", "ja", "fr", "es"];
 const STANDALONE = ["general", "pharmacy"];
 const ALL_TRACKS = [...STANDALONE, ...OVERLAY_TRACKS];
 
-const WRITING_TRACKS = new Set([
-  "cs",
-  "law",
-  "medicine",
-  "chemical-engineering",
-  "veterinary",
-  "linguistics",
-  "design",
-  "cultural-arts",
-  "philosophy",
-  "sports",
-  "economics",
-  "architecture",
-  "electrical-engineering",
-  "home-economics",
-]);
+const WRITING_TRACKS = new Set(OVERLAY_TRACKS);
+
+const I18N_RUBRIC = { "zh-TW": ZH, ja: JA, fr: FR, es: ES };
 
 const CONCISE_TRACKS = new Set(["linguistics"]);
 
@@ -126,6 +116,10 @@ function bulletCount(text) {
   return (text.match(/^\s*-\s+/gm) || []).length;
 }
 
+function rubricAxisCount(text) {
+  return (text.match(/\n[1-6]\.\s+\*\*/g) || []).length;
+}
+
 function checkDepth(trackId, locale) {
   const issues = [];
   const depth = depthFor(trackId, locale);
@@ -143,6 +137,7 @@ function checkDepth(trackId, locale) {
   const pres = (depth?.["presentation-context"] || "") + (overlay?.["presentation-context"] || "");
 
   if (!rubric.trim()) issues.push("missing academic-rubric");
+  if (rubricAxisCount(rubric) < 6) issues.push(`academic-rubric axes=${rubricAxisCount(rubric)}`);
   if (bulletCount(fail) < 2) issues.push(`academic-fail bullets=${bulletCount(fail)}`);
   if (!keywords.trim()) issues.push("missing source-keywords");
   if (!study.trim()) issues.push("missing study-examples");
@@ -166,12 +161,82 @@ function checkDepth(trackId, locale) {
     if (!concise.trim()) issues.push("missing concise-examples");
   }
 
+  const guide = overlay?.["guide-extra"] || "";
+  const generic = GENERIC_GUIDE_MARKERS[locale];
+  if (generic && guide.includes(generic)) {
+    issues.push("guide-extra generic template only");
+  }
+  if (bulletCount(guide) < 3) issues.push(`guide-extra bullets=${bulletCount(guide)}`);
+  if (!guide.includes("|")) issues.push("guide-extra missing situation table");
+  const m = LOCALE_MARKERS[locale] || LOCALE_MARKERS["en-GB"];
+  if (!hasAny(guide, m.chatgpt)) issues.push("guide-extra missing ChatGPT section");
+  if (!hasAny(guide, m.gemini)) issues.push("guide-extra missing Gemini section");
+
   return issues;
+}
+
+function checkOrphanBundles() {
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  const valid = new Set();
+  for (const track of manifest.tracks) {
+    for (const locale of manifest.locales) {
+      valid.add(`${track.id}-${locale}.json`);
+    }
+  }
+  const orphans = fs
+    .readdirSync(bundlesDir)
+    .filter((f) => f.endsWith(".json") && !valid.has(f));
+  return orphans;
 }
 
 function promptText(bundle, id) {
   const p = bundle.prompts?.find((x) => x.id === id);
   return p?.copyText || p?.body || "";
+}
+
+function generalRubricAxisCount(academic) {
+  const m = academic.match(
+    /\n## [^\n]*(루브릭|rubric|Rúbrica|Rubrique|ルーブリック|評量)[^\n]*\n([\s\S]*?)\n## /i
+  );
+  if (!m) return 0;
+  return (m[2].match(/\n[1-6]\.\s+\*\*/g) || []).length;
+}
+
+function checkGeneralRubric(academic, locale) {
+  const issues = [];
+  if (/<!-- OVERLAY:/.test(academic)) issues.push("academic-review overlay marker leak");
+  const axes = generalRubricAxisCount(academic);
+  if (axes !== 6) issues.push(`general rubric axes=${axes}`);
+  const headings =
+    (academic.match(/\n## [^\n]*(루브릭|rubric|Rúbrica|Rubrique|ルーブリック|評量)[^\n]*\n/gi) || [])
+      .length;
+  if (headings > 1) issues.push(`general rubric headings=${headings}`);
+  if (locale !== "ko" && academic.includes("「일반적으로」")) {
+    issues.push("general ko rubric leak");
+  }
+  if (locale === "ko" && /\n## Default rubric/.test(academic)) {
+    issues.push("general en rubric leak");
+  }
+  return issues;
+}
+
+function checkOverlayRubric(trackId, locale, academic) {
+  const issues = [];
+  const table = I18N_RUBRIC[locale];
+  if (!table) return issues;
+  const row = table[trackId];
+  if (!row) return issues;
+  const axisTitle = row.axes[0][0];
+  if (!academic.includes(axisTitle)) {
+    issues.push(`overlay rubric locale leak (missing ${axisTitle})`);
+  }
+  if (/\n## [^\n]*default rubric \(when none supplied\)/.test(academic)) {
+    issues.push("overlay en rubric leak");
+  }
+  if (locale !== "ko" && /\n## [^\n]*기본 루브릭/.test(academic)) {
+    issues.push("overlay ko rubric leak");
+  }
+  return issues;
 }
 
 function checkBundle(trackId, locale) {
@@ -188,9 +253,12 @@ function checkBundle(trackId, locale) {
   const academic = promptText(bundle, "academic-review");
   const concise = promptText(bundle, "concise-mode");
   const writing = promptText(bundle, "writing-review");
-  const source = promptText(bundle, "source-check");
   const study = promptText(bundle, "study-companion");
   const pres = promptText(bundle, "presentation");
+
+  if (trackId === "general") {
+    issues.push(...checkGeneralRubric(academic, locale));
+  }
 
   for (const [label, text] of [
     ["academic round0", academic],
@@ -215,19 +283,30 @@ function checkBundle(trackId, locale) {
   }
 
   if (OVERLAY_TRACKS.includes(trackId)) {
+    issues.push(...checkOverlayRubric(trackId, locale, academic));
     const studyBullets = countBullets(study);
     const presBullets = countBullets(pres);
     if (studyBullets < 3) issues.push(`bundle study bullets=${studyBullets}`);
     if (presBullets < 3) issues.push(`bundle presentation bullets=${presBullets}`);
+    if (
+      !study.includes("안전") &&
+      !study.includes("安全") &&
+      !study.includes("seguridad") &&
+      !study.includes("Sécurité") &&
+      !study.includes("safety") &&
+      !study.includes("Safety")
+    ) {
+      issues.push("bundle study-companion missing discipline safety");
+    }
   }
 
   for (const p of bundle.prompts || []) {
-    if (p.copyText && /<!-- OVERLAY:\w+ -->/.test(p.copyText)) {
+    if (p.copyText && /<!-- OVERLAY:[\w-]+ -->/.test(p.copyText)) {
       issues.push(`bundle ${p.id} copyText has OVERLAY marker`);
     }
   }
   const guideText = bundle.guide?.markdown || "";
-  if (/<!-- OVERLAY:\w+ -->/.test(guideText)) {
+  if (/<!-- OVERLAY:[\w-]+ -->/.test(guideText)) {
     issues.push("bundle guide has OVERLAY marker");
   }
 
@@ -236,6 +315,12 @@ function checkBundle(trackId, locale) {
 
 let failCount = 0;
 const report = [];
+
+const orphanBundles = checkOrphanBundles();
+if (orphanBundles.length) {
+  failCount++;
+  report.push(`orphan-bundles: ${orphanBundles.join(", ")}`);
+}
 
 for (const trackId of OVERLAY_TRACKS) {
   for (const locale of LOCALES) {
@@ -262,7 +347,7 @@ for (const trackId of STANDALONE) {
 const total = OVERLAY_TRACKS.length * LOCALES.length + STANDALONE.length * LOCALES.length;
 
 if (failCount === 0) {
-  console.log(`ALL_OK ${total}/${total} (16 tracks × 6 locales)`);
+  console.log(`ALL_OK ${total}/${total} (24 tracks × 6 locales)`);
   process.exit(0);
 }
 
