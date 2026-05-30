@@ -34,8 +34,8 @@
   },
   "locales": {
     "ko": "한국어",
-    "en-GB": "English (UK)",
-    "zh-TW": "繁體中文（台灣）",
+    "en-GB": "English",
+    "zh-TW": "中文",
     "ja": "日本語",
     "fr": "Français",
     "es": "Español"
