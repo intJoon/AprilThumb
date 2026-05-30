@@ -2,9 +2,9 @@
   "guide-extra": "\n## philosophy assignment tips\n\n- Strong philosophy work ties **discipline terms, evidence, and limits** together.\n",
   "academic-rubric": "\n## philosophy extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to philosophy\n8. **Application** — implications beyond theory alone\n\n9. **Argument structure** — premises, conclusion, objection, reply\n10. **Textual support** — citations actually support the interpretation\n",
   "academic-fail": "\n### philosophy fail signals\n\n- Generic AI text without philosophy core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n\n- Citation stacking with no author thesis\n- Straw man only; core objection not addressed\n",
-  "source-keywords": "\n## philosophy keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the philosophy context\n",
+  "source-keywords": "\n## Philosophy keyword examples\n\n- Argument: premise, conclusion, validity\n- Objection: counterexample, reply\n- Text: citation, page, interpretation\n- Concept: definition, distinction, thought experiment\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## philosophy example\n\n- 「Explain a philosophy concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
-  "writing-examples": "\n## philosophy example\n\n✅ `§2.1: major — philosophy claim lacks source. Add textbook or paper §.`\n",
+  "writing-examples": "\n## Philosophy example\n\n❌ \"Section 2 discusses philosophy but seems to lack concrete evidence.\"\n\n✅ `§2: major — objection raised with no reply. Add reply paragraph.`\n✅ `§3.4: minor — citation stacking with no author thesis. Add thesis sentence.`\n",
   "presentation-context": "\n## philosophy presentation context\n\n- e.g. philosophy coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n",
   "study-role": "\n- Study help in philosophy concepts, exams, and projects\n",
   "study-examples": "\n## philosophy study examples\n\n- 「philosophy exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on philosophy assignment」→ 2 next actions\n"

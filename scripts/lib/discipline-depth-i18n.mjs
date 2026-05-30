@@ -1,3 +1,5 @@
+import { LOCALE_EXAMPLES } from "./discipline-examples-i18n.mjs";
+
 export const LOCALE_DEPTH = {
   cs: {
     "zh-TW": {
@@ -468,5 +470,13 @@ for (const [trackId, locales] of Object.entries(FAIL_I18N)) {
     if (LOCALE_DEPTH[trackId]?.[locale]) {
       LOCALE_DEPTH[trackId][locale]["academic-fail"] = fail;
     }
+  }
+}
+
+for (const [trackId, locales] of Object.entries(LOCALE_EXAMPLES)) {
+  if (!LOCALE_DEPTH[trackId]) LOCALE_DEPTH[trackId] = {};
+  for (const [locale, patch] of Object.entries(locales)) {
+    if (!LOCALE_DEPTH[trackId][locale]) LOCALE_DEPTH[trackId][locale] = {};
+    Object.assign(LOCALE_DEPTH[trackId][locale], patch);
   }
 }

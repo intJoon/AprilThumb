@@ -2,9 +2,9 @@
   "guide-extra": "\n## design assignment tips\n\n- Strong design work ties **discipline terms, evidence, and limits** together.\n",
   "academic-rubric": "\n## design extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to design\n8. **Application** — implications beyond theory alone\n\n9. **User & context** — persona, journey, constraints tied to decisions\n10. **Critique response** — alternatives, trade-offs, limits\n",
   "academic-fail": "\n### design fail signals\n\n- Generic AI text without design core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n\n- UX or persona claims without research evidence\n- Single concept pushed with no alternatives or trade-offs\n",
-  "source-keywords": "\n## design keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the design context\n",
+  "source-keywords": "\n## Design keyword examples\n\n- Research: interview, usability, persona\n- Decisions: journey, wireframe, iteration\n- Critique: trade-off, constraint, accessibility\n- Validation: test protocol, metric, sample\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## design example\n\n- 「Explain a design concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
-  "writing-examples": "\n## design example\n\n✅ `§2.1: major — design claim lacks source. Add textbook or paper §.`\n",
+  "writing-examples": "\n## Design example\n\n❌ \"Section 2 discusses design but seems to lack concrete evidence.\"\n\n✅ `§3: major — persona claim with no interview or test evidence. Add § or caption.`\n✅ `§5.2: minor — single concept with no alternatives or trade-offs. Add one alternative §.`\n",
   "presentation-context": "\n## design presentation context\n\n- e.g. design coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. portfolio review, user-journey pitch, critique session\n- Slides: problem → research → concepts → iteration\n",
   "study-role": "\n- Study help in design concepts, exams, and projects\n",
   "study-examples": "\n## design study examples\n\n- 「design exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on design assignment」→ 2 next actions\n"

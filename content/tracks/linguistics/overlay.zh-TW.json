@@ -2,9 +2,9 @@
   "guide-extra": "\n## 語言學 作業提示\n\n- 好的 語言學 作業應結合**專業術語、證據與限制**。\n",
   "academic-rubric": "\n## 語言學 附加標準\n\n7. **專業契合** — 符合 語言學 的概念、案例、方法\n8. **應用** — 不止理論，還有與主題相關的應用\n\n9. **資料與例句** — 自然語例、語料庫、統計依據\n10. **理論契合** — 框架與分析單位一致\n",
   "academic-fail": "\n### 語言學 未通過信號\n\n- 缺乏 語言學 核心概念，只有空泛 AI 文\n- 誤用術語或無出處的專業主張\n- 偏離作業主題\n\n- 無 gloss、出處的例句卻做句法／音韻主張\n- 理論框架與分析單位不一致\n",
-  "source-keywords": "\n## 語言學 關鍵詞示例\n\n- 2–4 組關鍵詞（概念 | 方法 | 結果 | 限制）\n- 依 語言學 情境調整\n\n- 音位 | 詞素 | 句法 | 語用 | 語料庫 | gloss\n",
+  "source-keywords": "\n## 關鍵詞示例 Linguistics\n\n- Phonology: phoneme, allophone, minimal pair\n- Morpho-syntax: morpheme, constituency, gloss\n- Semantics-pragmatics: implicature, presupposition\n- Data: corpus, elicitation, statistics\n\n依課題語境調整。\n",
   "concise-examples": "\n## 語言學 示例\n\n- 「語言學 核心概念，更短」\n- 專有名詞、數字、術語不可縮寫\n",
-  "writing-examples": "\n## 語言學 示例\n\n✅ `§2.1: 重要 — 語言學 主張無出處。補充教材或論文 §。`\n",
+  "writing-examples": "\n## 示例 Linguistics\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§4: major — example (1) lacks gloss and source. Add paper or corpus ID.`\n✅ `§6.2: minor — framework mismatched to unit (word vs utterance). State unit explicitly.`\n",
   "presentation-context": "\n## 語言學 簡報情境\n\n- 例：語言學 作業、研討會、專題\n- 聽眾：同學、教授、實務者\n",
   "study-role": "\n- 在 語言學 概念、考試、專題中提供學習協助\n",
   "study-examples": "\n## 語言學 學習示例\n\n- 「語言學 考試明天」→ 25 分鐘計畫 + 5 重點\n- 「語言學 作業卡住」→ 2 個下一步\n"

@@ -1,4 +1,5 @@
 import { LOCALE_DEPTH } from "./discipline-depth-i18n.mjs";
+import { EXAMPLE_DEPTH } from "./discipline-examples.mjs";
 
 export const TRACK_DEPTH = {
   cs: {
@@ -267,6 +268,14 @@ export const TRACK_DEPTH = {
     },
   },
 };
+
+for (const [trackId, locales] of Object.entries(EXAMPLE_DEPTH)) {
+  if (!TRACK_DEPTH[trackId]) TRACK_DEPTH[trackId] = {};
+  for (const [locale, patch] of Object.entries(locales)) {
+    if (!TRACK_DEPTH[trackId][locale]) TRACK_DEPTH[trackId][locale] = {};
+    Object.assign(TRACK_DEPTH[trackId][locale], patch);
+  }
+}
 
 for (const [trackId, locales] of Object.entries(LOCALE_DEPTH)) {
   if (!TRACK_DEPTH[trackId]) continue;

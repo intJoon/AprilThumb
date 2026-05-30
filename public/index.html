@@ -41,6 +41,35 @@
     </header>
 
     <main class="wrap">
+      <section id="tutorial" class="tutorial" hidden aria-label="Getting started">
+        <div class="tutorial-aim" aria-hidden="true">
+          <span class="tutorial-aim-mark">↑</span>
+          <span class="tutorial-aim-mark">↑</span>
+        </div>
+        <div class="tutorial-steps">
+          <button type="button" class="tutorial-step" id="tutorial-step-lang">
+            <span class="tutorial-num">1</span>
+            <svg class="tutorial-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+              <path d="M3 12h18M12 3c2.5 2.8 3.8 5.8 3.8 9s-1.3 6.2-3.8 9M12 3c-2.5 2.8-3.8 5.8-3.8 9s1.3 6.2 3.8 9" stroke="currentColor" stroke-width="1.8" />
+            </svg>
+            <span class="tutorial-hint" id="tutorial-hint-lang"></span>
+          </button>
+          <span class="tutorial-arrow" aria-hidden="true">→</span>
+          <button type="button" class="tutorial-step" id="tutorial-step-track">
+            <span class="tutorial-num">2</span>
+            <svg class="tutorial-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" />
+            </svg>
+            <span class="tutorial-hint" id="tutorial-hint-track"></span>
+          </button>
+        </div>
+        <p class="tutorial-note" id="tutorial-note" hidden></p>
+      </section>
+
       <section id="picker" class="picker" hidden aria-label="Selection">
         <h2 class="picker-label" id="picker-label"></h2>
         <div id="picker-options"></div>

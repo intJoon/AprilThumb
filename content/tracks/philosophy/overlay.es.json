@@ -2,9 +2,9 @@
   "guide-extra": "\n## Consejos de filosofía\n\n- Un buen trabajo en filosofía une **términos, evidencia y límites**.\n",
   "academic-rubric": "\n## Criterios filosofía\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de filosofía\n8. **Aplicación** — más allá de la teoría\n\n9. **Estructura argumentativa** — premisas, conclusión, objeción, réplica\n10. **Soporte textual** — citas que respaldan la interpretación\n",
   "academic-fail": "\n### Señales de fallo filosofía\n\n- Texto IA genérico sin conceptos filosofía\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- Solo citas sin tesis propia\n- Hombre de paja únicamente; objeción central sin responder\n",
-  "source-keywords": "\n## Palabras clave filosofía\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto filosofía\n",
+  "source-keywords": "\n## Palabras clave Philosophy\n\n- Argument: premise, conclusion, validity\n- Objection: counterexample, reply\n- Text: citation, page, interpretation\n- Concept: definition, distinction, thought experiment\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo filosofía\n\n- 「Concepto filosofía, más corto」\n- No acortar nombres propios, cifras ni términos\n",
-  "writing-examples": "\n## Ejemplo filosofía\n\n✅ `§2.1: importante — afirmación filosofía sin fuente. Añadir manual o artículo §.`\n",
+  "writing-examples": "\n## Ejemplo Philosophy\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2: major — objection raised with no reply. Add reply paragraph.`\n✅ `§3.4: minor — citation stacking with no author thesis. Add thesis sentence.`\n",
   "presentation-context": "\n## Contexto filosofía\n\n- p. ej. trabajo, seminario, TFG en filosofía\n- Público: compañeros, profesores, profesionales\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de filosofía\n",
   "study-examples": "\n## Ejemplos filosofía\n\n- 「Examen filosofía mañana」→ plan 25 min + 5 puntos\n- 「Atascado en filosofía」→ 2 siguientes pasos\n"

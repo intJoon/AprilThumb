@@ -2,9 +2,9 @@
   "guide-extra": "\n## Consejos de arquitectura\n\n- Un buen trabajo en arquitectura une **términos, evidencia y límites**.\n",
   "academic-rubric": "\n## Criterios arquitectura\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de arquitectura\n8. **Aplicación** — más allá de la teoría\n\n9. **Espacio y estructura** — escala, circulación, lógica estructural\n10. **Entorno y normativa** — luz, energía, regulación, contexto\n",
   "academic-fail": "\n### Señales de fallo arquitectura\n\n- Texto IA genérico sin conceptos arquitectura\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- Diseño sin escala, materiales o lógica estructural\n- Sin análisis de luz, energía o normativa\n",
-  "source-keywords": "\n## Palabras clave arquitectura\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto arquitectura\n",
+  "source-keywords": "\n## Palabras clave Architecture\n\n- Space: scale, circulation, programme\n- Structure: span, load path, material\n- Environment: daylight, energy, ventilation\n- Code: setback, accessibility, fire\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo arquitectura\n\n- 「Concepto arquitectura, más corto」\n- No acortar nombres propios, cifras ni términos\n",
-  "writing-examples": "\n## Ejemplo arquitectura\n\n✅ `§2.1: importante — afirmación arquitectura sin fuente. Añadir manual o artículo §.`\n",
+  "writing-examples": "\n## Ejemplo Architecture\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.3: major — design claim with no scale, material, or structure rationale. Add drawing caption §.`\n✅ `§4.1: minor — no daylight or energy analysis. Add one sentence.`\n",
   "presentation-context": "\n## Contexto arquitectura\n\n- p. ej. trabajo, seminario, TFG en arquitectura\n- Público: compañeros, profesores, profesionales\n\n- p. ej. pin-up de estudio, integración estructura/entorno\n- Una línea por diapositiva: escala, material, justificación\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de arquitectura\n",
   "study-examples": "\n## Ejemplos arquitectura\n\n- 「Examen arquitectura mañana」→ plan 25 min + 5 puntos\n- 「Atascado en arquitectura」→ 2 siguientes pasos\n"

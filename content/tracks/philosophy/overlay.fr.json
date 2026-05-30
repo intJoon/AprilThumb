@@ -2,9 +2,9 @@
   "guide-extra": "\n## Conseils philosophie\n\n- Un bon travail en philosophie lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères philosophie\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de philosophie\n8. **Application** — au-delà de la théorie seule\n\n9. **Structure argumentative** — prémisses, conclusion, objection, réplique\n10. **Appui textuel** — citations soutenant l'interprétation\n",
   "academic-fail": "\n### Signaux d'échec philosophie\n\n- Texte IA générique sans concepts philosophie\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Empilement de citations sans thèse auteur\n- Homme de paille seule ; objection centrale esquivée\n",
-  "source-keywords": "\n## Mots-clés philosophie\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte philosophie\n",
+  "source-keywords": "\n## Mots-clés Philosophy\n\n- Argument: premise, conclusion, validity\n- Objection: counterexample, reply\n- Text: citation, page, interpretation\n- Concept: definition, distinction, thought experiment\n\nAjuster au contexte du devoir.\n",
   "concise-examples": "\n## Exemple philosophie\n\n- 「Concept philosophie, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
-  "writing-examples": "\n## Exemple philosophie\n\n✅ `§2.1: majeur — affirmation philosophie sans source. Ajouter manuel ou article §.`\n",
+  "writing-examples": "\n## Exemple Philosophy\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2: major — objection raised with no reply. Add reply paragraph.`\n✅ `§3.4: minor — citation stacking with no author thesis. Add thesis sentence.`\n",
   "presentation-context": "\n## Contexte philosophie\n\n- ex. devoir, séminaire, mémoire en philosophie\n- Public : pairs, enseignants, praticiens\n",
   "study-role": "\n- Aide en philosophie : concepts, examens, projets\n",
   "study-examples": "\n## Exemples philosophie\n\n- 「Examen philosophie demain」→ plan 25 min + 5 points\n- 「Blocage devoir philosophie」→ 2 actions suivantes\n"

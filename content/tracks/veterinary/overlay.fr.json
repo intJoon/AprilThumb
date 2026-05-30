@@ -2,9 +2,9 @@
   "guide-extra": "\n## Conseils médecine vétérinaire\n\n- Un bon travail en médecine vétérinaire lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères médecine vétérinaire\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de médecine vétérinaire\n8. **Application** — au-delà de la théorie seule\n\n9. **Espèce & voie** — contexte vétérinaire explicite\n10. **Résidus & animaux alimentaires** — LMR, délai d'attente, hors AMM\n",
   "academic-fail": "\n### Signaux d'échec médecine vétérinaire\n\n- Texte IA générique sans concepts médecine vétérinaire\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Posologie humaine seule sans espèce\n- Différences pharmacocinétiques inter-espèces ignorées\n",
-  "source-keywords": "\n## Mots-clés médecine vétérinaire\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte médecine vétérinaire\n\n- espèce | dose mg/kg | délai d'attente | pharmacocinétique | zoonose\n",
+  "source-keywords": "\n## Mots-clés Veterinary medicine\n\n- Species: breed, body weight, physiology\n- Dosing: mg/kg, route, interval\n- PK: withdrawal, MRL, off-label\n- Public health: zoonosis, AMR stewardship\n\nAjuster au contexte du devoir.\n",
   "concise-examples": "\n## Exemple médecine vétérinaire\n\n- 「Concept médecine vétérinaire, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
-  "writing-examples": "\n## Exemple médecine vétérinaire\n\n✅ `§2.1: majeur — affirmation médecine vétérinaire sans source. Ajouter manuel ou article §.`\n",
+  "writing-examples": "\n## Exemple Veterinary medicine\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2.1: major — human dose with no species or weight context. Add mg/kg table.`\n✅ `§4.3: minor — food-animal drug with no withdrawal or MRL. Add withdrawal §.`\n",
   "presentation-context": "\n## Contexte médecine vétérinaire\n\n- ex. devoir, séminaire, mémoire en médecine vétérinaire\n- Public : pairs, enseignants, praticiens\n",
   "study-role": "\n- Aide en médecine vétérinaire : concepts, examens, projets\n",
   "study-examples": "\n## Exemples médecine vétérinaire\n\n- 「Examen médecine vétérinaire demain」→ plan 25 min + 5 points\n- 「Blocage devoir médecine vétérinaire」→ 2 actions suivantes\n"

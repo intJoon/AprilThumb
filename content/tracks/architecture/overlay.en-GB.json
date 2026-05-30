@@ -2,9 +2,9 @@
   "guide-extra": "\n## architecture assignment tips\n\n- Strong architecture work ties **discipline terms, evidence, and limits** together.\n",
   "academic-rubric": "\n## architecture extra criteria\n\n7. **Discipline fit** — concepts, cases, methods suited to architecture\n8. **Application** — implications beyond theory alone\n\n9. **Space & structure** — scale, circulation, structural logic\n10. **Environment & code** — daylight, energy, regulations, context\n",
   "academic-fail": "\n### architecture fail signals\n\n- Generic AI text without architecture core concepts\n- Misused terms or unsupported discipline claims\n- Answer ignores the assignment brief\n\n- Design claims with no scale, material, or structural rationale\n- No daylight, energy, or code analysis\n",
-  "source-keywords": "\n## architecture keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the architecture context\n",
+  "source-keywords": "\n## Architecture keyword examples\n\n- Space: scale, circulation, programme\n- Structure: span, load path, material\n- Environment: daylight, energy, ventilation\n- Code: setback, accessibility, fire\n\nAdjust to the assignment context.\n",
   "concise-examples": "\n## architecture example\n\n- 「Explain a architecture concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n",
-  "writing-examples": "\n## architecture example\n\n✅ `§2.1: major — architecture claim lacks source. Add textbook or paper §.`\n",
+  "writing-examples": "\n## Architecture example\n\n❌ \"Section 2 discusses architecture but seems to lack concrete evidence.\"\n\n✅ `§2.3: major — design claim with no scale, material, or structure rationale. Add drawing caption §.`\n✅ `§4.1: minor — no daylight or energy analysis. Add one sentence.`\n",
   "presentation-context": "\n## architecture presentation context\n\n- e.g. architecture coursework, seminar, capstone\n- Audience: peers, tutors, practitioners\n\n- e.g. studio pin-up, structural/environment integration\n- One line per slide on drawing scale and material rationale\n",
   "study-role": "\n- Study help in architecture concepts, exams, and projects\n",
   "study-examples": "\n## architecture study examples\n\n- 「architecture exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on architecture assignment」→ 2 next actions\n"

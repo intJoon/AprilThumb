@@ -2,9 +2,9 @@
   "guide-extra": "\n## 체육학 과제 팁\n\n- 체육학 과제는 **전공 용어·근거·한계**를 함께 쓰면 좋습니다.\n",
   "academic-rubric": "\n## 체육학 추가 기준\n\n7. **전공 적합** — 체육학 맥락에 맞는 개념·사례·방법론\n8. **실무/응용** — 이론만이 아니라 과제 주제에 맞는 적용·함의\n\n9. **생리·부하** — 훈련·경기 부하와 적응 근거\n10. **측정·통계** — 표본·효과크기·한계\n",
   "academic-fail": "\n### 체육학 Fail 신호\n\n- 체육학 핵심 개념 없이 일반론만 반복\n- 전공 용어 오용·출처 없는 전공 주장\n- 과제 주제와 무관한 범용 AI 답변\n\n- n·효과크기 없이 「유의미한 개선」만 주장\n- 훈련 부하·회복 근거 없는 프로그램 권고\n",
-  "source-keywords": "\n## 체육학 키워드 예\n\n- 전공 핵심 용어 2~4그룹 (개념 | 방법 | 결과 | 한계)\n- 체육학 맥락에 맞게 조정\n\n- VO2max | periodization | injury | biomechanics | load | recovery\n",
+  "source-keywords": "\n## 체육 키워드 예\n\n- 생리: VO2max, lactate, HR zone\n- 부하: periodization, load, recovery\n- 측정: biomechanics, force plate, reliability\n- 통계: effect size, n, intervention\n\n과제 맥락에 맞게 조정하세요.\n",
   "concise-examples": "\n## 체육학 예\n\n- 「체육학 핵심 개념, 더 짧게」\n- 고유명사·수치·전공 용어는 축약하지 말 것\n",
-  "writing-examples": "\n## 체육학 예\n\n✅ `§2.1: 중요 — 체육학 핵심 주장, 출처 없음. 해당 전공 교재·논문 § 추가.`\n",
+  "writing-examples": "\n## 체육 예\n\n❌ 「2장에서 체육 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§3.1: 중요 — 「유의미한 개선」 주장, n·효과크기 없음. 통계 § 추가.`\n✅ `§5.2: 주의 — 훈련 프로그램 권고, 부하·회복 근거 없음. load principle 1문장.`\n",
   "presentation-context": "\n## 체육학 발표 맥락\n\n- 예: 체육학 과제·세미나·캡스톤 발표\n- 청중: 동기·교수·실무자\n",
   "study-role": "\n- 체육학 개념·시험·프로젝트 맥락에서 공부 도움\n",
   "study-examples": "\n## 체육학 공부 예\n\n- 「체육학 시험 D-1」→ 25분 플랜 + 핵심 5개\n- 「체육학 과제 막힘」→ 다음 행동 2개\n\n- 「체력 시험 D-5」→ 주별 부하 + 회복 3원칙\n"

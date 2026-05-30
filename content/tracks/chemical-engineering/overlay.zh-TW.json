@@ -2,9 +2,9 @@
   "guide-extra": "\n## 化學工程 作業提示\n\n- 好的 化學工程 作業應結合**專業術語、證據與限制**。\n",
   "academic-rubric": "\n## 化學工程 附加標準\n\n7. **專業契合** — 符合 化學工程 的概念、案例、方法\n8. **應用** — 不止理論，還有與主題相關的應用\n\n9. **物質與能量平衡** — 單位、平衡、守恆\n10. **製程與安全** — 反應器設計、HAZOP、放大限制\n",
   "academic-fail": "\n### 化學工程 未通過信號\n\n- 缺乏 化學工程 核心概念，只有空泛 AI 文\n- 誤用術語或無出處的專業主張\n- 偏離作業主題\n\n- 無物料／能量平衡或單位，只重複「高效製程」\n- 無 HAZOP 或放大限制的安全主張\n",
-  "source-keywords": "\n## 化學工程 關鍵詞示例\n\n- 2–4 組關鍵詞（概念 | 方法 | 結果 | 限制）\n- 依 化學工程 情境調整\n\n- 物料平衡 | 熱負荷 | Reynolds | 產率 | 分離\n",
+  "source-keywords": "\n## 關鍵詞示例 Chemical engineering\n\n- Balances: mass, energy, units, closure\n- Transport: heat duty, Reynolds, mass transfer\n- Reaction: yield, selectivity, kinetics\n- Safety: HAZOP, scale-up, relief\n\n依課題語境調整。\n",
   "concise-examples": "\n## 化學工程 示例\n\n- 「化學工程 核心概念，更短」\n- 專有名詞、數字、術語不可縮寫\n",
-  "writing-examples": "\n## 化學工程 示例\n\n✅ `§2.1: 重要 — 化學工程 主張無出處。補充教材或論文 §。`\n",
+  "writing-examples": "\n## 示例 Chemical engineering\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§2.4: major — efficient process claim with no balance or units. Add mass/energy balance §.`\n✅ `§5.1: minor — pilot results generalised with no scale-up limits. Add HAZOP sentence.`\n",
   "presentation-context": "\n## 化學工程 簡報情境\n\n- 例：化學工程 作業、研討會、專題\n- 聽眾：同學、教授、實務者\n\n- 例：製程設計報告、實驗室安全與 PFD 審查\n- 投影片：問題 → PFD／實驗 → 數值 → 限制\n",
   "study-role": "\n- 在 化學工程 概念、考試、專題中提供學習協助\n",
   "study-examples": "\n## 化學工程 學習示例\n\n- 「化學工程 考試明天」→ 25 分鐘計畫 + 5 重點\n- 「化學工程 作業卡住」→ 2 個下一步\n"

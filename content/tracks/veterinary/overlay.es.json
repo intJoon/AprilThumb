@@ -2,9 +2,9 @@
   "guide-extra": "\n## Consejos de medicina veterinaria\n\n- Un buen trabajo en medicina veterinaria une **términos, evidencia y límites**.\n",
   "academic-rubric": "\n## Criterios medicina veterinaria\n\n7. **Ajuste disciplinar** — conceptos, casos, métodos de medicina veterinaria\n8. **Aplicación** — más allá de la teoría\n\n9. **Especie y vía** — contexto veterinario explícito\n10. **Residuos y animales de consumo** — LMR, período de retiro, uso off-label\n",
   "academic-fail": "\n### Señales de fallo medicina veterinaria\n\n- Texto IA genérico sin conceptos medicina veterinaria\n- Términos mal usados o afirmaciones sin fuente\n- Respuesta fuera del encargo\n\n- Solo dosis humana sin contexto de especie\n- Ignora diferencias farmacocinéticas entre especies\n",
-  "source-keywords": "\n## Palabras clave medicina veterinaria\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto medicina veterinaria\n\n- especie | dosis mg/kg | retiro | farmacocinética | zoonosis\n",
+  "source-keywords": "\n## Palabras clave Veterinary medicine\n\n- Species: breed, body weight, physiology\n- Dosing: mg/kg, route, interval\n- PK: withdrawal, MRL, off-label\n- Public health: zoonosis, AMR stewardship\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo medicina veterinaria\n\n- 「Concepto medicina veterinaria, más corto」\n- No acortar nombres propios, cifras ni términos\n",
-  "writing-examples": "\n## Ejemplo medicina veterinaria\n\n✅ `§2.1: importante — afirmación medicina veterinaria sin fuente. Añadir manual o artículo §.`\n",
+  "writing-examples": "\n## Ejemplo Veterinary medicine\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.1: major — human dose with no species or weight context. Add mg/kg table.`\n✅ `§4.3: minor — food-animal drug with no withdrawal or MRL. Add withdrawal §.`\n",
   "presentation-context": "\n## Contexto medicina veterinaria\n\n- p. ej. trabajo, seminario, TFG en medicina veterinaria\n- Público: compañeros, profesores, profesionales\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de medicina veterinaria\n",
   "study-examples": "\n## Ejemplos medicina veterinaria\n\n- 「Examen medicina veterinaria mañana」→ plan 25 min + 5 puntos\n- 「Atascado en medicina veterinaria」→ 2 siguientes pasos\n"

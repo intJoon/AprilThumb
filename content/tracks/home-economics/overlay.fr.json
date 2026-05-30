@@ -2,9 +2,9 @@
   "guide-extra": "\n## Conseils sciences du foyer\n\n- Un bon travail en sciences du foyer lie **termes, preuves et limites**.\n",
   "academic-rubric": "\n## Critères sciences du foyer\n\n7. **Adéquation disciplinaire** — concepts, cas, méthodes de sciences du foyer\n8. **Application** — au-delà de la théorie seule\n\n9. **Sciences du foyer & consommation** — nutrition, alimentation, foyer ou bien-être\n10. **Preuves & politique** — échantillon, indicateurs, limites\n",
   "academic-fail": "\n### Signaux d'échec sciences du foyer\n\n- Texte IA générique sans concepts sciences du foyer\n- Termes mal employés ou affirmations sans source\n- Réponse hors sujet\n\n- Nutrition/politique sans échantillon ni indicateurs\n- ECR/enquête sans limites ni généralisation\n",
-  "source-keywords": "\n## Mots-clés sciences du foyer\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte sciences du foyer\n\n- nutrition | sécurité alimentaire | foyer | consommateur | politique | ECR\n",
+  "source-keywords": "\n## Mots-clés Home economics\n\n- Nutrition: RDA, macro, bioavailability\n- Food: HACCP, shelf-life, allergen\n- Household: budget, lifecycle, welfare\n- Policy: RCT, survey, indicator\n\nAjuster au contexte du devoir.\n",
   "concise-examples": "\n## Exemple sciences du foyer\n\n- 「Concept sciences du foyer, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n",
-  "writing-examples": "\n## Exemple sciences du foyer\n\n✅ `§2.1: majeur — affirmation sciences du foyer sans source. Ajouter manuel ou article §.`\n",
+  "writing-examples": "\n## Exemple Home economics\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2.4: major — nutrition or policy claim with no sample or indicators. Add data source §.`\n✅ `§4.3: minor — RCT generalised with no survey limits. Add limits sentence.`\n",
   "presentation-context": "\n## Contexte sciences du foyer\n\n- ex. devoir, séminaire, mémoire en sciences du foyer\n- Public : pairs, enseignants, praticiens\n",
   "study-role": "\n- Aide en sciences du foyer : concepts, examens, projets\n",
   "study-examples": "\n## Exemples sciences du foyer\n\n- 「Examen sciences du foyer demain」→ plan 25 min + 5 points\n- 「Blocage devoir sciences du foyer」→ 2 actions suivantes\n"

@@ -207,10 +207,15 @@ export function buildOverlay(trackId, locale) {
 
   const lang = templates[locale] ? locale : isKo ? "ko" : "en-GB";
   const base = { ...templates[lang] };
+  const replaceKeys = new Set(["source-keywords", "writing-examples"]);
   const extra = depthFor(trackId, locale);
   if (extra) {
     for (const [key, chunk] of Object.entries(extra)) {
-      base[key] = (base[key] || "") + chunk;
+      if (replaceKeys.has(key)) {
+        base[key] = chunk;
+      } else {
+        base[key] = (base[key] || "") + chunk;
+      }
     }
   }
   return base;
