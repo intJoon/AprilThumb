@@ -6,6 +6,7 @@ const guideEl = document.getElementById("guide");
 const app = document.getElementById("app");
 const toast = document.getElementById("toast");
 const headerActions = document.getElementById("header-actions");
+const headerSelection = document.getElementById("header-selection");
 const btnChangeTrack = document.getElementById("btn-change-track");
 const btnChangeLang = document.getElementById("btn-change-lang");
 const btnEnter = document.getElementById("btn-enter");
@@ -212,16 +213,28 @@ function updateEnterState() {
   btnEnter.disabled = !(selectedTrack && selectedLang);
 }
 
+function updateHeaderSelection() {
+  if (!selectedLang || !selectedTrack) {
+    headerSelection.hidden = true;
+    headerSelection.textContent = "";
+    return;
+  }
+  headerSelection.textContent = `${langLabel(selectedLang)} · ${trackLabel(selectedTrack)}`;
+  headerSelection.hidden = false;
+}
+
 function showLanding() {
   landing.hidden = false;
   appView.hidden = true;
   headerActions.hidden = true;
+  headerSelection.hidden = true;
 }
 
 function showApp() {
   landing.hidden = true;
   appView.hidden = false;
   headerActions.hidden = false;
+  updateHeaderSelection();
 }
 
 async function loadBundle(track, lang) {
@@ -238,6 +251,7 @@ async function loadBundle(track, lang) {
   document.getElementById("prompts-label").textContent = currentBundle.ui.promptsLabel;
   btnChangeTrack.textContent = currentBundle.ui.changeTrack;
   btnChangeLang.textContent = currentBundle.ui.changeLang;
+  updateHeaderSelection();
 
   updateLandingLabels(currentBundle.ui);
 

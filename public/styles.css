@@ -78,12 +78,26 @@ body {
   color: var(--text);
 }
 
+.header-selection {
+  display: inline-block;
+  margin: 0.75rem auto 0;
+  padding: 0.35rem 0.9rem;
+  max-width: 100%;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 999px;
+}
+
 .header-actions {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.85rem;
 }
 
 .btn-ghost {
