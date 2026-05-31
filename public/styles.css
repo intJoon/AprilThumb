@@ -120,11 +120,6 @@ body {
   line-height: 1.2;
 }
 
-.btn-ghost:hover {
-  border-color: rgba(15, 118, 110, 0.35);
-  background: var(--accent-soft);
-}
-
 .btn-ghost:active {
   transform: scale(0.97);
 }
@@ -153,11 +148,6 @@ body {
   border-color: rgba(15, 118, 110, 0.28);
   background: var(--card);
   color: var(--accent);
-}
-
-.btn-ghost:not(.is-empty):hover {
-  border-color: rgba(15, 118, 110, 0.4);
-  background: var(--accent-soft);
 }
 
 .btn-ghost.copied,
@@ -248,11 +238,6 @@ body {
     background 0.18s ease;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-}
-
-.track-card:hover:not(:disabled) {
-  border-color: rgba(15, 118, 110, 0.3);
-  box-shadow: 0 6px 18px rgba(15, 118, 110, 0.12);
 }
 
 .track-card:active:not(:disabled) {
@@ -425,11 +410,6 @@ main {
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(15, 118, 110, 0.2);
   transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
-}
-
-.btn-copy:hover {
-  background: var(--accent-hover);
-  box-shadow: 0 3px 12px rgba(15, 118, 110, 0.28);
 }
 
 .btn-copy:focus-visible {
@@ -685,11 +665,6 @@ main {
   transition: border-color 0.15s, background 0.15s;
 }
 
-.btn-retry:hover {
-  border-color: rgba(15, 118, 110, 0.35);
-  background: var(--accent-soft);
-}
-
 .comment-context {
   margin: 0 0 0.65rem;
   font-size: 0.72rem;
@@ -778,10 +753,6 @@ main {
   border-radius: 999px;
   cursor: pointer;
   transition: background 0.15s;
-}
-
-.btn-submit:hover:not(:disabled) {
-  background: var(--accent-hover);
 }
 
 .btn-submit:disabled {
@@ -891,6 +862,37 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-ghost:hover {
+    border-color: rgba(15, 118, 110, 0.35);
+    background: var(--accent-soft);
+  }
+
+  .btn-ghost:not(.is-empty):hover {
+    border-color: rgba(15, 118, 110, 0.4);
+    background: var(--accent-soft);
+  }
+
+  .track-card:hover:not(:disabled) {
+    border-color: rgba(15, 118, 110, 0.3);
+    box-shadow: 0 6px 18px rgba(15, 118, 110, 0.12);
+  }
+
+  .btn-copy:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 3px 12px rgba(15, 118, 110, 0.28);
+  }
+
+  .btn-retry:hover {
+    border-color: rgba(15, 118, 110, 0.35);
+    background: var(--accent-soft);
+  }
+
+  .btn-submit:hover:not(:disabled) {
+    background: var(--accent-hover);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
