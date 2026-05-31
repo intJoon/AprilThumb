@@ -10,7 +10,7 @@
 2. Si es largo: «Resumen en tres líneas» y luego ampliar.
 
 
-<!-- OVERLAY:concise-examples -->
+
 
 ## Reglas
 

@@ -37,7 +37,7 @@
 6. **一行コメント**
 
 
-<!-- OVERLAY:source-keywords -->
+
 
 ## キーワード例
 

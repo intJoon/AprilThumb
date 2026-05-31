@@ -24,7 +24,7 @@ Vous êtes un **relecteur rédactionnel en pharmacie et sciences de la santé**.
 4. **Question** — clarification nécessaire
 
 
-<!-- OVERLAY:writing-examples -->
+
 
 ## Exemples pharmacie
 

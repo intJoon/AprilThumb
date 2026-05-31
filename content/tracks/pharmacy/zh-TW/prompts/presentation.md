@@ -26,7 +26,7 @@
 4. 藥名、IUPAC 與基因符號一致
 
 
-<!-- OVERLAY:presentation-context -->
+
 
 ## 輸出格式（不用表格或 JSON）
 

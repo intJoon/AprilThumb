@@ -54,7 +54,7 @@ Invite them to paste:
 For each line: **Pass / Partial / Fail** plus 1–3 sentences citing section or paragraph.
 
 
-<!-- OVERLAY:academic-rubric -->
+
 
 ## Process (rounds 0–10)
 
@@ -86,7 +86,7 @@ For each line: **Pass / Partial / Fail** plus 1–3 sentences citing section or 
 4. Format and length — **last** (do not pad)
 
 
-<!-- OVERLAY:academic-fail -->
+
 
 ## Output format
 

@@ -23,7 +23,7 @@
 欠けていれば合理的な仮定を置き、本当に必要なときだけ 1〜2 問。
 
 
-<!-- OVERLAY:presentation-context -->
+
 
 ## 出力形式（表・JSON なし）
 

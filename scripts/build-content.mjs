@@ -1,8 +1,6 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { OVERLAY_TRACKS } from "./lib/overlays.mjs";
-import { GENERIC_RUBRIC, genericRubricFor } from "./lib/discipline-rubrics.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -13,7 +11,6 @@ const manifest = JSON.parse(
   fs.readFileSync(path.join(contentRoot, "manifest.json"), "utf8")
 );
 
-const STANDALONE_TRACKS = new Set(["general", "pharmacy"]);
 const koFallbacks = [];
 
 function readJson(p) {
@@ -33,69 +30,15 @@ function copyText(raw) {
   return raw.replace(/^#.*\n+/m, "").trim();
 }
 
-function applyOverlay(text, overlay, trackId, locale) {
-  if (!overlay) {
-    let out = text;
-    if (trackId === "general") {
-      out = out.replace("<!-- OVERLAY:academic-rubric -->", genericRubricFor(locale));
-    }
-    return out.replace(/<!-- OVERLAY:[\w-]+ -->/g, "");
-  }
-  let out = text;
-  for (const [key, value] of Object.entries(overlay)) {
-    out = out.replace(`<!-- OVERLAY:${key} -->`, value || "");
-  }
-  return out.replace(/<!-- OVERLAY:[\w-]+ -->/g, "");
-}
-
-function resolveOverlay(trackId, locale) {
-  const exact = path.join(contentRoot, "tracks", trackId, `overlay.${locale}.json`);
-  const ko = path.join(contentRoot, "tracks", trackId, "overlay.ko.json");
-  if (fs.existsSync(exact)) return readJson(exact);
+function resolveSource(trackId, locale, subpath) {
+  const exact = path.join(contentRoot, "tracks", trackId, locale, subpath);
+  const ko = path.join(contentRoot, "tracks", trackId, "ko", subpath);
+  if (fs.existsSync(exact)) return readText(exact);
   if (locale !== "ko" && fs.existsSync(ko)) {
-    koFallbacks.push(`${trackId}/${locale} overlay → ko`);
-    return readJson(ko);
+    koFallbacks.push(`${trackId}/${locale}/${subpath} → ko`);
+    return readText(ko);
   }
   return null;
-}
-
-function resolveSource(trackId, locale, subpath) {
-  if (STANDALONE_TRACKS.has(trackId)) {
-    const exact = path.join(contentRoot, "tracks", trackId, locale, subpath);
-    const ko = path.join(contentRoot, "tracks", trackId, "ko", subpath);
-    let text = null;
-    if (fs.existsSync(exact)) text = readText(exact);
-    else if (locale !== "ko" && fs.existsSync(ko)) {
-      koFallbacks.push(`${trackId}/${locale}/${subpath} → ko`);
-      text = readText(ko);
-    }
-    if (!text) return null;
-    return applyOverlay(text, null, trackId, locale);
-  }
-
-  const trackExact = path.join(contentRoot, "tracks", trackId, locale, subpath);
-  const trackKo = path.join(contentRoot, "tracks", trackId, "ko", subpath);
-  if (subpath === "guide.md" && fs.existsSync(trackExact)) {
-    const overlay = resolveOverlay(trackId, locale);
-    return applyOverlay(readText(trackExact), overlay, trackId, locale);
-  }
-  if (subpath === "guide.md" && locale !== "ko" && fs.existsSync(trackKo)) {
-    koFallbacks.push(`${trackId}/${locale}/${subpath} → ko`);
-    const overlay = resolveOverlay(trackId, locale);
-    return applyOverlay(readText(trackKo), overlay, trackId, locale);
-  }
-
-  const generalExact = path.join(contentRoot, "tracks", "general", locale, subpath);
-  const generalKo = path.join(contentRoot, "tracks", "general", "ko", subpath);
-  let base = fs.existsSync(generalExact)
-    ? readText(generalExact)
-    : readText(generalKo);
-  if (!base) return null;
-  if (!fs.existsSync(generalExact) && locale !== "ko") {
-    koFallbacks.push(`${trackId}/${locale}/${subpath} general → ko`);
-  }
-  const overlay = resolveOverlay(trackId, locale);
-  return applyOverlay(base, overlay, trackId, locale);
 }
 
 function loadUi(locale) {

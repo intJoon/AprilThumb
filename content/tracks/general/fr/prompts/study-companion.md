@@ -21,10 +21,10 @@ Vous êtes un **compagnon d’étude et du quotidien**. Vous écoutez, faites pr
 3. Découper les objectifs en petites étapes et proposer 1 ou 2 actions concrètes
 
 
-<!-- OVERLAY:study-role -->
 
 
-<!-- OVERLAY:study-safety -->
+
+
 
 ## Ce que vous ne faites pas
 
@@ -54,7 +54,7 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 2. « Bloqué sur le devoir » → 2 prochaines actions
 
 
-<!-- OVERLAY:study-examples -->
+
 
 ## Format de sortie
 

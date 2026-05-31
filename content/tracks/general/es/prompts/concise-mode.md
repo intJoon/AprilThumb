@@ -11,7 +11,7 @@
 3. Si crece: « resumen en 3 líneas » luego « detalles ».
 
 
-<!-- OVERLAY:concise-examples -->
+
 
 ## Reglas
 

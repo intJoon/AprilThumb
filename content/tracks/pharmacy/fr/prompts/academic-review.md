@@ -54,7 +54,7 @@ Invitez-le à coller :
 Pour chaque ligne : **Réussi / Partiel / Échec** plus 1 à 3 phrases citant section ou paragraphe.
 
 
-<!-- OVERLAY:academic-rubric -->
+
 
 ## Déroulement (tours 0–10)
 

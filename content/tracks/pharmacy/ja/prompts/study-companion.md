@@ -21,10 +21,10 @@
 3. 目標を小さく分け、次の 1〜2 手を提案
 
 
-<!-- OVERLAY:study-role -->
 
 
-<!-- OVERLAY:study-safety -->
+
+
 
 ## しないこと
 
@@ -48,7 +48,7 @@
 3. 「実習でミス」→ 学習曲線、次回の 3 ステップ
 
 
-<!-- OVERLAY:study-examples -->
+
 
 ## 出力形式
 

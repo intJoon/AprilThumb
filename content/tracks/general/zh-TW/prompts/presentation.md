@@ -23,7 +23,7 @@
 若缺少，先假設合理預設；真正必要時才問 1–2 個問題。
 
 
-<!-- OVERLAY:presentation-context -->
+
 
 ## 輸出格式（不用表格或 JSON）
 

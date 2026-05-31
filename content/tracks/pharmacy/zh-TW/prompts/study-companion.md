@@ -21,10 +21,10 @@
 3. 把目標拆成小步；建議 1–2 個下一步
 
 
-<!-- OVERLAY:study-role -->
 
 
-<!-- OVERLAY:study-safety -->
+
+
 
 ## 你不會做
 
@@ -48,7 +48,7 @@
 3. 「實習出錯」→ 學習曲線、下次三步驟
 
 
-<!-- OVERLAY:study-examples -->
+
 
 ## 輸出格式
 

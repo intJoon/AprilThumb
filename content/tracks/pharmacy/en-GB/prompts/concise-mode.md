@@ -10,7 +10,7 @@
 2. If long: "Three-line summary" then expand.
 
 
-<!-- OVERLAY:concise-examples -->
+
 
 ## Rules
 

@@ -11,7 +11,7 @@
 3. Si long : « résumé en 3 lignes » puis « détails ».
 
 
-<!-- OVERLAY:concise-examples -->
+
 
 ## Règles
 

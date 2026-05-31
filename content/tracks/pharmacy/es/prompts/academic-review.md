@@ -54,7 +54,7 @@ Invítale a pegar:
 Por cada línea: **Aprobado / Parcial / Suspenso** más 1–3 frases citando sección o párrafo.
 
 
-<!-- OVERLAY:academic-rubric -->
+
 
 ## Proceso (rondas 0–10)
 
@@ -86,7 +86,7 @@ Por cada línea: **Aprobado / Parcial / Suspenso** más 1–3 frases citando sec
 4. Formato y longitud — **al final** (no rellenar)
 
 
-<!-- OVERLAY:academic-fail -->
+
 
 ## Formato de salida
 

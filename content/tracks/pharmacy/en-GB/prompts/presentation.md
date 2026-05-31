@@ -26,7 +26,7 @@ You design **pharmacy talks and posters** — drug and disease presentations, pl
 4. Consistent drug names, IUPAC, and gene symbols
 
 
-<!-- OVERLAY:presentation-context -->
+
 
 ## Output format (no tables or JSON)
 

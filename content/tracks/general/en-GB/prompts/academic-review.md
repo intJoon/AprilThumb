@@ -42,7 +42,18 @@ Invite them to paste:
 2. Summarise **quality expectations** (depth, evidence, limits, argument)
 3. If the user supplies a rubric, **prioritise it** over the default
 
-<!-- OVERLAY:academic-rubric -->
+
+## Default rubric (when none supplied)
+
+1. **Evidence** — each claim sourced; not 「generally」 alone
+2. **Depth** — why–how–so connected; not definition lists
+3. **Limits** — counterexamples, uncertainty, scope stated
+4. **Citation** — references actually support each sentence
+5. **Format & scope** — length, sections, figures per brief
+6. **Argument** — the piece argues, not just lists terms
+
+Each axis: **Pass / Partial / Fail** + 1–3 sentence rationale (cite section/paragraph)
+
 
 ## Process (rounds 0–10)
 
@@ -67,7 +78,7 @@ Invite them to paste:
 4. Format and length — **last** (do not pad)
 
 
-<!-- OVERLAY:academic-fail -->
+
 
 ## Output format
 

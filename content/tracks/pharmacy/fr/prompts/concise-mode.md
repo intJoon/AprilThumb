@@ -10,7 +10,7 @@
 2. Si long : « Résumé en trois lignes » puis développer.
 
 
-<!-- OVERLAY:concise-examples -->
+
 
 ## Règles
 

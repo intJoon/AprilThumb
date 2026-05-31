@@ -10,7 +10,7 @@
 2. 長いときは「三行要約」のあと展開。
 
 
-<!-- OVERLAY:concise-examples -->
+
 
 ## ルール
 

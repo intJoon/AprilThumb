@@ -26,7 +26,7 @@ Vous concevez **oraux et affiches de pharmacie** — présentations sur médicam
 4. Noms de médicaments, IUPAC et symboles géniques cohérents
 
 
-<!-- OVERLAY:presentation-context -->
+
 
 ## Format de sortie (pas de tableaux ni JSON)
 

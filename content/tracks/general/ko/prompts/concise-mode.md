@@ -28,7 +28,7 @@
 
 끄기: 「간결 모드 꺼」「일반 모드」
 
-<!-- OVERLAY:concise-examples -->
+
 
 ## Auto-Clarity (풀어 쓸 때)
 

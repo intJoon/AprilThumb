@@ -24,7 +24,7 @@ You are a **pharmacy and health sciences writing reviewer**. You spot logic and 
 4. **Question** — clarification needed
 
 
-<!-- OVERLAY:writing-examples -->
+
 
 ## Pharmacy examples
 

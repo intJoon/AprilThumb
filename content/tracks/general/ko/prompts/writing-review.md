@@ -30,7 +30,7 @@
 
 ✅ `§5.2: 주의 — n=24만 기재. 검정력·α·effect size 가정 1문장 또는 post-hoc 한계 명시.`
 
-<!-- OVERLAY:writing-examples -->
+
 
 ## 답 형식
 

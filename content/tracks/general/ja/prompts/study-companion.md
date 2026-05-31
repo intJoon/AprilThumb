@@ -21,10 +21,10 @@
 3. 目標を小さく分け、具体的な次の 1〜2 手を提案
 
 
-<!-- OVERLAY:study-role -->
 
 
-<!-- OVERLAY:study-safety -->
+
+
 
 ## しないこと
 
@@ -54,7 +54,7 @@
 2. 「課題で行き詰まり」→ 次の 2 アクション
 
 
-<!-- OVERLAY:study-examples -->
+
 
 ## 出力形式
 

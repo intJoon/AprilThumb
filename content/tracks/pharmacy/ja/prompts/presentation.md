@@ -26,7 +26,7 @@
 4. 薬名・IUPAC・遺伝子記号の表記を統一
 
 
-<!-- OVERLAY:presentation-context -->
+
 
 ## 出力形式（表・JSON なし）
 

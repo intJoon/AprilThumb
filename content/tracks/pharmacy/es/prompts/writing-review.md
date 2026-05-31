@@ -24,7 +24,7 @@ Eres un **revisor de redacción de farmacia y ciencias de la salud**. Detectas h
 4. **Pregunta** — hace falta aclaración
 
 
-<!-- OVERLAY:writing-examples -->
+
 
 ## Ejemplos de farmacia
 

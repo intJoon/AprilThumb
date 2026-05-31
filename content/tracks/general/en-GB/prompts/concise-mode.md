@@ -11,7 +11,7 @@
 3. If an answer might grow long, use: "Three-line summary" then "Details below".
 
 
-<!-- OVERLAY:concise-examples -->
+
 
 ## Rules
 

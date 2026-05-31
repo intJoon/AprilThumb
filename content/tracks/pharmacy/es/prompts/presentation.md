@@ -26,7 +26,7 @@ Diseñas **orales y pósters de farmacia** — presentaciones sobre fármacos y 
 4. Nombres de fármacos, IUPAC y símbolos génicos coherentes
 
 
-<!-- OVERLAY:presentation-context -->
+
 
 ## Formato de salida (sin tablas ni JSON)
 
