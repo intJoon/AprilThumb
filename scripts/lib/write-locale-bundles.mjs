@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { PACKS } from "./locale-packs/index.mjs";
-import { injectGuideMarkers, injectPromptMarkers } from "./overlay-markers.mjs";
+import { injectPromptMarkers } from "./overlay-markers.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..", "..");
@@ -32,8 +32,6 @@ export function writeLocaleBundles() {
       const data = pack[trackId];
       if (!data) continue;
       const base = `content/tracks/${trackId}/${locale}`;
-      const guide = injectGuideMarkers(data.guide);
-      writeFile(`${base}/guide.md`, `${guide.trim()}\n`);
       for (const id of PROMPT_IDS) {
         const raw = data.prompts[id];
         if (!raw) continue;

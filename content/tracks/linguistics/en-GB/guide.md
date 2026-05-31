@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Corpora, literature, data cited | Source check |
 | Rules, features, examples cramming | Concise mode |
 | Analysis report drafts | Writing review |
+| linguistics slides, seminar, poster | Presentation |
+| linguistics study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

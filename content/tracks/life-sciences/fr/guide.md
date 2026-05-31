@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Articles, données, protocoles | Vérification des sources |
 | Voies & termes clés | Mode concis |
 | Brouillon rapport labo / terrain | Relecture |
+| sciences de la vie diapos, séminaire, poster | Structure de présentation |
+| sciences de la vie révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

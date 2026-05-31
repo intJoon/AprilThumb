@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Espectros, literatura, condiciones | Verificación de fuentes |
 | Reacciones y mecanismos | Modo conciso |
 | Borrador informe y seguridad | Revisión de texto |
+| química diapos, seminario, póster | Estructura de presentación |
+| química estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

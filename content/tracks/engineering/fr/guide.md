@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Normes, littérature, chiffres | Vérification des sources |
 | Formules, unités, bilans | Mode concis |
 | Brouillon rapport / plans | Relecture |
+| ingénierie diapos, séminaire, poster | Structure de présentation |
+| ingénierie révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Spectres, littérature, conditions | Vérification des sources |
 | Réactions & mécanismes | Mode concis |
 | Brouillon rapport & sécurité | Relecture |
+| chimie diapos, séminaire, poster | Structure de présentation |
+| chimie révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

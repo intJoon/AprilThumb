@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Works, literature, context cited | Source check |
 | Theory, context, works cramming | Concise mode |
 | Critique / interpretation drafts | Writing review |
+| cultural arts slides, seminar, poster | Presentation |
+| cultural arts study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

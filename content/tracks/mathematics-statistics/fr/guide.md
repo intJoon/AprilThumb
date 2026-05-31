@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Théorèmes, articles, données | Vérification des sources |
 | Définitions, tests clés | Mode concis |
 | Brouillon démonstration | Relecture |
+| mathématiques et statistiques diapos, séminaire, poster | Structure de présentation |
+| mathématiques et statistiques révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

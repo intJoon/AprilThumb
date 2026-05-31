@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Sources, methods, sample citations | Source check |
 | Theory, concepts, variables cramming | Concise mode |
 | Report / argument drafts | Writing review |
+| social sciences slides, seminar, poster | Presentation |
+| social sciences study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

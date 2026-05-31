@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Standards, literature, numbers | Source check |
 | Formulas, units, balances cramming | Concise mode |
 | Design report / drawing drafts | Writing review |
+| engineering slides, seminar, poster | Presentation |
+| engineering study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

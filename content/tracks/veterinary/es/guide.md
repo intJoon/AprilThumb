@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Especie, dosis, LMR, citas | Verificación de fuentes |
 | Fármacos / fisiopat por especie | Modo conciso |
 | Borrador caso y lógica tratamiento | Revisión de texto |
+| medicina veterinaria diapos, seminario, póster | Estructura de presentación |
+| medicina veterinaria estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

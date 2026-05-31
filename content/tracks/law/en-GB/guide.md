@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Statutes & cases support claims | Source check |
 | IRAC & issue cramming | Concise mode |
 | Argument / application drafts | Writing review |
+| law slides, seminar, poster | Presentation |
+| law study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

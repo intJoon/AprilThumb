@@ -18,7 +18,9 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Before studio / pin-up work | Academic review |
 | Codes, sun, literature, captions | Source check |
 | Program & circulation cramming | Concise mode |
+| Design statement & studio report drafts | Writing review |
 | Design presentation decks | Presentation |
+| Architecture study & studio work | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

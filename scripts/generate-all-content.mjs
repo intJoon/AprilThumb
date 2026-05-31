@@ -7,24 +7,13 @@ import { fullGuideFor } from "./lib/discipline-guide.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
-const tracksRoot = path.join(root, "content", "tracks");
 const locales = ["ko", "en-GB", "zh-TW", "ja", "fr", "es"];
-const STANDALONE = new Set(["general", "pharmacy"]);
+const GUIDE_TRACKS = ["general", "pharmacy", ...OVERLAY_TRACKS];
 
 function writeFile(rel, content) {
   const p = path.join(root, rel);
   fs.mkdirSync(path.dirname(p), { recursive: true });
   fs.writeFileSync(p, content, "utf8");
-}
-
-function copyStandaloneLocales(trackId) {
-  for (const locale of locales) {
-    const dir = path.join(tracksRoot, trackId, locale);
-    if (!fs.existsSync(dir)) {
-      console.warn(`Missing ${trackId}/${locale} — run write-locale-bundles first`);
-      continue;
-    }
-  }
 }
 
 function writeOverlays() {
@@ -39,8 +28,8 @@ function writeOverlays() {
   }
 }
 
-function writeOverlayGuides() {
-  for (const trackId of OVERLAY_TRACKS) {
+function writeTrackGuides() {
+  for (const trackId of GUIDE_TRACKS) {
     for (const locale of locales) {
       writeFile(
         `content/tracks/${trackId}/${locale}/guide.md`,
@@ -52,7 +41,5 @@ function writeOverlayGuides() {
 
 writeLocaleBundles();
 writeOverlays();
-writeOverlayGuides();
-copyStandaloneLocales("general");
-copyStandaloneLocales("pharmacy");
+writeTrackGuides();
 console.log("Locale bundles written (no roughTranslate).");

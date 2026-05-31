@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Obras, literatura, contexto | Verificación de fuentes |
 | Teoría, contexto, obras | Modo conciso |
 | Borrador crítica / interpretación | Revisión de texto |
+| artes y cultura diapos, seminario, póster | Estructura de presentación |
+| artes y cultura estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

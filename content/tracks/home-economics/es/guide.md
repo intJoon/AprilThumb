@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Guías, datos, recetas | Verificación de fuentes |
 | Nutrición, seguridad, protocolos | Modo conciso |
 | Borrador informe práctica / política | Revisión de texto |
+| economía doméstica diapos, seminario, póster | Estructura de presentación |
+| economía doméstica estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

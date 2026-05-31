@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Espèce, dose, LMR, citations | Vérification des sources |
 | Médicaments / physiopath par espèce | Mode concis |
 | Brouillon cas & logique traitement | Relecture |
+| médecine vétérinaire diapos, séminaire, poster | Structure de présentation |
+| médecine vétérinaire révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

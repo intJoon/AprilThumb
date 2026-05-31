@@ -1,4 +1,44 @@
 export const ZH = {
+  general: {
+    name: "一般",
+    axes: [
+      ["證據", "每項主張有來源；不能只有「一般來說」"],
+      ["解釋深度", "why、how、therefore 相連；非定義堆疊"],
+      ["限制", "反例、不確定性與適用範圍有說明"],
+      ["引用", "參考文獻確實支持各句；格式一致"],
+      ["篇幅與格式", "符合作業指示（篇幅、章節、圖表）"],
+      ["論證", "作品在論述，非名詞羅列"],
+    ],
+    fail: [
+      "主張無理由或取捨",
+      "空泛 generalization（如「AI 改善醫療」）",
+      "無引用或引用與句子不符",
+    ],
+    safety: [
+      "AI **不能取代**醫療、法律、投資等專業判斷",
+      "出處驗證僅為摘要層級 — 重要事實請查原文",
+    ],
+  },
+  pharmacy: {
+    name: "藥學",
+    axes: [
+      ["證據", "每項主張有臨床或實驗支持；不能只有「一般來說」"],
+      ["機轉", "藥物作用、病理生理、藥動學以具體步驟說明"],
+      ["限制", "副作用、禁忌、研究限制、外推範圍"],
+      ["引用", "參考文獻確實支持各句；格式一致"],
+      ["篇幅與格式", "符合作業（字數、章節、圖表）"],
+      ["深度", "**為何・如何・因此**相連，非定義羅列"],
+    ],
+    fail: [
+      "無交互作用、劑量或病人因素卻給用藥建議",
+      "臨床主張無證據等級（RCT、指引等）",
+      "未交代 n、研究設計或外推限制",
+    ],
+    safety: [
+      "AI **不能取代**診斷、處方或給藥指示",
+      "出處驗證僅為摘要層級 — 臨床與藥理請查原文",
+    ],
+  },
   cs: {
     name: "資訊工程",
     axes: [
@@ -406,6 +446,46 @@ export const ZH = {
 };
 
 export const JA = {
+  general: {
+    name: "一般",
+    axes: [
+      ["根拠", "各主張に出典。「一般的に」だけで終わらない"],
+      ["説明の深さ", "なぜ・どう・だからがつながる"],
+      ["限界", "反例・不確実性・適用範囲"],
+      ["引用", "文献が該当文を実際に支持；形式一貫"],
+      ["形式", "分量・必須セクション・図表"],
+      ["論証", "定義羅列でなく **議論** が続く"],
+    ],
+    fail: [
+      "根拠やトレードオフのない主張",
+      "根拠のない generalization",
+      "引用なし、または引用と文が不一致",
+    ],
+    safety: [
+      "AIは **診断・処方・法律・投資** 等の専門判断を代替しない",
+      "出典検証は要約レベル — 重要な事実は原文で確認",
+    ],
+  },
+  pharmacy: {
+    name: "薬学",
+    axes: [
+      ["根拠", "各主張に臨床/実験的根拠。「一般的に」だけで終わらない"],
+      ["メカニズム", "薬物作用・病態生理・薬物動態を具体段階で"],
+      ["限界", "副作用・禁忌・研究限界・一般化の範囲"],
+      ["引用", "文献が該当文を実際に支持；形式一貫"],
+      ["形式", "分量・セクション・図表"],
+      ["深さ", "**なぜ・どう・だから** がつながる"],
+    ],
+    fail: [
+      "相互作用・用量・患者因子なしの投薬助言",
+      "臨床主張にエビデンスレベルなし",
+      "n・研究デザイン・一般化限界の欠如",
+    ],
+    safety: [
+      "AIは **診断・処方・投薬指示** を代替しない",
+      "出典検証は要約レベル — 臨床・薬理は原文で確認",
+    ],
+  },
   cs: {
     name: "コンピュータ科学",
     axes: [
@@ -813,6 +893,46 @@ export const JA = {
 };
 
 export const FR = {
+  general: {
+    name: "général",
+    axes: [
+      ["Preuves", "Chaque affirmation sourcée ; pas seulement « en général »"],
+      ["Profondeur", "Pourquoi–comment–donc reliés"],
+      ["Limites", "Contre-exemples, incertitude, portée"],
+      ["Citation", "Les références soutiennent la phrase exacte"],
+      ["Format", "Longueur, sections, figures selon le brief"],
+      ["Argument", "Le texte argumente, pas seulement des listes"],
+    ],
+    fail: [
+      "Affirmations sans raison ni compromis",
+      "Généralisations vides (ex. « l'IA améliore la santé »)",
+      "Affirmations sans citation ou citation non conforme",
+    ],
+    safety: [
+      "L'IA ne remplace pas le jugement pro en **médecine, droit, finance**, etc.",
+      "Vérification des sources = niveau résumé — vérifiez les faits importants à la source",
+    ],
+  },
+  pharmacy: {
+    name: "pharmacie",
+    axes: [
+      ["Preuves", "Support clinique ou expérimental ; pas « en général » seul"],
+      ["Mécanisme", "Action médicamenteuse, physiopathologie, pharmacocinétique en étapes"],
+      ["Limites", "Effets indésirables, contre-indications, limites d'étude"],
+      ["Citation", "Les références soutiennent la phrase exacte"],
+      ["Format", "Volume, sections, figures selon le brief"],
+      ["Profondeur", "Pourquoi–comment–donc ; pas empilement de définitions"],
+    ],
+    fail: [
+      "Conseil posologique sans interactions, dose ou facteurs patients",
+      "Affirmations cliniques sans niveau de preuve (RCT, guideline)",
+      "Pas de n, de design ou de limites de généralisation",
+    ],
+    safety: [
+      "L'IA ne remplace pas **diagnostic, prescription ou posologie**",
+      "Vérification des sources = résumé — vérifiez clinique et pharmacologie à la source",
+    ],
+  },
   cs: {
     name: "informatique",
     axes: [
@@ -1220,6 +1340,46 @@ export const FR = {
 };
 
 export const ES = {
+  general: {
+    name: "general",
+    axes: [
+      ["Evidencia", "Cada afirmación con fuente ; no solo «en general»"],
+      ["Profundidad", "Por qué–cómo–por tanto conectados"],
+      ["Límites", "Contraejemplos, incertidumbre, alcance"],
+      ["Cita", "Las referencias apoyan la frase exacta"],
+      ["Formato", "Extensión, secciones, figuras según el encargo"],
+      ["Argumento", "El texto argumenta, no solo listas"],
+    ],
+    fail: [
+      "Afirmaciones sin razón ni compensaciones",
+      "Generalizaciones vacías (p. ej. « la IA mejora la salud »)",
+      "Afirmaciones sin cita o cita que no coincide",
+    ],
+    safety: [
+      "La IA no sustituye el juicio profesional en **medicina, derecho, finanzas**, etc.",
+      "Verificación de fuentes = nivel resumen — confirme hechos importantes en originales",
+    ],
+  },
+  pharmacy: {
+    name: "farmacia",
+    axes: [
+      ["Evidencia", "Apoyo clínico o experimental ; no solo «en general»"],
+      ["Mecanismo", "Acción farmacológica, fisiopatología, farmacocinética en pasos"],
+      ["Límites", "Efectos adversos, contraindicaciones, límites del estudio"],
+      ["Cita", "Las referencias apoyan la frase exacta"],
+      ["Formato", "Extensión, secciones, figuras según el encargo"],
+      ["Profundidad", "Por qué–cómo–por tanto ; no solo definiciones"],
+    ],
+    fail: [
+      "Consejo de dosis sin interacciones, dosis o factores del paciente",
+      "Afirmaciones clínicas sin nivel de evidencia (ECA, guía)",
+      "Sin n, diseño del estudio o límites de generalización",
+    ],
+    safety: [
+      "La IA no sustituye **diagnóstico, prescripción o dosificación**",
+      "Verificación de fuentes = resumen — confirme afirmaciones clínicas y farmacológicas en originales",
+    ],
+  },
   cs: {
     name: "informática",
     axes: [

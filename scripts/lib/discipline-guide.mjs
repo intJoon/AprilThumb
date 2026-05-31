@@ -1,6 +1,6 @@
 import { KO, EN, rubricFor } from "./discipline-rubrics.mjs";
 import { ZH, JA, FR, ES } from "./discipline-rubrics-i18n.mjs";
-import { SIT_DEFAULT, SIT_OVERRIDE } from "./discipline-guide-sit.mjs";
+import { SIT_DEFAULT, SIT_OVERRIDE, SIT_TAIL, SIT_TAIL_OVERRIDE } from "./discipline-guide-sit.mjs";
 import { AI_OVERRIDE } from "./discipline-guide-ai.mjs";
 
 const TABLES = { ko: KO, "en-GB": EN, "zh-TW": ZH, ja: JA, fr: FR, es: ES };
@@ -214,10 +214,16 @@ function rubricRow(trackId, locale) {
 
 function situationRows(trackId, locale, name) {
   const override = SIT_OVERRIDE[trackId];
-  const rows =
+  const base =
     override?.[locale] ||
     SIT_DEFAULT[locale] ||
     SIT_DEFAULT["en-GB"];
+  const tail =
+    SIT_TAIL_OVERRIDE[trackId]?.[locale] ||
+    SIT_TAIL[locale] ||
+    SIT_TAIL["en-GB"];
+  const keys = new Set(base.map(([, key]) => key));
+  const rows = [...base, ...tail.filter(([, key]) => !keys.has(key))];
   const prompts = PROMPTS[locale] || PROMPTS["en-GB"];
   return rows.map(([sit, key]) => {
     const text = sit.replace(/\{name\}/g, name);

@@ -18,7 +18,9 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Antes de informe entrenamiento / fisiología | Revisión académica |
 | Literatura, medidas, n, efecto | Verificación de fuentes |
 | Protocolo y carga clave | Modo conciso |
+| Borrador informe entrenamiento / fisiología | Revisión de texto |
 | Diapos programa y prevención | Estructura de presentación |
+| Estudio ciencias deporte y entreno | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

@@ -18,7 +18,9 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Avant portfolio / UX | Évaluation académique |
 | Recherche, tests, cas cités | Vérification des sources |
 | Persona & parcours clés | Mode concis |
+| Brouillon récit UX / processus | Relecture |
 | Prototype & diapos | Structure de présentation |
+| Études design / UX & projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

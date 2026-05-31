@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Œuvres, littérature, contexte | Vérification des sources |
 | Théorie, contexte, œuvres | Mode concis |
 | Brouillon critique / interprétation | Relecture |
+| arts et culture diapos, séminaire, poster | Structure de présentation |
+| arts et culture révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

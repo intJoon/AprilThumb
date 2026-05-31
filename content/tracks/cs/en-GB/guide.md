@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | CVE, security papers, citations | Source check |
 | Exam concepts, Big-O cramming | Concise mode |
 | Project or code design drafts | Writing review |
+| computer science slides, seminar, poster | Presentation |
+| computer science study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

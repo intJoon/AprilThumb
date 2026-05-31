@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Normas y jurisprudencia | Verificación de fuentes |
 | IRAC y cuestiones clave | Modo conciso |
 | Borrador argumento / aplicación | Revisión de texto |
+| derecho diapos, seminario, póster | Estructura de presentación |
+| derecho estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

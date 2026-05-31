@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Theorems, papers, data sources | Source check |
 | Definitions, tests cramming | Concise mode |
 | Proof draft & logic steps | Writing review |
+| mathematics & statistics slides, seminar, poster | Presentation |
+| mathematics & statistics study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

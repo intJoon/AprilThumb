@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Reports, financial & market data | Source check |
 | Frameworks & metrics cramming | Concise mode |
 | Memo / strategy report drafts | Writing review |
+| business & accounting slides, seminar, poster | Presentation |
+| business & accounting study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

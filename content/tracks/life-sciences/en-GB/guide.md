@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Papers, data, protocol citations | Source check |
 | Pathways & terms cramming | Concise mode |
 | Lab / field report drafts | Writing review |
+| life sciences slides, seminar, poster | Presentation |
+| life sciences study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

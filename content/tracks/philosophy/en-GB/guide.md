@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Primary & secondary sources cited | Source check |
 | Concepts & argument structure cramming | Concise mode |
 | Argument / objection drafts | Writing review |
+| philosophy slides, seminar, poster | Presentation |
+| philosophy study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

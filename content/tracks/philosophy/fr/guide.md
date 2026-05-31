@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Sources primaires & secondaires | Vérification des sources |
 | Concepts & structure d'argument | Mode concis |
 | Brouillon argument / objection | Relecture |
+| philosophie diapos, séminaire, poster | Structure de présentation |
+| philosophie révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | CVE, artículos seguridad, citas | Verificación de fuentes |
 | Resumen conceptos, Big-O | Modo conciso |
 | Borrador proyecto / código | Revisión de texto |
+| informática diapos, seminario, póster | Estructura de presentación |
+| informática estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

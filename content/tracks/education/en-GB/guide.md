@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Pedagogy literature & theory cited | Source check |
 | Theory, strategies, assessment cramming | Concise mode |
 | Lesson plan / research draft | Writing review |
+| education slides, seminar, poster | Presentation |
+| education study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

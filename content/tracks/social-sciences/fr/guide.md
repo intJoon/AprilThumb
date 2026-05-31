@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Sources, méthodes, échantillon | Vérification des sources |
 | Théorie, concepts, variables | Mode concis |
 | Brouillon rapport / argument | Relecture |
+| sciences sociales diapos, séminaire, poster | Structure de présentation |
+| sciences sociales révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

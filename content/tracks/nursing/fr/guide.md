@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Directives infirmières & citations | Vérification des sources |
 | Révision diagnostics / interventions | Mode concis |
 | Brouillon plan de soins | Relecture |
+| sciences infirmières diapos, séminaire, poster | Structure de présentation |
+| sciences infirmières révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

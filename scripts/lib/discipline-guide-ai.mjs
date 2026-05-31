@@ -571,4 +571,146 @@ export const AI_OVERRIDE = {
       gemini: ["**Google Search** para VO2max, biomecánica y tamaños del efecto.","Organice informes largos en **Google Docs**."],
     },
   },
+  general: {
+    ko: {
+      chatgpt: [
+        "**웹 검색**이 켜져 있으면 출처 확인·최신 정보에 유리합니다.",
+        "글 다듬기·초안 수정은 **Canvas**(캔버스)로 열어 두면 옆에서 문서를 보며 수정하기 쉽습니다.",
+        "표·목록이 많으면 채팅 말고 Canvas나 복사해 메모 앱에 붙여 보세요.",
+      ],
+      gemini: [
+        "**Google 검색** 연동(지구본 아이콘)이 켜져 있으면 출처·사실 확인에 유리합니다.",
+        "**Gemini in Google Docs**에 붙여 넣으면 긴 답을 문서처럼 다루기 쉽습니다.",
+        "표 형식 답은 Docs·Sheets로 옮기면 읽기 편합니다.",
+      ],
+    },
+    "en-GB": {
+      chatgpt: [
+        "Turn on **web search** when you need sources or up-to-date facts.",
+        "For long rewrites, ask the model to open **Canvas** so you can edit beside the chat.",
+        "Ask for rubrics and scores as **numbered lists** in Canvas or a notes app.",
+      ],
+      gemini: [
+        "Turn on **Google Search grounding** (globe icon) for source and fact checking.",
+        "Ask for long answers in **Google Docs** so you can edit before submission.",
+        "Move list-style answers into Docs or Sheets if they are easier to read there.",
+      ],
+    },
+    "zh-TW": {
+      chatgpt: [
+        "開啟**網路搜尋**有助查證出處與最新資料。",
+        "長篇修改可用 **Canvas** 在側邊編輯。",
+        "表格式答案可請整理到 Canvas 或備忘 app。",
+      ],
+      gemini: [
+        "開啟 **Google 搜尋**（地球圖示）方便查證。",
+        "長文可請整理到 **Google 文件**。",
+        "表格式答案可移到 Docs 或 Sheets 閱讀。",
+      ],
+    },
+    ja: {
+      chatgpt: [
+        "**ウェブ検索**をオンにすると出典・最新情報の確認に有利です。",
+        "長い修正文は **Canvas** で横に並べて編集してください。",
+        "表・リストが多い場合は Canvas かメモアプリへ。",
+      ],
+      gemini: [
+        "**Google 検索**（地球儀）をオンにすると事実確認に有利です。",
+        "長い修正文は **Google ドキュメント**に整理してもらってください。",
+        "表形式の回答は Docs・Sheets へ移すと読みやすいです。",
+      ],
+    },
+    fr: {
+      chatgpt: [
+        "Activez la **recherche web** pour vérifier sources et références récentes.",
+        "Ouvrez les longues révisions dans **Canvas** pour éditer à côté.",
+        "Demandez scores et rubrique en **liste numérotée**.",
+      ],
+      gemini: [
+        "Activez **Google Search** (globe) pour vérifier les faits.",
+        "Collez les longues révisions dans **Google Docs**.",
+        "Déplacez les réponses en tableaux vers Docs ou Sheets.",
+      ],
+    },
+    es: {
+      chatgpt: [
+        "Activa la **búsqueda web** para comprobar fuentes e información reciente.",
+        "Abre borradores largos en **Canvas** para editar al lado.",
+        "Pide puntuación y rúbrica como **lista numerada**.",
+      ],
+      gemini: [
+        "Activa **Google Search** (icono globo) para verificar hechos.",
+        "Pega ediciones largas en **Google Docs**.",
+        "Mueve respuestas en tabla a Docs o Sheets si leen mejor.",
+      ],
+    },
+  },
+  pharmacy: {
+    ko: {
+      chatgpt: [
+        "**웹 검색**이 켜져 있으면 PubMed·가이드라인 확인에 유리합니다.",
+        "수정 초안이 길면 **Canvas(캔버스)** 로 열어 옆에서 다듬으세요.",
+        "루브릭·점수는 Canvas나 메모 앱에 **번호 목록**으로 받으세요.",
+      ],
+      gemini: [
+        "**Google 검색(지구본)** 이 켜져 있으면 약물·임상 정보 확인에 유리합니다.",
+        "긴 수정문은 **Google Docs**에 정리해 달라고 하세요.",
+      ],
+    },
+    "en-GB": {
+      chatgpt: [
+        "Turn on **web search** to check PubMed, guidelines, and drug information.",
+        "For long rewrites, ask the model to open **Canvas** so you can edit beside the chat.",
+        "Ask for rubrics and scores as **numbered lists** in Canvas or a notes app.",
+      ],
+      gemini: [
+        "Turn on **Google Search grounding** (globe icon) for drug and clinical information.",
+        "Ask for long rewrites in **Google Docs**.",
+      ],
+    },
+    "zh-TW": {
+      chatgpt: [
+        "**網路搜尋**有助查 PubMed 與臨床指引。",
+        "長篇修改可在 **Canvas** 並排編輯。",
+        "評量分數請用**編號清單**接收。",
+      ],
+      gemini: [
+        "**Google 搜尋**（地球圖示）方便查藥物與臨床資訊。",
+        "長文修改可請整理到 **Google 文件**。",
+      ],
+    },
+    ja: {
+      chatgpt: [
+        "**ウェブ検索**で PubMed・ガイドライン確認に有利。",
+        "長い修正文は **Canvas** で横並び編集。",
+        "ルーブリック・点数は**番号リスト**で受け取ってください。",
+      ],
+      gemini: [
+        "**Google 検索**（地球儀）で薬物・臨床情報の確認に有利。",
+        "長い修正文は **Google ドキュメント**へ。",
+      ],
+    },
+    fr: {
+      chatgpt: [
+        "**Recherche web** pour PubMed, recommandations et infos médicamenteuses.",
+        "Ouvrez longues révisions dans **Canvas**.",
+        "Demandez rubrique et scores en **liste numérotée**.",
+      ],
+      gemini: [
+        "**Google Search** (globe) pour médicaments et faits cliniques.",
+        "Demandez longues révisions dans **Google Docs**.",
+      ],
+    },
+    es: {
+      chatgpt: [
+        "**Búsqueda web** para PubMed, guías e información sobre fármacos.",
+        "Abra reescrituras largas en **Canvas**.",
+        "Pida rúbrica y puntuación como **lista numerada**.",
+      ],
+      gemini: [
+        "**Google Search** (globo) para fármacos e información clínica.",
+        "Pida reescrituras largas en **Google Docs**.",
+      ],
+    },
+  },
 };

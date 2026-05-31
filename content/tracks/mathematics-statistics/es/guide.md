@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Teoremas, artículos, datos | Verificación de fuentes |
 | Definiciones, pruebas clave | Modo conciso |
 | Borrador demostración | Revisión de texto |
+| matemáticas y estadística diapos, seminario, póster | Estructura de presentación |
+| matemáticas y estadística estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

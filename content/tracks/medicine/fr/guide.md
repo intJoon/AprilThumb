@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Directives & ECR soutiennent les affirmations | Vérification des sources |
 | Révision physiopath & médicaments | Mode concis |
 | Brouillon cas / SOAP | Relecture |
+| Diapos cas / maladie | Structure de présentation |
+| Études med & stages cliniques | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

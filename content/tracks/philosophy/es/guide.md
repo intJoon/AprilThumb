@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Fuentes primarias y secundarias | Verificación de fuentes |
 | Conceptos y estructura argumento | Modo conciso |
 | Borrador argumento / objeción | Revisión de texto |
+| filosofía diapos, seminario, póster | Estructura de presentación |
+| filosofía estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Data, papers, statistics cited | Source check |
 | Graphs, models, assumptions cramming | Concise mode |
 | Analysis / policy memo drafts | Writing review |
+| economics slides, seminar, poster | Presentation |
+| economics study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Nursing guidelines & citations | Source check |
 | Diagnosis / intervention cramming | Concise mode |
 | Care plan draft review | Writing review |
+| nursing slides, seminar, poster | Presentation |
+| nursing study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

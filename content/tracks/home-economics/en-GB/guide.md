@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Guidelines, data, recipe citations | Source check |
 | Nutrition, safety, protocol cramming | Concise mode |
 | Practicum / policy report drafts | Writing review |
+| home economics slides, seminar, poster | Presentation |
+| home economics study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

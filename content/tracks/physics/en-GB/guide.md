@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Literature, spectra, numbers cited | Source check |
 | Formulas, definitions cramming | Concise mode |
 | Lab report / proof drafts | Writing review |
+| physics slides, seminar, poster | Presentation |
+| physics study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

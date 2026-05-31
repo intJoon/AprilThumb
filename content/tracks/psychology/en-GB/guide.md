@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Papers, meta, measures cited | Source check |
 | Theory & effect-size cramming | Concise mode |
 | Research draft & ethics | Writing review |
+| psychology slides, seminar, poster | Presentation |
+| psychology study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

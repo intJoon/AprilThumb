@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Littérature & théories citées | Vérification des sources |
 | Théories, stratégies, évaluation | Mode concis |
 | Brouillon séance / recherche | Relecture |
+| sciences de l'éducation diapos, séminaire, poster | Structure de présentation |
+| sciences de l'éducation révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

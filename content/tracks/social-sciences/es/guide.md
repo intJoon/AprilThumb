@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Fuentes, métodos, muestra | Verificación de fuentes |
 | Teoría, conceptos, variables | Modo conciso |
 | Borrador informe / argumento | Revisión de texto |
+| ciencias sociales diapos, seminario, póster | Estructura de presentación |
+| ciencias sociales estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Artículos, meta, medidas citadas | Verificación de fuentes |
 | Teoría y tamaño del efecto | Modo conciso |
 | Borrador investigación y ética | Revisión de texto |
+| psicología diapos, seminario, póster | Estructura de presentación |
+| psicología estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

@@ -18,7 +18,9 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Avant studio / pin-up | Évaluation académique |
 | Normes, ensoleillement, plans | Vérification des sources |
 | Programme & circulation | Mode concis |
+| Brouillon note conception / studio | Relecture |
 | Diapos & poster conception | Structure de présentation |
+| Études archi & studio | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

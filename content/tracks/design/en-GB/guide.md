@@ -18,7 +18,9 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Before portfolio / UX work | Academic review |
 | Research, tests, case citations | Source check |
 | Persona & flow cramming | Concise mode |
+| UX story & process draft review | Writing review |
 | Prototype & slide decks | Presentation |
+| Design / UX study & projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Literatura, espectros, cifras | Verificación de fuentes |
 | Fórmulas, definiciones, unidades | Modo conciso |
 | Borrador informe / demostración | Revisión de texto |
+| física diapos, seminario, póster | Estructura de presentación |
+| física estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

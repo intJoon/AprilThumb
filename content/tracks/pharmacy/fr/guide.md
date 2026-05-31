@@ -1,34 +1,41 @@
-# Comment utiliser ceci
+# Mode d'emploi
 
-Appuyez sur **Copier**, puis collez au début d’une **nouvelle** conversation ChatGPT ou Gemini. Ensuite, envoyez votre devoir, brouillon ou question comme d’habitude.
+Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini, puis envoyez devoir, brouillon ou question.
 
-Épinglez vos favoris dans les **instructions personnalisées** de ChatGPT ou un **Gem** Gemini.
+Épinglez vos favoris dans les **instructions** ChatGPT ou un **Gem** Gemini.
 
-## Quel prompt quand ?
+## Conseils — pharmacie
 
-1. Avant de rendre un devoir ou rapport de pharmacie — **Relecture académique**
-2. Pour vérifier si références et recommandations soutiennent vos affirmations — **Vérification des sources**
-3. Révision courte en pharmacologie et noms de médicaments — **Mode concis**
-4. Rapports de laboratoire et études de cas — **Relecture rédactionnelle**
-5. Oraux et affiches sur médicaments, maladies ou stages — **Présentation**
-6. Études de pharmacie, stages et soucis du quotidien — **Compagnon d’étude**
+- **Preuves** — Support clinique ou expérimental ; pas « en général » seul
+- **Mécanisme** — Action médicamenteuse, physiopathologie, pharmacocinétique en étapes
+- **Limites** — Effets indésirables, contre-indications, limites d'étude
+- **Citation** — Les références soutiennent la phrase exacte
 
-Utilisez **Relecture académique** et **Compagnon d’étude** dans des conversations séparées.
+## Quel prompt ?
 
-## Voir les résultats dans ChatGPT
+| Situation | Prompt |
+|------|----------|
+| Avant rendu pharmacie | Évaluation académique |
+| Directives et sources soutiennent-elles les affirmations | Vérification des sources |
+| Révision pharmacologie et noms de médicaments | Mode concis |
+| Brouillons rapport labo / cas | Relecture |
+| Diapos médicaments / maladies | Structure de présentation |
+| Études pharma, stages et quotidien | Compagnon d'étude |
 
-1. Activez la **recherche web** pour PubMed, recommandations et informations sur les médicaments.
-2. Pour de longues réécritures, demandez **Canvas** pour modifier à côté du chat.
-3. Demandez grilles et notes en **listes numérotées** dans Canvas ou une application de notes.
+Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 
-## Voir les résultats dans Gemini
+## Dans ChatGPT
 
-1. Activez le **grounding Google Search** (icône globe) pour médicaments et informations cliniques.
-2. Demandez les longues réécritures dans **Google Docs**.
+- **Recherche web** pour PubMed, recommandations et infos médicamenteuses.
+- Ouvrez longues révisions dans **Canvas**.
+- Demandez rubrique et scores en **liste numérotée**.
 
-## Mise en garde
+## Dans Gemini
 
-1. L’IA ne remplace pas **diagnostic, prescription ni posologie**.
-2. La vérification des sources se limite à la recherche et aux résumés. Vérifiez vous-même les affirmations cliniques et pharmacologiques dans les sources originales.
+- **Google Search** (globe) pour médicaments et faits cliniques.
+- Demandez longues révisions dans **Google Docs**.
 
-<!-- OVERLAY:guide-extra -->
+## Précaution
+
+- L'IA ne remplace pas **diagnostic, prescription ou posologie**
+- Vérification des sources = résumé — vérifiez clinique et pharmacologie à la source

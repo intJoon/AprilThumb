@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Species, dose, MRL, citations | Source check |
 | Drug / pathophys by species | Concise mode |
 | Case draft & treatment logic | Writing review |
+| veterinary medicine slides, seminar, poster | Presentation |
+| veterinary medicine study, exams, projects | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

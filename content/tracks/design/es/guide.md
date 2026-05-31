@@ -18,7 +18,9 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Antes de portafolio / UX | Revisión académica |
 | Investigación, pruebas, casos | Verificación de fuentes |
 | Persona y flujo clave | Modo conciso |
+| Borrador relato UX / proceso | Revisión de texto |
 | Prototipo y diapositivas | Estructura de presentación |
+| Estudio diseño / UX y proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

@@ -1,34 +1,41 @@
-# Cómo usar esto
+# Cómo usar
 
-Pulsa **Copiar** y pega al inicio de un chat **nuevo** de ChatGPT o Gemini. Después envía tu tarea, borrador o pregunta como siempre.
+Pulsa **Copiar** y pega al inicio de un chat **nuevo** en ChatGPT o Gemini; luego envía tarea, borrador o pregunta.
 
-Fija favoritos en las **instrucciones personalizadas** de ChatGPT o en un **Gem** de Gemini.
+Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 
-## ¿Qué prompt cuándo?
+## Consejos — farmacia
 
-1. Antes de entregar trabajo o informe de farmacia — **Revisión académica**
-2. Para comprobar si referencias y guías respaldan tus afirmaciones — **Verificación de fuentes**
-3. Repaso breve de farmacología y nombres de fármacos — **Modo conciso**
-4. Informes de laboratorio y estudios de caso — **Revisión de redacción**
-5. Orales y pósters sobre fármacos, enfermedades o prácticas — **Presentación**
-6. Estudio de farmacia, prácticas y preocupaciones del día a día — **Compañero de estudio**
+- **Evidencia** — Apoyo clínico o experimental ; no solo «en general»
+- **Mecanismo** — Acción farmacológica, fisiopatología, farmacocinética en pasos
+- **Límites** — Efectos adversos, contraindicaciones, límites del estudio
+- **Cita** — Las referencias apoyan la frase exacta
+
+## ¿Qué prompt?
+
+| Situación | Prompt |
+|------|----------|
+| Antes de entregar farmacia | Revisión académica |
+| Si guías y fuentes respaldan afirmaciones | Verificación de fuentes |
+| Repaso farmacología y nombres de fármacos | Modo conciso |
+| Borradores informe lab / caso | Revisión de texto |
+| Diapos fármacos / enfermedades | Estructura de presentación |
+| Estudio farmacia, prácticas y día a día | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 
-## Ver resultados en ChatGPT
+## En ChatGPT
 
-1. Activa la **búsqueda web** para PubMed, guías e información sobre medicamentos.
-2. En reescrituras largas, pide **Canvas** para editar junto al chat.
-3. Pide rúbricas y puntuaciones como **listas numeradas** en Canvas o una app de notas.
+- **Búsqueda web** para PubMed, guías e información sobre fármacos.
+- Abra reescrituras largas en **Canvas**.
+- Pida rúbrica y puntuación como **lista numerada**.
 
-## Ver resultados en Gemini
+## En Gemini
 
-1. Activa el **grounding de Búsqueda de Google** (icono del globo) para fármacos e información clínica.
-2. Pide reescrituras largas en **Google Docs**.
+- **Google Search** (globo) para fármacos e información clínica.
+- Pida reescrituras largas en **Google Docs**.
 
 ## Precaución
 
-1. La IA no sustituye **diagnóstico, prescripción ni posología**.
-2. La verificación de fuentes es solo búsqueda y resumen. Comprueba tú mismo afirmaciones clínicas y farmacológicas en las fuentes originales.
-
-<!-- OVERLAY:guide-extra -->
+- La IA no sustituye **diagnóstico, prescripción o dosificación**
+- Verificación de fuentes = resumen — confirme afirmaciones clínicas y farmacológicas en originales

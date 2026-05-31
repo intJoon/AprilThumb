@@ -19,6 +19,8 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Guidelines & RCTs support claims | Source check |
 | Pathophys & drug name cramming | Concise mode |
 | Case report / SOAP drafts | Writing review |
+| Case / disease presentation decks | Presentation |
+| Med school study & clinical practice | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

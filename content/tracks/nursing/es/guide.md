@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Guías de enfermería y citas | Verificación de fuentes |
 | Resumen diagnósticos / intervenciones | Modo conciso |
 | Borrador plan de cuidados | Revisión de texto |
+| enfermería diapos, seminario, póster | Estructura de presentación |
+| enfermería estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

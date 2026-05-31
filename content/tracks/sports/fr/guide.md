@@ -18,7 +18,9 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Avant rapport entraînement / physio | Évaluation académique |
 | Littérature, mesures, n, effet | Vérification des sources |
 | Protocole & charge clés | Mode concis |
+| Brouillon rapport entraînement / physio | Relecture |
 | Diapos programme & prévention | Structure de présentation |
+| Études STAPS & entraînement | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

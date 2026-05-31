@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Rapports, données financières | Vérification des sources |
 | Cadres & indicateurs clés | Mode concis |
 | Brouillon mémo / rapport stratégie | Relecture |
+| gestion et comptabilité diapos, séminaire, poster | Structure de présentation |
+| gestion et comptabilité révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

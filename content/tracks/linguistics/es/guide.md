@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Corpus, literatura, datos | Verificación de fuentes |
 | Reglas, rasgos, ejemplos | Modo conciso |
 | Borrador informe análisis | Revisión de texto |
+| lingüística diapos, seminario, póster | Estructura de presentación |
+| lingüística estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

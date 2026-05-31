@@ -18,7 +18,9 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Antes de estudio / pin-up | Revisión académica |
 | Normas, insolación, planos | Verificación de fuentes |
 | Programa y circulación | Modo conciso |
+| Borrador memoria / informe estudio | Revisión de texto |
 | Diapos y póster diseño | Estructura de presentación |
+| Estudio arquitectura y estudio | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

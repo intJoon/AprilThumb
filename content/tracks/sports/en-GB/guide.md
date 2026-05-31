@@ -18,7 +18,9 @@ Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.
 | Before training / physiology reports | Academic review |
 | Literature, measures, n, effect size | Source check |
 | Protocol & load cramming | Concise mode |
+| Training / physiology report drafts | Writing review |
 | Program & injury-prevention slides | Presentation |
+| Sports science study & training | Study companion |
 
 Use **Academic review** and **Study companion** in separate chats.
 

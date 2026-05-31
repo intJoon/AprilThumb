@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Directives, données, recettes | Vérification des sources |
 | Nutrition, sécurité, protocoles | Mode concis |
 | Brouillon rapport pratique / politique | Relecture |
+| sciences du foyer diapos, séminaire, poster | Structure de présentation |
+| sciences du foyer révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

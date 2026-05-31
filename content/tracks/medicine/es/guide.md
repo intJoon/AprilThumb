@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Guías y ECA respaldan afirmaciones | Verificación de fuentes |
 | Resumen fisiopatología y fármacos | Modo conciso |
 | Borrador caso / SOAP | Revisión de texto |
+| Diapos caso / enfermedad | Estructura de presentación |
+| Estudio medicina y práctica clínica | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

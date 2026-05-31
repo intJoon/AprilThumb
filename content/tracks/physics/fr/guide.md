@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Littérature, spectres, chiffres | Vérification des sources |
 | Formules, définitions, unités | Mode concis |
 | Brouillon rapport / démonstration | Relecture |
+| physique diapos, séminaire, poster | Structure de présentation |
+| physique révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

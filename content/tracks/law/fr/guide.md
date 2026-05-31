@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Textes & jurisprudence | Vérification des sources |
 | IRAC & questions clés | Mode concis |
 | Brouillon argument / application | Relecture |
+| droit diapos, séminaire, poster | Structure de présentation |
+| droit révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | CVE, articles sécu, citations | Vérification des sources |
 | Révision concepts, Big-O | Mode concis |
 | Brouillon projet / code | Relecture |
+| informatique diapos, séminaire, poster | Structure de présentation |
+| informatique révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

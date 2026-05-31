@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Données, articles, statistiques | Vérification des sources |
 | Graphiques, modèles, hypothèses | Mode concis |
 | Brouillon analyse / note politique | Relecture |
+| économie diapos, séminaire, poster | Structure de présentation |
+| économie révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

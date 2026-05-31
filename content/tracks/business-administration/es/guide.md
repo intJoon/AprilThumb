@@ -19,6 +19,8 @@ Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 | Informes, datos financieros | Verificación de fuentes |
 | Marcos e indicadores clave | Modo conciso |
 | Borrador memo / informe estrategia | Revisión de texto |
+| administración y contabilidad diapos, seminario, póster | Estructura de presentación |
+| administración y contabilidad estudio, exámenes, proyectos | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 

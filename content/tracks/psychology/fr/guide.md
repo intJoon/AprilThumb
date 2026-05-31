@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Articles, méta, mesures citées | Vérification des sources |
 | Théorie & taille d'effet | Mode concis |
 | Brouillon recherche & éthique | Relecture |
+| psychologie diapos, séminaire, poster | Structure de présentation |
+| psychologie révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

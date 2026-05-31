@@ -1,4 +1,44 @@
 const KO = {
+  general: {
+    name: "일반",
+    axes: [
+      ["근거", "주장마다 출처·사실 근거. 「일반적으로」만으로 끝나지 않음"],
+      ["설명 깊이", "왜·어떻게·그래서가 연결됨; 정의 나열만이 아님"],
+      ["한계", "반례·한계·불확실성·적용 범위 명시"],
+      ["인용", "참고문헌이 해당 문장을 실제로 지지. 형식 일관"],
+      ["분량·형식", "과제 지시(분량, 섹션, 표·그림) 충족"],
+      ["깊이", "정의 나열이 아니라 **논증**이 이어짐"],
+    ],
+    fail: [
+      "선택·주장 이유 없음; trade-off 없음",
+      "「AI가 X를 개선한다」 같은 빈 generalization",
+      "인용 없는 주장; 인용이 문장 내용과 불일치",
+    ],
+    safety: [
+      "AI는 **진단·처방·법률·투자** 등 전문 판단을 대체하지 않습니다",
+      "출처 검증은 요약·검색 수준입니다. 중요한 사실은 원문을 직접 확인하세요",
+    ],
+  },
+  pharmacy: {
+    name: "약학",
+    axes: [
+      ["근거", "주장마다 출처·임상/실험 근거. 「일반적으로」만으로 끝나지 않음"],
+      ["메커니즘", "약물 작용·병태생리·약동학을 구체 단계로 설명"],
+      ["한계", "부작용·금기·연구 한계·일반화 불가 구간 명시"],
+      ["인용", "참고문헌이 해당 문장을 실제로 지지. 형식 일관"],
+      ["분량·형식", "과제 지시(분량, 섹션, 표·그림) 충족"],
+      ["깊이", "정의 나열이 아니라 **왜·어떻게·그래서**가 연결됨"],
+    ],
+    fail: [
+      "상호작용·용량·환자 특성 없이 투약 권고",
+      "임상 주장에 근거 수준(RCT·가이드 등) 없음",
+      "n수·연구 설계·일반화 한계 미언급",
+    ],
+    safety: [
+      "AI는 **진단·처방·투약 지시**를 대체하지 않습니다",
+      "출처 검증은 요약·검색 수준입니다. 임상·약리 주장은 원문을 직접 확인하세요",
+    ],
+  },
   cs: {
     name: "컴퓨터공학",
     axes: [
@@ -430,6 +470,46 @@ const KO = {
 };
 
 const EN = {
+  general: {
+    name: "general",
+    axes: [
+      ["Evidence", "Each claim sourced; not closed with 「generally」 alone"],
+      ["Depth", "Why–how–so connected; not definition lists alone"],
+      ["Limits", "Counterexamples, uncertainty, and scope stated"],
+      ["Citation", "References support the exact sentence; consistent format"],
+      ["Format & scope", "Length, sections, figures match the brief"],
+      ["Argument", "The piece argues, not just lists terms"],
+    ],
+    fail: [
+      "Claims with no rationale or trade-offs",
+      "Empty generalisations (e.g. 「AI improves healthcare」)",
+      "Claims without citations, or citations that do not match",
+    ],
+    safety: [
+      "AI does not replace professional judgement in **medicine, law, finance**, or similar",
+      "Source check is summary level only — verify important facts in original sources",
+    ],
+  },
+  pharmacy: {
+    name: "pharmacy",
+    axes: [
+      ["Evidence", "Clinical or experimental support per claim; not 「generally」 alone"],
+      ["Mechanism", "Drug action, pathophysiology, pharmacokinetics in concrete steps"],
+      ["Limits", "Adverse effects, contraindications, study limits, generalisation scope"],
+      ["Citation", "References support the exact sentence; consistent format"],
+      ["Format & scope", "Word count, sections, figures match the brief"],
+      ["Depth", "Why–how–so connected; not definition stacking alone"],
+    ],
+    fail: [
+      "Dosing advice without interactions, dose, or patient factors",
+      "Clinical claims without evidence level (RCT, guideline, etc.)",
+      "No n, study design, or generalisation limits",
+    ],
+    safety: [
+      "AI does not replace **diagnosis, prescribing, or dosing instructions**",
+      "Source check is summary level only — verify clinical and pharmacology claims in originals",
+    ],
+  },
   cs: {
     name: "computer science",
     axes: [

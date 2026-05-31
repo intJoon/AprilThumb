@@ -38,6 +38,82 @@ export const SIT_DEFAULT = {
 };
 
 export const SIT_OVERRIDE = {
+  general: {
+    ko: [
+      ["과제·레포트 제출 전", "academic"],
+      ["참고문헌이 주장을 뒷받침하는지", "source"],
+      ["긴 답을 짧게", "concise"],
+      ["초안 논리·근거 점검", "writing"],
+    ],
+    "en-GB": [
+      ["Before submitting coursework or a report", "academic"],
+      ["Whether references support your claims", "source"],
+      ["Shortening long answers", "concise"],
+      ["Checking draft logic and evidence", "writing"],
+    ],
+    "zh-TW": [
+      ["作業·報告提交前", "academic"],
+      ["文獻是否支持各句主張", "source"],
+      ["冗長答案壓縮", "concise"],
+      ["初稿邏輯與證據缺口", "writing"],
+    ],
+    ja: [
+      ["課題・レポート提出前", "academic"],
+      ["文献が主張を裏付けるか", "source"],
+      ["長い回答を短く", "concise"],
+      ["草稿の論理と根拠", "writing"],
+    ],
+    fr: [
+      ["Avant rendu de travail", "academic"],
+      ["Les sources soutiennent-elles les affirmations", "source"],
+      ["Raccourcir réponses longues", "concise"],
+      ["Logique et preuves du brouillon", "writing"],
+    ],
+    es: [
+      ["Antes de entregar trabajo", "academic"],
+      ["Si las fuentes respaldan las afirmaciones", "source"],
+      ["Acortar respuestas largas", "concise"],
+      ["Lógica y evidencia del borrador", "writing"],
+    ],
+  },
+  pharmacy: {
+    ko: [
+      ["약학 과제·레포트 제출 전", "academic"],
+      ["참고문헌·가이드라인이 주장을 뒷받침하는지", "source"],
+      ["약리·약물명 암기를 짧게", "concise"],
+      ["실험보고서·케이스 초안", "writing"],
+    ],
+    "en-GB": [
+      ["Before submitting pharmacy coursework", "academic"],
+      ["Whether references and guidelines support claims", "source"],
+      ["Short revision for pharmacology and drug names", "concise"],
+      ["Lab reports and case study drafts", "writing"],
+    ],
+    "zh-TW": [
+      ["藥學作業·報告提交前", "academic"],
+      ["文獻·指引是否支持主張", "source"],
+      ["藥理·藥名考前摘要", "concise"],
+      ["實驗報告·個案草稿", "writing"],
+    ],
+    ja: [
+      ["薬学課題・レポート提出前", "academic"],
+      ["文献・ガイドラインが主張を支持するか", "source"],
+      ["薬理・薬物名の暗記要約", "concise"],
+      ["実験報告・症例草稿", "writing"],
+    ],
+    fr: [
+      ["Avant rendu pharmacie", "academic"],
+      ["Directives et sources soutiennent-elles les affirmations", "source"],
+      ["Révision pharmacologie et noms de médicaments", "concise"],
+      ["Brouillons rapport labo / cas", "writing"],
+    ],
+    es: [
+      ["Antes de entregar farmacia", "academic"],
+      ["Si guías y fuentes respaldan afirmaciones", "source"],
+      ["Repaso farmacología y nombres de fármacos", "concise"],
+      ["Borradores informe lab / caso", "writing"],
+    ],
+  },
   cs: {
     ko: [
       ["알고리즘·자료구조 과제 제출 전", "academic"],
@@ -727,37 +803,37 @@ export const SIT_OVERRIDE = {
       ["포트폴리오·UX 과제 제출 전", "academic"],
       ["리서치·테스트·사례 인용", "source"],
       ["페르소나·플로우 핵심 요약", "concise"],
-      ["프로토타입·발표 슬라이드", "presentation"],
+      ["UX 스토리·프로세스 설명 초안", "writing"],
     ],
     "en-GB": [
       ["Before portfolio / UX work", "academic"],
       ["Research, tests, case citations", "source"],
       ["Persona & flow cramming", "concise"],
-      ["Prototype & slide decks", "presentation"],
+      ["UX story & process draft review", "writing"],
     ],
     "zh-TW": [
       ["作品集·UX 作業提交前", "academic"],
       ["研究·測試·案例引用", "source"],
       ["人物誌·流程重點摘要", "concise"],
-      ["原型·簡報投影片", "presentation"],
+      ["UX 敘事·流程說明草稿", "writing"],
     ],
     ja: [
       ["ポートフォリオ・UX課題提出前", "academic"],
       ["リサーチ・テスト・事例引用", "source"],
       ["ペルソナ・フローの要点", "concise"],
-      ["プロトタイプ・発表スライド", "presentation"],
+      ["UXストーリー・プロセス草稿", "writing"],
     ],
     fr: [
       ["Avant portfolio / UX", "academic"],
       ["Recherche, tests, cas cités", "source"],
       ["Persona & parcours clés", "concise"],
-      ["Prototype & diapos", "presentation"],
+      ["Brouillon récit UX / processus", "writing"],
     ],
     es: [
       ["Antes de portafolio / UX", "academic"],
       ["Investigación, pruebas, casos", "source"],
       ["Persona y flujo clave", "concise"],
-      ["Prototipo y diapositivas", "presentation"],
+      ["Borrador relato UX / proceso", "writing"],
     ],
   },
   architecture: {
@@ -765,37 +841,37 @@ export const SIT_OVERRIDE = {
       ["스튜디오·핀업·보고 제출 전", "academic"],
       ["법규·일조·문헌·도면 캡션", "source"],
       ["프로그램·동선 핵심 요약", "concise"],
-      ["설계 발표·포스터", "presentation"],
+      ["설계 설명·스튜디오 보고 초안", "writing"],
     ],
     "en-GB": [
       ["Before studio / pin-up work", "academic"],
       ["Codes, sun, literature, captions", "source"],
       ["Program & circulation cramming", "concise"],
-      ["Design presentation decks", "presentation"],
+      ["Design statement & studio report drafts", "writing"],
     ],
     "zh-TW": [
       ["工作室·評圖·報告提交前", "academic"],
       ["法規·日照·文獻·圖說", "source"],
       ["機能·動線重點摘要", "concise"],
-      ["設計簡報·海報", "presentation"],
+      ["設計說明·工作室報告草稿", "writing"],
     ],
     ja: [
       ["スタジオ・ピンアップ提出前", "academic"],
       ["法規・日照・文献・図面", "source"],
       ["プログラム・動線の要点", "concise"],
-      ["設計発表・ポスター", "presentation"],
+      ["設計説明・スタジオ報告草稿", "writing"],
     ],
     fr: [
       ["Avant studio / pin-up", "academic"],
       ["Normes, ensoleillement, plans", "source"],
       ["Programme & circulation", "concise"],
-      ["Diapos & poster conception", "presentation"],
+      ["Brouillon note conception / studio", "writing"],
     ],
     es: [
       ["Antes de estudio / pin-up", "academic"],
       ["Normas, insolación, planos", "source"],
       ["Programa y circulación", "concise"],
-      ["Diapos y póster diseño", "presentation"],
+      ["Borrador memoria / informe estudio", "writing"],
     ],
   },
   "home-economics": {
@@ -841,37 +917,223 @@ export const SIT_OVERRIDE = {
       ["훈련·생리 연구 보고 제출 전", "academic"],
       ["문헌·측정·n·효과크기 인용", "source"],
       ["프로토콜·부하 핵심 요약", "concise"],
-      ["프로그램·손상 예방 발표", "presentation"],
+      ["훈련·생리 보고 초안", "writing"],
     ],
     "en-GB": [
       ["Before training / physiology reports", "academic"],
       ["Literature, measures, n, effect size", "source"],
       ["Protocol & load cramming", "concise"],
-      ["Program & injury-prevention slides", "presentation"],
+      ["Training / physiology report drafts", "writing"],
     ],
     "zh-TW": [
       ["訓練·生理研究報告提交前", "academic"],
       ["文獻·測量·樣本·效果量引用", "source"],
       ["協議·負荷重點摘要", "concise"],
-      ["計畫·傷害預防簡報", "presentation"],
+      ["訓練·生理報告草稿", "writing"],
     ],
     ja: [
       ["トレーニング・生理レポート提出前", "academic"],
       ["文献・測定・n・効果量", "source"],
       ["プロトコル・負荷の要点", "concise"],
-      ["プログラム・傷害予防発表", "presentation"],
+      ["トレーニング・生理報告草稿", "writing"],
     ],
     fr: [
       ["Avant rapport entraînement / physio", "academic"],
       ["Littérature, mesures, n, effet", "source"],
       ["Protocole & charge clés", "concise"],
-      ["Diapos programme & prévention", "presentation"],
+      ["Brouillon rapport entraînement / physio", "writing"],
     ],
     es: [
       ["Antes de informe entrenamiento / fisiología", "academic"],
       ["Literatura, medidas, n, efecto", "source"],
       ["Protocolo y carga clave", "concise"],
+      ["Borrador informe entrenamiento / fisiología", "writing"],
+    ],
+  },
+};
+
+export const SIT_TAIL = {
+  ko: [
+    ["{name} 발표·세미나·포스터", "presentation"],
+    ["{name} 공부·시험·프로젝트", "study"],
+  ],
+  "en-GB": [
+    ["{name} slides, seminar, poster", "presentation"],
+    ["{name} study, exams, projects", "study"],
+  ],
+  "zh-TW": [
+    ["{name} 簡報·研討·海報", "presentation"],
+    ["{name} 讀書·考試·專題", "study"],
+  ],
+  ja: [
+    ["{name} 発表・セミナー・ポスター", "presentation"],
+    ["{name} 学習・試験・プロジェクト", "study"],
+  ],
+  fr: [
+    ["{name} diapos, séminaire, poster", "presentation"],
+    ["{name} révisions, examens, projets", "study"],
+  ],
+  es: [
+    ["{name} diapos, seminario, póster", "presentation"],
+    ["{name} estudio, exámenes, proyectos", "study"],
+  ],
+};
+
+export const SIT_TAIL_OVERRIDE = {
+  general: {
+    ko: [
+      ["발표 PPT·포스터", "presentation"],
+      ["공부·일상 고민", "study"],
+    ],
+    "en-GB": [
+      ["Planning slides or a poster", "presentation"],
+      ["Study help and everyday worries", "study"],
+    ],
+    "zh-TW": [
+      ["簡報·海報", "presentation"],
+      ["讀書·日常煩惱", "study"],
+    ],
+    ja: [
+      ["発表スライド・ポスター", "presentation"],
+      ["学習·日常の相談", "study"],
+    ],
+    fr: [
+      ["Diapos ou poster", "presentation"],
+      ["Révisions et vie quotidienne", "study"],
+    ],
+    es: [
+      ["Diapos o póster", "presentation"],
+      ["Estudio y preocupaciones diarias", "study"],
+    ],
+  },
+  pharmacy: {
+    ko: [
+      ["약물·질환 발표 PPT·포스터", "presentation"],
+      ["약학과 공부·실습·일상", "study"],
+    ],
+    "en-GB": [
+      ["Drug, disease, or placement talks and posters", "presentation"],
+      ["Pharmacy study, placements, and everyday worries", "study"],
+    ],
+    "zh-TW": [
+      ["藥物·疾病簡報·海報", "presentation"],
+      ["藥學系讀書·實習·日常", "study"],
+    ],
+    ja: [
+      ["薬物・疾患発表スライド", "presentation"],
+      ["薬学部の学習・実習・日常", "study"],
+    ],
+    fr: [
+      ["Diapos médicaments / maladies", "presentation"],
+      ["Études pharma, stages et quotidien", "study"],
+    ],
+    es: [
+      ["Diapos fármacos / enfermedades", "presentation"],
+      ["Estudio farmacia, prácticas y día a día", "study"],
+    ],
+  },
+  medicine: {
+    ko: [
+      ["질환·케이스 발표 PPT·포스터", "presentation"],
+      ["의학과 공부·실습·일상", "study"],
+    ],
+    "en-GB": [
+      ["Case / disease presentation decks", "presentation"],
+      ["Med school study & clinical practice", "study"],
+    ],
+    "zh-TW": [
+      ["疾病·個案簡報·海報", "presentation"],
+      ["醫學系讀書·實習·日常", "study"],
+    ],
+    ja: [
+      ["疾患・症例発表スライド", "presentation"],
+      ["医学部の学習・実習・日常", "study"],
+    ],
+    fr: [
+      ["Diapos cas / maladie", "presentation"],
+      ["Études med & stages cliniques", "study"],
+    ],
+    es: [
+      ["Diapos caso / enfermedad", "presentation"],
+      ["Estudio medicina y práctica clínica", "study"],
+    ],
+  },
+  design: {
+    ko: [
+      ["프로토타입·발표 슬라이드", "presentation"],
+      ["디자인·UX 공부·프로젝트", "study"],
+    ],
+    "en-GB": [
+      ["Prototype & slide decks", "presentation"],
+      ["Design / UX study & projects", "study"],
+    ],
+    "zh-TW": [
+      ["原型·簡報投影片", "presentation"],
+      ["設計·UX 讀書·專題", "study"],
+    ],
+    ja: [
+      ["プロトタイプ・発表スライド", "presentation"],
+      ["デザイン・UX学習・プロジェクト", "study"],
+    ],
+    fr: [
+      ["Prototype & diapos", "presentation"],
+      ["Études design / UX & projets", "study"],
+    ],
+    es: [
+      ["Prototipo y diapositivas", "presentation"],
+      ["Estudio diseño / UX y proyectos", "study"],
+    ],
+  },
+  architecture: {
+    ko: [
+      ["설계 발표·포스터", "presentation"],
+      ["건축과 공부·스튜디오·일상", "study"],
+    ],
+    "en-GB": [
+      ["Design presentation decks", "presentation"],
+      ["Architecture study & studio work", "study"],
+    ],
+    "zh-TW": [
+      ["設計簡報·海報", "presentation"],
+      ["建築系讀書·工作室·日常", "study"],
+    ],
+    ja: [
+      ["設計発表・ポスター", "presentation"],
+      ["建築学科の学習・スタジオ", "study"],
+    ],
+    fr: [
+      ["Diapos & poster conception", "presentation"],
+      ["Études archi & studio", "study"],
+    ],
+    es: [
+      ["Diapos y póster diseño", "presentation"],
+      ["Estudio arquitectura y estudio", "study"],
+    ],
+  },
+  sports: {
+    ko: [
+      ["프로그램·손상 예방 발표", "presentation"],
+      ["스포츠과학 공부·훈련·일상", "study"],
+    ],
+    "en-GB": [
+      ["Program & injury-prevention slides", "presentation"],
+      ["Sports science study & training", "study"],
+    ],
+    "zh-TW": [
+      ["計畫·傷害預防簡報", "presentation"],
+      ["運動科學讀書·訓練·日常", "study"],
+    ],
+    ja: [
+      ["プログラム・傷害予防発表", "presentation"],
+      ["スポーツ科学の学習・トレーニング", "study"],
+    ],
+    fr: [
+      ["Diapos programme & prévention", "presentation"],
+      ["Études STAPS & entraînement", "study"],
+    ],
+    es: [
       ["Diapos programa y prevención", "presentation"],
+      ["Estudio ciencias deporte y entreno", "study"],
     ],
   },
 };

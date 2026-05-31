@@ -1,35 +1,42 @@
-# Cómo usar esto
+# Cómo usar
 
-Pulsa **Copiar** y pega al inicio de un chat **nuevo** de ChatGPT o Gemini. Después envía tu tarea, borrador o pregunta como siempre.
+Pulsa **Copiar** y pega al inicio de un chat **nuevo** en ChatGPT o Gemini; luego envía tarea, borrador o pregunta.
 
-Fija favoritos en las **instrucciones personalizadas** de ChatGPT o en un **Gem** de Gemini.
+Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.
 
-## ¿Qué prompt cuándo?
+## Consejos — general
 
-1. Antes de entregar un trabajo o informe — **Revisión académica**
-2. Para comprobar si las referencias respaldan tus afirmaciones — **Verificación de fuentes**
-3. Para acortar respuestas largas — **Modo conciso**
-4. Para revisar la lógica y las pruebas de un borrador — **Revisión de redacción**
-5. Para planificar diapositivas o un póster — **Presentación**
-6. Ayuda de estudio y preocupaciones del día a día — **Compañero de estudio**
+- **Evidencia** — Cada afirmación con fuente ; no solo «en general»
+- **Profundidad** — Por qué–cómo–por tanto conectados
+- **Límites** — Contraejemplos, incertidumbre, alcance
+- **Cita** — Las referencias apoyan la frase exacta
+
+## ¿Qué prompt?
+
+| Situación | Prompt |
+|------|----------|
+| Antes de entregar trabajo | Revisión académica |
+| Si las fuentes respaldan las afirmaciones | Verificación de fuentes |
+| Acortar respuestas largas | Modo conciso |
+| Lógica y evidencia del borrador | Revisión de texto |
+| Diapos o póster | Estructura de presentación |
+| Estudio y preocupaciones diarias | Compañero de estudio |
 
 Usa **Revisión académica** y **Compañero de estudio** en chats separados.
 
-## Ver resultados en ChatGPT
+## En ChatGPT
 
-1. Activa la **búsqueda web** cuando necesites fuentes o datos actualizados.
-2. En reescrituras largas, pide al modelo que abra **Canvas** para editar junto al chat.
-3. Pide rúbricas y puntuaciones como **listas numeradas** en Canvas o una app de notas, no como tablas.
+- Activa la **búsqueda web** para comprobar fuentes e información reciente.
+- Abre borradores largos en **Canvas** para editar al lado.
+- Pide puntuación y rúbrica como **lista numerada**.
 
-## Ver resultados en Gemini
+## En Gemini
 
-1. Activa el **grounding de Búsqueda de Google** (icono del globo) para fuentes y hechos.
-2. Pide respuestas largas en **Google Docs** para editar antes de entregar.
-3. Pasa respuestas en lista a Docs o Sheets si se leen mejor allí.
+- Activa **Google Search** (icono globo) para verificar hechos.
+- Pega ediciones largas en **Google Docs**.
+- Mueve respuestas en tabla a Docs o Sheets si leen mejor.
 
 ## Precaución
 
-1. La IA no sustituye el criterio profesional en medicina, derecho, finanzas o campos similares.
-2. La verificación de fuentes es solo búsqueda y resumen. Comprueba tú mismo los hechos importantes en las fuentes originales.
-
-<!-- OVERLAY:guide-extra -->
+- La IA no sustituye el juicio profesional en **medicina, derecho, finanzas**, etc.
+- Verificación de fuentes = nivel resumen — confirme hechos importantes en originales

@@ -19,6 +19,8 @@ Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini
 | Corpus, littérature, données | Vérification des sources |
 | Règles, traits, exemples | Mode concis |
 | Brouillon rapport d'analyse | Relecture |
+| linguistique diapos, séminaire, poster | Structure de présentation |
+| linguistique révisions, examens, projets | Compagnon d'étude |
 
 Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.
 

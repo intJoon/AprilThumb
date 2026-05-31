@@ -221,11 +221,29 @@ function headingCount(text, heading) {
   return n;
 }
 
-function checkOverlayGuide(trackId, locale, guide) {
+function sitTableRowCount(guide, sitHeading) {
+  const start = guide.indexOf(sitHeading);
+  if (start < 0) return 0;
+  let n = 0;
+  let pastSep = false;
+  for (const line of guide.slice(start).split("\n")) {
+    if (line.startsWith("## ") && pastSep) break;
+    if (line.includes("------")) {
+      pastSep = true;
+      continue;
+    }
+    if (pastSep && /^\|[^|]+\|[^|]+\|$/.test(line)) n++;
+  }
+  return n;
+}
+
+function checkGuideStructure(trackId, locale, guide) {
   const issues = [];
   const h = GUIDE_HEADINGS[locale] || GUIDE_HEADINGS["en-GB"];
   if (bulletCount(guide) < 3) issues.push(`guide bullets=${bulletCount(guide)}`);
   if (!guide.includes("|")) issues.push("guide missing situation table");
+  const sitRows = sitTableRowCount(guide, h.sit);
+  if (sitRows !== 6) issues.push(`guide sit rows=${sitRows}`);
   if (headingCount(guide, h.chatgpt) !== 1) {
     issues.push(`guide chatgpt headings=${headingCount(guide, h.chatgpt)}`);
   }
@@ -282,6 +300,8 @@ function checkBundle(trackId, locale) {
     issues.push(...checkGeneralRubric(academic, locale));
   }
 
+  issues.push(...checkGuideStructure(trackId, locale, guideText));
+
   for (const [label, text] of [
     ["academic round0", academic],
     ["academic final", academic],
@@ -306,7 +326,6 @@ function checkBundle(trackId, locale) {
 
   if (OVERLAY_TRACKS.includes(trackId)) {
     issues.push(...checkOverlayRubric(trackId, locale, academic));
-    issues.push(...checkOverlayGuide(trackId, locale, guideText));
     const studyBullets = countBullets(study);
     const presBullets = countBullets(pres);
     if (studyBullets < 3) issues.push(`bundle study bullets=${studyBullets}`);
