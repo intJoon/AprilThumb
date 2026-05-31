@@ -1,5 +1,7 @@
 const STORAGE_KEY = "aprilstumb";
 
+import { mountFeedbackPanel } from "./feedback-panel.js";
+
 const picker = document.getElementById("picker");
 const pickerLabel = document.getElementById("picker-label");
 const pickerOptions = document.getElementById("picker-options");
@@ -20,7 +22,7 @@ let selectedLang = null;
 let currentBundle = null;
 let landingUi = null;
 let pickerMode = null;
-
+let feedbackPanel = null;
 const CHEVRON = `<svg class="chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
   <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`;
@@ -92,6 +94,7 @@ async function loadLandingUi(lang) {
   landingUi = bundle.ui;
   document.getElementById("footer-text").textContent = landingUi.footerDisclaimer;
   document.getElementById("site-title").textContent = landingUi.siteTitle;
+  feedbackPanel?.updateLabels?.();
 }
 
 function showToast(text) {
@@ -273,6 +276,7 @@ async function loadBundle(track, lang) {
   document.getElementById("footer-text").textContent = currentBundle.ui.footerDisclaimer;
   document.getElementById("prompts-label").textContent = currentBundle.ui.promptsLabel;
   landingUi = currentBundle.ui;
+  feedbackPanel?.updateLabels?.();
 
   guideEl.replaceChildren();
   guideEl.appendChild(renderMd(currentBundle.guide.markdown));
@@ -283,6 +287,7 @@ async function loadBundle(track, lang) {
   }
 
   document.documentElement.lang = lang === "en-GB" ? "en" : lang.split("-")[0];
+  await feedbackPanel?.refresh?.();
 }
 
 async function tryLoadContent() {
@@ -304,6 +309,7 @@ async function tryLoadContent() {
     }
   }
   updateHeaderButtons();
+  feedbackPanel?.refresh?.();
 }
 
 async function init() {
@@ -317,6 +323,14 @@ async function init() {
   selectedLang = params.lang || stored?.lang || null;
 
   await loadLandingUi(selectedLang || "ko");
+  feedbackPanel = mountFeedbackPanel({
+    ui,
+    trackLabel,
+    langLabel,
+    selectedTrack: () => selectedTrack,
+    selectedLang: () => selectedLang,
+    showToast,
+  });
   updateHeaderButtons();
   picker.hidden = true;
 

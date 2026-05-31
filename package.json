@@ -1,6 +1,7 @@
 {
   "name": "aprilstumb",
   "private": true,
+  "type": "module",
   "scripts": {
     "generate": "node scripts/generate-all-content.mjs",
     "build": "node scripts/generate-all-content.mjs && node scripts/build-content.mjs",
@@ -11,6 +12,10 @@
     "instagram:export:zh": "node scripts/export-instagram-slides.mjs --locale=zh-TW",
     "vercel-build": "npm run build",
     "dev": "npm run build && npx serve public -l 3456"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "@vercel/analytics": "^2.0.1"
   },
   "devDependencies": {
     "playwright": "^1.52.0",

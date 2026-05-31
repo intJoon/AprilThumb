@@ -79,6 +79,36 @@
       <p id="footer-text"></p>
     </footer>
 
+    <section id="feedback-section" class="feedback-section wrap" hidden aria-label="Feedback">
+      <details class="feedback-disclosure" id="feedback-disclosure">
+        <summary class="feedback-summary">
+          <span id="feedback-summary-label">피드백</span>
+          <svg class="feedback-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </summary>
+        <div class="feedback-inner">
+          <ul id="feedback-list" class="comments-list"></ul>
+          <p class="comments-empty" id="feedback-empty" hidden></p>
+          <form id="feedback-form" class="comment-form" autocomplete="off">
+            <p class="comment-context" id="feedback-meta"></p>
+            <label class="sr-only" for="feedback-body" id="label-feedback-body"></label>
+            <textarea
+              id="feedback-body"
+              class="comment-input"
+              rows="4"
+              maxlength="500"
+              required
+            ></textarea>
+            <div class="comment-form-actions">
+              <button type="submit" class="btn-submit" id="btn-feedback-submit"></button>
+            </div>
+            <input type="text" name="website" class="comment-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          </form>
+        </div>
+      </details>
+    </section>
+
     <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
