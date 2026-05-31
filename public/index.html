@@ -80,31 +80,49 @@
     </footer>
 
     <section id="feedback-section" class="feedback-section wrap" hidden aria-label="Feedback">
+      <p class="feedback-section-label" id="feedback-section-label"></p>
       <details class="feedback-disclosure" id="feedback-disclosure">
         <summary class="feedback-summary">
-          <span id="feedback-summary-label">피드백</span>
+          <span class="feedback-summary-main">
+            <span id="feedback-summary-label">피드백</span>
+            <span id="feedback-summary-hint" class="feedback-summary-hint"></span>
+          </span>
           <svg class="feedback-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </summary>
         <div class="feedback-inner">
-          <ul id="feedback-list" class="comments-list"></ul>
-          <p class="comments-empty" id="feedback-empty" hidden></p>
-          <form id="feedback-form" class="comment-form" autocomplete="off">
-            <p class="comment-context" id="feedback-meta"></p>
-            <label class="sr-only" for="feedback-body" id="label-feedback-body"></label>
-            <textarea
-              id="feedback-body"
-              class="comment-input"
-              rows="4"
-              maxlength="500"
-              required
-            ></textarea>
-            <div class="comment-form-actions">
-              <button type="submit" class="btn-submit" id="btn-feedback-submit"></button>
+          <div class="feedback-compose">
+            <p class="feedback-scope" id="feedback-scope"></p>
+            <form id="feedback-form" class="comment-form" autocomplete="off">
+              <p class="comment-context" id="feedback-meta"></p>
+              <label class="sr-only" for="feedback-body" id="label-feedback-body"></label>
+              <div class="comment-input-wrap">
+                <textarea
+                  id="feedback-body"
+                  class="comment-input"
+                  rows="4"
+                  maxlength="500"
+                  required
+                ></textarea>
+                <span class="comment-char-count" id="feedback-char-count" aria-live="polite"></span>
+              </div>
+              <div class="comment-form-actions">
+                <button type="submit" class="btn-submit" id="btn-feedback-submit"></button>
+              </div>
+              <input type="text" name="website" class="comment-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            </form>
+          </div>
+          <div class="feedback-divider" role="separator" aria-hidden="true"></div>
+          <div class="feedback-feed" id="feedback-feed">
+            <p class="feedback-status feedback-loading" id="feedback-loading" hidden></p>
+            <div class="feedback-status feedback-error" id="feedback-error" hidden>
+              <p class="feedback-error-text" id="feedback-error-text"></p>
+              <button type="button" class="btn-retry" id="btn-feedback-retry"></button>
             </div>
-            <input type="text" name="website" class="comment-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          </form>
+            <ul id="feedback-list" class="comments-list"></ul>
+            <p class="comments-empty" id="feedback-empty" hidden></p>
+          </div>
         </div>
       </details>
     </section>

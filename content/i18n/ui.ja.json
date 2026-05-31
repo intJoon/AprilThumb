@@ -27,6 +27,13 @@
   "commentsMinutesAgo": "{n}分前",
   "commentsHoursAgo": "{n}時間前",
   "commentsDaysAgo": "{n}日前",
+  "commentsScopeAll": "すべてのフィードバック · 全言語・全分野",
+  "commentsScopeHint": "匿名 · 全体公開",
+  "commentsFirstCta": "最初のフィードバックを書く",
+  "commentsSummaryCount": "フィードバック · 全{n}件",
+  "commentsLoading": "読み込み中…",
+  "commentsLoadError": "フィードバックを読み込めませんでした",
+  "commentsRetry": "再試行",
   "tracks": {
     "pharmacy": "薬学",
     "general": "一般",

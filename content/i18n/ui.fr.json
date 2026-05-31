@@ -27,6 +27,13 @@
   "commentsMinutesAgo": "Il y a {n} min",
   "commentsHoursAgo": "Il y a {n} h",
   "commentsDaysAgo": "Il y a {n} j",
+  "commentsScopeAll": "Tous les retours · toutes langues et filières",
+  "commentsScopeHint": "Anonyme · visible par tous",
+  "commentsFirstCta": "Laisser le premier retour",
+  "commentsSummaryCount": "Retours · {n} au total",
+  "commentsLoading": "Chargement…",
+  "commentsLoadError": "Impossible de charger les retours",
+  "commentsRetry": "Réessayer",
   "tracks": {
     "pharmacy": "Pharmacie",
     "general": "Général",

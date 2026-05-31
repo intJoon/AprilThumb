@@ -27,6 +27,13 @@
   "commentsMinutesAgo": "{n}m ago",
   "commentsHoursAgo": "{n}h ago",
   "commentsDaysAgo": "{n}d ago",
+  "commentsScopeAll": "All feedback · every language & field",
+  "commentsScopeHint": "Anonymous · publicly visible",
+  "commentsFirstCta": "Leave the first feedback",
+  "commentsSummaryCount": "Feedback · {n} total",
+  "commentsLoading": "Loading…",
+  "commentsLoadError": "Could not load feedback",
+  "commentsRetry": "Retry",
   "tracks": {
     "pharmacy": "Pharmacy",
     "general": "General",

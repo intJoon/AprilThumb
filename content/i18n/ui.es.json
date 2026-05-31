@@ -27,6 +27,13 @@
   "commentsMinutesAgo": "Hace {n} min",
   "commentsHoursAgo": "Hace {n} h",
   "commentsDaysAgo": "Hace {n} d",
+  "commentsScopeAll": "Todos los comentarios · todos los idiomas y áreas",
+  "commentsScopeHint": "Anónimo · visible para todos",
+  "commentsFirstCta": "Dejar el primer comentario",
+  "commentsSummaryCount": "Comentarios · {n} en total",
+  "commentsLoading": "Cargando…",
+  "commentsLoadError": "No se pudieron cargar los comentarios",
+  "commentsRetry": "Reintentar",
   "tracks": {
     "pharmacy": "Farmacia",
     "general": "General",

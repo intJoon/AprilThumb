@@ -577,9 +577,19 @@ main {
 }
 
 .feedback-section {
+  margin-top: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: max(2.5rem, env(safe-area-inset-bottom));
   border-top: 1px solid var(--border);
+}
+
+.feedback-section-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
 .feedback-section[hidden] {
@@ -595,7 +605,8 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  padding: 1rem 0;
+  min-height: 48px;
+  padding: 0.75rem 0;
   font-size: 0.95rem;
   font-weight: 650;
   color: var(--text);
@@ -606,6 +617,29 @@ main {
 
 .feedback-summary::-webkit-details-marker {
   display: none;
+}
+
+.feedback-summary::marker {
+  content: "";
+}
+
+.feedback-summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.feedback-summary-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.feedback-summary-hint {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted);
 }
 
 .feedback-chevron {
@@ -622,6 +656,72 @@ main {
 
 .feedback-inner {
   padding-bottom: 0.5rem;
+}
+
+.feedback-compose {
+  flex-shrink: 0;
+}
+
+.feedback-scope {
+  margin: 0 0 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.feedback-divider {
+  height: 1px;
+  margin: 1.25rem 0 1rem;
+  background: var(--border);
+}
+
+.feedback-feed {
+  max-height: min(40vh, 320px);
+  overflow-y: auto;
+  padding: 0.35rem 0.15rem 0.85rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.feedback-status {
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+.feedback-loading {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.feedback-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.feedback-error-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.btn-retry {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.btn-retry:hover {
+  border-color: rgba(15, 118, 110, 0.35);
+  background: var(--accent-soft);
 }
 
 .comments-label {
@@ -647,7 +747,30 @@ main {
 }
 
 .comment-form {
-  margin-top: 1.25rem;
+  margin-top: 0;
+}
+
+.comment-input-wrap {
+  position: relative;
+}
+
+.comment-char-count {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted);
+  pointer-events: none;
+  line-height: 1;
+}
+
+.comment-char-count--warn {
+  color: #b45309;
+}
+
+.comment-char-count--limit {
+  color: #b91c1c;
 }
 
 .comment-input {
@@ -655,7 +778,7 @@ main {
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: var(--radius);
-  padding: 0.85rem 1rem;
+  padding: 0.85rem 1rem 1.65rem;
   font: inherit;
   font-size: 16px;
   line-height: 1.55;
@@ -730,6 +853,11 @@ main {
   border-radius: var(--radius);
   padding: 0.85rem 1rem 0.75rem;
   box-shadow: var(--shadow);
+  transition: background 0.35s ease;
+}
+
+.comment-bubble--new {
+  background: var(--accent-soft);
 }
 
 .comment-bubble::before {
@@ -747,10 +875,11 @@ main {
 
 .comment-meta {
   margin: 0 0 0.35rem;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--accent);
   letter-spacing: 0.01em;
+  line-height: 1.45;
 }
 
 .comment-body {
@@ -764,7 +893,8 @@ main {
 .comment-when {
   display: block;
   margin-top: 0.45rem;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
+  line-height: 1.45;
   color: var(--muted);
 }
 
@@ -782,8 +912,10 @@ main {
 
 @media (prefers-reduced-motion: reduce) {
   .chevron,
+  .feedback-chevron,
   .btn-copy,
-  .toast {
+  .toast,
+  .comment-bubble {
     transition: none;
   }
 }
