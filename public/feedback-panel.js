@@ -63,9 +63,15 @@ export function mountFeedbackPanel(ctx) {
 
   function updateCharCount() {
     const len = bodyInput.value.length;
-    charCount.textContent = `${len}/${MAX_BODY}`;
-    charCount.classList.toggle("comment-char-count--warn", len >= WARN_AT);
-    charCount.classList.toggle("comment-char-count--limit", len >= MAX_BODY);
+    const show = len >= WARN_AT;
+    charCount.classList.toggle("is-visible", show);
+    if (show) {
+      charCount.textContent = `${len}/${MAX_BODY}`;
+      charCount.classList.toggle("comment-char-count--warn", len >= WARN_AT);
+      charCount.classList.toggle("comment-char-count--limit", len >= MAX_BODY);
+    } else {
+      charCount.classList.remove("comment-char-count--warn", "comment-char-count--limit");
+    }
     autoResizeInput();
   }
 
