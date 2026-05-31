@@ -200,7 +200,7 @@ function renderPicker(mode) {
   pickerMode = mode;
   const src = uiSource();
   picker.hidden = false;
-  pickerOptions.className = mode === "lang" ? "lang-row" : "track-grid";
+  pickerOptions.className = "track-grid";
   pickerOptions.replaceChildren();
 
   if (mode === "lang") {
@@ -208,7 +208,7 @@ function renderPicker(mode) {
     for (const locale of manifest.locales) {
       const btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "lang-chip";
+      btn.className = "track-card";
       if (locale === selectedLang) btn.classList.add("selected");
       btn.textContent = langLabel(locale);
       btn.dataset.lang = locale;

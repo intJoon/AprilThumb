@@ -142,6 +142,13 @@ body {
   border-style: dashed;
 }
 
+.btn-ghost:not(.is-empty) {
+  border-style: solid;
+  border-color: rgba(15, 118, 110, 0.45);
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
 .btn-ghost[aria-expanded="true"] {
   border-color: rgba(15, 118, 110, 0.45);
   background: var(--accent-soft);
@@ -152,13 +159,18 @@ body {
   margin-bottom: 1.35rem;
 }
 
-.picker-label {
+.picker-label,
+.prompts-label {
   margin: 0 0 0.65rem;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.prompts-label {
+  margin-bottom: 0.85rem;
 }
 
 .track-grid {
@@ -223,41 +235,6 @@ body {
   cursor: not-allowed;
 }
 
-.lang-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-
-.lang-chip {
-  border: 1px solid var(--border);
-  background: var(--card);
-  color: var(--text);
-  font: inherit;
-  font-size: 0.8rem;
-  font-weight: 600;
-  padding: 0.45rem 0.85rem;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: border-color 0.15s, background 0.15s, color 0.15s;
-}
-
-.lang-chip:hover {
-  border-color: rgba(15, 118, 110, 0.3);
-  transform: translateY(-1px);
-}
-
-.lang-chip:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.lang-chip.selected {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
-}
-
 main {
   padding-bottom: 2.5rem;
 }
@@ -319,15 +296,6 @@ main {
 
 .guide .md strong {
   color: var(--text);
-}
-
-.prompts-label {
-  margin: 0 0 0.85rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
 }
 
 .prompt {
@@ -687,9 +655,9 @@ main {
   background: var(--card);
   color: var(--text);
   font: inherit;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1.15rem;
   border-radius: 999px;
   cursor: pointer;
   transition: border-color 0.15s, background 0.15s;
@@ -698,15 +666,6 @@ main {
 .btn-retry:hover {
   border-color: rgba(15, 118, 110, 0.35);
   background: var(--accent-soft);
-}
-
-.comments-label {
-  margin: 0 0 0.35rem;
-  font-size: 0.72rem;
-  font-weight: 650;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
 }
 
 .comment-context {
@@ -754,12 +713,14 @@ main {
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: var(--radius);
-  padding: 0.85rem 1rem 1.65rem;
+  padding: 0.65rem 1rem 1.5rem;
   font: inherit;
   font-size: 16px;
   line-height: 1.55;
-  resize: vertical;
-  min-height: 5.5rem;
+  resize: none;
+  min-height: 2.75rem;
+  max-height: 8.5rem;
+  overflow-y: hidden;
   transition: border-color 0.15s;
 }
 
