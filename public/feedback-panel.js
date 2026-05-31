@@ -186,7 +186,10 @@ export function mountFeedbackPanel(ctx) {
       if (e.name === "AbortError") return;
       if (cachedItems) {
         renderList(cachedItems, highlightNewest);
-        ctx.showToast(ctx.ui("commentsLoadError"));
+        ctx.flashButton(retryBtn, ctx.ui("commentsLoadError"), {
+          error: true,
+          restoreText: ctx.ui("commentsRetry"),
+        });
         return;
       }
       showError(true);
@@ -236,10 +239,15 @@ export function mountFeedbackPanel(ctx) {
         website: honeypot?.value || "",
       });
       resetInputHeight();
-      ctx.showToast(ctx.ui("commentsPosted"));
+      const submitLabel = ctx.ui("commentsSubmit");
+      ctx.flashButton(submitBtn, ctx.ui("commentsPosted"), { restoreText: submitLabel });
       await loadFeed(true);
     } catch {
-      ctx.showToast(ctx.ui("commentsError"));
+      const submitLabel = ctx.ui("commentsSubmit");
+      ctx.flashButton(submitBtn, ctx.ui("commentsError"), {
+        error: true,
+        restoreText: submitLabel,
+      });
     } finally {
       submitBtn.disabled = false;
       submitBtn.removeAttribute("aria-busy");

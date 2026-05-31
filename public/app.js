@@ -1,6 +1,7 @@
 const STORAGE_KEY = "aprilstumb";
 
 import { mountFeedbackPanel } from "./feedback-panel.js";
+import { flashButton, flashIconButton, flashLabel } from "./button-flash.js";
 
 const picker = document.getElementById("picker");
 const pickerLabel = document.getElementById("picker-label");
@@ -8,14 +9,12 @@ const pickerOptions = document.getElementById("picker-options");
 const appView = document.getElementById("app-view");
 const guideEl = document.getElementById("guide");
 const app = document.getElementById("app");
-const toast = document.getElementById("toast");
 const btnChangeTrack = document.getElementById("btn-change-track");
 const btnChangeLang = document.getElementById("btn-change-lang");
 const btnLabelLang = document.getElementById("btn-label-lang");
 const btnLabelTrack = document.getElementById("btn-label-track");
 const btnCopyLink = document.getElementById("btn-copy-link");
 
-let toastTimer;
 let manifest;
 let selectedTrack = null;
 let selectedLang = null;
@@ -97,19 +96,6 @@ async function loadLandingUi(lang) {
   feedbackPanel?.updateLabels?.();
 }
 
-function showToast(text) {
-  toast.textContent = text;
-  toast.hidden = false;
-  toast.classList.add("show");
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => {
-    toast.classList.remove("show");
-    setTimeout(() => {
-      toast.hidden = true;
-    }, 200);
-  }, 1800);
-}
-
 function getSiteUrl() {
   const base = (manifest?.siteUrl || location.origin).replace(/\/$/, "");
   return `${base}/`;
@@ -132,23 +118,14 @@ async function writeClipboard(text) {
 
 async function copyText(text, btn) {
   await writeClipboard(text);
-  const prev = btn.textContent;
-  btn.textContent = ui("copied");
-  btn.classList.add("copied");
-  btn.setAttribute("aria-label", ui("copied"));
-  setTimeout(() => {
-    btn.textContent = prev;
-    btn.classList.remove("copied");
-    btn.removeAttribute("aria-label");
-  }, 1400);
-  showToast(ui("toastCopied"));
+  flashButton(btn, ui("copied"), { restoreText: ui("copy"), okClass: "copied" });
 }
 
 async function copySiteLink() {
   await writeClipboard(getSiteUrl());
-  btnCopyLink.classList.add("copied");
-  setTimeout(() => btnCopyLink.classList.remove("copied"), 1400);
-  showToast(ui("toastLinkCopied"));
+  flashIconButton(btnCopyLink, ui("toastLinkCopied"), {
+    restoreLabel: ui("copyLink"),
+  });
 }
 
 function renderPrompt(item) {
@@ -291,6 +268,7 @@ async function loadBundle(track, lang) {
 }
 
 async function tryLoadContent() {
+  let bundleLoadFailed = false;
   if (selectedTrack && selectedLang) {
     saveSelection(selectedTrack, selectedLang);
     setParams(selectedTrack, selectedLang);
@@ -299,7 +277,7 @@ async function tryLoadContent() {
       appView.hidden = false;
     } catch {
       appView.hidden = true;
-      showToast(ui("loadError"));
+      bundleLoadFailed = true;
     }
   } else {
     appView.hidden = true;
@@ -309,6 +287,11 @@ async function tryLoadContent() {
     }
   }
   updateHeaderButtons();
+  if (bundleLoadFailed) {
+    const msg = ui("loadError");
+    flashLabel(btnLabelLang, btnChangeLang, msg, { error: true });
+    flashLabel(btnLabelTrack, btnChangeTrack, msg, { error: true });
+  }
   feedbackPanel?.prefetchCount?.();
 }
 
@@ -329,7 +312,7 @@ async function init() {
     langLabel,
     selectedTrack: () => selectedTrack,
     selectedLang: () => selectedLang,
-    showToast,
+    flashButton,
   });
   updateHeaderButtons();
   picker.hidden = true;
