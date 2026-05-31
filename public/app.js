@@ -287,7 +287,7 @@ async function loadBundle(track, lang) {
   }
 
   document.documentElement.lang = lang === "en-GB" ? "en" : lang.split("-")[0];
-  await feedbackPanel?.refresh?.();
+  await feedbackPanel?.prefetchCount?.();
 }
 
 async function tryLoadContent() {
@@ -309,7 +309,7 @@ async function tryLoadContent() {
     }
   }
   updateHeaderButtons();
-  feedbackPanel?.refresh?.();
+  feedbackPanel?.prefetchCount?.();
 }
 
 async function init() {

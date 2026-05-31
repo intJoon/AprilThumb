@@ -38,11 +38,11 @@ export function renderBubble(item, ctx) {
   return li;
 }
 
-export async function fetchAllComments() {
-  const res = await fetch(API);
+export async function fetchAllComments(signal) {
+  const res = await fetch(API, signal ? { signal } : undefined);
   if (!res.ok) throw new Error("load");
   const data = await res.json();
-  return data.comments || [];
+  return Array.isArray(data.comments) ? data.comments : [];
 }
 
 export async function postComment({ track, lang, body, website = "" }) {

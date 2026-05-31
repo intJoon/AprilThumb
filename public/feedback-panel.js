@@ -30,9 +30,9 @@ export function mountFeedbackPanel(ctx) {
   const submitBtn = el("btn-feedback-submit");
   const labelBody = el("label-feedback-body");
 
+  let cachedItems = null;
   let cachedCount = 0;
-  let loadState = "idle";
-  let fetchSeq = 0;
+  let feedAbort = null;
 
   function contextLine() {
     const track = ctx.selectedTrack();
@@ -79,22 +79,28 @@ export function mountFeedbackPanel(ctx) {
     updateCharCount();
   }
 
-  function syncFeedUi() {
-    if (!details.open) return;
-    loading.hidden = loadState !== "loading";
-    errorEl.hidden = loadState !== "error";
-    list.hidden = loadState === "loading" || loadState === "error";
-    if (loadState !== "ok") empty.hidden = true;
+  function showLoading(show) {
+    loading.hidden = !show;
+    if (show) {
+      errorEl.hidden = true;
+      list.hidden = true;
+      empty.hidden = true;
+    }
   }
 
-  function setLoadState(state) {
-    loadState = state;
-    syncFeedUi();
+  function showError(show) {
+    errorEl.hidden = !show;
+    if (show) {
+      loading.hidden = true;
+      list.hidden = true;
+      empty.hidden = true;
+    }
   }
 
   function renderList(items, highlightNewest = false) {
-    if (loadState !== "ok") return;
     list.replaceChildren();
+    showLoading(false);
+    showError(false);
     if (!items.length) {
       list.hidden = false;
       empty.hidden = false;
@@ -112,7 +118,58 @@ export function mountFeedbackPanel(ctx) {
     }
   }
 
-  async function refresh(highlightNewest = false) {
+  function applyItems(items, highlightNewest = false) {
+    cachedItems = items;
+    cachedCount = items.length;
+    updateSummary();
+    if (details.open) renderList(items, highlightNewest);
+  }
+
+  async function prefetchCount() {
+    if (feedAbort) feedAbort.abort();
+    feedAbort = new AbortController();
+    const signal = feedAbort.signal;
+    try {
+      const items = await fetchAllComments(signal);
+      if (signal.aborted) return;
+      applyItems(items);
+    } catch (e) {
+      if (e.name === "AbortError") return;
+    }
+  }
+
+  async function loadFeed(highlightNewest = false) {
+    if (!details.open) return;
+
+    if (cachedItems) {
+      renderList(cachedItems, highlightNewest);
+    } else {
+      showLoading(true);
+    }
+
+    if (feedAbort) feedAbort.abort();
+    feedAbort = new AbortController();
+    const signal = feedAbort.signal;
+
+    try {
+      const items = await fetchAllComments(signal);
+      if (signal.aborted) return;
+      applyItems(items, highlightNewest);
+    } catch (e) {
+      if (e.name === "AbortError") return;
+      if (cachedItems) {
+        renderList(cachedItems, highlightNewest);
+        ctx.showToast(ctx.ui("commentsLoadError"));
+        return;
+      }
+      showError(true);
+      list.replaceChildren();
+      list.hidden = true;
+      empty.hidden = true;
+    }
+  }
+
+  function syncSection() {
     const track = ctx.selectedTrack();
     const lang = ctx.selectedLang();
     updateLabels();
@@ -122,37 +179,15 @@ export function mountFeedbackPanel(ctx) {
       return;
     }
     section.hidden = false;
-
-    const seq = ++fetchSeq;
-    if (details.open) setLoadState("loading");
-
-    try {
-      const items = await fetchAllComments();
-      if (seq !== fetchSeq) return;
-      cachedCount = items.length;
-      updateSummary();
-      if (!details.open) {
-        loadState = "idle";
-        return;
-      }
-      setLoadState("ok");
-      renderList(items, highlightNewest);
-    } catch {
-      if (seq !== fetchSeq) return;
-      if (!details.open) return;
-      setLoadState("error");
-      list.replaceChildren();
-      list.hidden = true;
-      empty.hidden = true;
-    }
   }
 
   details.addEventListener("toggle", () => {
     setDisclosureAria();
-    if (details.open) refresh();
+    if (details.open) loadFeed();
+    else if (feedAbort) feedAbort.abort();
   });
 
-  retryBtn.addEventListener("click", () => refresh());
+  retryBtn.addEventListener("click", () => loadFeed());
 
   bodyInput.addEventListener("input", updateCharCount);
 
@@ -176,7 +211,7 @@ export function mountFeedbackPanel(ctx) {
       bodyInput.value = "";
       updateCharCount();
       ctx.showToast(ctx.ui("commentsPosted"));
-      await refresh(true);
+      await loadFeed(true);
     } catch {
       ctx.showToast(ctx.ui("commentsError"));
     } finally {
@@ -187,5 +222,12 @@ export function mountFeedbackPanel(ctx) {
 
   updateLabels();
 
-  return { updateLabels, refresh };
+  return {
+    updateLabels: () => {
+      syncSection();
+      updateLabels();
+    },
+    prefetchCount,
+    refresh: loadFeed,
+  };
 }
