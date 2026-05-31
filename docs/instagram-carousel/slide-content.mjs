@@ -1,4 +1,5 @@
 export const SITE_URL = "https://aprilstumb.vercel.app";
+export const SLIDE_COUNT = 6;
 
 export const LOCALES = [
   { id: "ko", label: "한국어", htmlLang: "ko", fontExtra: "" },
@@ -26,11 +27,6 @@ export const SLIDES_BY_LOCALE = {
       perks: ["한 링크", "즉시 복사", "계속 재사용"],
     },
     s4: {
-      tag: "How",
-      h2: "30초면 끝",
-      steps: ["언어", "전공", "복사 → 새 대화"],
-    },
-    s5: {
       tag: "Roles",
       h2: "목적별 프롬프트",
       roles: [
@@ -42,7 +38,7 @@ export const SLIDES_BY_LOCALE = {
         { n: "06", t: "학습 동반자", d: "공부·번아웃" },
       ],
     },
-    s6: {
+    s5: {
       tag: "Scope",
       h2: "전공·언어<br />전부",
       majorsLabel: "전공",
@@ -75,7 +71,7 @@ export const SLIDES_BY_LOCALE = {
       ],
       languages: ["한국어", "English", "中文", "日本語", "Français", "Español"],
     },
-    s7: {
+    s6: {
       tag: "Save",
       h2: "시험·과제 전에<br />꺼내 쓰기",
       cta: "프로필 · QR · 스캔",
@@ -102,11 +98,6 @@ export const SLIDES_BY_LOCALE = {
       perks: ["One link", "Copy fast", "Reuse anytime"],
     },
     s4: {
-      tag: "How",
-      h2: "30 seconds",
-      steps: ["Language", "Major", "Copy → new chat"],
-    },
-    s5: {
       tag: "Roles",
       h2: "Pick your role",
       roles: [
@@ -118,7 +109,7 @@ export const SLIDES_BY_LOCALE = {
         { n: "06", t: "Study companion", d: "Study · burnout" },
       ],
     },
-    s6: {
+    s5: {
       tag: "Scope",
       h2: "Every major<br />& language",
       majorsLabel: "Majors",
@@ -151,7 +142,7 @@ export const SLIDES_BY_LOCALE = {
       ],
       languages: ["한국어", "English", "中文", "日本語", "Français", "Español"],
     },
-    s7: {
+    s6: {
       tag: "Save",
       h2: "Open before<br />deadlines",
       cta: "Bio · QR · scan",
@@ -178,11 +169,6 @@ export const SLIDES_BY_LOCALE = {
       perks: ["一個連結", "立即複製", "反覆使用"],
     },
     s4: {
-      tag: "How",
-      h2: "30 秒",
-      steps: ["語言", "科系", "複製 → 新對話"],
-    },
-    s5: {
       tag: "Roles",
       h2: "依目的選擇",
       roles: [
@@ -194,7 +180,7 @@ export const SLIDES_BY_LOCALE = {
         { n: "06", t: "學習夥伴", d: "讀書·倦怠" },
       ],
     },
-    s6: {
+    s5: {
       tag: "Scope",
       h2: "科系·語言<br />全部",
       majorsLabel: "科系",
@@ -227,7 +213,7 @@ export const SLIDES_BY_LOCALE = {
       ],
       languages: ["한국어", "English", "中文", "日本語", "Français", "Español"],
     },
-    s7: {
+    s6: {
       tag: "Save",
       h2: "考前作業前<br />再拿出來",
       cta: "個人檔案 · QR · 掃描",

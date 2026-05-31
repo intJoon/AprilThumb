@@ -1,4 +1,4 @@
-import { SLIDES_BY_LOCALE, LOCALES, SITE_URL } from "../docs/instagram-carousel/slide-content.mjs";
+import { SLIDES_BY_LOCALE, LOCALES, SITE_URL, SLIDE_COUNT } from "../docs/instagram-carousel/slide-content.mjs";
 
 function esc(s) {
   return String(s)
@@ -53,7 +53,7 @@ export function renderSlidesHtml(localeId) {
   const font = FONT_BY_LOCALE[localeId] ?? FONT_BY_LOCALE.en;
   const { display, body, mono, links, headWeight, headTracking, headLineHeight } = font;
 
-  const roleRows = d.s5.roles
+  const roleRows = d.s4.roles
     .map(
       (r, i) => `
         <li class="panel deck-card panel--role${i % 3 === 0 ? " panel--acid deck-card--acid" : ""}">
@@ -67,16 +67,16 @@ export function renderSlidesHtml(localeId) {
 
   const deckBurst = `<div class="deck-burst" aria-hidden="true"></div>`;
 
-  const majorChips = d.s6.majors
+  const majorChips = d.s5.majors
     .map(
       (m, i) =>
         `<span class="major-chip deck-card${(Math.floor(i / 4) + (i % 4)) % 2 === 0 ? " major-chip--acid deck-card--acid" : ""}">${esc(m)}</span>`
     )
     .join("");
   const scopeMajors = `
-        <p class="section-label section-label--majors">${esc(d.s6.majorsLabel)}</p>
+        <p class="section-label section-label--majors">${esc(d.s5.majorsLabel)}</p>
         <div class="major-grid">${majorChips}</div>`;
-  const scopeLangs = d.s6.languages
+  const scopeLangs = d.s5.languages
     .map((l, i) => {
       const acid = i % 2 === 0;
       return `<span class="lang-pill deck-card${acid ? " lang-pill--acid deck-card--acid" : ""}">${esc(l)}</span>`;
@@ -87,7 +87,7 @@ export function renderSlidesHtml(localeId) {
     `<section class="slide slide--deck ${mod}" data-n="${n}">
       <header class="slide-top">
         <span class="brand">AprilThumb</span>
-        <span class="idx">${String(n).padStart(2, "0")}<span class="idx-total"> / 07</span></span>
+        <span class="idx">${String(n).padStart(2, "0")}<span class="idx-total"> / ${String(SLIDE_COUNT).padStart(2, "0")}</span></span>
       </header>
       ${inner}
     </section>`;
@@ -720,49 +720,40 @@ export function renderSlidesHtml(localeId) {
         `
         <span class="tag">${esc(d.s4.tag)}</span>
         <h2 class="head">${raw(d.s4.h2)}</h2>
-        <div class="flow">
-          ${d.s4.steps.map((t, i) => `<div class="flow-step"><span class="arrow-n">${String(i + 1).padStart(2, "0")}</span><span>${esc(t)}</span></div>`).join("")}
-        </div>`
-      )}
-      ${slide(
-        5,
-        `
-        <span class="tag">${esc(d.s5.tag)}</span>
-        <h2 class="head">${raw(d.s5.h2)}</h2>
         <ul class="roles">${roleRows}</ul>`,
         "slide--roles"
       )}
       ${slide(
-        6,
+        5,
         `
         ${deckBurst}
-        <span class="tag">${esc(d.s6.tag)}</span>
-        <h2 class="head">${raw(d.s6.h2)}</h2>
+        <span class="tag">${esc(d.s5.tag)}</span>
+        <h2 class="head">${raw(d.s5.h2)}</h2>
         <div class="scope-body">
           ${scopeMajors}
           <div class="deck-divider">
-            <p class="section-label">${esc(d.s6.languagesLabel)}</p>
+            <p class="section-label">${esc(d.s5.languagesLabel)}</p>
             <div class="lang-rail">${scopeLangs}</div>
           </div>
         </div>`,
         "slide--scope"
       )}
       ${slide(
-        7,
+        6,
         `
-        <span class="tag">${esc(d.s7.tag)}</span>
-        <h2 class="head">${raw(d.s7.h2)}</h2>
+        <span class="tag">${esc(d.s6.tag)}</span>
+        <h2 class="head">${raw(d.s6.h2)}</h2>
         <div class="cta-wrap">
           <div class="qr-card">
             <img src="qr.png" alt="${esc(SITE_URL)}" width="240" height="240" />
-            <span class="scan-lbl">${esc(d.s7.scan)}</span>
+            <span class="scan-lbl">${esc(d.s6.scan)}</span>
           </div>
           <div class="cta-text">
-            <p>${esc(d.s7.cta)}</p>
+            <p>${esc(d.s6.cta)}</p>
             <p class="url">aprilstumb.vercel.app</p>
           </div>
         </div>
-        <p class="fine">${esc(d.s7.disclaimer)}</p>`,
+        <p class="fine">${esc(d.s6.disclaimer)}</p>`,
         "slide--cta"
       )}
     </div>
