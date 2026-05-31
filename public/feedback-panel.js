@@ -15,11 +15,8 @@ function el(id) {
 
 export function mountFeedbackPanel(ctx) {
   const section = el("feedback-section");
-  const sectionLabel = el("feedback-section-label");
   const details = el("feedback-disclosure");
   const summaryLabel = el("feedback-summary-label");
-  const summaryHint = el("feedback-summary-hint");
-  const scopeLine = el("feedback-scope");
   const list = el("feedback-list");
   const empty = el("feedback-empty");
   const loading = el("feedback-loading");
@@ -62,21 +59,17 @@ export function mountFeedbackPanel(ctx) {
       summaryLabel.textContent = ctx
         .ui("commentsSummaryCount")
         .replace("{n}", String(cachedCount));
-      summaryHint.textContent = ctx.ui("commentsScopeHint");
     } else {
       summaryLabel.textContent = ctx.ui("commentsTitle");
-      summaryHint.textContent = ctx.ui("commentsFirstCta");
     }
   }
 
   function updateLabels() {
     updateSummary();
-    sectionLabel.textContent = ctx.ui("commentsTitle");
     bodyInput.placeholder = ctx.ui("commentsPlaceholder");
     submitBtn.textContent = ctx.ui("commentsSubmit");
     labelBody.textContent = ctx.ui("commentsPlaceholder");
     meta.textContent = contextLine();
-    scopeLine.textContent = ctx.ui("commentsScopeAll");
     empty.textContent = ctx.ui("commentsEmpty");
     loading.textContent = ctx.ui("commentsLoading");
     errorText.textContent = ctx.ui("commentsLoadError");

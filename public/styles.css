@@ -583,15 +583,6 @@ main {
   border-top: 1px solid var(--border);
 }
 
-.feedback-section-label {
-  margin: 0 0 0.35rem;
-  font-size: 0.72rem;
-  font-weight: 650;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 .feedback-section[hidden] {
   display: none !important;
 }
@@ -628,20 +619,6 @@ main {
   outline-offset: -2px;
 }
 
-.feedback-summary-main {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  min-width: 0;
-  flex: 1;
-}
-
-.feedback-summary-hint {
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--muted);
-}
-
 .feedback-chevron {
   width: 1.25rem;
   height: 1.25rem;
@@ -660,13 +637,6 @@ main {
 
 .feedback-compose {
   flex-shrink: 0;
-}
-
-.feedback-scope {
-  margin: 0 0 0.75rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--muted);
 }
 
 .feedback-divider {
