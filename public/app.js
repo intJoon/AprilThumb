@@ -1,7 +1,7 @@
 const STORAGE_KEY = "aprilstumb";
 
 import { mountFeedbackPanel } from "./feedback-panel.js";
-import { flashButton, flashIconButton, flashLabel } from "./button-flash.js";
+import { flashButton, flashIconButtonWithLabel, flashLabel } from "./button-flash.js";
 
 const picker = document.getElementById("picker");
 const pickerLabel = document.getElementById("picker-label");
@@ -14,6 +14,7 @@ const btnChangeLang = document.getElementById("btn-change-lang");
 const btnLabelLang = document.getElementById("btn-label-lang");
 const btnLabelTrack = document.getElementById("btn-label-track");
 const btnCopyLink = document.getElementById("btn-copy-link");
+const btnLabelCopy = document.getElementById("btn-label-copy");
 
 let manifest;
 let selectedTrack = null;
@@ -123,8 +124,9 @@ async function copyText(text, btn) {
 
 async function copySiteLink() {
   await writeClipboard(getSiteUrl());
-  flashIconButton(btnCopyLink, ui("toastLinkCopied"), {
+  flashIconButtonWithLabel(btnCopyLink, btnLabelCopy, ui("copied"), {
     restoreLabel: ui("copyLink"),
+    ariaMessage: ui("toastLinkCopied"),
   });
 }
 

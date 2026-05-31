@@ -138,12 +138,6 @@ body {
   height: 1.05rem;
 }
 
-.btn-ghost.copied {
-  border-color: rgba(21, 128, 61, 0.45);
-  background: #ecfdf3;
-  color: #15803d;
-}
-
 .btn-ghost:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -164,6 +158,14 @@ body {
 .btn-ghost:not(.is-empty):hover {
   border-color: rgba(15, 118, 110, 0.4);
   background: var(--accent-soft);
+}
+
+.btn-ghost.copied,
+.btn-ghost:not(.is-empty).copied,
+.btn-ghost--icon.copied {
+  border-color: rgba(21, 128, 61, 0.45);
+  background: #ecfdf3;
+  color: #15803d;
 }
 
 .btn-ghost[aria-expanded="true"] {

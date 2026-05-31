@@ -29,19 +29,29 @@ export function flashLabel(labelEl, hostBtn, message, { error = false, restoreTe
   }, 1600);
 }
 
-export function flashIconButton(btn, message, { error = false, restoreLabel, okClass = "copied" } = {}) {
-  if (!btn) return;
-  const prev = restoreLabel ?? btn.getAttribute("aria-label") ?? "";
-  btn.setAttribute("aria-label", message);
-  btn.classList.remove("btn-status-ok", "btn-status-error");
+export function flashIconButtonWithLabel(
+  btn,
+  labelEl,
+  message,
+  { restoreLabel, ariaMessage, okClass = "copied" } = {}
+) {
+  if (!btn || !labelEl) return;
+  const prevAria = restoreLabel ?? btn.getAttribute("aria-label") ?? "";
+  const aria = ariaMessage ?? message;
+  labelEl.hidden = false;
+  labelEl.textContent = message;
+  btn.setAttribute("aria-label", aria);
+  btn.classList.remove("btn-status-error");
   if (okClass) btn.classList.remove(okClass);
-  btn.classList.add(error ? "btn-status-error" : "btn-status-ok");
-  if (!error && okClass) btn.classList.add(okClass);
+  btn.classList.add("btn-status-ok");
+  if (okClass) btn.classList.add(okClass);
   clearTimeout(btn._flashTimer);
   btn._flashTimer = setTimeout(() => {
-    btn.classList.remove("btn-status-ok", "btn-status-error");
+    labelEl.hidden = true;
+    labelEl.textContent = "";
+    btn.classList.remove("btn-status-ok");
     if (okClass) btn.classList.remove(okClass);
-    if (prev) btn.setAttribute("aria-label", prev);
+    if (prevAria) btn.setAttribute("aria-label", prevAria);
     else btn.removeAttribute("aria-label");
   }, 1600);
 }
