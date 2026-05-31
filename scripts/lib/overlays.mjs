@@ -204,16 +204,13 @@ export const DISCIPLINE = {
 
 import { depthFor } from "./discipline-depth.mjs";
 import { rubricFor } from "./discipline-rubrics.mjs";
-import { guideExtraFor } from "./discipline-guide.mjs";
 
 export function buildOverlay(trackId, locale) {
   const d = DISCIPLINE[trackId][locale] || DISCIPLINE[trackId].ko;
   const isKo = locale === "ko";
-  const guideExtra = guideExtraFor(trackId, locale);
 
   const templates = {
     ko: {
-      "guide-extra": guideExtra,
       "source-keywords": `\n## ${DISCIPLINE[trackId].ko} 키워드 예\n\n- 전공 핵심 용어 2~4그룹 (개념 | 방법 | 결과 | 한계)\n- ${DISCIPLINE[trackId].ko} 맥락에 맞게 조정\n`,
       "concise-examples": `\n## ${DISCIPLINE[trackId].ko} 예\n\n- 「${DISCIPLINE[trackId].ko} 핵심 개념, 더 짧게」\n- 고유명사·수치·전공 용어는 축약하지 말 것\n`,
       "writing-examples": `\n## ${DISCIPLINE[trackId].ko} 예\n\n✅ \`§2.1: 중요 — ${DISCIPLINE[trackId].ko} 핵심 주장, 출처 없음. 해당 전공 교재·논문 § 추가.\`\n`,
@@ -222,7 +219,6 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## ${DISCIPLINE[trackId].ko} 공부 예\n\n- 「${DISCIPLINE[trackId].ko} 시험 D-1」→ 25분 플랜 + 핵심 5개\n- 「${DISCIPLINE[trackId].ko} 과제 막힘」→ 다음 행동 2개\n`,
     },
     "en-GB": {
-      "guide-extra": guideExtra,
       "source-keywords": `\n## ${d} keyword examples\n\n- 2–4 keyword groups (concept | method | result | limit)\n- Adjust to the ${d} context\n`,
       "concise-examples": `\n## ${d} example\n\n- 「Explain a ${d} concept, shorter」\n- Do not shorten proper nouns, figures, or discipline terms\n`,
       "writing-examples": `\n## ${d} example\n\n✅ \`§2.1: major — ${d} claim lacks source. Add textbook or paper §.\`\n`,
@@ -231,7 +227,6 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## ${d} study examples\n\n- 「${d} exam tomorrow」→ 25-min plan + 5 key points\n- 「Stuck on ${d} assignment」→ 2 next actions\n`,
     },
     "zh-TW": {
-      "guide-extra": guideExtra,
       "source-keywords": `\n## ${d} 關鍵詞示例\n\n- 2–4 組關鍵詞（概念 | 方法 | 結果 | 限制）\n- 依 ${d} 情境調整\n`,
       "concise-examples": `\n## ${d} 示例\n\n- 「${d} 核心概念，更短」\n- 專有名詞、數字、術語不可縮寫\n`,
       "writing-examples": `\n## ${d} 示例\n\n✅ \`§2.1: 重要 — ${d} 主張無出處。補充教材或論文 §。\`\n`,
@@ -240,7 +235,6 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## ${d} 學習示例\n\n- 「${d} 考試明天」→ 25 分鐘計畫 + 5 重點\n- 「${d} 作業卡住」→ 2 個下一步\n`,
     },
     ja: {
-      "guide-extra": guideExtra,
       "source-keywords": `\n## ${d} キーワード例\n\n- 2–4 グループ（概念 | 方法 | 結果 | 限界）\n- ${d} 文脈に合わせて調整\n`,
       "concise-examples": `\n## ${d} 例\n\n- 「${d} の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n`,
       "writing-examples": `\n## ${d} 例\n\n✅ \`§2.1: 重要 — ${d} の主張に出典なし。教科書や論文 § を追加。\`\n`,
@@ -249,7 +243,6 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## ${d} 学習例\n\n- 「${d} 試験が明日」→ 25分プラン + 要点5つ\n- 「${d} 課題で詰まった」→ 次の行動2つ\n`,
     },
     fr: {
-      "guide-extra": guideExtra,
       "source-keywords": `\n## Mots-clés ${d}\n\n- 2–4 groupes (concept | méthode | résultat | limite)\n- Ajuster au contexte ${d}\n`,
       "concise-examples": `\n## Exemple ${d}\n\n- 「Concept ${d}, plus court」\n- Ne pas raccourcir noms propres, chiffres, termes\n`,
       "writing-examples": `\n## Exemple ${d}\n\n✅ \`§2.1: majeur — affirmation ${d} sans source. Ajouter manuel ou article §.\`\n`,
@@ -258,7 +251,6 @@ export function buildOverlay(trackId, locale) {
       "study-examples": `\n## Exemples ${d}\n\n- 「Examen ${d} demain」→ plan 25 min + 5 points\n- 「Blocage devoir ${d}」→ 2 actions suivantes\n`,
     },
     es: {
-      "guide-extra": guideExtra,
       "source-keywords": `\n## Palabras clave ${d}\n\n- 2–4 grupos (concepto | método | resultado | límite)\n- Ajustar al contexto ${d}\n`,
       "concise-examples": `\n## Ejemplo ${d}\n\n- 「Concepto ${d}, más corto」\n- No acortar nombres propios, cifras ni términos\n`,
       "writing-examples": `\n## Ejemplo ${d}\n\n✅ \`§2.1: importante — afirmación ${d} sin fuente. Añadir manual o artículo §.\`\n`,

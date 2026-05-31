@@ -73,6 +73,18 @@ function resolveSource(trackId, locale, subpath) {
     return applyOverlay(text, null, trackId, locale);
   }
 
+  const trackExact = path.join(contentRoot, "tracks", trackId, locale, subpath);
+  const trackKo = path.join(contentRoot, "tracks", trackId, "ko", subpath);
+  if (subpath === "guide.md" && fs.existsSync(trackExact)) {
+    const overlay = resolveOverlay(trackId, locale);
+    return applyOverlay(readText(trackExact), overlay, trackId, locale);
+  }
+  if (subpath === "guide.md" && locale !== "ko" && fs.existsSync(trackKo)) {
+    koFallbacks.push(`${trackId}/${locale}/${subpath} → ko`);
+    const overlay = resolveOverlay(trackId, locale);
+    return applyOverlay(readText(trackKo), overlay, trackId, locale);
+  }
+
   const generalExact = path.join(contentRoot, "tracks", "general", locale, subpath);
   const generalKo = path.join(contentRoot, "tracks", "general", "ko", subpath);
   let base = fs.existsSync(generalExact)

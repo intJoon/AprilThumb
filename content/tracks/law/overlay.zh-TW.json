@@ -1,5 +1,4 @@
 {
-  "guide-extra": "\n## 法律 作業提示\n\n- **法源** — 法條與判決對應各項主張\n- **論證結構** — 事實、法律、結論分離（IRAC 等）\n- **詮釋與適用** — 對本案爭點的適用論證\n- **引用** — 法條與判決引用一致且正確\n\n## 用哪個提示詞？\n\n| 情境 | 提示詞 |\n|------|----------|\n| 備忘錄·論文·法律意見提交前 | 學術評分 |\n| 法條·判例是否支持主張 | 出處驗證 |\n| IRAC·爭點重點壓縮 | 簡潔模式 |\n| 論證·適用草稿 | 文稿審閱 |\n\n## 在 ChatGPT 查看結果\n\n- **網路搜尋**快速查法條與判例要旨。\n- IRAC、論證草稿適合在 **Canvas** 分段修改。\n\n## 在 Gemini 查看結果\n\n- **Google 搜尋**找法令與判例資料庫連結。\n- 長篇備忘錄可貼到 **Google 文件**審閱。\n\n## 注意\n\n- **不提供真實法律意見或訴訟策略** — 僅課業\n- 犯罪或危機 → 適當主管機關\n",
   "source-keywords": "\n## 關鍵詞示例 法律\n\n- 法條: statute, article, amendment\n- 判例: ratio decidendi, obiter, dissent\n- 程序: burden of proof, standing, remedy\n- 解釋: literal, purposive, precedent\n\n依課題語境調整。\n",
   "concise-examples": "\n## 法律 示例\n\n- 「法律 核心概念，更短」\n- 專有名詞、數字、術語不可縮寫\n",
   "writing-examples": "\n## 示例 法律\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§2: 重大 — 「違法」主張無法條·判例。補充法條 §。`\n✅ `§4.1: 次要 — 僅判例摘要，未套用本案事實。加 IRAC 一段。`\n",

@@ -1,5 +1,4 @@
 {
-  "guide-extra": "\n## 體育 作業提示\n\n- **生理與負荷** — 訓練負荷、適應、恢復有據\n- **測量與統計** — n、效果量、效度（如適用）\n- **安全** — 傷害、過度訓練、禁忌（如適用）\n- **引用** — 文獻與資料支持主張\n\n## 用哪個提示詞？\n\n| 情境 | 提示詞 |\n|------|----------|\n| 訓練·生理研究報告提交前 | 學術評分 |\n| 文獻·測量·樣本·效果量引用 | 出處驗證 |\n| 協議·負荷重點摘要 | 簡潔模式 |\n| 計畫·傷害預防簡報 | 簡報結構 |\n\n## 在 ChatGPT 查看結果\n\n- **網路搜尋**查 ACSM、生理與負荷監測資料。\n- 訓練、測量表適合在 **Canvas** 並修。\n\n## 在 Gemini 查看結果\n\n- **Google 搜尋**找 VO2max、生物力學與效果量。\n- 長篇計畫報告可整理到 **Google 文件**。\n\n## 注意\n\n- **不建議無視傷病之訓練或補充品**\n- 疼痛、心臟或呼吸異常 → 就醫\n",
   "source-keywords": "\n## 關鍵詞示例 體育\n\n- 生理: VO2max, lactate, HR zone\n- 負荷: periodization, load, recovery\n- 測量: biomechanics, force plate, reliability\n- 統計: effect size, n, intervention\n\n依課題語境調整。\n",
   "concise-examples": "\n## 體育 示例\n\n- 「體育 核心概念，更短」\n- 專有名詞、數字、術語不可縮寫\n",
   "writing-examples": "\n## 示例 體育\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§3.1: 重大 — 「顯著改善」主張無 n·效果量。加統計 §。`\n✅ `§5.2: 次要 — 訓練計畫無負荷·恢復依據。加 load 1 句。`\n",

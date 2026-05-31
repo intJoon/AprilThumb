@@ -1,5 +1,4 @@
 {
-  "guide-extra": "\n## 철학 과제 팁\n\n- **논증** — 전제·결론·타당성·명료성\n- **반론·재반박** — 반례·반론에 대한 응답\n- **텍스트** — 인용·해석·저자 논지 정확\n- **개념** — 정의·구분·thought experiment(해당 시)\n\n## 어떤 프롬프트?\n\n| 상황 | 프롬프트 |\n|------|----------|\n| 논증·에세이·비평 제출 전 | 학술 채점 |\n| 원전·2차 문헌 인용 검증 | 출처 검증 |\n| 개념·논증 구조 요약 | 간결 모드 |\n| 논증·반론 초안 | 글 리뷰 |\n\n## ChatGPT에서 결과 보기\n\n- **웹 검색**으로 Stanford Encyclopedia·원전 페이지를 확인하세요.\n- 논증·반례는 **Canvas**에서 단락별로 다듬기 좋습니다.\n\n## Gemini에서 결과 보기\n\n- **Google 검색**으로 인용·페이지·번역 자료를 찾을 수 있습니다.\n- 긴 에세이 초안은 **Google Docs**에 붙여 검토하세요.\n\n## 주의\n\n- **시험·과제 논증 전체 대행** — 구조·반례 힌트만\n",
   "source-keywords": "\n## 철학 키워드 예\n\n- 논증: premise, conclusion, validity\n- 반례: objection, counterexample, reply\n- 텍스트: citation, page, interpretation\n- 개념: definition, distinction, thought experiment\n\n과제 맥락에 맞게 조정하세요.\n",
   "concise-examples": "\n## 철학 예\n\n- 「철학 핵심 개념, 더 짧게」\n- 고유명사·수치·전공 용어는 축약하지 말 것\n",
   "writing-examples": "\n## 철학 예\n\n❌ 「2장에서 철학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2: 중요 — 반례 제시 후 재반박 없음. 한 단락으로 반박 추가.`\n✅ `§3.4: 주의 — 인용만 나열, 본인 논지·결론 불명확. thesis 1문장 + 인용 연결.`\n",

@@ -1,5 +1,4 @@
 {
-  "guide-extra": "\n## 文化藝術 作業提示\n\n- **一手資料** — 作品、節目、檔案、展覽有據\n- **脈絡** — 時代、制度、接受、政策\n- **詮釋** — 主張對應資料；替代詮釋\n- **引用** — 圖錄與論文格式一致\n\n## 用哪個提示詞？\n\n| 情境 | 提示詞 |\n|------|----------|\n| 評論·作品集·研究提交前 | 學術評分 |\n| 作品·文獻·脈絡引用 | 出處驗證 |\n| 理論·脈絡·作品重點摘要 | 簡潔模式 |\n| 評論·詮釋草稿 | 文稿審閱 |\n\n## 在 ChatGPT 查看結果\n\n- **網路搜尋**查檔案、展覽圖錄與節目冊。\n- 詮釋、引用適合在 **Canvas** 與出處並修。\n\n## 在 Gemini 查看結果\n\n- **Google 搜尋**找 JSTOR、博物館資料庫與評論。\n- 長篇論文草稿可貼到 **Google 文件**。\n\n## 注意\n\n- **不指示侵權或非法散布**\n",
   "source-keywords": "\n## 關鍵詞示例 文化藝術\n\n- 一手: archive, programme, score, exhibition\n- 脈絡: period, patronage, policy\n- 評論: reception, canon, interpretation\n- 理論: curatorial, performativity\n\n依課題語境調整。\n",
   "concise-examples": "\n## 文化藝術 示例\n\n- 「文化藝術 核心概念，更短」\n- 專有名詞、數字、術語不可縮寫\n",
   "writing-examples": "\n## 示例 文化藝術\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§2.2: 重大 — 詮釋無一手資料·檔案。加展覽圖錄 §。`\n✅ `§4.1: 次要 — 描述作品無時代脈絡。加 context 一段。`\n",

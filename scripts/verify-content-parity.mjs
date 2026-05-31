@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 import { OVERLAY_TRACKS, buildOverlay } from "./lib/overlays.mjs";
 import { depthFor } from "./lib/discipline-depth.mjs";
 import { ZH, JA, FR, ES } from "./lib/discipline-rubrics-i18n.mjs";
-import { GENERIC_GUIDE_MARKERS } from "./lib/discipline-guide.mjs";
+import { GUIDE_HEADINGS } from "./lib/discipline-guide.mjs";
 import { AI_OVERRIDE } from "./lib/discipline-guide-ai.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -162,20 +162,6 @@ function checkDepth(trackId, locale) {
     if (!concise.trim()) issues.push("missing concise-examples");
   }
 
-  const guide = overlay?.["guide-extra"] || "";
-  const generic = GENERIC_GUIDE_MARKERS[locale];
-  if (generic && guide.includes(generic)) {
-    issues.push("guide-extra generic template only");
-  }
-  if (bulletCount(guide) < 3) issues.push(`guide-extra bullets=${bulletCount(guide)}`);
-  if (!guide.includes("|")) issues.push("guide-extra missing situation table");
-  const m = LOCALE_MARKERS[locale] || LOCALE_MARKERS["en-GB"];
-  if (!hasAny(guide, m.chatgpt)) issues.push("guide-extra missing ChatGPT section");
-  if (!hasAny(guide, m.gemini)) issues.push("guide-extra missing Gemini section");
-  if (!AI_OVERRIDE[trackId]?.[locale]) {
-    issues.push("guide-extra missing AI override");
-  }
-
   return issues;
 }
 
@@ -224,6 +210,37 @@ function checkGeneralRubric(academic, locale) {
   return issues;
 }
 
+function headingCount(text, heading) {
+  if (!heading) return 0;
+  let n = 0;
+  let i = 0;
+  while ((i = text.indexOf(heading, i)) !== -1) {
+    n++;
+    i += heading.length;
+  }
+  return n;
+}
+
+function checkOverlayGuide(trackId, locale, guide) {
+  const issues = [];
+  const h = GUIDE_HEADINGS[locale] || GUIDE_HEADINGS["en-GB"];
+  if (bulletCount(guide) < 3) issues.push(`guide bullets=${bulletCount(guide)}`);
+  if (!guide.includes("|")) issues.push("guide missing situation table");
+  if (headingCount(guide, h.chatgpt) !== 1) {
+    issues.push(`guide chatgpt headings=${headingCount(guide, h.chatgpt)}`);
+  }
+  if (headingCount(guide, h.gemini) !== 1) {
+    issues.push(`guide gemini headings=${headingCount(guide, h.gemini)}`);
+  }
+  if (headingCount(guide, h.sit) !== 1) {
+    issues.push(`guide sit headings=${headingCount(guide, h.sit)}`);
+  }
+  if (!AI_OVERRIDE[trackId]?.[locale]) {
+    issues.push("guide missing AI override");
+  }
+  return issues;
+}
+
 function checkOverlayRubric(trackId, locale, academic) {
   const issues = [];
   const table = I18N_RUBRIC[locale];
@@ -259,6 +276,7 @@ function checkBundle(trackId, locale) {
   const writing = promptText(bundle, "writing-review");
   const study = promptText(bundle, "study-companion");
   const pres = promptText(bundle, "presentation");
+  const guideText = bundle.guide?.markdown || "";
 
   if (trackId === "general") {
     issues.push(...checkGeneralRubric(academic, locale));
@@ -288,6 +306,7 @@ function checkBundle(trackId, locale) {
 
   if (OVERLAY_TRACKS.includes(trackId)) {
     issues.push(...checkOverlayRubric(trackId, locale, academic));
+    issues.push(...checkOverlayGuide(trackId, locale, guideText));
     const studyBullets = countBullets(study);
     const presBullets = countBullets(pres);
     if (studyBullets < 3) issues.push(`bundle study bullets=${studyBullets}`);
@@ -309,7 +328,6 @@ function checkBundle(trackId, locale) {
       issues.push(`bundle ${p.id} copyText has OVERLAY marker`);
     }
   }
-  const guideText = bundle.guide?.markdown || "";
   if (/<!-- OVERLAY:[\w-]+ -->/.test(guideText)) {
     issues.push("bundle guide has OVERLAY marker");
   }

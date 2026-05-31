@@ -58,49 +58,79 @@ const PROMPTS = {
 
 const CHROME = {
   ko: {
+    title: "# 이렇게 쓰면 됩니다",
+    intro1:
+      "**복사**를 누른 뒤 ChatGPT 또는 Gemini **새 대화** 맨 처음에 붙여넣으세요. 그다음 과제·글·질문을 이어서내면 됩니다.",
+    intro2:
+      "자주 쓰는 프롬프트는 ChatGPT **지시사항**(Custom GPT)이나 Gemini **Gem**에 고정해 두어도 좋습니다.",
     tips: (name) => `## ${name} 과제 팁`,
-    sit: "## 어떤 프롬프트?",
+    sit: "## 어떤 걸 쓸까?",
     sitHead: ["상황", "프롬프트"],
+    separateChats: "**채점**과 **학습 동반자**는 서로 다른 대화에서 쓰는 것이 좋습니다.",
     chatgpt: "## ChatGPT에서 결과 보기",
     gemini: "## Gemini에서 결과 보기",
     caution: "## 주의",
   },
   "en-GB": {
+    title: "# How to use this",
+    intro1:
+      "Tap **Copy**, then paste at the start of a **new** ChatGPT or Gemini chat. After that, send your assignment, draft, or question as usual.",
+    intro2: "Pin favourites in ChatGPT **Custom instructions** or a Gemini **Gem**.",
     tips: (name) => `## ${name} assignment tips`,
-    sit: "## Which prompt?",
+    sit: "## Which prompt when?",
     sitHead: ["Situation", "Prompt"],
+    separateChats: "Use **Academic review** and **Study companion** in separate chats.",
     chatgpt: "## In ChatGPT",
     gemini: "## In Gemini",
     caution: "## Caution",
   },
   "zh-TW": {
+    title: "# 使用方式",
+    intro1: "點 **複製**，貼到 ChatGPT 或 Gemini **新對話**開頭，再送出作業、文稿或問題。",
+    intro2: "常用提示詞可固定在 ChatGPT **自訂指示**或 Gemini **Gem**。",
     tips: (name) => `## ${name} 作業提示`,
     sit: "## 用哪個提示詞？",
     sitHead: ["情境", "提示詞"],
+    separateChats: "**學術評分**與**學習夥伴**請分開對話使用。",
     chatgpt: "## 在 ChatGPT 查看結果",
     gemini: "## 在 Gemini 查看結果",
     caution: "## 注意",
   },
   ja: {
+    title: "# 使い方",
+    intro1:
+      "**コピー**を押し、ChatGPT または Gemini の**新規チャット**の最初に貼り付けてから、課題・原稿・質問を続けてください。",
+    intro2: "よく使うプロンプトは ChatGPT **カスタム指示**や Gemini **Gem** に固定できます。",
     tips: (name) => `## ${name} 課題のヒント`,
     sit: "## どのプロンプト？",
     sitHead: ["状況", "プロンプト"],
+    separateChats: "**学術採点**と**学習コンパニオン**は別チャットで使うとよいです。",
     chatgpt: "## ChatGPTでの見方",
     gemini: "## Geminiでの見方",
     caution: "## 注意",
   },
   fr: {
+    title: "# Mode d'emploi",
+    intro1:
+      "Appuyez sur **Copier**, collez au début d'un **nouveau** chat ChatGPT ou Gemini, puis envoyez devoir, brouillon ou question.",
+    intro2: "Épinglez vos favoris dans les **instructions** ChatGPT ou un **Gem** Gemini.",
     tips: (name) => `## Conseils — ${name}`,
     sit: "## Quel prompt ?",
     sitHead: ["Situation", "Prompt"],
+    separateChats: "Utilisez **Évaluation académique** et **Compagnon d'étude** dans des chats séparés.",
     chatgpt: "## Dans ChatGPT",
     gemini: "## Dans Gemini",
     caution: "## Précaution",
   },
   es: {
+    title: "# Cómo usar",
+    intro1:
+      "Pulsa **Copiar** y pega al inicio de un chat **nuevo** en ChatGPT o Gemini; luego envía tarea, borrador o pregunta.",
+    intro2: "Fija favoritos en **instrucciones** de ChatGPT o un **Gem** de Gemini.",
     tips: (name) => `## Consejos — ${name}`,
     sit: "## ¿Qué prompt?",
     sitHead: ["Situación", "Prompt"],
+    separateChats: "Usa **Revisión académica** y **Compañero de estudio** en chats separados.",
     chatgpt: "## En ChatGPT",
     gemini: "## En Gemini",
     caution: "## Precaución",
@@ -213,7 +243,7 @@ function bulletBlock(items) {
   return items.map((t) => `- ${t}`).join("\n");
 }
 
-export function guideExtraFor(trackId, locale) {
+function guideBody(trackId, locale) {
   const row = rubricRow(trackId, locale);
   if (!row) return "";
   const ui = CHROME[locale] || CHROME["en-GB"];
@@ -226,10 +256,28 @@ export function guideExtraFor(trackId, locale) {
   ].join("\n");
   const ai = aiTips(trackId, locale);
   const caution = cautionBullets(trackId, locale).join("\n");
-  let out = `\n${ui.tips(row.name)}\n\n${tips.join("\n")}\n\n${ui.sit}\n\n${table}\n\n${ui.chatgpt}\n\n${bulletBlock(ai.chatgpt)}\n\n${ui.gemini}\n\n${bulletBlock(ai.gemini)}\n`;
+  let out = `${ui.tips(row.name)}\n\n${tips.join("\n")}\n\n${ui.sit}\n\n${table}\n\n${ui.separateChats}\n\n${ui.chatgpt}\n\n${bulletBlock(ai.chatgpt)}\n\n${ui.gemini}\n\n${bulletBlock(ai.gemini)}\n`;
   if (caution) out += `\n${ui.caution}\n\n${caution}\n`;
   return out;
 }
+
+export function guideExtraFor(trackId, locale) {
+  return `\n${guideBody(trackId, locale)}`;
+}
+
+export function fullGuideFor(trackId, locale) {
+  const ui = CHROME[locale] || CHROME["en-GB"];
+  const body = guideBody(trackId, locale);
+  if (!body) return "";
+  return `${ui.title}\n\n${ui.intro1}\n\n${ui.intro2}\n\n${body}`;
+}
+
+export const GUIDE_HEADINGS = Object.fromEntries(
+  Object.entries(CHROME).map(([loc, ui]) => [
+    loc,
+    { chatgpt: ui.chatgpt, gemini: ui.gemini, sit: ui.sit },
+  ])
+);
 
 export const GENERIC_GUIDE_MARKERS = {
   ko: "전공 용어·근거·한계**를 함께",

@@ -1,5 +1,4 @@
 {
-  "guide-extra": "\n## 言語学 課題のヒント\n\n- **分析単位** — 音韻・形態統語・語用の単位を明示\n- **データ・例** — gloss、出典、コーパス（該当時）\n- **理論・一貫性** — フレームと分析単位の一致\n- **引用** — 論文・コーパスが主張を支持\n\n## どのプロンプト？\n\n| 状況 | プロンプト |\n|------|----------|\n| 音韻・統語・談話分析提出前 | 学術採点 |\n| コーパス・文献・データ引用 | 出典検証 |\n| 規則・特徴・例の要約 | 簡潔モード |\n| 分析報告草稿 | 文章レビュー |\n\n## ChatGPTでの見方\n\n- **ウェブ検索**で論文・コーパス・gloss例を確認。\n- 例文・転写は **Canvas** で gloss と並行編集。\n\n## Geminiでの見方\n\n- **Google 検索**で WALS・Ethnologue・言語資料を参照。\n- 長い分析草稿は **Google ドキュメント**へ。\n\n## 注意\n\n- **課題分析・転写の全文代行なし** — 方法と次のステップのみ\n",
   "source-keywords": "\n## キーワード例 言語学\n\n- 音韻: phoneme, allophone, minimal pair\n- 形態·統語: morpheme, constituency, gloss\n- 語用: implicature, presupposition\n- データ: corpus, elicitation, statistics\n\n課題文脈に合わせて調整。\n",
   "concise-examples": "\n## 言語学 例\n\n- 「言語学 の核心概念、もっと短く」\n- 固有名詞・数値・専門用語は短縮しない\n",
   "writing-examples": "\n## 例 言語学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§4: 重大 — 例文 (1) に gloss・出典なし。論文またはコーパス ID を追加。`\n✅ `§6.2: 軽微 — 理論と分析単位の不一致。単位を1文で明示。`\n",

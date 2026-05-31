@@ -1,5 +1,4 @@
 {
-  "guide-extra": "\n## 언어학 과제 팁\n\n- **분석 단위** — 음운·형태·통사·화용 단위 명시\n- **데이터·예시** — 예문 gloss·출처·코퍼스(해당 시)\n- **이론·일관성** — 프레임과 분석 단위 일치\n- **인용** — 논문·코퍼스가 주장을 지지\n\n## 어떤 프롬프트?\n\n| 상황 | 프롬프트 |\n|------|----------|\n| 음운·통사·담화 분석 제출 전 | 학술 채점 |\n| 코퍼스·문헌·데이터 인용 | 출처 검증 |\n| 규칙·특징·예시 요약 | 간결 모드 |\n| 분석 보고 초안 | 글 리뷰 |\n\n## ChatGPT에서 결과 보기\n\n- **웹 검색**으로 논문·코퍼스·gloss 예시를 확인하세요.\n- 예문·전사는 **Canvas**에서 gloss와 함께 수정하기 좋습니다.\n\n## Gemini에서 결과 보기\n\n- **Google 검색**으로 WALS·Ethnologue·언어 자료를 찾을 수 있습니다.\n- 긴 분석 초안은 **Google Docs**에 붙여 검토하세요.\n\n## 주의\n\n- **과제 분석·전사 전체 대행** — 방법·다음 단계만\n",
   "source-keywords": "\n## 언어학 키워드 예\n\n- 음운: phoneme, allophone, minimal pair\n- 형태·통사: morpheme, constituency, gloss\n- 의미·화용: implicature, presupposition\n- 데이터: corpus, elicitation, statistics\n\n과제 맥락에 맞게 조정하세요.\n",
   "concise-examples": "\n## 언어학 예\n\n- 「언어학 핵심 개념, 더 짧게」\n- 고유명사·수치·전공 용어는 축약하지 말 것\n\n- 「통사 트리, 간결 ultra」— 기호·라벨은 축약하지 말 것\n",
   "writing-examples": "\n## 언어학 예\n\n❌ 「2장에서 언어학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§4: 중요 — 예문 (1) gloss·출처 없음. 인용 논문 또는 코퍼스 ID 추가.`\n✅ `§6.2: 주의 — 이론 프레임과 분석 단위(어절 vs 발화) 불일치. 단위 명시 1문장.`\n",
