@@ -825,6 +825,11 @@ main {
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   transform: rotate(45deg);
+  transition: background 0.35s ease;
+}
+
+.comment-bubble--new::before {
+  background: var(--accent-soft);
 }
 
 .comment-meta {
