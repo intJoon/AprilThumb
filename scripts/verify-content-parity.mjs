@@ -5,6 +5,7 @@ import { OVERLAY_TRACKS, buildOverlay } from "./lib/overlays.mjs";
 import { depthFor } from "./lib/discipline-depth.mjs";
 import { ZH, JA, FR, ES } from "./lib/discipline-rubrics-i18n.mjs";
 import { GENERIC_GUIDE_MARKERS } from "./lib/discipline-guide.mjs";
+import { AI_OVERRIDE } from "./lib/discipline-guide-ai.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -171,6 +172,9 @@ function checkDepth(trackId, locale) {
   const m = LOCALE_MARKERS[locale] || LOCALE_MARKERS["en-GB"];
   if (!hasAny(guide, m.chatgpt)) issues.push("guide-extra missing ChatGPT section");
   if (!hasAny(guide, m.gemini)) issues.push("guide-extra missing Gemini section");
+  if (!AI_OVERRIDE[trackId]?.[locale]) {
+    issues.push("guide-extra missing AI override");
+  }
 
   return issues;
 }

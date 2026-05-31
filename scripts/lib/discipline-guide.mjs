@@ -1,6 +1,7 @@
 import { KO, EN, rubricFor } from "./discipline-rubrics.mjs";
 import { ZH, JA, FR, ES } from "./discipline-rubrics-i18n.mjs";
 import { SIT_DEFAULT, SIT_OVERRIDE } from "./discipline-guide-sit.mjs";
+import { AI_OVERRIDE } from "./discipline-guide-ai.mjs";
 
 const TABLES = { ko: KO, "en-GB": EN, "zh-TW": ZH, ja: JA, fr: FR, es: ES };
 
@@ -175,75 +176,6 @@ const AI_DEFAULT = {
   },
 };
 
-const AI_OVERRIDE = {
-  cs: {
-    ko: {
-      chatgpt: [
-        "**웹 검색**으로 CVE·OWASP·공식 문서를 확인하세요.",
-        "코드·복잡도 설명은 **Canvas**에서 함께 다듬기 좋습니다.",
-      ],
-      gemini: [
-        "**Google 검색**으로 CVE·스택오버플로·문서를 빠르게 찾을 수 있습니다.",
-        "긴 코드 리뷰는 **Google Docs**에 붙여 정리하세요.",
-      ],
-    },
-    "en-GB": {
-      chatgpt: [
-        "Use **web search** for CVE, OWASP, and official docs.",
-        "Refine code and complexity notes in **Canvas**.",
-      ],
-      gemini: [
-        "**Google Search** helps find CVEs, Stack Overflow, and docs.",
-        "Paste long code reviews into **Google Docs**.",
-      ],
-    },
-  },
-  medicine: {
-    ko: {
-      chatgpt: [
-        "**웹 검색**이 켜져 있으면 PubMed·가이드라인 확인에 유리합니다.",
-        "SOAP·케이스 수정은 **Canvas**로 열어 옆에서 다듬으세요.",
-      ],
-      gemini: [
-        "**Google 검색(지구본)**이 켜져 있으면 약물·임상 정보 확인에 유리합니다.",
-        "긴 케이스 보고는 **Google Docs**에 정리해 달라고 하세요.",
-      ],
-    },
-    "en-GB": {
-      chatgpt: [
-        "**Web search** helps check PubMed and clinical guidelines.",
-        "Open SOAP / case edits in **Canvas**.",
-      ],
-      gemini: [
-        "**Google Search** (globe) for drug and clinical fact checks.",
-        "Ask for long case reports in **Google Docs**.",
-      ],
-    },
-  },
-  law: {
-    ko: {
-      chatgpt: [
-        "**웹 검색**으로 조문·판례 요지를 빠르게 확인하세요.",
-        "IRAC·논증 초안은 **Canvas**에서 단락별로 수정하기 좋습니다.",
-      ],
-      gemini: [
-        "**Google 검색**으로 법령·판례 DB 링크를 찾을 수 있습니다.",
-        "긴 메모는 **Google Docs**에 붙여 검토하세요.",
-      ],
-    },
-    "en-GB": {
-      chatgpt: [
-        "Use **web search** for statute and case summaries.",
-        "Edit IRAC drafts paragraph-by-paragraph in **Canvas**.",
-      ],
-      gemini: [
-        "**Google Search** for statute and case database links.",
-        "Paste long memos into **Google Docs** for review.",
-      ],
-    },
-  },
-};
-
 function rubricRow(trackId, locale) {
   let table = TABLES[locale];
   if (!table) table = EN;
@@ -265,7 +197,7 @@ function situationRows(trackId, locale, name) {
 
 function aiTips(trackId, locale) {
   const base = AI_DEFAULT[locale] || AI_DEFAULT["en-GB"];
-  const override = AI_OVERRIDE[trackId]?.[locale] || AI_OVERRIDE[trackId]?.["en-GB"];
+  const override = AI_OVERRIDE[trackId]?.[locale];
   return {
     chatgpt: override?.chatgpt || base.chatgpt,
     gemini: override?.gemini || base.gemini,

@@ -56,8 +56,7 @@ export function renderSlidesHtml(localeId) {
   const roleRows = d.s5.roles
     .map(
       (r, i) => `
-        <li class="panel panel--role${i % 3 === 0 ? " panel--acid" : ""}">
-          <span class="panel-num">${esc(r.n)}</span>
+        <li class="panel deck-card panel--role${i % 3 === 0 ? " panel--acid deck-card--acid" : ""}">
           <span class="panel-body">
             <strong>${esc(r.t)}</strong>
             <em>${esc(r.d)}</em>
@@ -66,22 +65,21 @@ export function renderSlidesHtml(localeId) {
     )
     .join("");
 
-  const majorCount = d.s6.majors.length;
-  const langCount = d.s6.languages.length;
+  const deckBurst = `<div class="deck-burst" aria-hidden="true"></div>`;
 
   const majorChips = d.s6.majors
     .map(
       (m, i) =>
-        `<span class="major-chip${(Math.floor(i / 4) + (i % 4)) % 2 === 0 ? " major-chip--acid" : ""}">${esc(m)}</span>`
+        `<span class="major-chip deck-card${(Math.floor(i / 4) + (i % 4)) % 2 === 0 ? " major-chip--acid deck-card--acid" : ""}">${esc(m)}</span>`
     )
     .join("");
   const scopeMajors = `
-        <p class="scope-label scope-label--majors">${esc(d.s6.majorsLabel)}</p>
+        <p class="section-label section-label--majors">${esc(d.s6.majorsLabel)}</p>
         <div class="major-grid">${majorChips}</div>`;
   const scopeLangs = d.s6.languages
     .map((l, i) => {
       const acid = i % 2 === 0;
-      return `<span class="lang-pill${acid ? " lang-pill--acid" : ""}">${esc(l)}</span>`;
+      return `<span class="lang-pill deck-card${acid ? " lang-pill--acid deck-card--acid" : ""}">${esc(l)}</span>`;
     })
     .join("");
 
@@ -114,11 +112,93 @@ export function renderSlidesHtml(localeId) {
         --accent: #0f766e;
         --accent-hi: #2dd4bf;
         --acid: #d4ff4c;
+        --surface: #181614;
         --line: rgba(245, 242, 235, 0.14);
+        --border: rgba(245, 242, 235, 0.92);
+        --border-w: 3px;
         --shadow: 5px 5px 0 rgba(0, 0, 0, 0.45);
+        --grid-size: 54px;
         --safe-x: 80px;
-        --safe-top: 92px;
-        --safe-bottom: 100px;
+        --safe-top: 88px;
+        --safe-bottom: 96px;
+      }
+      .deck-card {
+        border: var(--border-w) solid var(--border);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+      .section-label {
+        position: relative;
+        z-index: 2;
+        font-family: ${mono};
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--acid);
+        margin-bottom: 10px;
+      }
+      .deck-burst {
+        position: absolute;
+        right: -160px;
+        top: 96px;
+        width: 480px;
+        height: 480px;
+        background: var(--acid);
+        opacity: 0.08;
+        transform: rotate(24deg);
+        z-index: 0;
+        pointer-events: none;
+      }
+      .slide--cover .deck-burst { opacity: 0.11; top: 72px; }
+      .slide--cover .head { font-size: 108px; }
+      .slide--cover .head--duo .line.accent {
+        text-shadow: 8px 8px 0 rgba(0, 0, 0, 0.45);
+      }
+      .slide--cover .swipe-hint::after { width: 96px; height: 4px; }
+      .slide--spotlight .perk-cell {
+        padding: 36px 14px;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+        color: var(--fg);
+      }
+      .slide--spotlight .perk-cell:nth-child(2) {
+        box-shadow: 8px 8px 0 rgba(212, 255, 76, 0.38);
+        transform: scale(1.05);
+        color: var(--bg);
+      }
+      .perk-strip {
+        position: relative;
+        z-index: 2;
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .slide--scope .head {
+        font-size: 72px;
+        line-height: 1.04;
+        text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);
+      }
+      .slide--scope .major-chip {
+        box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.5);
+      }
+      .slide--scope .major-chip--acid {
+        box-shadow: 6px 6px 0 rgba(212, 255, 76, 0.38);
+      }
+      .slide--cta .head { font-size: 80px; }
+      .slide--cta .qr-card {
+        width: 320px;
+        border-width: 4px;
+        box-shadow: 8px 8px 0 rgba(212, 255, 76, 0.28);
+      }
+      .slide--cta .qr-card img { width: 240px; height: 240px; }
+      .slide--cta .url {
+        font-size: 42px;
+        text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4);
       }
       * { box-sizing: border-box; margin: 0; padding: 0; }
       body {
@@ -161,7 +241,7 @@ export function renderSlidesHtml(localeId) {
         background-image:
           linear-gradient(rgba(245, 242, 235, 0.05) 1px, transparent 1px),
           linear-gradient(90deg, rgba(245, 242, 235, 0.05) 1px, transparent 1px);
-        background-size: 54px 54px;
+        background-size: var(--grid-size) var(--grid-size);
         pointer-events: none;
       }
       .slide--deck::after {
@@ -181,9 +261,9 @@ export function renderSlidesHtml(localeId) {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
         flex-shrink: 0;
-        padding-bottom: 18px;
+        padding-bottom: 16px;
         border-bottom: 1px solid var(--line);
       }
       .brand {
@@ -211,7 +291,7 @@ export function renderSlidesHtml(localeId) {
         letter-spacing: 0.16em;
         text-transform: uppercase;
         color: var(--accent-hi);
-        margin-bottom: 20px;
+        margin-bottom: 16px;
       }
       .sub,
       .bullets li,
@@ -219,8 +299,7 @@ export function renderSlidesHtml(localeId) {
       .panel-body em,
       .flow-step span:last-child,
       .cta-text p,
-      .stat-cell .l,
-      .sticker,
+      .perk-cell,
       .lang-pill,
       .major-chip {
         font-family: ${body};
@@ -239,7 +318,7 @@ export function renderSlidesHtml(localeId) {
       .head--duo .line { display: block; }
       .head--duo .line.accent { color: var(--acid); }
       .slide--cover .head { font-size: 100px; }
-      .slide--deck:not(.slide--cover):not(.slide--scope):not(.slide--roles) .head { font-size: 72px; }
+      .slide--deck:not(.slide--cover):not(.slide--scope) .head { font-size: 72px; }
       .sub {
         position: relative;
         z-index: 2;
@@ -277,58 +356,37 @@ export function renderSlidesHtml(localeId) {
         position: relative;
         z-index: 2;
       }
+      .bullets li,
+      .flow-step,
+      .perk-cell,
+      .panel,
+      .major-chip,
+      .lang-pill {
+        border: var(--border-w) solid var(--border);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+      .deck-card--acid,
+      .bullets li:nth-child(3),
+      .flow-step:nth-child(3),
+      .panel--acid,
+      .major-chip--acid,
+      .lang-pill--acid,
+      .slide--spotlight .perk-cell:nth-child(2) {
+        background: var(--acid);
+        border-color: var(--fg);
+        color: var(--bg);
+      }
       .bullets li {
         font-size: 38px;
         font-weight: 700;
         line-height: 1.36;
         padding: 24px 30px;
-        border: 2px solid rgba(245, 242, 235, 0.92);
-        background: rgba(10, 9, 8, 0.65);
         color: var(--fg);
-        box-shadow: var(--shadow);
-        transform: rotate(-0.5deg);
       }
-      .bullets li:nth-child(2) { transform: rotate(0.6deg); }
-      .bullets li:nth-child(3) { transform: rotate(-0.8deg); background: var(--acid); color: var(--bg); border-color: var(--acid); }
-      .stat-strip {
-        position: relative;
-        z-index: 2;
-        margin-top: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
+      .bullets li:nth-child(3) {
+        color: var(--bg);
       }
-      .stat-cell {
-        padding: 32px 16px;
-        text-align: center;
-        border: 2px solid rgba(245, 242, 235, 0.85);
-        box-shadow: var(--shadow);
-      }
-      .stat-cell:nth-child(2) {
-        background: var(--acid);
-        border-color: var(--acid);
-      }
-      .stat-cell:nth-child(2) .n,
-      .stat-cell:nth-child(2) .l { color: var(--bg); }
-      .stat-cell .n {
-        font-family: ${display};
-        font-size: 88px;
-        font-weight: ${headWeight};
-        letter-spacing: ${headTracking};
-        color: var(--acid);
-        line-height: 1;
-        font-variant-numeric: tabular-nums;
-      }
-      .stat-cell .l {
-        margin-top: 10px;
-        font-size: 28px;
-        font-weight: 700;
-        color: var(--fg-soft);
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        font-family: ${mono};
-      }
-      .stat-cell:not(:nth-child(2)) .l { color: var(--muted); }
       .flow {
         margin-top: auto;
         display: flex;
@@ -344,14 +402,8 @@ export function renderSlidesHtml(localeId) {
         align-items: center;
         gap: 22px;
         padding: 28px 32px;
-        border: 2px solid rgba(245, 242, 235, 0.92);
-        background: rgba(10, 9, 8, 0.55);
         color: var(--fg);
-        box-shadow: var(--shadow);
-        transform: rotate(-0.4deg);
       }
-      .flow-step:nth-child(2) { transform: rotate(0.5deg); }
-      .flow-step:nth-child(3) { transform: rotate(-0.3deg); background: var(--acid); border-color: var(--acid); }
       .flow-step:nth-child(3) .arrow-n { background: var(--bg); color: var(--acid); }
       .flow-step:nth-child(3) span:last-child { color: var(--bg); }
       .flow-step .arrow-n {
@@ -395,13 +447,9 @@ export function renderSlidesHtml(localeId) {
         align-items: flex-start;
         gap: 16px;
         padding: 20px 22px;
-        border: 2px solid rgba(245, 242, 235, 0.92);
-        background: rgba(10, 9, 8, 0.5);
-        box-shadow: var(--shadow);
       }
       .panel--acid {
-        background: var(--acid);
-        border-color: var(--acid);
+        border-color: var(--fg);
       }
       .panel--acid .panel-num { color: var(--bg); }
       .panel--acid .panel-body strong,
@@ -436,39 +484,24 @@ export function renderSlidesHtml(localeId) {
         line-height: 1.28;
       }
       .panel--acid .panel-body em { color: rgba(10, 9, 8, 0.72); }
-      .slide--roles .slide-top {
-        margin-bottom: 18px;
-        padding-bottom: 14px;
-      }
-      .slide--roles .tag {
-        margin-bottom: 10px;
-      }
       .slide--roles .head {
-        font-size: 56px;
-        line-height: 1.08;
-        max-width: 920px;
+        margin-bottom: 8px;
       }
       .slide--roles .roles {
         flex: 1;
-        margin-top: 0;
+        margin-top: 28px;
         min-height: 0;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, minmax(0, 1fr));
-        gap: 18px;
-        align-content: stretch;
+        gap: 14px;
       }
       .slide--roles .panel {
-        padding: 22px 24px;
-        background: #181614;
-        border-width: 3px;
-        align-items: center;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
         min-height: 0;
       }
-      .slide--roles .panel--acid {
-        background: var(--acid);
-        border-color: var(--fg);
-      }
-      .slide--roles .panel--acid .panel-num,
       .slide--roles .panel--acid .panel-body strong,
       .slide--roles .panel--acid .panel-body em {
         color: var(--bg);
@@ -477,245 +510,105 @@ export function renderSlidesHtml(localeId) {
         color: var(--fg);
         opacity: 0.92;
       }
-      .slide--roles .panel-num {
-        font-size: 32px;
-        width: 52px;
-        line-height: 1;
-      }
       .slide--roles .panel-body {
+        flex: 1;
+        justify-content: center;
         gap: 10px;
       }
       .slide--roles .panel-body strong {
-        font-size: 40px;
-        line-height: 1.16;
+        font-size: 44px;
+        line-height: 1.14;
       }
       .slide--roles .panel-body em {
-        font-size: 30px;
+        font-size: 36px;
         font-weight: 700;
-        line-height: 1.26;
+        line-height: 1.22;
       }
       .slide--roles .panel--acid .panel-body em {
         color: rgba(10, 9, 8, 0.8);
       }
-      .locale-en .slide--roles .head { font-size: 52px; }
-      .locale-en .slide--roles .panel-body strong { font-size: 34px; }
-      .locale-en .slide--roles .panel-body em { font-size: 26px; }
-      .locale-zh-TW .slide--roles .panel-body strong { font-size: 36px; }
-      .locale-zh-TW .slide--roles .panel-body em { font-size: 28px; }
+      .locale-en .slide--roles .panel-body strong { font-size: 40px; }
+      .locale-en .slide--roles .panel-body em { font-size: 32px; }
+      .locale-zh-TW .slide--roles .panel-body strong { font-size: 42px; }
+      .locale-zh-TW .slide--roles .panel-body em { font-size: 34px; }
       .locale-ko .lang-pill,
       .locale-zh-TW .lang-pill:first-child {
         text-transform: none;
         letter-spacing: -0.02em;
       }
-      .slide--scope {
-        padding-top: 72px;
-      }
-      .slide--scope .slide-top {
-        margin-bottom: 14px;
-        padding-bottom: 12px;
-      }
-      .scope-burst {
-        position: absolute;
-        right: -180px;
-        top: 120px;
-        width: 520px;
-        height: 520px;
-        background: var(--acid);
-        opacity: 0.1;
-        transform: rotate(28deg);
-        z-index: 0;
-        pointer-events: none;
-      }
-      .scope-head {
-        position: relative;
-        z-index: 2;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        gap: 20px;
-        margin-bottom: 4px;
-        flex-shrink: 0;
-      }
-      .scope-head-l {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-      .scope-head .tag { margin-bottom: 0; }
-      .scope-mega {
-        display: flex;
-        align-items: baseline;
-        gap: 6px;
-        font-family: ${display};
-        font-weight: 800;
-        letter-spacing: -0.08em;
-        line-height: 0.85;
-        margin-left: auto;
-      }
-      .scope-mega-a {
-        font-size: 96px;
-        color: var(--acid);
-        text-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
-      }
-      .scope-mega-x {
-        font-size: 52px;
-        color: var(--fg);
-        opacity: 0.45;
-        margin: 0 4px;
-      }
-      .scope-mega-b {
-        font-size: 96px;
-        color: var(--fg);
-        text-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
-      }
-      .scope-badge {
-        transform: rotate(-9deg);
-        padding: 16px 24px;
-        font-family: ${mono};
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        background: var(--acid);
-        color: var(--bg);
-        border: 3px solid var(--fg);
-        box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.55);
-      }
-      .scope-bg {
-        position: absolute;
-        left: 50%;
-        top: 48%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        align-items: baseline;
-        gap: 8px;
-        font-family: ${display};
-        font-weight: 800;
-        letter-spacing: -0.09em;
-        line-height: 0.75;
-        pointer-events: none;
-        z-index: 0;
-        user-select: none;
-      }
-      .scope-bg-n {
-        font-size: 520px;
-        color: var(--acid);
-        opacity: 0.11;
-      }
-      .scope-bg-n--2 {
-        font-size: 380px;
-        color: var(--fg);
-        opacity: 0.07;
-      }
-      .slide--scope::before {
-        opacity: 1;
-        background-size: 48px 48px;
-        background-image:
-          linear-gradient(rgba(245, 242, 235, 0.055) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(245, 242, 235, 0.055) 1px, transparent 1px);
-      }
       .scope-body {
         position: relative;
-        z-index: 1;
+        z-index: 2;
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 0;
         min-height: 0;
+        margin-top: auto;
       }
-      .scope-label--majors {
-        margin: 0 0 10px;
-        padding: 0 4px;
+      .section-label--majors {
+        margin-bottom: 8px;
       }
       .major-grid {
         flex: 1;
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-template-rows: repeat(6, minmax(0, 1fr));
-        gap: 10px;
+        gap: 8px;
         min-height: 0;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
       }
       .major-chip {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding: 8px 6px;
+        padding: 10px 4px;
         font-weight: 800;
-        font-size: 26px;
+        font-size: 36px;
         letter-spacing: -0.03em;
-        line-height: 1.14;
-        border: 2px solid rgba(245, 242, 235, 0.92);
-        background: #181614;
+        line-height: 1.12;
         color: var(--fg);
-        box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.45);
         min-width: 0;
         word-break: keep-all;
         overflow: hidden;
       }
-      .major-chip--acid {
-        background: var(--acid);
-        border-color: var(--fg);
+      .major-chip--acid,
+      .lang-pill--acid {
         color: var(--bg);
-        box-shadow: 4px 4px 0 rgba(212, 255, 76, 0.32);
       }
-      .lang-rail-wrap {
+      .deck-divider {
         flex-shrink: 0;
-        padding: 16px 0 0;
-        border-top: 3px solid var(--acid);
+        padding: 12px 0 0;
+        border-top: var(--border-w) solid var(--acid);
         position: relative;
         z-index: 2;
-        background: linear-gradient(180deg, rgba(212, 255, 76, 0.06) 0%, transparent 100%);
       }
-      .scope-label {
-        font-family: ${mono};
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--acid);
-        margin-bottom: 12px;
-      }
-      .slide--scope .lang-rail {
+      .lang-rail {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
-      }
-      .slide--scope .lang-pill {
-        transform: none;
-        padding: 14px 10px;
-        font-size: 26px;
-        text-align: center;
-        min-width: 0;
+        gap: 8px;
       }
       .lang-pill {
-        display: inline-block;
-        transform: rotate(var(--r)) scale(1.02);
-        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 8px;
         font-family: ${mono};
-        font-size: 32px;
+        font-size: 34px;
         font-weight: 700;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: var(--fg);
-        border: 3px solid var(--accent-hi);
-        background: rgba(10, 9, 8, 0.85);
-        box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
+        text-align: center;
+        min-width: 0;
       }
       .lang-pill--acid {
-        background: var(--acid);
         color: var(--bg);
-        border-color: var(--fg);
-        box-shadow: 10px 10px 0 rgba(212, 255, 76, 0.35);
       }
-      .locale-en .major-chip { font-size: 22px; letter-spacing: -0.04em; }
-      .locale-en .scope-mega-a,
-      .locale-en .scope-mega-b { font-size: 88px; }
-      .locale-en .slide--scope .lang-pill { font-size: 22px; }
-      .locale-zh-TW .major-chip { font-size: 21px; letter-spacing: -0.04em; }
-      .locale-zh-TW .slide--scope .lang-pill { font-size: 24px; }
+      .locale-en .major-chip { font-size: 30px; letter-spacing: -0.04em; }
+      .locale-en .lang-pill { font-size: 28px; }
+      .locale-zh-TW .major-chip { font-size: 30px; letter-spacing: -0.04em; }
+      .locale-zh-TW .lang-pill { font-size: 30px; }
       .locale-en .panel-body strong { font-size: 26px; }
       .locale-en .panel-body em { font-size: 20px; }
       .cta-wrap {
@@ -795,6 +688,7 @@ export function renderSlidesHtml(localeId) {
       ${slide(
         1,
         `
+        ${deckBurst}
         <span class="tag">${esc(d.s1.tag)}</span>
         <h1 class="head head--duo">
           <span class="line">${esc(d.s1.h1)}</span>
@@ -816,10 +710,10 @@ export function renderSlidesHtml(localeId) {
         `
         <span class="tag">${esc(d.s3.tag)}</span>
         <h2 class="head">${raw(d.s3.h2)}</h2>
-        <p class="sub">${esc(d.s3.sub)}</p>
-        <div class="stat-strip">
-          ${d.s3.stats.map((s) => `<div class="stat-cell"><div class="n">${esc(s.n)}</div><div class="l">${esc(s.l)}</div></div>`).join("")}
-        </div>`
+        <div class="perk-strip">
+          ${d.s3.perks.map((p) => `<div class="perk-cell deck-card">${esc(p)}</div>`).join("")}
+        </div>`,
+        "slide--spotlight"
       )}
       ${slide(
         4,
@@ -841,23 +735,13 @@ export function renderSlidesHtml(localeId) {
       ${slide(
         6,
         `
-        <div class="scope-burst" aria-hidden="true"></div>
-        <div class="scope-bg" aria-hidden="true"><span class="scope-bg-n">${majorCount}</span><span class="scope-bg-n scope-bg-n--2">${langCount}</span></div>
-        <div class="scope-head">
-          <div class="scope-head-l">
-            <span class="tag">${esc(d.s6.tag)}</span>
-            <span class="scope-badge">${esc(d.s6.badge)}</span>
-          </div>
-          <div class="scope-mega" aria-label="${esc(d.s6.h2.replace(/<br\s*\/?>/gi, " "))}">
-            <span class="scope-mega-a">${majorCount}</span>
-            <span class="scope-mega-x">×</span>
-            <span class="scope-mega-b">${langCount}</span>
-          </div>
-        </div>
+        ${deckBurst}
+        <span class="tag">${esc(d.s6.tag)}</span>
+        <h2 class="head">${raw(d.s6.h2)}</h2>
         <div class="scope-body">
           ${scopeMajors}
-          <div class="lang-rail-wrap">
-            <p class="scope-label">${esc(d.s6.languagesLabel)}</p>
+          <div class="deck-divider">
+            <p class="section-label">${esc(d.s6.languagesLabel)}</p>
             <div class="lang-rail">${scopeLangs}</div>
           </div>
         </div>`,
@@ -870,16 +754,16 @@ export function renderSlidesHtml(localeId) {
         <h2 class="head">${raw(d.s7.h2)}</h2>
         <div class="cta-wrap">
           <div class="qr-card">
-            <img src="qr.png" alt="${esc(SITE_URL)}" width="220" height="220" />
+            <img src="qr.png" alt="${esc(SITE_URL)}" width="240" height="240" />
             <span class="scan-lbl">${esc(d.s7.scan)}</span>
           </div>
           <div class="cta-text">
             <p>${esc(d.s7.cta)}</p>
             <p class="url">aprilstumb.vercel.app</p>
-            <p>${esc(d.s7.hint)}</p>
           </div>
         </div>
-        <p class="fine">${esc(d.s7.disclaimer)}</p>`
+        <p class="fine">${esc(d.s7.disclaimer)}</p>`,
+        "slide--cta"
       )}
     </div>
   </body>

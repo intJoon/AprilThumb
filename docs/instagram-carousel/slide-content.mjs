@@ -12,7 +12,7 @@ export const SLIDES_BY_LOCALE = {
       tag: "ChatGPT · Gemini",
       h1: "복붙 한 번.",
       h1b: "역할 고정.",
-      sub: "AprilThumb — 학습·과제 프롬프트",
+      sub: "학습·과제 프롬프트 허브",
       hint: "스와이프",
     },
     s2: {
@@ -23,12 +23,7 @@ export const SLIDES_BY_LOCALE = {
     s3: {
       tag: "Solution",
       h2: "한 URL에서<br />골라 복사",
-      sub: "ChatGPT · Gemini 첫 메시지에 붙여넣기",
-      stats: [
-        { n: "24", l: "전공" },
-        { n: "6", l: "언어" },
-        { n: "6", l: "역할" },
-      ],
+      perks: ["한 링크", "즉시 복사", "계속 재사용"],
     },
     s4: {
       tag: "How",
@@ -36,7 +31,7 @@ export const SLIDES_BY_LOCALE = {
       steps: ["언어", "전공", "복사 → 새 대화"],
     },
     s5: {
-      tag: "6 roles",
+      tag: "Roles",
       h2: "목적별 프롬프트",
       roles: [
         { n: "01", t: "학술 채점", d: "루브릭·AI 톤" },
@@ -49,8 +44,7 @@ export const SLIDES_BY_LOCALE = {
     },
     s6: {
       tag: "Scope",
-      h2: "24 전공<br />6 언어",
-      badge: "전부 표시",
+      h2: "전공·언어<br />전부",
       majorsLabel: "전공",
       languagesLabel: "언어",
       majors: [
@@ -84,8 +78,7 @@ export const SLIDES_BY_LOCALE = {
     s7: {
       tag: "Save",
       h2: "시험·과제 전에<br />꺼내 쓰기",
-      cta: "프로필 링크 · QR",
-      hint: "캡션 링크보다 QR·프로필",
+      cta: "프로필 · QR · 스캔",
       scan: "스캔",
       disclaimer: "AI ≠ 전문 상담",
     },
@@ -95,7 +88,7 @@ export const SLIDES_BY_LOCALE = {
       tag: "ChatGPT · Gemini",
       h1: "One paste.",
       h1b: "Role set.",
-      sub: "AprilThumb — study & assignment prompts",
+      sub: "Study & assignment prompt hub",
       hint: "Swipe",
     },
     s2: {
@@ -106,12 +99,7 @@ export const SLIDES_BY_LOCALE = {
     s3: {
       tag: "Solution",
       h2: "One URL.<br />Copy & go.",
-      sub: "Paste into ChatGPT or Gemini first message",
-      stats: [
-        { n: "24", l: "majors" },
-        { n: "6", l: "langs" },
-        { n: "6", l: "roles" },
-      ],
+      perks: ["One link", "Copy fast", "Reuse anytime"],
     },
     s4: {
       tag: "How",
@@ -119,7 +107,7 @@ export const SLIDES_BY_LOCALE = {
       steps: ["Language", "Major", "Copy → new chat"],
     },
     s5: {
-      tag: "6 roles",
+      tag: "Roles",
       h2: "Pick your role",
       roles: [
         { n: "01", t: "Academic review", d: "Rubric · AI tone" },
@@ -132,8 +120,7 @@ export const SLIDES_BY_LOCALE = {
     },
     s6: {
       tag: "Scope",
-      h2: "24 majors<br />6 languages",
-      badge: "ALL IN",
+      h2: "Every major<br />& language",
       majorsLabel: "Majors",
       languagesLabel: "Languages",
       majors: [
@@ -167,8 +154,7 @@ export const SLIDES_BY_LOCALE = {
     s7: {
       tag: "Save",
       h2: "Open before<br />deadlines",
-      cta: "Link in bio · QR",
-      hint: "Use bio or QR, not caption links",
+      cta: "Bio · QR · scan",
       scan: "Scan",
       disclaimer: "AI ≠ professional advice",
     },
@@ -178,7 +164,7 @@ export const SLIDES_BY_LOCALE = {
       tag: "ChatGPT · Gemini",
       h1: "貼上一次。",
       h1b: "角色固定。",
-      sub: "AprilThumb — 學習與作業提示詞",
+      sub: "學習與作業提示詞",
       hint: "滑動",
     },
     s2: {
@@ -189,12 +175,7 @@ export const SLIDES_BY_LOCALE = {
     s3: {
       tag: "Solution",
       h2: "一個網址<br />複製即用",
-      sub: "貼到 ChatGPT / Gemini 第一則訊息",
-      stats: [
-        { n: "24", l: "科系" },
-        { n: "6", l: "語言" },
-        { n: "6", l: "角色" },
-      ],
+      perks: ["一個連結", "立即複製", "反覆使用"],
     },
     s4: {
       tag: "How",
@@ -202,7 +183,7 @@ export const SLIDES_BY_LOCALE = {
       steps: ["語言", "科系", "複製 → 新對話"],
     },
     s5: {
-      tag: "6 roles",
+      tag: "Roles",
       h2: "依目的選擇",
       roles: [
         { n: "01", t: "學術評分", d: "評分·AI 痕跡" },
@@ -215,8 +196,7 @@ export const SLIDES_BY_LOCALE = {
     },
     s6: {
       tag: "Scope",
-      h2: "24 科系<br />6 語言",
-      badge: "全部列出",
+      h2: "科系·語言<br />全部",
       majorsLabel: "科系",
       languagesLabel: "語言",
       majors: [
@@ -250,8 +230,7 @@ export const SLIDES_BY_LOCALE = {
     s7: {
       tag: "Save",
       h2: "考前作業前<br />再拿出來",
-      cta: "個人檔案 · QR",
-      hint: "用個人檔案或 QR",
+      cta: "個人檔案 · QR · 掃描",
       scan: "掃描",
       disclaimer: "AI ≠ 專業諮詢",
     },
