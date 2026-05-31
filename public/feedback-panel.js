@@ -141,6 +141,12 @@ export function mountFeedbackPanel(ctx) {
       if (newest) {
         newest.classList.add("comment-bubble--new");
         setTimeout(() => newest.classList.remove("comment-bubble--new"), HIGHLIGHT_MS);
+        const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth";
+        requestAnimationFrame(() => {
+          newest.scrollIntoView({ block: "start", behavior: motion });
+        });
       }
     }
   }
