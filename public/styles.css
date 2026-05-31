@@ -624,11 +624,12 @@ main {
   height: 1.25rem;
   flex-shrink: 0;
   color: var(--muted);
+  transform: rotate(180deg);
   transition: transform 0.2s;
 }
 
 .feedback-disclosure[open] .feedback-chevron {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .feedback-inner {

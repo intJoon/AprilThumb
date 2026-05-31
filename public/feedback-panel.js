@@ -32,6 +32,7 @@ export function mountFeedbackPanel(ctx) {
 
   let cachedCount = 0;
   let loadState = "idle";
+  let fetchSeq = 0;
 
   function contextLine() {
     const track = ctx.selectedTrack();
@@ -78,25 +79,29 @@ export function mountFeedbackPanel(ctx) {
     updateCharCount();
   }
 
+  function syncFeedUi() {
+    if (!details.open) return;
+    loading.hidden = loadState !== "loading";
+    errorEl.hidden = loadState !== "error";
+    list.hidden = loadState === "loading" || loadState === "error";
+    if (loadState !== "ok") empty.hidden = true;
+  }
+
   function setLoadState(state) {
     loadState = state;
-    if (!details.open) return;
-    loading.hidden = state !== "loading";
-    errorEl.hidden = state !== "error";
-    empty.hidden = true;
-    list.hidden = state === "loading" || state === "error";
+    syncFeedUi();
   }
 
   function renderList(items, highlightNewest = false) {
+    if (loadState !== "ok") return;
     list.replaceChildren();
-    list.hidden = false;
-    if (loadState === "loading" || loadState === "error") return;
-
     if (!items.length) {
+      list.hidden = false;
       empty.hidden = false;
       return;
     }
     empty.hidden = true;
+    list.hidden = false;
     for (const item of items) list.appendChild(renderBubble(item, ctx));
     if (highlightNewest && items.length) {
       const newest = list.firstElementChild;
@@ -118,24 +123,27 @@ export function mountFeedbackPanel(ctx) {
     }
     section.hidden = false;
 
-    if (details.open) {
-      setLoadState("loading");
-    }
+    const seq = ++fetchSeq;
+    if (details.open) setLoadState("loading");
 
     try {
       const items = await fetchAllComments();
+      if (seq !== fetchSeq) return;
       cachedCount = items.length;
       updateSummary();
-      if (details.open) {
-        setLoadState("ok");
-        renderList(items, highlightNewest);
+      if (!details.open) {
+        loadState = "idle";
+        return;
       }
+      setLoadState("ok");
+      renderList(items, highlightNewest);
     } catch {
-      if (details.open) {
-        setLoadState("error");
-        list.replaceChildren();
-        list.hidden = true;
-      }
+      if (seq !== fetchSeq) return;
+      if (!details.open) return;
+      setLoadState("error");
+      list.replaceChildren();
+      list.hidden = true;
+      empty.hidden = true;
     }
   }
 
