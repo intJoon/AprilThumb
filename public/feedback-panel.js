@@ -48,11 +48,32 @@ export function mountFeedbackPanel(ctx) {
     );
   }
 
+  const inputMaxPx = () => {
+    const line = parseFloat(getComputedStyle(bodyInput).lineHeight) || 25;
+    return line * 5 + 28;
+  };
+
+  function autoResizeInput() {
+    bodyInput.style.height = "auto";
+    const cap = inputMaxPx();
+    const h = Math.min(bodyInput.scrollHeight, cap);
+    bodyInput.style.height = `${h}px`;
+    bodyInput.style.overflowY = bodyInput.scrollHeight > cap ? "auto" : "hidden";
+  }
+
   function updateCharCount() {
     const len = bodyInput.value.length;
     charCount.textContent = `${len}/${MAX_BODY}`;
     charCount.classList.toggle("comment-char-count--warn", len >= WARN_AT);
     charCount.classList.toggle("comment-char-count--limit", len >= MAX_BODY);
+    autoResizeInput();
+  }
+
+  function resetInputHeight() {
+    bodyInput.value = "";
+    bodyInput.style.height = "";
+    bodyInput.style.overflowY = "hidden";
+    updateCharCount();
   }
 
   function updateSummary() {
@@ -208,8 +229,7 @@ export function mountFeedbackPanel(ctx) {
         body,
         website: honeypot?.value || "",
       });
-      bodyInput.value = "";
-      updateCharCount();
+      resetInputHeight();
       ctx.showToast(ctx.ui("commentsPosted"));
       await loadFeed(true);
     } catch {
@@ -221,6 +241,7 @@ export function mountFeedbackPanel(ctx) {
   });
 
   updateLabels();
+  autoResizeInput();
 
   return {
     updateLabels: () => {
