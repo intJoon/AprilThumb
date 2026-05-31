@@ -40,11 +40,6 @@ const PROMPT_MARKERS = {
   ],
 };
 
-export function injectGuideMarkers(text) {
-  if (text.includes("OVERLAY:guide-extra")) return text;
-  return `${text.trimEnd()}\n\n<!-- OVERLAY:guide-extra -->\n`;
-}
-
 export function injectPromptMarkers(promptId, text) {
   const rules = PROMPT_MARKERS[promptId];
   if (!rules) return text;

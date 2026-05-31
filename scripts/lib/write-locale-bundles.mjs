@@ -26,7 +26,6 @@ function writeFile(rel, content) {
 }
 
 export function writeLocaleBundles() {
-  // KO SSOT lives on disk (content/tracks/*/ko); never generated from PACKS.
   for (const [locale, pack] of Object.entries(PACKS)) {
     for (const trackId of TRACKS) {
       const data = pack[trackId];

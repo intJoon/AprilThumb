@@ -1,6 +1,6 @@
 # AprilThumb
 
-ChatGPT·Gemini용 학습·과제 프롬프트 허브. 16개 전공 × 6개 언어, 복사 한 번으로 새 대화에 붙여넣기.
+ChatGPT·Gemini용 학습·과제 프롬프트 허브. **24개 전공 × 6개 언어**, 복사 한 번으로 새 대화에 붙여넣기.
 
 **프로덕션:** https://aprilstumb.vercel.app
 
@@ -31,9 +31,10 @@ npx vercel --prod
 
 ## 구조
 
-- `content/tracks/{전공}/{locale}/` — 프롬프트·가이드 원본 (pharmacy/ko는 디스크 SSOT)
+- `content/tracks/{전공}/{locale}/` — 프롬프트·가이드 (`guide.md`는 `fullGuideFor()`로 24×6 생성)
+- `content/tracks/{general|pharmacy}/ko/prompts/` — KO 프롬프트 디스크 SSOT · non-KO는 `locale-packs`에서 주입
 - `archive/icloud-source/` — iCloud 약학 KO MD·템플릿 원본 (읽기 전용 보관)
 - `content/i18n/` — UI 문자열
 - `scripts/` — 생성·빌드·전공 overlay·locale 팩
-- `public/` — 정적 사이트 + `data/bundles/` 빌드 산출물
+- `public/` — 정적 사이트 + `data/bundles/` 빌드 산출물 (144)
 - `docs/` — 방법론·출처·버전 (SSOT 문서)

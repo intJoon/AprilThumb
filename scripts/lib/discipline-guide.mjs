@@ -267,10 +267,6 @@ function guideBody(trackId, locale) {
   return out;
 }
 
-export function guideExtraFor(trackId, locale) {
-  return `\n${guideBody(trackId, locale)}`;
-}
-
 export function fullGuideFor(trackId, locale) {
   const ui = CHROME[locale] || CHROME["en-GB"];
   const body = guideBody(trackId, locale);
@@ -284,12 +280,3 @@ export const GUIDE_HEADINGS = Object.fromEntries(
     { chatgpt: ui.chatgpt, gemini: ui.gemini, sit: ui.sit },
   ])
 );
-
-export const GENERIC_GUIDE_MARKERS = {
-  ko: "전공 용어·근거·한계**를 함께",
-  "en-GB": "discipline terms, evidence, and limits",
-  "zh-TW": "專業術語、證據與限制",
-  ja: "専門用語・根拠・限界",
-  fr: "termes, preuves et limites",
-  es: "términos, evidencia y límites",
-};

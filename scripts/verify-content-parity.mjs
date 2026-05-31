@@ -91,7 +91,9 @@ function hasAny(text, markers) {
 }
 
 function countBullets(text) {
-  return (text.match(/\n-\s/g) || []).length;
+  const dash = (text.match(/\n-\s/g) || []).length;
+  const numbered = (text.match(/\n\d+\.\s/g) || []).length;
+  return dash + numbered;
 }
 
 function hasWritingExamples(text) {
@@ -326,20 +328,14 @@ function checkBundle(trackId, locale) {
 
   if (OVERLAY_TRACKS.includes(trackId)) {
     issues.push(...checkOverlayRubric(trackId, locale, academic));
-    const studyBullets = countBullets(study);
-    const presBullets = countBullets(pres);
-    if (studyBullets < 3) issues.push(`bundle study bullets=${studyBullets}`);
-    if (presBullets < 3) issues.push(`bundle presentation bullets=${presBullets}`);
-    if (
-      !study.includes("안전") &&
-      !study.includes("安全") &&
-      !study.includes("seguridad") &&
-      !study.includes("Sécurité") &&
-      !study.includes("safety") &&
-      !study.includes("Safety")
-    ) {
-      issues.push("bundle study-companion missing discipline safety");
-    }
+  }
+
+  const studyBullets = countBullets(study);
+  const presBullets = countBullets(pres);
+  if (studyBullets < 3) issues.push(`bundle study bullets=${studyBullets}`);
+  if (presBullets < 3) issues.push(`bundle presentation bullets=${presBullets}`);
+  if (!/안전|安全|seguridad|sécurité|safety/i.test(study)) {
+    issues.push("bundle study-companion missing discipline safety");
   }
 
   for (const p of bundle.prompts || []) {
@@ -363,9 +359,11 @@ if (orphanBundles.length) {
   report.push(`orphan-bundles: ${orphanBundles.join(", ")}`);
 }
 
-for (const trackId of OVERLAY_TRACKS) {
+for (const trackId of ALL_TRACKS) {
   for (const locale of LOCALES) {
-    const depthIssues = checkDepth(trackId, locale);
+    const depthIssues = OVERLAY_TRACKS.includes(trackId)
+      ? checkDepth(trackId, locale)
+      : [];
     const bundleIssues = checkBundle(trackId, locale);
     const all = [...depthIssues, ...bundleIssues];
     if (all.length) {
@@ -375,17 +373,7 @@ for (const trackId of OVERLAY_TRACKS) {
   }
 }
 
-for (const trackId of STANDALONE) {
-  for (const locale of LOCALES) {
-    const bundleIssues = checkBundle(trackId, locale);
-    if (bundleIssues.length) {
-      failCount++;
-      report.push(`${trackId}/${locale}: ${bundleIssues.join("; ")}`);
-    }
-  }
-}
-
-const total = OVERLAY_TRACKS.length * LOCALES.length + STANDALONE.length * LOCALES.length;
+const total = ALL_TRACKS.length * LOCALES.length;
 
 if (failCount === 0) {
   console.log(`ALL_OK ${total}/${total} (24 tracks × 6 locales)`);
