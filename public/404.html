@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#faf7f2" />
     <meta name="robots" content="noindex" />
-    <title>Page not found — AprilThumb</title>
+    <title>AprilThumb</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,14 +65,15 @@
   <body>
     <div class="page-bg" aria-hidden="true"></div>
     <main class="wrap not-found">
-      <p class="hero-label">404</p>
-      <h1>Page not found</h1>
-      <p>The link may be outdated or the page was removed. Return to AprilThumb to pick a discipline and language.</p>
+      <p class="hero-label" id="not-found-code"></p>
+      <h1 id="not-found-heading"></h1>
+      <p id="not-found-body"></p>
       <div class="not-found-actions">
-        <a href="/">Back to AprilThumb</a>
-        <a class="secondary" href="/" id="not-found-retry">Try again</a>
+        <a href="/" id="not-found-back"></a>
+        <a class="secondary" href="/" id="not-found-retry"></a>
       </div>
     </main>
+    <script src="/not-found.js" type="module"></script>
     <script>
       document.getElementById("not-found-retry").addEventListener("click", (e) => {
         e.preventDefault();

@@ -1,6 +1,10 @@
-const STORAGE_KEY = "aprilstumb";
-const DEFAULT_LOCALE = "en-GB";
-
+import {
+  STORAGE_KEY,
+  DEFAULT_LOCALE,
+  resolveAppLocale,
+  loadStoredSelection,
+} from "./locale-resolve.js";
+import { applyPageChrome } from "./page-chrome.js";
 import { mountFeedbackPanel } from "./feedback-panel.js";
 import { flashButton, flashIconButtonWithLabel, flashLabel } from "./button-flash.js";
 
@@ -60,55 +64,7 @@ function saveSelection(track, lang) {
 }
 
 function loadSelection() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
-  } catch {}
-  return null;
-}
-
-function matchLocaleTag(tag, supported) {
-  if (!tag || !supported?.length) return null;
-  const lower = String(tag).trim().replace(/_/g, "-").toLowerCase();
-  const exact = supported.find((l) => l.toLowerCase() === lower);
-  if (exact) return exact;
-
-  const parts = lower.split("-");
-  const base = parts[0];
-  const region = parts[1];
-
-  if (base === "en" && supported.includes("en-GB")) return "en-GB";
-  if (base === "ko" && supported.includes("ko")) return "ko";
-  if (base === "ja" && supported.includes("ja")) return "ja";
-  if (base === "fr" && supported.includes("fr")) return "fr";
-  if (base === "es" && supported.includes("es")) return "es";
-
-  if (base === "zh" && supported.includes("zh-TW")) {
-    if (
-      region === "tw" ||
-      region === "hk" ||
-      region === "mo" ||
-      lower.includes("hant")
-    ) {
-      return "zh-TW";
-    }
-  }
-
-  return null;
-}
-
-function resolveDeviceLocale(supported) {
-  const prefs =
-    navigator.languages?.length > 0
-      ? navigator.languages
-      : navigator.language
-        ? [navigator.language]
-        : [];
-  for (const tag of prefs) {
-    const hit = matchLocaleTag(tag, supported);
-    if (hit) return hit;
-  }
-  return null;
+  return loadStoredSelection();
 }
 
 function uiSource() {
@@ -129,7 +85,6 @@ function langLabel(code) {
 
 async function loadLandingUi(lang) {
   const locale = lang || DEFAULT_LOCALE;
-  document.documentElement.lang = locale === "en-GB" ? "en" : locale.split("-")[0];
   const entry =
     manifest.bundles.find((b) => b.trackId === "general" && b.locale === locale) ??
     manifest.bundles.find((b) => b.trackId === "general" && b.locale === DEFAULT_LOCALE);
@@ -138,6 +93,7 @@ async function loadLandingUi(lang) {
   if (!res.ok) return;
   const bundle = await res.json();
   landingUi = bundle.ui;
+  applyPageChrome(landingUi, locale);
   document.getElementById("footer-text").textContent = landingUi.footerDisclaimer;
   document.getElementById("site-title").textContent = landingUi.siteTitle;
   feedbackPanel?.updateLabels?.();
@@ -299,12 +255,11 @@ async function loadBundle(track, lang) {
   if (!res.ok) throw new Error("load failed");
   currentBundle = await res.json();
 
+  landingUi = currentBundle.ui;
+  applyPageChrome(currentBundle.ui, lang);
   document.getElementById("site-title").textContent = currentBundle.siteTitle;
-  document.title = currentBundle.siteTitle;
-  document.getElementById("hero-label").textContent = currentBundle.ui.heroLabel;
   document.getElementById("footer-text").textContent = currentBundle.ui.footerDisclaimer;
   document.getElementById("prompts-label").textContent = currentBundle.ui.promptsLabel;
-  landingUi = currentBundle.ui;
   feedbackPanel?.updateLabels?.();
 
   guideEl.replaceChildren();
@@ -315,7 +270,6 @@ async function loadBundle(track, lang) {
     app.appendChild(renderPrompt(item));
   }
 
-  document.documentElement.lang = lang === "en-GB" ? "en" : lang.split("-")[0];
   await feedbackPanel?.prefetchCount?.();
 }
 
@@ -355,11 +309,7 @@ async function init() {
   const params = getParams();
   const stored = loadSelection();
   selectedTrack = params.track || stored?.track || null;
-  selectedLang =
-    params.lang ||
-    stored?.lang ||
-    resolveDeviceLocale(manifest.locales) ||
-    DEFAULT_LOCALE;
+  selectedLang = resolveAppLocale(manifest, params.lang, stored?.lang);
 
   await loadLandingUi(selectedLang);
   feedbackPanel = mountFeedbackPanel({
@@ -381,5 +331,7 @@ async function init() {
 }
 
 init().catch(() => {
-  document.body.innerHTML = `<main class="wrap"><p class="loading">${landingUi?.loadError ?? "Could not load."}</p></main>`;
+  const msg = landingUi?.loadError || "Could not load.";
+  document.body.innerHTML = `<main class="wrap"><p class="loading"></p></main>`;
+  document.querySelector(".loading").textContent = msg;
 });
