@@ -1,4 +1,5 @@
 const STORAGE_KEY = "aprilstumb";
+const DEFAULT_LOCALE = "en-GB";
 
 import { mountFeedbackPanel } from "./feedback-panel.js";
 import { flashButton, flashIconButtonWithLabel, flashLabel } from "./button-flash.js";
@@ -66,6 +67,50 @@ function loadSelection() {
   return null;
 }
 
+function matchLocaleTag(tag, supported) {
+  if (!tag || !supported?.length) return null;
+  const lower = String(tag).trim().replace(/_/g, "-").toLowerCase();
+  const exact = supported.find((l) => l.toLowerCase() === lower);
+  if (exact) return exact;
+
+  const parts = lower.split("-");
+  const base = parts[0];
+  const region = parts[1];
+
+  if (base === "en" && supported.includes("en-GB")) return "en-GB";
+  if (base === "ko" && supported.includes("ko")) return "ko";
+  if (base === "ja" && supported.includes("ja")) return "ja";
+  if (base === "fr" && supported.includes("fr")) return "fr";
+  if (base === "es" && supported.includes("es")) return "es";
+
+  if (base === "zh" && supported.includes("zh-TW")) {
+    if (
+      region === "tw" ||
+      region === "hk" ||
+      region === "mo" ||
+      lower.includes("hant")
+    ) {
+      return "zh-TW";
+    }
+  }
+
+  return null;
+}
+
+function resolveDeviceLocale(supported) {
+  const prefs =
+    navigator.languages?.length > 0
+      ? navigator.languages
+      : navigator.language
+        ? [navigator.language]
+        : [];
+  for (const tag of prefs) {
+    const hit = matchLocaleTag(tag, supported);
+    if (hit) return hit;
+  }
+  return null;
+}
+
 function uiSource() {
   return currentBundle?.ui ?? landingUi;
 }
@@ -83,10 +128,11 @@ function langLabel(code) {
 }
 
 async function loadLandingUi(lang) {
-  const locale = lang || "ko";
+  const locale = lang || DEFAULT_LOCALE;
+  document.documentElement.lang = locale === "en-GB" ? "en" : locale.split("-")[0];
   const entry =
     manifest.bundles.find((b) => b.trackId === "general" && b.locale === locale) ??
-    manifest.bundles.find((b) => b.trackId === "general" && b.locale === "ko");
+    manifest.bundles.find((b) => b.trackId === "general" && b.locale === DEFAULT_LOCALE);
   if (!entry) return;
   const res = await fetch(`/data/bundles/${entry.file}`);
   if (!res.ok) return;
@@ -305,9 +351,13 @@ async function init() {
   const params = getParams();
   const stored = loadSelection();
   selectedTrack = params.track || stored?.track || null;
-  selectedLang = params.lang || stored?.lang || null;
+  selectedLang =
+    params.lang ||
+    stored?.lang ||
+    resolveDeviceLocale(manifest.locales) ||
+    DEFAULT_LOCALE;
 
-  await loadLandingUi(selectedLang || "ko");
+  await loadLandingUi(selectedLang);
   feedbackPanel = mountFeedbackPanel({
     ui,
     trackLabel,
