@@ -11,8 +11,19 @@
     <meta property="og:description" content="Copy prompts for ChatGPT and Gemini — 24 disciplines, 6 languages" />
     <meta property="og:url" content="https://aprilstumb.vercel.app/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:image" content="https://aprilstumb.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AprilThumb — ChatGPT and Gemini prompts for 24 disciplines" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AprilThumb" />
+    <meta name="twitter:description" content="Copy prompts for ChatGPT and Gemini — 24 disciplines, 6 languages" />
+    <meta name="twitter:image" content="https://aprilstumb.vercel.app/og-image.png" />
+    <meta name="twitter:image:alt" content="AprilThumb — ChatGPT and Gemini prompts for 24 disciplines" />
     <title>AprilThumb</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,14 +45,14 @@
         <p class="hero-label" id="hero-label">ChatGPT · Gemini</p>
         <h1 id="site-title">AprilThumb</h1>
         <div class="header-actions">
-          <button type="button" class="btn-ghost is-empty" id="btn-change-lang" aria-haspopup="listbox">
+          <button type="button" class="btn-ghost is-empty" id="btn-change-lang" aria-haspopup="true" aria-controls="picker">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
               <path d="M3 12h18M12 3c2.5 2.8 3.8 5.8 3.8 9s-1.3 6.2-3.8 9M12 3c-2.5 2.8-3.8 5.8-3.8 9s1.3 6.2 3.8 9" stroke="currentColor" stroke-width="1.8" />
             </svg>
             <span class="btn-label" id="btn-label-lang"></span>
           </button>
-          <button type="button" class="btn-ghost is-empty" id="btn-change-track" aria-haspopup="listbox">
+          <button type="button" class="btn-ghost is-empty" id="btn-change-track" aria-haspopup="true" aria-controls="picker">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" />
               <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.8" />
@@ -62,9 +73,9 @@
     </header>
 
     <main class="wrap">
-      <section id="picker" class="picker" hidden aria-label="Selection">
+      <section id="picker" class="picker" hidden role="region" aria-labelledby="picker-label">
         <h2 class="picker-label" id="picker-label"></h2>
-        <div id="picker-options"></div>
+        <div id="picker-options" role="group" aria-labelledby="picker-label"></div>
       </section>
 
       <div id="app-view" hidden>

@@ -10,6 +10,7 @@
     "instagram:export:ko": "node scripts/export-instagram-slides.mjs --locale=ko",
     "instagram:export:en": "node scripts/export-instagram-slides.mjs --locale=en",
     "instagram:export:zh": "node scripts/export-instagram-slides.mjs --locale=zh-TW",
+    "brand-assets": "node scripts/render-brand-assets.mjs",
     "vercel-build": "npm run build",
     "dev": "npm run build && npx serve public -l 3456"
   },

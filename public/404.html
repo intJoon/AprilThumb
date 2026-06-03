@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#faf7f2" />
+    <meta name="robots" content="noindex" />
+    <title>Page not found — AprilThumb</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap"
+    />
+    <style>
+      .not-found {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2rem 0 4rem;
+      }
+      .not-found h1 {
+        font-family: "Source Serif 4", Georgia, serif;
+        font-size: clamp(1.75rem, 5vw, 2.25rem);
+        margin: 0;
+      }
+      .not-found p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 36rem;
+      }
+      .not-found-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+      }
+      .not-found-actions a {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.55rem 1.1rem;
+        border-radius: var(--radius-sm);
+        font-weight: 600;
+        text-decoration: none;
+        background: var(--accent);
+        color: #fff;
+      }
+      .not-found-actions a:hover {
+        background: var(--accent-hover);
+      }
+      .not-found-actions a.secondary {
+        background: transparent;
+        color: var(--accent);
+        border: 1px solid var(--border);
+      }
+      .not-found-actions a.secondary:hover {
+        background: var(--accent-soft);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+    <main class="wrap not-found">
+      <p class="hero-label">404</p>
+      <h1>Page not found</h1>
+      <p>The link may be outdated or the page was removed. Return to AprilThumb to pick a discipline and language.</p>
+      <div class="not-found-actions">
+        <a href="/">Back to AprilThumb</a>
+        <a class="secondary" href="/" id="not-found-retry">Try again</a>
+      </div>
+    </main>
+    <script>
+      document.getElementById("not-found-retry").addEventListener("click", (e) => {
+        e.preventDefault();
+        location.reload();
+      });
+    </script>
+  </body>
+</html>

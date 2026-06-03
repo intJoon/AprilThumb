@@ -227,6 +227,7 @@ function renderPicker(mode) {
   picker.hidden = false;
   pickerOptions.className = "track-grid";
   pickerOptions.replaceChildren();
+  const activeTrigger = mode === "lang" ? btnChangeLang : btnChangeTrack;
 
   if (mode === "lang") {
     pickerLabel.textContent = src.landingLanguages;
@@ -237,6 +238,7 @@ function renderPicker(mode) {
       if (locale === selectedLang) btn.classList.add("selected");
       btn.textContent = langLabel(locale);
       btn.dataset.lang = locale;
+      btn.setAttribute("aria-pressed", locale === selectedLang ? "true" : "false");
       btn.addEventListener("click", () => onPickLang(locale));
       pickerOptions.appendChild(btn);
     }
@@ -249,12 +251,14 @@ function renderPicker(mode) {
       if (track.id === selectedTrack) btn.classList.add("selected");
       btn.textContent = trackLabel(track.id);
       btn.dataset.track = track.id;
+      btn.setAttribute("aria-pressed", track.id === selectedTrack ? "true" : "false");
       btn.addEventListener("click", () => onPickTrack(track.id));
       pickerOptions.appendChild(btn);
     }
   }
 
   updateHeaderButtons();
+  activeTrigger.focus();
 }
 
 function closePicker() {
