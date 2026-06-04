@@ -48,6 +48,17 @@ export function mountFeedbackPanel(ctx) {
     );
   }
 
+  function scrollPageToFeedback() {
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? "auto"
+      : "smooth";
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        section.scrollIntoView({ block: "start", behavior: motion });
+      });
+    });
+  }
+
   const inputMaxPx = () => {
     const line = parseFloat(getComputedStyle(bodyInput).lineHeight) || 25;
     return line * 5 + 28;
@@ -148,6 +159,8 @@ export function mountFeedbackPanel(ctx) {
           newest.scrollIntoView({ block: "start", behavior: motion });
         });
       }
+    } else if (details.open) {
+      scrollPageToFeedback();
     }
   }
 
@@ -219,8 +232,10 @@ export function mountFeedbackPanel(ctx) {
 
   details.addEventListener("toggle", () => {
     setDisclosureAria();
-    if (details.open) loadFeed();
-    else if (feedAbort) feedAbort.abort();
+    if (details.open) {
+      scrollPageToFeedback();
+      loadFeed();
+    } else if (feedAbort) feedAbort.abort();
   });
 
   retryBtn.addEventListener("click", () => loadFeed());
