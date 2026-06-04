@@ -435,7 +435,7 @@ main {
 .prompt-preview .md {
   padding: 1rem 1.1rem;
   background: #f5f0e8;
-  border-radius: var(--radius-sm);
+  border-radius: 0;
   font-size: 0.88rem;
   line-height: 1.65;
   color: #44403c;
