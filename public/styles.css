@@ -22,9 +22,24 @@
 }
 
 button,
-summary {
+summary,
+a {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+}
+
+.not-found-actions a {
+  transition: transform 0.15s, background 0.15s, border-color 0.15s;
+}
+
+.not-found-actions a:active {
+  transform: scale(0.96);
+  background: var(--accent-hover);
+}
+
+.not-found-actions a.secondary:active {
+  background: var(--accent-soft);
+  transform: scale(0.96);
 }
 
 html {
@@ -943,7 +958,9 @@ main {
   .track-card:active:not(:disabled),
   .btn-copy:active,
   .btn-retry:active,
-  .btn-submit:active:not(:disabled) {
+  .btn-submit:active:not(:disabled),
+  .not-found-actions a:active,
+  .not-found-actions a.secondary:active {
     transform: none;
   }
 }
