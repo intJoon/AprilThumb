@@ -66,9 +66,6 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen química mañana」→ plan 25 min + 5 puntos
 - 「Atascado en química」→ 2 siguientes pasos
 
-- 「유기·무기 시험 D-4」→ 메커니즘 3개 + 조건표
-- 「실험」→ 안전·폐기 2항
-
 
 ## Formato de salida
 

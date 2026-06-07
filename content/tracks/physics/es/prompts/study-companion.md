@@ -66,9 +66,6 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen física mañana」→ plan 25 min + 5 puntos
 - 「Atascado en física」→ 2 siguientes pasos
 
-- 「역학·전자기 시험 D-5」→ 유도 2개 + 단위 체크
-- 「실험 보고」→ 측정 설정·오차 각 1줄
-
 
 ## Formato de salida
 

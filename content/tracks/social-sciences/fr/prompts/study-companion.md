@@ -67,8 +67,8 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen sciences sociales demain」→ plan 25 min + 5 points
 - 「Blocage devoir sciences sociales」→ 2 actions suivantes
 
-- 「조사·정책 시험 D-4」→ 개념 조작화 3개 + 표본 1단락
-- 「논문」→ 변수 정의표 + 편향 2줄
+- « Examen enquête/politique J-4 »→ 3 opérationnalisations + 1 paragraphe échantillon
+- « Article »→ tableau variables + 2 lignes biais
 
 
 ## Format de sortie

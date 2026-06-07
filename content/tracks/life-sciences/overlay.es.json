@@ -1,10 +1,10 @@
 {
-  "source-keywords": "\n## 생명과학 키워드 예\n\n- 메커니즘: pathway, gene, cell, ecology\n- 실험: control, n, stats, reproducibility\n\n과제 맥락에 맞게 조정하세요.\n",
+  "source-keywords": "\n## Palabras clave ciencias de la vida\n\n- Mecanismo: vía, gen, célula, ecología\n- Experimento: control, n, stats, reproducibilidad\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo ciencias de la vida\n\n- 「Concepto ciencias de la vida, más corto」\n- No acortar nombres propios, cifras ni términos\n",
-  "writing-examples": "\n## 생명과학 예\n\n❌ 「2장에서 생명과학 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§3.1: 중요 — 「유의미」 주장, n·통계 없음. stats § 추가.`\n✅ `§4.2: 주의 — in vitro 결과 in vivo 일반화. limits 1문장.`\n",
-  "presentation-context": "\n## Contexto ciencias de la vida\n\n- p. ej. trabajo, seminario, TFG en ciencias de la vida\n- Público: compañeros, profesores, profesionales\n\n- 예: 실험·리뷰·포스터 발표\n- 슬라이드: 가설 → 방법 → 데이터 → 한계\n",
+  "writing-examples": "\n## Ejemplo ciencias de la vida\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§3.1: importante — « significativo » sin n ni stats. Añadir stats §.`\n✅ `§4.2: menor — in vitro generalizado a in vivo. Añadir frase de límites.`\n",
+  "presentation-context": "\n## Contexto ciencias de la vida\n\n- p. ej. trabajo, seminario, TFG en ciencias de la vida\n- Público: compañeros, profesores, profesionales\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de ciencias de la vida\n",
-  "study-examples": "\n## Ejemplos ciencias de la vida\n\n- 「Examen ciencias de la vida mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ciencias de la vida」→ 2 siguientes pasos\n\n- 「세포·유전 시험 D-4」→ 경로 2개 + 실험 설계 1개\n- 「리뷰」→ 논문 3편 + 한계 각 1줄\n",
+  "study-examples": "\n## Ejemplos ciencias de la vida\n\n- 「Examen ciencias de la vida mañana」→ plan 25 min + 5 puntos\n- 「Atascado en ciencias de la vida」→ 2 siguientes pasos\n",
   "academic-rubric": "\n## Rúbrica de ciencias de la vida (sin rúbrica del usuario)\n\n1. **Mecanismo biológico** — Vía, genética, célula, ecología hechos concretos\n2. **Experimento y datos** — Diseño, controles, n, estadística, reproducibilidad (si aplica)\n3. **Límites** — Organismo modelo, límites in vitro, alcance de generalización\n4. **Cita** — Artículos y bases de datos apoyan las afirmaciones\n5. **Formato y alcance** — Laboratorio/revisión/póster según el encargo\n6. **Profundidad** — Hipótesis→evidencia→implicación conectadas\n\nCada eje: **Pass / Partial / Fail** + 1–3 frases (citar sección/párrafo)\n",
   "academic-fail": "\n### Señales de fallo — ciencias de la vida\n\n- « Significativo » sin estadística ni n\n- In vitro generalizado a in vivo sin crítica\n- Rasgos sin evidencia genética o linaje\n",
   "study-safety": "\n### Seguridad — ciencias de la vida (compañero de estudio)\n\n- **Sin elusión de bioseguridad o regulación de edición génica**\n"

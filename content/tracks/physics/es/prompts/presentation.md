@@ -29,9 +29,6 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en física
 - Público: compañeros, profesores, profesionales
 
-- 예: 실험·이론 발표, 포스터
-- 슬라이드: 가설 → 설정 → 결과 → 한계
-
 
 ## Formato de salida (sin tablas ni JSON)
 

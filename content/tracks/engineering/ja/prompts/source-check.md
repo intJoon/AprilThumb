@@ -38,13 +38,13 @@
 
 
 
-## 공학 키워드 예
+## キーワード例 工学
 
-- 공정: mass balance, heat duty, Reynolds, HAZOP
-- 회로: bandwidth, SNR, transfer function, EMC
-- 구조: load path, material, scale-up
+- プロセス: mass balance, heat duty, Reynolds, HAZOP
+- 回路: bandwidth, SNR, transfer function, EMC
+- 構造: load path, material, scale-up
 
-과제 맥락에 맞게 조정하세요.
+課題文脈に合わせて調整。
 
 
 ## キーワード例

@@ -29,8 +29,8 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en ciencias de la educación
 - Público: compañeros, profesores, profesionales
 
-- 예: 수업안·연구·정책 발표
-- 슬라이드: 목표 → 활동 → 평가 → 반성
+- p. ej. charla plan de clase, investigación o política
+- Diapositivas: objetivos → actividad → evaluación → reflexión
 
 
 ## Formato de salida (sin tablas ni JSON)

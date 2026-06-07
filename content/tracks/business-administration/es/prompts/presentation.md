@@ -29,8 +29,8 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en administración y contabilidad
 - Público: compañeros, profesores, profesionales
 
-- 예: 케이스·재무·전략 발표
-- 슬라이드: 문제 → 분석 → 권고 → 리스크
+- p. ej. pitch caso, finanzas o estrategia
+- Diapositivas: problema → análisis → recomendación → riesgos
 
 
 ## Formato de salida (sin tablas ni JSON)

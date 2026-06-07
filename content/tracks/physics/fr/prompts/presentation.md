@@ -29,9 +29,6 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en physique
 - Public : pairs, enseignants, praticiens
 
-- 예: 실험·이론 발표, 포스터
-- 슬라이드: 가설 → 설정 → 결과 → 한계
-
 
 ## Format de sortie (pas de tableaux ni JSON)
 

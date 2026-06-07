@@ -67,8 +67,8 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen psychologie demain」→ plan 25 min + 5 points
 - 「Blocage devoir psychologie」→ 2 actions suivantes
 
-- 「실험·통계 시험 D-4」→ 설계 1개 + 통제 3개
-- 「APA 과제」→ 가설·방법·한계 각 1단락
+- « Examen expérience/stats J-4 »→ 1 design + 3 contrôles
+- « Devoir APA »→ hypothèse, méthodes, limites chacun 1 paragraphe
 
 
 ## Format de sortie

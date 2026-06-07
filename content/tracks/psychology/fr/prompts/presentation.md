@@ -29,8 +29,8 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en psychologie
 - Public : pairs, enseignants, praticiens
 
-- 예: 실험·메타·임상 논의 발표
-- 슬라이드: 가설 → 방법 → 결과 → 한계
+- ex. exposé expérience, méta ou clinique
+- Slides : hypothèse → méthodes → résultats → limites
 
 
 ## Format de sortie (pas de tableaux ni JSON)

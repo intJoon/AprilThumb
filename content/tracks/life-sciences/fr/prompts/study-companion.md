@@ -66,9 +66,6 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen sciences de la vie demain」→ plan 25 min + 5 points
 - 「Blocage devoir sciences de la vie」→ 2 actions suivantes
 
-- 「세포·유전 시험 D-4」→ 경로 2개 + 실험 설계 1개
-- 「리뷰」→ 논문 3편 + 한계 각 1줄
-
 
 ## Format de sortie
 

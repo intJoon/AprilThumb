@@ -85,6 +85,9 @@ const EN_LEAK =
 const EN_LABEL_LEAK =
   /\b(Algorithms:|Research:|Statutes:|Pathophysiology:|Balances:|Species:|Phonology:|Primary:|Argument:|Physiology:|Model:|Space:|Circuits:|Nutrition:)\b/;
 
+const KO_LEAK = /[가-힣]/;
+const NON_KO_LOCALES = new Set(["zh-TW", "ja", "fr", "es"]);
+
 function hasAny(text, markers) {
   const list = Array.isArray(markers) ? markers : [markers];
   return list.some((m) => text.includes(m));
@@ -162,6 +165,13 @@ function checkDepth(trackId, locale) {
   if (CONCISE_TRACKS.has(trackId)) {
     const concise = overlay?.["concise-examples"] || depth?.["concise-examples"] || "";
     if (!concise.trim()) issues.push("missing concise-examples");
+  }
+
+  if (NON_KO_LOCALES.has(locale)) {
+    const writing = overlay?.["writing-examples"] || depth?.["writing-examples"] || "";
+    if (KO_LEAK.test(keywords) || KO_LEAK.test(writing) || KO_LEAK.test(study) || KO_LEAK.test(pres)) {
+      issues.push("depth Korean leak");
+    }
   }
 
   return issues;
@@ -293,10 +303,17 @@ function checkBundle(trackId, locale) {
 
   const academic = promptText(bundle, "academic-review");
   const concise = promptText(bundle, "concise-mode");
+  const source = promptText(bundle, "source-check");
   const writing = promptText(bundle, "writing-review");
   const study = promptText(bundle, "study-companion");
   const pres = promptText(bundle, "presentation");
   const guideText = bundle.guide?.markdown || "";
+
+  if (NON_KO_LOCALES.has(locale)) {
+    if (KO_LEAK.test(source) || KO_LEAK.test(writing) || KO_LEAK.test(study) || KO_LEAK.test(pres)) {
+      issues.push("bundle Korean leak");
+    }
+  }
 
   if (trackId === "general") {
     issues.push(...checkGeneralRubric(academic, locale));

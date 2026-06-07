@@ -29,8 +29,8 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en matemáticas y estadística
 - Público: compañeros, profesores, profesionales
 
-- 예: 증명 발표, 실증·통계 결과 브리핑
-- 슬라이드: 정의 → 유도/모형 → 결과 → 한계
+- p. ej. charla de prueba, briefing empírico/estadístico
+- Diapositivas: definición → derivación/modelo → resultados → límites
 
 
 ## Formato de salida (sin tablas ni JSON)

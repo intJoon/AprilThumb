@@ -29,9 +29,6 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en enfermería
 - Público: compañeros, profesores, profesionales
 
-- 예: 케이스 프레젠테이션, 케어플랜·시뮬 브리핑
-- 슬라이드: 사정 → 진단 → 중재 → 평가
-
 
 ## Formato de salida (sin tablas ni JSON)
 

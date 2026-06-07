@@ -29,8 +29,8 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en sciences sociales
 - Public : pairs, enseignants, praticiens
 
-- 예: 조사·정책·이론 발표
-- 슬라이드: 질문 → 방법 → 결과 → 한계
+- ex. exposé enquête, politique ou théorie
+- Slides : question → méthodes → résultats → limites
 
 
 ## Format de sortie (pas de tableaux ni JSON)

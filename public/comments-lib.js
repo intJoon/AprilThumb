@@ -1,4 +1,5 @@
 export const API = "/api/comments";
+export const COMMENTS_PAGE_SIZE = 10;
 
 export function formatRelative(iso, ui) {
   const then = new Date(iso).getTime();
@@ -38,11 +39,21 @@ export function renderBubble(item, ctx) {
   return li;
 }
 
-export async function fetchAllComments(signal) {
-  const res = await fetch(API, signal ? { signal } : undefined);
+export async function fetchCommentsPage({ offset = 0, limit = COMMENTS_PAGE_SIZE, signal } = {}) {
+  const url = `${API}?limit=${limit}&offset=${offset}`;
+  const res = await fetch(url, signal ? { signal } : undefined);
   if (!res.ok) throw new Error("load");
   const data = await res.json();
-  return Array.isArray(data.comments) ? data.comments : [];
+  return {
+    comments: Array.isArray(data.comments) ? data.comments : [],
+    total: typeof data.total === "number" ? data.total : 0,
+    hasMore: Boolean(data.hasMore),
+  };
+}
+
+export async function fetchAllComments(signal) {
+  const page = await fetchCommentsPage({ offset: 0, limit: COMMENTS_PAGE_SIZE, signal });
+  return page.comments;
 }
 
 export async function postComment({ track, lang, body, website = "" }) {

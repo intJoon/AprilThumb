@@ -250,5 +250,95 @@ export const LOCALE_EXAMPLES = {
       "source-keywords": "\n## Palabras clave economía doméstica\n\n- Nutrición: RDA, macro, biodisponibilidad\n- Alimentos: HACCP, vida útil, alérgeno\n- Hogar: presupuesto, ciclo de vida, bienestar\n- Política: ECA, encuesta, indicador\n\nAjustar al contexto de la tarea.\n",
       "writing-examples": "\n## Ejemplo economía doméstica\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.4: importante — nutrición/política sin muestra ni indicadores. Añadir fuente de datos §.`\n✅ `§4.3: menor — generalización ECA sin límites de encuesta. Añadir frase de límites.`\n"
     }
+  },
+  "nursing": {
+    "zh-TW": {
+      "source-keywords": "\n## 關鍵詞示例 護理\n\n- 護理過程: assessment, diagnosis, intervention, evaluation\n- 證據: guideline, NANDA, care plan, safety\n\n依課題語境調整。\n",
+      "writing-examples": "\n## 示例 護理\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§2.1: 重大 — 護理介入無診斷理據。加 NANDA·指引 §。`\n✅ `§3.3: 次要 — 無病患脈絡(年齡·共病)。加脈絡一段。`\n"
+    },
+    "ja": {
+      "source-keywords": "\n## キーワード例 看護学\n\n- 看護過程: assessment, diagnosis, intervention, evaluation\n- エビデンス: guideline, NANDA, care plan, safety\n\n課題文脈に合わせて調整。\n",
+      "writing-examples": "\n## 例 看護学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.1: 重大 — 介入に診断の根拠なし。NANDA・ガイドライン § を追加。`\n✅ `§3.3: 軽微 — 患者文脈(年齢・併存疾患)なし。文脈段落を追加。`\n"
+    },
+    "fr": {
+      "source-keywords": "\n## Mots-clés soins infirmiers\n\n- Processus: évaluation, diagnostic, intervention, évaluation\n- Preuves: recommandation, NANDA, plan de soins, sécurité\n\nAjuster au contexte du devoir.\n",
+      "writing-examples": "\n## Exemple soins infirmiers\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2.1: majeur — intervention sans justification diagnostique. Ajouter NANDA/recommandation §.`\n✅ `§3.3: mineur — pas de contexte patient (âge, comorbidité). Ajouter paragraphe de contexte.`\n"
+    },
+    "es": {
+      "source-keywords": "\n## Palabras clave enfermería\n\n- Proceso: valoración, diagnóstico, intervención, evaluación\n- Evidencia: guía, NANDA, plan de cuidados, seguridad\n\nAjustar al contexto de la tarea.\n",
+      "writing-examples": "\n## Ejemplo enfermería\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.1: importante — intervención sin justificación diagnóstica. Añadir NANDA/guía §.`\n✅ `§3.3: menor — sin contexto del paciente (edad, comorbilidad). Añadir párrafo de contexto.`\n"
+    }
+  },
+  "engineering": {
+    "zh-TW": {
+      "source-keywords": "\n## 關鍵詞示例 工程\n\n- 製程: mass balance, heat duty, Reynolds, HAZOP\n- 電路: bandwidth, SNR, transfer function, EMC\n- 結構: load path, material, scale-up\n\n依課題語境調整。\n",
+      "writing-examples": "\n## 示例 工程\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§2.4: 重大 — 無物料·能量平衡卻稱「高效製程」。加 balance §。`\n✅ `§3.2: 重大 — 訊號處理主張無單位·頻寬·SNR。加量測 §。`\n"
+    },
+    "ja": {
+      "source-keywords": "\n## キーワード例 工学\n\n- プロセス: mass balance, heat duty, Reynolds, HAZOP\n- 回路: bandwidth, SNR, transfer function, EMC\n- 構造: load path, material, scale-up\n\n課題文脈に合わせて調整。\n",
+      "writing-examples": "\n## 例 工学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.4: 重大 — 収支・単位なしの「効率的プロセス」。balance § を追加。`\n✅ `§3.2: 重大 — 信号処理の主張、単位・帯域・SNR なし。測定 § を追加。`\n"
+    },
+    "fr": {
+      "source-keywords": "\n## Mots-clés ingénierie\n\n- Procédé: bilan matière, duty thermique, Reynolds, HAZOP\n- Circuits: bande passante, SNR, fonction de transfert, CEM\n- Structures: chemin de charge, matériau, scale-up\n\nAjuster au contexte du devoir.\n",
+      "writing-examples": "\n## Exemple ingénierie\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2.4: majeur — procédé « efficace » sans bilan matière/énergie. Ajouter bilan §.`\n✅ `§3.2: majeur — traitement du signal sans unités, bande passante ni SNR. Ajouter mesure §.`\n"
+    },
+    "es": {
+      "source-keywords": "\n## Palabras clave ingeniería\n\n- Proceso: balance de masa, heat duty, Reynolds, HAZOP\n- Circuitos: ancho de banda, SNR, función de transferencia, EMC\n- Estructuras: ruta de carga, material, scale-up\n\nAjustar al contexto de la tarea.\n",
+      "writing-examples": "\n## Ejemplo ingeniería\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.4: importante — proceso « eficiente » sin balance material/energético. Añadir balance §.`\n✅ `§3.2: importante — procesado de señal sin unidades, ancho de banda ni SNR. Añadir medición §.`\n"
+    }
+  },
+  "physics": {
+    "zh-TW": {
+      "source-keywords": "\n## 關鍵詞示例 物理\n\n- 模型: assumption, approximation, validity\n- 實驗: error, calibration, reproducibility\n\n依課題語境調整。\n",
+      "writing-examples": "\n## 示例 物理\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§2.2: 重大 — 單位·量綱不一致。加 SI 一致性 §。`\n✅ `§4.1: 次要 — 實驗數據無誤差·系統誤差。加 error 分析 1 句。`\n"
+    },
+    "ja": {
+      "source-keywords": "\n## キーワード例 物理学\n\n- モデル: assumption, approximation, validity\n- 実験: error, calibration, reproducibility\n\n課題文脈に合わせて調整。\n",
+      "writing-examples": "\n## 例 物理学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.2: 重大 — 単位・次元の不整合。SI 一貫性 § を追加。`\n✅ `§4.1: 軽微 — 実験データ、誤差・系統誤差なし。error 分析 1文を追加。`\n"
+    },
+    "fr": {
+      "source-keywords": "\n## Mots-clés physique\n\n- Modèle: hypothèse, approximation, validité\n- Laboratoire: erreur, calibration, reproductibilité\n\nAjuster au contexte du devoir.\n",
+      "writing-examples": "\n## Exemple physique\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2.2: majeur — incohérence d'unités ou de dimensions. Ajouter cohérence SI §.`\n✅ `§4.1: mineur — données sans erreur ni incertitude systématique. Ajouter phrase d'erreur.`\n"
+    },
+    "es": {
+      "source-keywords": "\n## Palabras clave física\n\n- Modelo: supuesto, aproximación, validez\n- Laboratorio: error, calibración, reproducibilidad\n\nAjustar al contexto de la tarea.\n",
+      "writing-examples": "\n## Ejemplo física\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.2: importante — incoherencia de unidades o dimensiones. Añadir coherencia SI §.`\n✅ `§4.1: menor — datos sin error ni incertidumbre sistemática. Añadir frase de error.`\n"
+    }
+  },
+  "chemistry": {
+    "zh-TW": {
+      "source-keywords": "\n## 關鍵詞示例 化學\n\n- 反應: yield, selectivity, mechanism, conditions\n- 分析: NMR, IR, MS, SDS\n\n依課題語境調整。\n",
+      "writing-examples": "\n## 示例 化學\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§2.3: 重大 — 無反應條件·收率卻稱「會反應」。加 conditions §。`\n✅ `§3.1: 次要 — 結構主張無光譜證據。加 spectrum §。`\n"
+    },
+    "ja": {
+      "source-keywords": "\n## キーワード例 化学\n\n- 反応: yield, selectivity, mechanism, conditions\n- 分析: NMR, IR, MS, SDS\n\n課題文脈に合わせて調整。\n",
+      "writing-examples": "\n## 例 化学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§2.3: 重大 — 条件・収率なしの「反応する」。conditions § を追加。`\n✅ `§3.1: 軽微 — 構造主張、スペクトル根拠なし。spectrum § を追加。`\n"
+    },
+    "fr": {
+      "source-keywords": "\n## Mots-clés chimie\n\n- Réaction: rendement, sélectivité, mécanisme, conditions\n- Analyse: RMN, IR, MS, FDS\n\nAjuster au contexte du devoir.\n",
+      "writing-examples": "\n## Exemple chimie\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§2.3: majeur — « réagit » sans conditions ni rendement. Ajouter conditions §.`\n✅ `§3.1: mineur — affirmation de structure sans preuve spectrale. Ajouter spectre §.`\n"
+    },
+    "es": {
+      "source-keywords": "\n## Palabras clave química\n\n- Reacción: rendimiento, selectividad, mecanismo, condiciones\n- Análisis: RMN, IR, MS, FDS\n\nAjustar al contexto de la tarea.\n",
+      "writing-examples": "\n## Ejemplo química\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.3: importante — « reacciona » sin condiciones ni rendimiento. Añadir conditions §.`\n✅ `§3.1: menor — afirmación estructural sin evidencia espectral. Añadir espectro §.`\n"
+    }
+  },
+  "life-sciences": {
+    "zh-TW": {
+      "source-keywords": "\n## 關鍵詞示例 生命科學\n\n- 機制: pathway, gene, cell, ecology\n- 實驗: control, n, stats, reproducibility\n\n依課題語境調整。\n",
+      "writing-examples": "\n## 示例 生命科學\n\n❌ 「第2章討論了但似乎缺少具體依據。」\n\n✅ `§3.1: 重大 — 「顯著」主張無 n·統計。加 stats §。`\n✅ `§4.2: 次要 — in vitro 結果外推至 in vivo。加 limits 1 句。`\n"
+    },
+    "ja": {
+      "source-keywords": "\n## キーワード例 生命科学\n\n- メカニズム: pathway, gene, cell, ecology\n- 実験: control, n, stats, reproducibility\n\n課題文脈に合わせて調整。\n",
+      "writing-examples": "\n## 例 生命科学\n\n❌ 「第2章で議論されていますが、具体的根拠が不足しているようです。」\n\n✅ `§3.1: 重大 — 「有意」主張、n・統計なし。stats § を追加。`\n✅ `§4.2: 軽微 — in vitro を in vivo に一般化。limits 1文を追加。`\n"
+    },
+    "fr": {
+      "source-keywords": "\n## Mots-clés sciences de la vie\n\n- Mécanisme: voie, gène, cellule, écologie\n- Expérience: contrôle, n, stats, reproductibilité\n\nAjuster au contexte du devoir.\n",
+      "writing-examples": "\n## Exemple sciences de la vie\n\n❌ « La section 2 discute le sujet mais manque de fondement concret. »\n\n✅ `§3.1: majeur — « significatif » sans n ni stats. Ajouter stats §.`\n✅ `§4.2: mineur — in vitro généralisé à in vivo. Ajouter phrase de limites.`\n"
+    },
+    "es": {
+      "source-keywords": "\n## Palabras clave ciencias de la vida\n\n- Mecanismo: vía, gen, célula, ecología\n- Experimento: control, n, stats, reproducibilidad\n\nAjustar al contexto de la tarea.\n",
+      "writing-examples": "\n## Ejemplo ciencias de la vida\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§3.1: importante — « significativo » sin n ni stats. Añadir stats §.`\n✅ `§4.2: menor — in vitro generalizado a in vivo. Añadir frase de límites.`\n"
+    }
   }
 };

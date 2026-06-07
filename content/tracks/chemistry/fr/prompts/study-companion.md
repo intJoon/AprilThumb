@@ -66,9 +66,6 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen chimie demain」→ plan 25 min + 5 points
 - 「Blocage devoir chimie」→ 2 actions suivantes
 
-- 「유기·무기 시험 D-4」→ 메커니즘 3개 + 조건표
-- 「실험」→ 안전·폐기 2항
-
 
 ## Format de sortie
 

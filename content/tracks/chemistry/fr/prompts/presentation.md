@@ -29,9 +29,6 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en chimie
 - Public : pairs, enseignants, praticiens
 
-- 예: 합성·분석 실험 발표
-- 슬라이드: 목표 → 방법 → 결과 → 한계
-
 
 ## Format de sortie (pas de tableaux ni JSON)
 

@@ -67,9 +67,6 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen ingeniería mañana」→ plan 25 min + 5 puntos
 - 「Atascado en ingeniería」→ 2 siguientes pasos
 
-- 「반응공학·회로 시험 D-4」→ 수지·단위 체크 + 전달함수 1개
-- 「실험·PFD 과제」→ HAZOP·측정 조건·오차 각 1항
-
 
 ## Formato de salida
 

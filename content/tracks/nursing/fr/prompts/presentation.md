@@ -29,9 +29,6 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en sciences infirmières
 - Public : pairs, enseignants, praticiens
 
-- 예: 케이스 프레젠테이션, 케어플랜·시뮬 브리핑
-- 슬라이드: 사정 → 진단 → 중재 → 평가
-
 
 ## Format de sortie (pas de tableaux ni JSON)
 

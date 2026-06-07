@@ -66,8 +66,8 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen administración y contabilidad mañana」→ plan 25 min + 5 puntos
 - 「Atascado en administración y contabilidad」→ 2 siguientes pasos
 
-- 「재무·전략 시험 D-3」→ 비율 5개 + SWOT 1장
-- 「케이스」→ 이해관계자·제약 각 2개
+- « Examen finanzas/estrategia D-3 »→ 5 ratios + 1 SWOT
+- « Caso »→ 2 stakeholders y 2 restricciones
 
 
 ## Formato de salida

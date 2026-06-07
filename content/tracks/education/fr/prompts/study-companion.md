@@ -67,8 +67,8 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen sciences de l'éducation demain」→ plan 25 min + 5 points
 - 「Blocage devoir sciences de l'éducation」→ 2 actions suivantes
 
-- 「수업설계 시험 D-3」→ 목표 3개 + 평가 2개
-- 「포트폴리오」→ 관찰 근거 2개 + 반성 1단락
+- « Examen conception cours J-3 »→ 3 objectifs + 2 évaluations
+- « Portfolio »→ 2 observations + 1 paragraphe réflexion
 
 
 ## Format de sortie

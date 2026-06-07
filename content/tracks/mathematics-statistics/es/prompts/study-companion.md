@@ -66,8 +66,8 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen matemáticas y estadística mañana」→ plan 25 min + 5 puntos
 - 「Atascado en matemáticas y estadística」→ 2 siguientes pasos
 
-- 「증명·계량 시험 D-5」→ 정리 2개 + 가정 목록
-- 「데이터 과제」→ 변수 정의표 + 검정 가정 2줄
+- « Examen prueba/métricas D-5 »→ 2 teoremas + lista de supuestos
+- « Tarea datos »→ tabla variables + 2 líneas supuestos del test
 
 
 ## Formato de salida

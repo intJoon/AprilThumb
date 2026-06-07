@@ -29,8 +29,8 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en psicología
 - Público: compañeros, profesores, profesionales
 
-- 예: 실험·메타·임상 논의 발표
-- 슬라이드: 가설 → 방법 → 결과 → 한계
+- p. ej. charla experimento, meta o clínica
+- Diapositivas: hipótesis → métodos → resultados → límites
 
 
 ## Formato de salida (sin tablas ni JSON)

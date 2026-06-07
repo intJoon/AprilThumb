@@ -66,8 +66,8 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen mathématiques et statistiques demain」→ plan 25 min + 5 points
 - 「Blocage devoir mathématiques et statistiques」→ 2 actions suivantes
 
-- 「증명·계량 시험 D-5」→ 정리 2개 + 가정 목록
-- 「데이터 과제」→ 변수 정의표 + 검정 가정 2줄
+- « Examen preuve/métriques J-5 »→ 2 théorèmes + liste d'hypothèses
+- « Devoir données »→ tableau variables + 2 lignes hypothèses de test
 
 
 ## Format de sortie

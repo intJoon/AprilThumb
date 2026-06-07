@@ -29,8 +29,8 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en ciencias sociales
 - Público: compañeros, profesores, profesionales
 
-- 예: 조사·정책·이론 발표
-- 슬라이드: 질문 → 방법 → 결과 → 한계
+- p. ej. charla encuesta, política o teoría
+- Diapositivas: pregunta → métodos → resultados → límites
 
 
 ## Formato de salida (sin tablas ni JSON)

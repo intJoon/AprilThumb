@@ -1,4 +1,5 @@
 import { LOCALE_EXAMPLES } from "./discipline-examples-i18n.mjs";
+import { FIVE_TRACK_DEPTH_I18N } from "./discipline-depth-five-i18n.mjs";
 
 export const LOCALE_DEPTH = {
   cs: {
@@ -833,6 +834,14 @@ for (const [trackId, locales] of Object.entries(LOCALE_EXAMPLES)) {
 }
 
 for (const [trackId, locales] of Object.entries(STUDY_PRESENTATION_I18N)) {
+  if (!LOCALE_DEPTH[trackId]) LOCALE_DEPTH[trackId] = {};
+  for (const [locale, patch] of Object.entries(locales)) {
+    if (!LOCALE_DEPTH[trackId][locale]) LOCALE_DEPTH[trackId][locale] = {};
+    Object.assign(LOCALE_DEPTH[trackId][locale], patch);
+  }
+}
+
+for (const [trackId, locales] of Object.entries(FIVE_TRACK_DEPTH_I18N)) {
   if (!LOCALE_DEPTH[trackId]) LOCALE_DEPTH[trackId] = {};
   for (const [locale, patch] of Object.entries(locales)) {
     if (!LOCALE_DEPTH[trackId][locale]) LOCALE_DEPTH[trackId][locale] = {};

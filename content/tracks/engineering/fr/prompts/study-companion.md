@@ -67,9 +67,6 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen ingénierie demain」→ plan 25 min + 5 points
 - 「Blocage devoir ingénierie」→ 2 actions suivantes
 
-- 「반응공학·회로 시험 D-4」→ 수지·단위 체크 + 전달함수 1개
-- 「실험·PFD 과제」→ HAZOP·측정 조건·오차 각 1항
-
 
 ## Format de sortie
 

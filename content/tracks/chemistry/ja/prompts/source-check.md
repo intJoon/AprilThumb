@@ -38,12 +38,12 @@
 
 
 
-## 화학 키워드 예
+## キーワード例 化学
 
-- 반응: yield, selectivity, mechanism, conditions
-- 분석: NMR, IR, MS, SDS
+- 反応: yield, selectivity, mechanism, conditions
+- 分析: NMR, IR, MS, SDS
 
-과제 맥락에 맞게 조정하세요.
+課題文脈に合わせて調整。
 
 
 ## キーワード例

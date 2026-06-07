@@ -29,8 +29,8 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en gestion et comptabilité
 - Public : pairs, enseignants, praticiens
 
-- 예: 케이스·재무·전략 발표
-- 슬라이드: 문제 → 분석 → 권고 → 리스크
+- ex. pitch cas, finance ou stratégie
+- Slides : problème → analyse → recommandation → risques
 
 
 ## Format de sortie (pas de tableaux ni JSON)

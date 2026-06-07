@@ -67,9 +67,6 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen sciences infirmières demain」→ plan 25 min + 5 points
 - 「Blocage devoir sciences infirmières」→ 2 actions suivantes
 
-- 「간호과정 시험 D-3」→ 사정·진단·중재 각 3항
-- 「케어플랜 과제」→ 근거 2개 + 평가 지표 1개
-
 
 ## Format de sortie
 

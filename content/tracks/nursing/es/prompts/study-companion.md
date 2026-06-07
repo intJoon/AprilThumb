@@ -67,9 +67,6 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen enfermería mañana」→ plan 25 min + 5 puntos
 - 「Atascado en enfermería」→ 2 siguientes pasos
 
-- 「간호과정 시험 D-3」→ 사정·진단·중재 각 3항
-- 「케어플랜 과제」→ 근거 2개 + 평가 지표 1개
-
 
 ## Formato de salida
 

@@ -67,8 +67,8 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen ciencias sociales mañana」→ plan 25 min + 5 puntos
 - 「Atascado en ciencias sociales」→ 2 siguientes pasos
 
-- 「조사·정책 시험 D-4」→ 개념 조작화 3개 + 표본 1단락
-- 「논문」→ 변수 정의표 + 편향 2줄
+- « Examen encuesta/política D-4 »→ 3 operacionalizaciones + 1 párrafo muestra
+- « Artículo »→ tabla variables + 2 líneas sesgo
 
 
 ## Formato de salida

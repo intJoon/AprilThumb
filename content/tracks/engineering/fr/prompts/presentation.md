@@ -29,9 +29,6 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en ingénierie
 - Public : pairs, enseignants, praticiens
 
-- 예: 공정·회로·구조 설계 발표, PFD·실험·시뮬 결과
-- 슬라이드: 사양 → 설계 → 수치·파형 → 한계
-
 
 ## Format de sortie (pas de tableaux ni JSON)
 

@@ -697,6 +697,41 @@ main {
   background: var(--accent-soft);
 }
 
+.feedback-load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.85rem;
+}
+
+.btn-load-more {
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    border-color 0.15s,
+    background 0.15s;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.btn-load-more:active {
+  transform: scale(0.96);
+  border-color: rgba(15, 118, 110, 0.35);
+  background: var(--accent-soft);
+}
+
+.btn-load-more:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
 .comment-context {
   margin: 0 0 0.65rem;
   font-size: 0.72rem;
@@ -929,7 +964,8 @@ main {
     box-shadow: 0 3px 12px rgba(15, 118, 110, 0.28);
   }
 
-  .btn-retry:hover {
+  .btn-retry:hover,
+  .btn-load-more:hover:not(:disabled) {
     border-color: rgba(15, 118, 110, 0.35);
     background: var(--accent-soft);
   }
@@ -946,6 +982,7 @@ main {
   .track-card,
   .btn-copy,
   .btn-retry,
+  .btn-load-more,
   .btn-submit,
   .comment-bubble {
     transition: none;
@@ -958,6 +995,7 @@ main {
   .track-card:active:not(:disabled),
   .btn-copy:active,
   .btn-retry:active,
+  .btn-load-more:active,
   .btn-submit:active:not(:disabled),
   .not-found-actions a:active,
   .not-found-actions a.secondary:active {

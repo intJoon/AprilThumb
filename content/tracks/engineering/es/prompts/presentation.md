@@ -29,9 +29,6 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en ingeniería
 - Público: compañeros, profesores, profesionales
 
-- 예: 공정·회로·구조 설계 발표, PFD·실험·시뮬 결과
-- 슬라이드: 사양 → 설계 → 수치·파형 → 한계
-
 
 ## Formato de salida (sin tablas ni JSON)
 

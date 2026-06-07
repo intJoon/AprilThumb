@@ -38,12 +38,8 @@
 
 
 
-## 수학·통계 키워드 예
-
-- 수학: definition, proof, counterexample
-- 통계: sample, CI, test, identification
-
-과제 맥락에 맞게 조정하세요.
+- 數學：definition | proof | counterexample
+- 統計：sample | CI | test | identification
 
 
 ## 關鍵詞示例

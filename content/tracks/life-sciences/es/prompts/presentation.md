@@ -29,9 +29,6 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en ciencias de la vida
 - Público: compañeros, profesores, profesionales
 
-- 예: 실험·리뷰·포스터 발표
-- 슬라이드: 가설 → 방법 → 데이터 → 한계
-
 
 ## Formato de salida (sin tablas ni JSON)
 

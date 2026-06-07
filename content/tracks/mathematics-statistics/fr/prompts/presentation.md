@@ -29,8 +29,8 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en mathématiques et statistiques
 - Public : pairs, enseignants, praticiens
 
-- 예: 증명 발표, 실증·통계 결과 브리핑
-- 슬라이드: 정의 → 유도/모형 → 결과 → 한계
+- ex. exposé de preuve, briefing empirique/statistique
+- Slides : définition → dérivation/modèle → résultats → limites
 
 
 ## Format de sortie (pas de tableaux ni JSON)

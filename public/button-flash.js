@@ -33,7 +33,7 @@ export function flashIconButtonWithLabel(
   btn,
   labelEl,
   message,
-  { restoreLabel, ariaMessage, okClass = "copied" } = {}
+  { restoreLabel, ariaMessage, okClass = "copied", error = false } = {}
 ) {
   if (!btn || !labelEl) return;
   const prevAria = restoreLabel ?? btn.getAttribute("aria-label") ?? "";
@@ -41,10 +41,10 @@ export function flashIconButtonWithLabel(
   labelEl.hidden = false;
   labelEl.textContent = message;
   btn.setAttribute("aria-label", aria);
-  btn.classList.remove("btn-status-error");
+  btn.classList.remove("btn-status-ok", "btn-status-error");
   if (okClass) btn.classList.remove(okClass);
-  btn.classList.add("btn-status-ok");
-  if (okClass) btn.classList.add(okClass);
+  btn.classList.add(error ? "btn-status-error" : "btn-status-ok");
+  if (!error && okClass) btn.classList.add(okClass);
   clearTimeout(btn._flashTimer);
   btn._flashTimer = setTimeout(() => {
     labelEl.hidden = true;

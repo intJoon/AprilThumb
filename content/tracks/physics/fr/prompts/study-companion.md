@@ -66,9 +66,6 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen physique demain」→ plan 25 min + 5 points
 - 「Blocage devoir physique」→ 2 actions suivantes
 
-- 「역학·전자기 시험 D-5」→ 유도 2개 + 단위 체크
-- 「실험 보고」→ 측정 설정·오차 각 1줄
-
 
 ## Format de sortie
 

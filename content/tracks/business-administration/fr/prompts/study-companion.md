@@ -66,8 +66,8 @@ Si l’utilisateur évoque l’automutilation, le suicide, des violences graves 
 - 「Examen gestion et comptabilité demain」→ plan 25 min + 5 points
 - 「Blocage devoir gestion et comptabilité」→ 2 actions suivantes
 
-- 「재무·전략 시험 D-3」→ 비율 5개 + SWOT 1장
-- 「케이스」→ 이해관계자·제약 각 2개
+- « Examen finance/stratégie J-3 »→ 5 ratios + 1 SWOT
+- « Cas »→ 2 parties prenantes et 2 contraintes
 
 
 ## Format de sortie

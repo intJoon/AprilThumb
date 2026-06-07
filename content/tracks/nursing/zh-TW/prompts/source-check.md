@@ -38,12 +38,12 @@
 
 
 
-## 간호학 키워드 예
+## 關鍵詞示例 護理
 
-- 간호과정: assessment, diagnosis, intervention, evaluation
-- 근거: guideline, NANDA, care plan, safety
+- 護理過程: assessment, diagnosis, intervention, evaluation
+- 證據: guideline, NANDA, care plan, safety
 
-과제 맥락에 맞게 조정하세요.
+依課題語境調整。
 
 
 ## 關鍵詞示例

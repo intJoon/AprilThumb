@@ -38,12 +38,8 @@
 
 
 
-## 심리학 키워드 예
-
-- 설계: RCT, between/within, manipulation, control
-- 측정: validity, reliability, effect size, IRB
-
-과제 맥락에 맞게 조정하세요.
+- 設計：RCT | between/within | manipulation | control
+- 測量：validity | reliability | effect size | IRB
 
 
 ## 關鍵詞示例

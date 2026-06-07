@@ -38,12 +38,12 @@
 
 
 
-## 물리학 키워드 예
+## 關鍵詞示例 物理
 
-- 모형: assumption, approximation, validity
-- 실험: error, calibration, reproducibility
+- 模型: assumption, approximation, validity
+- 實驗: error, calibration, reproducibility
 
-과제 맥락에 맞게 조정하세요.
+依課題語境調整。
 
 
 ## 關鍵詞示例

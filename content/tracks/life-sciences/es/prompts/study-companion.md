@@ -66,9 +66,6 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen ciencias de la vida mañana」→ plan 25 min + 5 puntos
 - 「Atascado en ciencias de la vida」→ 2 siguientes pasos
 
-- 「세포·유전 시험 D-4」→ 경로 2개 + 실험 설계 1개
-- 「리뷰」→ 논문 3편 + 한계 각 1줄
-
 
 ## Formato de salida
 

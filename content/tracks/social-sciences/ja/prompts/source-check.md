@@ -38,12 +38,8 @@
 
 
 
-## 사회과학 키워드 예
-
-- 이론: operationalisation, framework, hypothesis
-- 방법: sample, survey, interview, bias
-
-과제 맥락에 맞게 조정하세요.
+- 理論：operationalisation | framework | hypothesis
+- 方法：sample | survey | interview | bias
 
 
 ## キーワード例

@@ -67,8 +67,8 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen psicología mañana」→ plan 25 min + 5 puntos
 - 「Atascado en psicología」→ 2 siguientes pasos
 
-- 「실험·통계 시험 D-4」→ 설계 1개 + 통제 3개
-- 「APA 과제」→ 가설·방법·한계 각 1단락
+- « Examen experimento/estadística D-4 »→ 1 diseño + 3 controles
+- « Tarea APA »→ hipótesis, métodos, límites cada 1 párrafo
 
 
 ## Formato de salida

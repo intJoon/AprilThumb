@@ -38,12 +38,12 @@
 
 
 
-## 생명과학 키워드 예
+## キーワード例 生命科学
 
-- 메커니즘: pathway, gene, cell, ecology
-- 실험: control, n, stats, reproducibility
+- メカニズム: pathway, gene, cell, ecology
+- 実験: control, n, stats, reproducibility
 
-과제 맥락에 맞게 조정하세요.
+課題文脈に合わせて調整。
 
 
 ## キーワード例

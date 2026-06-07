@@ -38,12 +38,8 @@
 
 
 
-## 교육학 키워드 예
-
-- 설계: objective, assessment, curriculum alignment
-- 근거: theory, observation, policy, reflection
-
-과제 맥락에 맞게 조정하세요.
+- 設計：objective | assessment | curriculum alignment
+- 證據：theory | observation | policy | reflection
 
 
 ## 關鍵詞示例

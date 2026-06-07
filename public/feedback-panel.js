@@ -1,8 +1,9 @@
 import {
-  fetchAllComments,
+  fetchCommentsPage,
   postComment,
   renderBubble,
   formatMeta,
+  COMMENTS_PAGE_SIZE,
 } from "./comments-lib.js";
 
 const MAX_BODY = 500;
@@ -23,6 +24,8 @@ export function mountFeedbackPanel(ctx) {
   const errorEl = el("feedback-error");
   const errorText = el("feedback-error-text");
   const retryBtn = el("btn-feedback-retry");
+  const loadMoreWrap = el("feedback-load-more-wrap");
+  const loadMoreBtn = el("btn-feedback-load-more");
   const form = el("feedback-form");
   const meta = el("feedback-meta");
   const bodyInput = el("feedback-body");
@@ -30,8 +33,11 @@ export function mountFeedbackPanel(ctx) {
   const submitBtn = el("btn-feedback-submit");
   const labelBody = el("label-feedback-body");
 
-  let cachedItems = null;
-  let cachedCount = 0;
+  let cachedItems = [];
+  let cachedTotal = 0;
+  let hasMore = false;
+  let prefetchFailed = false;
+  let loadingMore = false;
   let feedAbort = null;
 
   function contextLine() {
@@ -94,12 +100,26 @@ export function mountFeedbackPanel(ctx) {
   }
 
   function updateSummary() {
-    if (cachedCount > 0) {
+    if (prefetchFailed) {
+      summaryLabel.textContent = ctx.ui("commentsSummaryLoadError");
+    } else if (cachedTotal > 0) {
       summaryLabel.textContent = ctx
         .ui("commentsSummaryCount")
-        .replace("{n}", String(cachedCount));
+        .replace("{n}", String(cachedTotal));
     } else {
       summaryLabel.textContent = ctx.ui("commentsTitle");
+    }
+  }
+
+  function updateLoadMore() {
+    if (!loadMoreWrap || !loadMoreBtn) return;
+    const show = details.open && cachedItems.length > 0 && hasMore;
+    loadMoreWrap.hidden = !show;
+    if (show) {
+      loadMoreBtn.disabled = loadingMore;
+      loadMoreBtn.textContent = loadingMore
+        ? ctx.ui("commentsLoading")
+        : ctx.ui("commentsLoadMore");
     }
   }
 
@@ -115,6 +135,7 @@ export function mountFeedbackPanel(ctx) {
     retryBtn.textContent = ctx.ui("commentsRetry");
     setDisclosureAria();
     updateCharCount();
+    updateLoadMore();
   }
 
   function showLoading(show) {
@@ -123,6 +144,7 @@ export function mountFeedbackPanel(ctx) {
       errorEl.hidden = true;
       list.hidden = true;
       empty.hidden = true;
+      if (loadMoreWrap) loadMoreWrap.hidden = true;
     }
   }
 
@@ -132,22 +154,24 @@ export function mountFeedbackPanel(ctx) {
       loading.hidden = true;
       list.hidden = true;
       empty.hidden = true;
+      if (loadMoreWrap) loadMoreWrap.hidden = true;
     }
   }
 
-  function renderList(items, highlightNewest = false) {
+  function renderList(highlightNewest = false) {
     list.replaceChildren();
     showLoading(false);
     showError(false);
-    if (!items.length) {
+    if (!cachedItems.length) {
       list.hidden = false;
       empty.hidden = false;
+      updateLoadMore();
       return;
     }
     empty.hidden = true;
     list.hidden = false;
-    for (const item of items) list.appendChild(renderBubble(item, ctx));
-    if (highlightNewest && items.length) {
+    for (const item of cachedItems) list.appendChild(renderBubble(item, ctx));
+    if (highlightNewest && cachedItems.length) {
       const newest = list.firstElementChild;
       if (newest) {
         newest.classList.add("comment-bubble--new");
@@ -159,16 +183,22 @@ export function mountFeedbackPanel(ctx) {
           newest.scrollIntoView({ block: "start", behavior: motion });
         });
       }
-    } else if (details.open) {
-      scrollPageToFeedback();
     }
+    updateLoadMore();
   }
 
-  function applyItems(items, highlightNewest = false) {
-    cachedItems = items;
-    cachedCount = items.length;
+  function applyPage(page, { append = false, highlightNewest = false } = {}) {
+    cachedTotal = page.total;
+    hasMore = page.hasMore;
+    prefetchFailed = false;
+    cachedItems = append ? [...cachedItems, ...page.comments] : page.comments;
     updateSummary();
-    if (details.open) renderList(items, highlightNewest);
+    if (details.open) renderList(highlightNewest);
+    else updateLoadMore();
+  }
+
+  async function fetchPage(offset, signal) {
+    return fetchCommentsPage({ offset, limit: COMMENTS_PAGE_SIZE, signal });
   }
 
   async function prefetchCount() {
@@ -176,19 +206,21 @@ export function mountFeedbackPanel(ctx) {
     feedAbort = new AbortController();
     const signal = feedAbort.signal;
     try {
-      const items = await fetchAllComments(signal);
+      const page = await fetchPage(0, signal);
       if (signal.aborted) return;
-      applyItems(items);
+      applyPage(page);
     } catch (e) {
       if (e.name === "AbortError") return;
+      prefetchFailed = true;
+      updateSummary();
     }
   }
 
   async function loadFeed(highlightNewest = false) {
     if (!details.open) return;
 
-    if (cachedItems) {
-      renderList(cachedItems, highlightNewest);
+    if (cachedItems.length) {
+      renderList(highlightNewest);
     } else {
       showLoading(true);
     }
@@ -198,13 +230,13 @@ export function mountFeedbackPanel(ctx) {
     const signal = feedAbort.signal;
 
     try {
-      const items = await fetchAllComments(signal);
+      const page = await fetchPage(0, signal);
       if (signal.aborted) return;
-      applyItems(items, highlightNewest);
+      applyPage(page, { highlightNewest });
     } catch (e) {
       if (e.name === "AbortError") return;
-      if (cachedItems) {
-        renderList(cachedItems, highlightNewest);
+      if (cachedItems.length) {
+        renderList(highlightNewest);
         ctx.flashButton(retryBtn, ctx.ui("commentsLoadError"), {
           error: true,
           restoreText: ctx.ui("commentsRetry"),
@@ -215,6 +247,24 @@ export function mountFeedbackPanel(ctx) {
       list.replaceChildren();
       list.hidden = true;
       empty.hidden = true;
+    }
+  }
+
+  async function loadMore() {
+    if (!hasMore || loadingMore) return;
+    loadingMore = true;
+    updateLoadMore();
+    try {
+      const page = await fetchPage(cachedItems.length);
+      applyPage(page, { append: true });
+    } catch {
+      ctx.flashButton(loadMoreBtn, ctx.ui("commentsLoadError"), {
+        error: true,
+        restoreText: ctx.ui("commentsLoadMore"),
+      });
+    } finally {
+      loadingMore = false;
+      updateLoadMore();
     }
   }
 
@@ -239,6 +289,7 @@ export function mountFeedbackPanel(ctx) {
   });
 
   retryBtn.addEventListener("click", () => loadFeed());
+  loadMoreBtn?.addEventListener("click", () => loadMore());
 
   bodyInput.addEventListener("input", updateCharCount);
 
@@ -262,6 +313,8 @@ export function mountFeedbackPanel(ctx) {
       resetInputHeight();
       const submitLabel = ctx.ui("commentsSubmit");
       ctx.flashButton(submitBtn, ctx.ui("commentsPosted"), { restoreText: submitLabel });
+      cachedItems = [];
+      hasMore = false;
       await loadFeed(true);
     } catch {
       const submitLabel = ctx.ui("commentsSubmit");

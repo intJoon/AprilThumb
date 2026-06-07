@@ -29,9 +29,6 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en sciences de la vie
 - Public : pairs, enseignants, praticiens
 
-- 예: 실험·리뷰·포스터 발표
-- 슬라이드: 가설 → 방법 → 데이터 → 한계
-
 
 ## Format de sortie (pas de tableaux ni JSON)
 

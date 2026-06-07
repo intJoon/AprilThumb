@@ -1,10 +1,10 @@
 {
-  "source-keywords": "\n## 간호학 키워드 예\n\n- 간호과정: assessment, diagnosis, intervention, evaluation\n- 근거: guideline, NANDA, care plan, safety\n\n과제 맥락에 맞게 조정하세요.\n",
+  "source-keywords": "\n## Palabras clave enfermería\n\n- Proceso: valoración, diagnóstico, intervención, evaluación\n- Evidencia: guía, NANDA, plan de cuidados, seguridad\n\nAjustar al contexto de la tarea.\n",
   "concise-examples": "\n## Ejemplo enfermería\n\n- 「Concepto enfermería, más corto」\n- No acortar nombres propios, cifras ni términos\n",
-  "writing-examples": "\n## 간호학 예\n\n❌ 「2장에서 간호 주제를 설명하셨는데, 구체적인 근거가 부족한 것 같습니다.」\n\n✅ `§2.1: 중요 — 간호중재 근거 없음. NANDA·가이드라인 § 추가.`\n✅ `§3.3: 주의 — 환자 맥락(연령·동반질환) 없음. context 1단락.`\n",
-  "presentation-context": "\n## Contexto enfermería\n\n- p. ej. trabajo, seminario, TFG en enfermería\n- Público: compañeros, profesores, profesionales\n\n- 예: 케이스 프레젠테이션, 케어플랜·시뮬 브리핑\n- 슬라이드: 사정 → 진단 → 중재 → 평가\n",
+  "writing-examples": "\n## Ejemplo enfermería\n\n❌ « La sección 2 discute el tema pero parece faltar fundamento concreto. »\n\n✅ `§2.1: importante — intervención sin justificación diagnóstica. Añadir NANDA/guía §.`\n✅ `§3.3: menor — sin contexto del paciente (edad, comorbilidad). Añadir párrafo de contexto.`\n",
+  "presentation-context": "\n## Contexto enfermería\n\n- p. ej. trabajo, seminario, TFG en enfermería\n- Público: compañeros, profesores, profesionales\n",
   "study-role": "\n- Ayuda en conceptos, exámenes y proyectos de enfermería\n",
-  "study-examples": "\n## Ejemplos enfermería\n\n- 「Examen enfermería mañana」→ plan 25 min + 5 puntos\n- 「Atascado en enfermería」→ 2 siguientes pasos\n\n- 「간호과정 시험 D-3」→ 사정·진단·중재 각 3항\n- 「케어플랜 과제」→ 근거 2개 + 평가 지표 1개\n",
+  "study-examples": "\n## Ejemplos enfermería\n\n- 「Examen enfermería mañana」→ plan 25 min + 5 puntos\n- 「Atascado en enfermería」→ 2 siguientes pasos\n",
   "academic-rubric": "\n## Rúbrica de enfermería (sin rúbrica del usuario)\n\n1. **Evidencia y guías** — Evidencia enfermera y estándares de cuidado vinculados\n2. **Proceso de enfermería** — Valoración→diagnóstico→plan→implementación→evaluación coherentes\n3. **Seguridad y ética** — Seguridad del paciente, infección, privacidad, dilemas éticos\n4. **Cita** — Manuales y guías apoyan las afirmaciones\n5. **Formato y alcance** — Plan de cuidados/SOAP/caso según el encargo\n6. **Profundidad** — Valoración→intervención→evaluación conectadas\n\nCada eje: **Pass / Partial / Fail** + 1–3 frases (citar sección/párrafo)\n",
   "academic-fail": "\n### Señales de fallo — enfermería\n\n- Intervenciones sin justificación de diagnóstico enfermero\n- Consejos genéricos sin contexto del paciente\n- Sin alineación con seguridad simulación/clínica o rúbrica\n",
   "study-safety": "\n### Seguridad — enfermería (compañero de estudio)\n\n- **Sin cuidados reales ni órdenes de medicación** — solo aprendizaje\n- Autolesión o urgencia → ayuda profesional\n"

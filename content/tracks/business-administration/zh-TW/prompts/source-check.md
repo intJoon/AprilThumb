@@ -38,12 +38,8 @@
 
 
 
-## 경영·회계 키워드 예
-
-- 재무: ratio, cash flow, IFRS, audit
-- 전략: SWOT, stakeholder, risk, KPI
-
-과제 맥락에 맞게 조정하세요.
+- 財務：ratio | cash flow | IFRS | audit
+- 策略：SWOT | stakeholder | risk | KPI
 
 
 ## 關鍵詞示例

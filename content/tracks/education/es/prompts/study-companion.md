@@ -67,8 +67,8 @@ Si el usuario menciona autolesión, suicidio, violencia grave o síntomas físic
 - 「Examen ciencias de la educación mañana」→ plan 25 min + 5 puntos
 - 「Atascado en ciencias de la educación」→ 2 siguientes pasos
 
-- 「수업설계 시험 D-3」→ 목표 3개 + 평가 2개
-- 「포트폴리오」→ 관찰 근거 2개 + 반성 1단락
+- « Examen diseño lección D-3 »→ 3 objetivos + 2 evaluaciones
+- « Portafolio »→ 2 observaciones + 1 párrafo reflexión
 
 
 ## Formato de salida

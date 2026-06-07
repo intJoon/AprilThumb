@@ -29,8 +29,8 @@ S’il manque des éléments, supposez des valeurs raisonnables et ne posez que 
 - ex. devoir, séminaire, mémoire en sciences de l'éducation
 - Public : pairs, enseignants, praticiens
 
-- 예: 수업안·연구·정책 발표
-- 슬라이드: 목표 → 활동 → 평가 → 반성
+- ex. exposé plan de cours, recherche ou politique
+- Slides : objectifs → activité → évaluation → réflexion
 
 
 ## Format de sortie (pas de tableaux ni JSON)

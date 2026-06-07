@@ -537,14 +537,11 @@ for (const [trackId, locales] of Object.entries(LOCALE_DEPTH)) {
   }
 }
 
-const LOCALE_FALLBACK = ["ko", "en-GB", "zh-TW", "ja", "fr", "es"];
-
 export function depthFor(trackId, locale) {
   const row = TRACK_DEPTH[trackId];
   if (!row) return null;
   if (row[locale]) return row[locale];
-  for (const loc of LOCALE_FALLBACK) {
-    if (row[loc]) return row[loc];
-  }
+  if (locale !== "en-GB" && row["en-GB"]) return row["en-GB"];
+  if (locale !== "ko" && row.ko) return row.ko;
   return null;
 }

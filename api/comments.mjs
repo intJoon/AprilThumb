@@ -2,7 +2,8 @@ import { getSql } from "../lib/db.mjs";
 import { isValidLocale, isValidTrack } from "../lib/manifest.mjs";
 
 const MAX_BODY = 500;
-const LIST_LIMIT = 200;
+const DEFAULT_PAGE_SIZE = 10;
+const MAX_PAGE_SIZE = 100;
 
 function json(res, status, body) {
   res.statusCode = status;
@@ -46,33 +47,58 @@ export default async function handler(req, res) {
       return json(res, 400, { error: "invalid_locale" });
     }
 
+    const limitRaw = parseInt(url.searchParams.get("limit") || String(DEFAULT_PAGE_SIZE), 10);
+    const offsetRaw = parseInt(url.searchParams.get("offset") || "0", 10);
+    const limit = Math.min(
+      Math.max(Number.isFinite(limitRaw) ? limitRaw : DEFAULT_PAGE_SIZE, 1),
+      MAX_PAGE_SIZE
+    );
+    const offset = Math.max(Number.isFinite(offsetRaw) ? offsetRaw : 0, 0);
+
     try {
       let rows;
+      let total;
       if (track && lang) {
+        const countRows = await sql`
+          SELECT COUNT(*)::int AS total FROM comments
+          WHERE track_id = ${track} AND locale = ${lang}
+        `;
+        total = countRows[0]?.total ?? 0;
         rows = await sql`
           SELECT id, track_id AS "trackId", locale, body, created_at AS "createdAt"
           FROM comments
           WHERE track_id = ${track} AND locale = ${lang}
           ORDER BY created_at DESC
-          LIMIT ${LIST_LIMIT}
+          LIMIT ${limit} OFFSET ${offset}
         `;
       } else if (track) {
+        const countRows = await sql`
+          SELECT COUNT(*)::int AS total FROM comments
+          WHERE track_id = ${track}
+        `;
+        total = countRows[0]?.total ?? 0;
         rows = await sql`
           SELECT id, track_id AS "trackId", locale, body, created_at AS "createdAt"
           FROM comments
           WHERE track_id = ${track}
           ORDER BY created_at DESC
-          LIMIT ${LIST_LIMIT}
+          LIMIT ${limit} OFFSET ${offset}
         `;
       } else {
+        const countRows = await sql`SELECT COUNT(*)::int AS total FROM comments`;
+        total = countRows[0]?.total ?? 0;
         rows = await sql`
           SELECT id, track_id AS "trackId", locale, body, created_at AS "createdAt"
           FROM comments
           ORDER BY created_at DESC
-          LIMIT ${LIST_LIMIT}
+          LIMIT ${limit} OFFSET ${offset}
         `;
       }
-      return json(res, 200, { comments: rows });
+      return json(res, 200, {
+        comments: rows,
+        total,
+        hasMore: offset + rows.length < total,
+      });
     } catch {
       return json(res, 500, { error: "read_failed" });
     }

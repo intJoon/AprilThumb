@@ -29,9 +29,6 @@ Si falta algo, asume valores razonables y solo haz 1–2 preguntas si hace falta
 - p. ej. trabajo, seminario, TFG en química
 - Público: compañeros, profesores, profesionales
 
-- 예: 합성·분석 실험 발표
-- 슬라이드: 목표 → 방법 → 결과 → 한계
-
 
 ## Formato de salida (sin tablas ni JSON)
 

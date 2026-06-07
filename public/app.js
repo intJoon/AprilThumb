@@ -83,20 +83,31 @@ function langLabel(code) {
   return landingUi?.locales?.[code] ?? currentBundle?.ui?.locales?.[code] ?? code;
 }
 
-async function loadLandingUi(lang) {
-  const locale = lang || DEFAULT_LOCALE;
-  const entry =
-    manifest.bundles.find((b) => b.trackId === "general" && b.locale === locale) ??
-    manifest.bundles.find((b) => b.trackId === "general" && b.locale === DEFAULT_LOCALE);
-  if (!entry) return;
+async function loadBundleUi(entry, locale) {
   const res = await fetch(`/data/bundles/${entry.file}`);
-  if (!res.ok) return;
+  if (!res.ok) return false;
   const bundle = await res.json();
   landingUi = bundle.ui;
   applyPageChrome(landingUi, locale);
   document.getElementById("footer-text").textContent = landingUi.footerDisclaimer;
   document.getElementById("site-title").textContent = landingUi.siteTitle;
   feedbackPanel?.updateLabels?.();
+  return true;
+}
+
+async function loadLandingUi(lang) {
+  const locale = lang || DEFAULT_LOCALE;
+  const entry =
+    manifest.bundles.find((b) => b.trackId === "general" && b.locale === locale) ??
+    manifest.bundles.find((b) => b.trackId === "general" && b.locale === DEFAULT_LOCALE);
+  if (!entry) return;
+  if (await loadBundleUi(entry, locale)) return;
+  if (locale !== DEFAULT_LOCALE) {
+    const fallback = manifest.bundles.find(
+      (b) => b.trackId === "general" && b.locale === DEFAULT_LOCALE
+    );
+    if (fallback) await loadBundleUi(fallback, DEFAULT_LOCALE);
+  }
 }
 
 function getSiteUrl() {
@@ -107,29 +118,47 @@ function getSiteUrl() {
 async function writeClipboard(text) {
   try {
     await navigator.clipboard.writeText(text);
+    return true;
   } catch {
-    const ta = document.createElement("textarea");
-    ta.value = text;
-    ta.style.position = "fixed";
-    ta.style.left = "-9999px";
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand("copy");
-    document.body.removeChild(ta);
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      const ok = document.execCommand("copy");
+      document.body.removeChild(ta);
+      return ok;
+    } catch {
+      return false;
+    }
   }
 }
 
 async function copyText(text, btn) {
-  await writeClipboard(text);
-  flashButton(btn, ui("copied"), { restoreText: ui("copy"), okClass: "copied" });
+  const ok = await writeClipboard(text);
+  if (ok) {
+    flashButton(btn, ui("copied"), { restoreText: ui("copy"), okClass: "copied" });
+  } else {
+    flashButton(btn, ui("copyFailed"), { error: true, restoreText: ui("copy") });
+  }
 }
 
 async function copySiteLink() {
-  await writeClipboard(getSiteUrl());
-  flashIconButtonWithLabel(btnCopyLink, btnLabelCopy, ui("copied"), {
-    restoreLabel: ui("copyLink"),
-    ariaMessage: ui("toastLinkCopied"),
-  });
+  const ok = await writeClipboard(getSiteUrl());
+  if (ok) {
+    flashIconButtonWithLabel(btnCopyLink, btnLabelCopy, ui("copied"), {
+      restoreLabel: ui("copyLink"),
+      ariaMessage: ui("toastLinkCopied"),
+    });
+  } else {
+    flashIconButtonWithLabel(btnCopyLink, btnLabelCopy, ui("copyFailed"), {
+      restoreLabel: ui("copyLink"),
+      error: true,
+      ariaMessage: ui("copyFailed"),
+    });
+  }
 }
 
 function renderPrompt(item) {
