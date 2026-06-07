@@ -1,4 +1,4 @@
-export const SITE_URL = "https://aprilstumb.vercel.app";
+export const SITE_URL = "https://aprilthumb.vercel.app";
 export const SLIDE_COUNT = 6;
 
 export const LOCALES = [

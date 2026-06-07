@@ -49,7 +49,7 @@ for (const { id } of locales) {
   const slides = await page.locator(".slide").all();
   for (let i = 0; i < slides.length; i++) {
     const n = String(i + 1).padStart(2, "0");
-    const out = path.join(outDir, `aprilstumb-carousel-${n}.png`);
+    const out = path.join(outDir, `aprilthumb-carousel-${n}.png`);
     await slides[i].screenshot({ path: out, type: "png" });
     console.log("Wrote", out);
   }
@@ -58,8 +58,8 @@ for (const { id } of locales) {
     for (let i = 0; i < slides.length; i++) {
       const n = String(i + 1).padStart(2, "0");
       fs.copyFileSync(
-        path.join(outDir, `aprilstumb-carousel-${n}.png`),
-        path.join(exportRoot, `aprilstumb-carousel-${n}.png`)
+        path.join(outDir, `aprilthumb-carousel-${n}.png`),
+        path.join(exportRoot, `aprilthumb-carousel-${n}.png`)
       );
     }
     fs.copyFileSync(htmlPath, path.join(carouselDir, "slides.html"));

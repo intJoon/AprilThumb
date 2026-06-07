@@ -2,7 +2,7 @@
 
 Learning and assignment prompt hub for ChatGPT and Gemini. **24 tracks × 6 locales** (23 disciplines + general), **6 prompt roles** — copy once, paste into a new chat.
 
-**Production:** https://aprilstumb.vercel.app
+**Production:** https://aprilthumb.vercel.app
 
 ## Name · brand
 

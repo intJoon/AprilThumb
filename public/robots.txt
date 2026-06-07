@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aprilstumb.vercel.app/sitemap.xml
+Sitemap: https://aprilthumb.vercel.app/sitemap.xml

@@ -1,4 +1,4 @@
-export const STORAGE_KEY = "aprilstumb";
+export const STORAGE_KEY = "aprilthumb";
 export const DEFAULT_LOCALE = "en-GB";
 
 export function matchLocaleTag(tag, supported) {

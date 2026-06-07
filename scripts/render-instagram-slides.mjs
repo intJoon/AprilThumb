@@ -750,7 +750,7 @@ export function renderSlidesHtml(localeId) {
           </div>
           <div class="cta-text">
             <p>${esc(d.s6.cta)}</p>
-            <p class="url">aprilstumb.vercel.app</p>
+            <p class="url">aprilthumb.vercel.app</p>
           </div>
         </div>
         <p class="fine">${esc(d.s6.disclaimer)}</p>`,

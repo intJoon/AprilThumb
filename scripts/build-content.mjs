@@ -86,7 +86,7 @@ function buildBundle(trackId, locale) {
 
 fs.mkdirSync(path.join(outRoot, "bundles"), { recursive: true });
 
-const siteUrl = (manifest.siteUrl || "https://aprilstumb.vercel.app").replace(/\/$/, "");
+const siteUrl = (manifest.siteUrl || "https://aprilthumb.vercel.app").replace(/\/$/, "");
 
 const publicManifest = {
   siteTitle: manifest.siteTitle,

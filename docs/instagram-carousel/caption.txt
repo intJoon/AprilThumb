@@ -10,7 +10,7 @@
 AprilThumb — 24개 전공 × 6개 언어 × 6가지 역할 프롬프트. 웹에서 골라 복사만 하면 됩니다.
 
 👉 스와이프 · 마지막 장 QR
-🔗 https://aprilstumb.vercel.app (프로필 링크에도 넣기)
+🔗 https://aprilthumb.vercel.app (프로필 링크에도 넣기)
 
 #대학생 #ChatGPT #Gemini #과제 #공부법 #프롬프트
 
@@ -23,7 +23,7 @@ Rewriting AI instructions every new chat?
 AprilThumb — 24 majors × 6 languages × 6 role prompts. Copy from the web, paste into ChatGPT or Gemini.
 
 👉 Swipe · QR on last slide
-🔗 https://aprilstumb.vercel.app (link in bio)
+🔗 https://aprilthumb.vercel.app (link in bio)
 
 #university #ChatGPT #Gemini #studygram #prompts
 
@@ -36,6 +36,6 @@ AprilThumb — 24 majors × 6 languages × 6 role prompts. Copy from the web, pa
 AprilThumb — 24 科系 × 6 語言 × 6 種角色提示詞。網頁複製，貼到 ChatGPT / Gemini。
 
 👉 滑動 · 最後一張 QR
-🔗 https://aprilstumb.vercel.app（個人檔案連結）
+🔗 https://aprilthumb.vercel.app（個人檔案連結）
 
 #大學生 #ChatGPT #Gemini #作業 #提示詞

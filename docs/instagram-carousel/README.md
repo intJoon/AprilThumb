@@ -13,7 +13,7 @@ docs/instagram-carousel/
     ├── ko/              # 업로드용 6장
     ├── en/
     ├── zh-TW/
-    └── aprilstumb-carousel-01~06.png  # ko 복사본
+    └── aprilthumb-carousel-01~06.png  # ko 복사본
 ```
 
 ## 게시 방식
