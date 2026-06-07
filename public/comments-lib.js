@@ -63,4 +63,6 @@ export async function postComment({ track, lang, body, website = "" }) {
     body: JSON.stringify({ track, lang, body, website }),
   });
   if (!res.ok) throw new Error("post");
+  const data = await res.json();
+  return data.comment ?? null;
 }

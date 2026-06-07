@@ -65,6 +65,16 @@ export function mountFeedbackPanel(ctx) {
     });
   }
 
+  function scrollListItem(node) {
+    if (!node) return;
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? "auto"
+      : "smooth";
+    requestAnimationFrame(() => {
+      node.scrollIntoView({ block: "nearest", behavior: motion });
+    });
+  }
+
   const inputMaxPx = () => {
     const line = parseFloat(getComputedStyle(bodyInput).lineHeight) || 25;
     return line * 5 + 28;
@@ -115,12 +125,15 @@ export function mountFeedbackPanel(ctx) {
     if (!loadMoreWrap || !loadMoreBtn) return;
     const show = details.open && cachedItems.length > 0 && hasMore;
     loadMoreWrap.hidden = !show;
-    if (show) {
-      loadMoreBtn.disabled = loadingMore;
-      loadMoreBtn.textContent = loadingMore
-        ? ctx.ui("commentsLoading")
-        : ctx.ui("commentsLoadMore");
+    if (!show) {
+      loadMoreBtn.disabled = false;
+      loadMoreBtn.textContent = "";
+      return;
     }
+    loadMoreBtn.disabled = loadingMore;
+    loadMoreBtn.textContent = loadingMore
+      ? ctx.ui("commentsLoading")
+      : ctx.ui("commentsLoadMore");
   }
 
   function updateLabels() {
@@ -158,7 +171,7 @@ export function mountFeedbackPanel(ctx) {
     }
   }
 
-  function renderList(highlightNewest = false) {
+  function renderList({ highlightIndex = -1, scrollToIndex = -1 } = {}) {
     list.replaceChildren();
     showLoading(false);
     showError(false);
@@ -171,34 +184,31 @@ export function mountFeedbackPanel(ctx) {
     empty.hidden = true;
     list.hidden = false;
     for (const item of cachedItems) list.appendChild(renderBubble(item, ctx));
-    if (highlightNewest && cachedItems.length) {
-      const newest = list.firstElementChild;
-      if (newest) {
-        newest.classList.add("comment-bubble--new");
-        setTimeout(() => newest.classList.remove("comment-bubble--new"), HIGHLIGHT_MS);
-        const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-          ? "auto"
-          : "smooth";
-        requestAnimationFrame(() => {
-          newest.scrollIntoView({ block: "start", behavior: motion });
-        });
-      }
+    if (highlightIndex >= 0 && list.children[highlightIndex]) {
+      const node = list.children[highlightIndex];
+      node.classList.add("comment-bubble--new");
+      setTimeout(() => node.classList.remove("comment-bubble--new"), HIGHLIGHT_MS);
+    }
+    if (scrollToIndex >= 0 && list.children[scrollToIndex]) {
+      scrollListItem(list.children[scrollToIndex]);
     }
     updateLoadMore();
   }
 
-  function applyPage(page, { append = false, highlightNewest = false } = {}) {
+  function applyPage(page, { append = false, highlightIndex = -1, scrollToIndex = -1 } = {}) {
     cachedTotal = page.total;
-    hasMore = page.hasMore;
+    hasMore = append
+      ? cachedItems.length + page.comments.length < page.total
+      : page.hasMore;
     prefetchFailed = false;
     cachedItems = append ? [...cachedItems, ...page.comments] : page.comments;
     updateSummary();
-    if (details.open) renderList(highlightNewest);
+    if (details.open) renderList({ highlightIndex, scrollToIndex });
     else updateLoadMore();
   }
 
-  async function fetchPage(offset, signal) {
-    return fetchCommentsPage({ offset, limit: COMMENTS_PAGE_SIZE, signal });
+  async function fetchPage(offset, signal, limit = COMMENTS_PAGE_SIZE) {
+    return fetchCommentsPage({ offset, limit, signal });
   }
 
   async function prefetchCount() {
@@ -206,6 +216,16 @@ export function mountFeedbackPanel(ctx) {
     feedAbort = new AbortController();
     const signal = feedAbort.signal;
     try {
+      if (details.open && cachedItems.length > COMMENTS_PAGE_SIZE) {
+        const page = await fetchPage(0, signal, 1);
+        if (signal.aborted) return;
+        cachedTotal = page.total;
+        hasMore = cachedItems.length < cachedTotal;
+        prefetchFailed = false;
+        updateSummary();
+        updateLoadMore();
+        return;
+      }
       const page = await fetchPage(0, signal);
       if (signal.aborted) return;
       applyPage(page);
@@ -216,11 +236,12 @@ export function mountFeedbackPanel(ctx) {
     }
   }
 
-  async function loadFeed(highlightNewest = false) {
+  async function loadFeed() {
     if (!details.open) return;
 
-    if (cachedItems.length) {
-      renderList(highlightNewest);
+    const keepLoaded = cachedItems.length;
+    if (keepLoaded) {
+      renderList();
     } else {
       showLoading(true);
     }
@@ -228,15 +249,16 @@ export function mountFeedbackPanel(ctx) {
     if (feedAbort) feedAbort.abort();
     feedAbort = new AbortController();
     const signal = feedAbort.signal;
+    const limit = Math.max(keepLoaded, COMMENTS_PAGE_SIZE);
 
     try {
-      const page = await fetchPage(0, signal);
+      const page = await fetchPage(0, signal, limit);
       if (signal.aborted) return;
-      applyPage(page, { highlightNewest });
+      applyPage(page);
     } catch (e) {
       if (e.name === "AbortError") return;
       if (cachedItems.length) {
-        renderList(highlightNewest);
+        renderList();
         ctx.flashButton(retryBtn, ctx.ui("commentsLoadError"), {
           error: true,
           restoreText: ctx.ui("commentsRetry"),
@@ -252,11 +274,12 @@ export function mountFeedbackPanel(ctx) {
 
   async function loadMore() {
     if (!hasMore || loadingMore) return;
+    const prevLen = cachedItems.length;
     loadingMore = true;
     updateLoadMore();
     try {
-      const page = await fetchPage(cachedItems.length);
-      applyPage(page, { append: true });
+      const page = await fetchPage(prevLen);
+      applyPage(page, { append: true, scrollToIndex: prevLen });
     } catch {
       ctx.flashButton(loadMoreBtn, ctx.ui("commentsLoadError"), {
         error: true,
@@ -304,7 +327,7 @@ export function mountFeedbackPanel(ctx) {
     submitBtn.disabled = true;
     submitBtn.setAttribute("aria-busy", "true");
     try {
-      await postComment({
+      const comment = await postComment({
         track,
         lang,
         body,
@@ -313,9 +336,16 @@ export function mountFeedbackPanel(ctx) {
       resetInputHeight();
       const submitLabel = ctx.ui("commentsSubmit");
       ctx.flashButton(submitBtn, ctx.ui("commentsPosted"), { restoreText: submitLabel });
-      cachedItems = [];
-      hasMore = false;
-      await loadFeed(true);
+      if (comment) {
+        cachedItems = [comment, ...cachedItems];
+        cachedTotal += 1;
+        hasMore = cachedItems.length < cachedTotal;
+        prefetchFailed = false;
+        updateSummary();
+        if (details.open) renderList({ highlightIndex: 0 });
+      } else {
+        await prefetchCount();
+      }
     } catch {
       const submitLabel = ctx.ui("commentsSubmit");
       ctx.flashButton(submitBtn, ctx.ui("commentsError"), {
