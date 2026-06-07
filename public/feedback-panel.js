@@ -65,13 +65,18 @@ export function mountFeedbackPanel(ctx) {
     });
   }
 
-  function scrollListItem(node) {
+  function scrollToNode(node) {
     if (!node) return;
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
       ? "auto"
       : "smooth";
+    const run = () => {
+      const rect = node.getBoundingClientRect();
+      const top = window.scrollY + rect.top - 16;
+      window.scrollTo({ top: Math.max(0, top), behavior: motion });
+    };
     requestAnimationFrame(() => {
-      node.scrollIntoView({ block: "nearest", behavior: motion });
+      requestAnimationFrame(run);
     });
   }
 
@@ -171,40 +176,62 @@ export function mountFeedbackPanel(ctx) {
     }
   }
 
-  function renderList({ highlightIndex = -1, scrollToIndex = -1 } = {}) {
-    list.replaceChildren();
+  function highlightBubble(node) {
+    if (!node) return;
+    node.classList.add("comment-bubble--new");
+    setTimeout(() => node.classList.remove("comment-bubble--new"), HIGHLIGHT_MS);
+  }
+
+  function appendItems(fromIndex) {
+    for (let i = fromIndex; i < cachedItems.length; i++) {
+      list.appendChild(renderBubble(cachedItems[i], ctx));
+    }
+  }
+
+  function renderList({ highlightIndex = -1, appendFrom = -1 } = {}) {
     showLoading(false);
     showError(false);
+
+    if (appendFrom >= 0 && appendFrom < cachedItems.length) {
+      empty.hidden = true;
+      list.hidden = false;
+      appendItems(appendFrom);
+      if (highlightIndex >= 0 && list.children[highlightIndex]) {
+        highlightBubble(list.children[highlightIndex]);
+      }
+      updateLoadMore();
+      return appendFrom;
+    }
+
+    list.replaceChildren();
     if (!cachedItems.length) {
       list.hidden = false;
       empty.hidden = false;
       updateLoadMore();
-      return;
+      return -1;
     }
     empty.hidden = true;
     list.hidden = false;
-    for (const item of cachedItems) list.appendChild(renderBubble(item, ctx));
+    appendItems(0);
     if (highlightIndex >= 0 && list.children[highlightIndex]) {
-      const node = list.children[highlightIndex];
-      node.classList.add("comment-bubble--new");
-      setTimeout(() => node.classList.remove("comment-bubble--new"), HIGHLIGHT_MS);
-    }
-    if (scrollToIndex >= 0 && list.children[scrollToIndex]) {
-      scrollListItem(list.children[scrollToIndex]);
+      highlightBubble(list.children[highlightIndex]);
     }
     updateLoadMore();
+    return -1;
   }
 
-  function applyPage(page, { append = false, highlightIndex = -1, scrollToIndex = -1 } = {}) {
+  function applyPage(page, { append = false, highlightIndex = -1 } = {}) {
+    const appendFrom = append ? cachedItems.length : -1;
     cachedTotal = page.total;
     hasMore = append
-      ? cachedItems.length + page.comments.length < page.total
+      ? appendFrom + page.comments.length < page.total
       : page.hasMore;
     prefetchFailed = false;
     cachedItems = append ? [...cachedItems, ...page.comments] : page.comments;
     updateSummary();
-    if (details.open) renderList({ highlightIndex, scrollToIndex });
-    else updateLoadMore();
+    if (details.open) return renderList({ highlightIndex, appendFrom });
+    updateLoadMore();
+    return -1;
   }
 
   async function fetchPage(offset, signal, limit = COMMENTS_PAGE_SIZE) {
@@ -277,9 +304,11 @@ export function mountFeedbackPanel(ctx) {
     const prevLen = cachedItems.length;
     loadingMore = true;
     updateLoadMore();
+    let scrollTarget = null;
     try {
       const page = await fetchPage(prevLen);
-      applyPage(page, { append: true, scrollToIndex: prevLen });
+      const firstNewIndex = applyPage(page, { append: true });
+      if (firstNewIndex >= 0) scrollTarget = list.children[firstNewIndex] ?? null;
     } catch {
       ctx.flashButton(loadMoreBtn, ctx.ui("commentsLoadError"), {
         error: true,
@@ -288,6 +317,7 @@ export function mountFeedbackPanel(ctx) {
     } finally {
       loadingMore = false;
       updateLoadMore();
+      if (scrollTarget) scrollToNode(scrollTarget);
     }
   }
 
