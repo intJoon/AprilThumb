@@ -65,21 +65,6 @@ export function mountFeedbackPanel(ctx) {
     });
   }
 
-  function scrollToNode(node) {
-    if (!node) return;
-    const motion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-      ? "auto"
-      : "smooth";
-    const run = () => {
-      const rect = node.getBoundingClientRect();
-      const top = window.scrollY + rect.top - 16;
-      window.scrollTo({ top: Math.max(0, top), behavior: motion });
-    };
-    requestAnimationFrame(() => {
-      requestAnimationFrame(run);
-    });
-  }
-
   const inputMaxPx = () => {
     const line = parseFloat(getComputedStyle(bodyInput).lineHeight) || 25;
     return line * 5 + 28;
@@ -304,11 +289,9 @@ export function mountFeedbackPanel(ctx) {
     const prevLen = cachedItems.length;
     loadingMore = true;
     updateLoadMore();
-    let scrollTarget = null;
     try {
       const page = await fetchPage(prevLen);
-      const firstNewIndex = applyPage(page, { append: true });
-      if (firstNewIndex >= 0) scrollTarget = list.children[firstNewIndex] ?? null;
+      applyPage(page, { append: true });
     } catch {
       ctx.flashButton(loadMoreBtn, ctx.ui("commentsLoadError"), {
         error: true,
@@ -317,7 +300,6 @@ export function mountFeedbackPanel(ctx) {
     } finally {
       loadingMore = false;
       updateLoadMore();
-      if (scrollTarget) scrollToNode(scrollTarget);
     }
   }
 
