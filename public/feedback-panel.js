@@ -3,6 +3,7 @@ import {
   postComment,
   renderBubble,
   formatMeta,
+  remountCommentClamps,
   COMMENTS_PAGE_SIZE,
 } from "./comments-lib.js";
 
@@ -358,9 +359,13 @@ export function mountFeedbackPanel(ctx) {
       } else {
         await prefetchCount();
       }
-    } catch {
+    } catch (e) {
       const submitLabel = ctx.ui("commentsSubmit");
-      ctx.flashButton(submitBtn, ctx.ui("commentsError"), {
+      const message =
+        e && (e.code === "rate_limited" || e.message === "rate_limited")
+          ? ctx.ui("commentsRateLimited")
+          : ctx.ui("commentsError");
+      ctx.flashButton(submitBtn, message, {
         error: true,
         restoreText: submitLabel,
       });
@@ -369,6 +374,11 @@ export function mountFeedbackPanel(ctx) {
       submitBtn.removeAttribute("aria-busy");
     }
   });
+
+  window.addEventListener("resize", remountCommentClamps);
+  if (document.fonts?.ready) {
+    document.fonts.ready.then(remountCommentClamps).catch(() => {});
+  }
 
   updateLabels();
   autoResizeInput();

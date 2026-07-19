@@ -1,16 +1,27 @@
 export const API = "/api/comments";
 export const COMMENTS_PAGE_SIZE = 5;
 
-export function formatRelative(iso, ui) {
-  const then = new Date(iso).getTime();
-  const diff = Math.max(0, Date.now() - then);
-  const mins = Math.floor(diff / 60000);
-  if (mins < 1) return ui("commentsJustNow");
-  if (mins < 60) return ui("commentsMinutesAgo").replace("{n}", String(mins));
-  const hours = Math.floor(mins / 60);
-  if (hours < 24) return ui("commentsHoursAgo").replace("{n}", String(hours));
-  const days = Math.floor(hours / 24);
-  return ui("commentsDaysAgo").replace("{n}", String(days));
+const commentClamps = [];
+
+export function formatAbsolute(iso, locale = "en-GB") {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return "";
+  try {
+    return new Intl.DateTimeFormat(locale, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(date);
+  } catch {
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, "0");
+    const d = String(date.getDate()).padStart(2, "0");
+    const hh = String(date.getHours()).padStart(2, "0");
+    const mm = String(date.getMinutes()).padStart(2, "0");
+    return `${y}-${m}-${d} ${hh}:${mm}`;
+  }
 }
 
 export function escapeText(s) {
@@ -23,6 +34,17 @@ export function escapeText(s) {
 
 export function formatMeta(item, ctx) {
   return `${ctx.langLabel(item.locale)} · ${ctx.trackLabel(item.trackId)}`;
+}
+
+export function remountCommentClamps() {
+  for (let i = commentClamps.length - 1; i >= 0; i -= 1) {
+    const entry = commentClamps[i];
+    if (!entry.bodyEl.isConnected) {
+      commentClamps.splice(i, 1);
+      continue;
+    }
+    entry.sync();
+  }
 }
 
 export function wireCommentBodyClamp(bodyEl, toggleEl, labels) {
@@ -52,6 +74,7 @@ export function wireCommentBodyClamp(bodyEl, toggleEl, labels) {
     bodyEl.classList.toggle("is-clamped", !expanded);
     toggleEl.textContent = expanded ? collapseLabel : expandLabel;
   });
+  commentClamps.push({ bodyEl, sync });
   requestAnimationFrame(() => requestAnimationFrame(sync));
 }
 
@@ -75,7 +98,7 @@ export function renderBubble(item, ctx) {
   const when = document.createElement("time");
   when.className = "comment-when";
   when.dateTime = item.createdAt;
-  when.textContent = formatRelative(item.createdAt, ctx.ui);
+  when.textContent = formatAbsolute(item.createdAt, ctx.selectedLang?.() || "en-GB");
 
   li.append(meta, body, toggle, when);
   wireCommentBodyClamp(body, toggle, {
@@ -108,6 +131,11 @@ export async function postComment({ track, lang, body, website = "" }) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ track, lang, body, website }),
   });
+  if (res.status === 429) {
+    const err = new Error("rate_limited");
+    err.code = "rate_limited";
+    throw err;
+  }
   if (!res.ok) throw new Error("post");
   const data = await res.json();
   return data.comment ?? null;

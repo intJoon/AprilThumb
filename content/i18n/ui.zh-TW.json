@@ -23,6 +23,7 @@
   "commentsCollapse": "收合回饋",
   "commentsPosted": "已送出",
   "commentsError": "無法送出",
+  "commentsRateLimited": "每天最多可送出 2 則意見",
   "commentsJustNow": "剛剛",
   "commentsMinutesAgo": "{n} 分鐘前",
   "commentsHoursAgo": "{n} 小時前",

@@ -23,6 +23,7 @@
   "commentsCollapse": "Hide feedback",
   "commentsPosted": "Sent",
   "commentsError": "Could not send",
+  "commentsRateLimited": "You can send up to 2 feedback posts per day",
   "commentsJustNow": "Just now",
   "commentsMinutesAgo": "{n}m ago",
   "commentsHoursAgo": "{n}h ago",

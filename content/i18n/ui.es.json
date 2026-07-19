@@ -23,6 +23,7 @@
   "commentsCollapse": "Ocultar opiniones",
   "commentsPosted": "Enviado",
   "commentsError": "No se pudo enviar",
+  "commentsRateLimited": "Puedes enviar hasta 2 comentarios al día",
   "commentsJustNow": "Ahora",
   "commentsMinutesAgo": "Hace {n} min",
   "commentsHoursAgo": "Hace {n} h",

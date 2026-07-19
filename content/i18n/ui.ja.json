@@ -23,6 +23,7 @@
   "commentsCollapse": "フィードバックを閉じる",
   "commentsPosted": "送信しました",
   "commentsError": "送信できませんでした",
+  "commentsRateLimited": "1日あたり2件まで送信できます",
   "commentsJustNow": "たった今",
   "commentsMinutesAgo": "{n}分前",
   "commentsHoursAgo": "{n}時間前",

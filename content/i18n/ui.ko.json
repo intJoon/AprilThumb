@@ -23,6 +23,7 @@
   "commentsCollapse": "피드백 접기",
   "commentsPosted": "보냈습니다",
   "commentsError": "보내지 못했습니다",
+  "commentsRateLimited": "하루에 2개까지 보낼 수 있습니다",
   "commentsJustNow": "방금",
   "commentsMinutesAgo": "{n}분 전",
   "commentsHoursAgo": "{n}시간 전",

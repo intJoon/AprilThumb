@@ -23,6 +23,7 @@
   "commentsCollapse": "Masquer les retours",
   "commentsPosted": "Envoyé",
   "commentsError": "Envoi impossible",
+  "commentsRateLimited": "Vous pouvez envoyer jusqu’à 2 avis par jour",
   "commentsJustNow": "À l'instant",
   "commentsMinutesAgo": "Il y a {n} min",
   "commentsHoursAgo": "Il y a {n} h",
