@@ -32,6 +32,8 @@
   "commentsLoadError": "Could not load feedback",
   "commentsRetry": "Retry",
   "commentsLoadMore": "Load more",
+  "commentsExpandBody": "Expand",
+  "commentsCollapseBody": "Collapse",
   "commentsSummaryLoadError": "Feedback · could not load",
   "copyFailed": "Could not copy",
   "metaDescription": "AprilThumb — ChatGPT·Gemini prompts for 24 disciplines, 6 languages",

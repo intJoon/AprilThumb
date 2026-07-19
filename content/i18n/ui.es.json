@@ -32,6 +32,8 @@
   "commentsLoadError": "No se pudieron cargar los comentarios",
   "commentsRetry": "Reintentar",
   "commentsLoadMore": "Ver más",
+  "commentsExpandBody": "Expandir",
+  "commentsCollapseBody": "Contraer",
   "commentsSummaryLoadError": "Comentarios · no se pudo cargar",
   "copyFailed": "No se pudo copiar",
   "metaDescription": "AprilThumb — prompts ChatGPT·Gemini, 24 especialidades, 6 idiomas",

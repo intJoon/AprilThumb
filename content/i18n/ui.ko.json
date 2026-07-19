@@ -32,6 +32,8 @@
   "commentsLoadError": "피드백을 불러오지 못했습니다",
   "commentsRetry": "다시 시도",
   "commentsLoadMore": "더 보기",
+  "commentsExpandBody": "펼치기",
+  "commentsCollapseBody": "접기",
   "commentsSummaryLoadError": "피드백 · 불러오지 못함",
   "copyFailed": "복사하지 못했습니다",
   "metaDescription": "AprilThumb — ChatGPT·Gemini 프롬프트, 24개 전공, 6개 언어",

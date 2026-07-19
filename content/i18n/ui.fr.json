@@ -32,6 +32,8 @@
   "commentsLoadError": "Impossible de charger les retours",
   "commentsRetry": "Réessayer",
   "commentsLoadMore": "Voir plus",
+  "commentsExpandBody": "Développer",
+  "commentsCollapseBody": "Réduire",
   "commentsSummaryLoadError": "Commentaires · échec du chargement",
   "copyFailed": "Copie impossible",
   "metaDescription": "AprilThumb — prompts ChatGPT·Gemini, 24 filières, 6 langues",

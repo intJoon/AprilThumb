@@ -1,5 +1,5 @@
 export const API = "/api/comments";
-export const COMMENTS_PAGE_SIZE = 10;
+export const COMMENTS_PAGE_SIZE = 5;
 
 export function formatRelative(iso, ui) {
   const then = new Date(iso).getTime();
@@ -25,17 +25,63 @@ export function formatMeta(item, ctx) {
   return `${ctx.langLabel(item.locale)} · ${ctx.trackLabel(item.trackId)}`;
 }
 
+export function wireCommentBodyClamp(bodyEl, toggleEl, labels) {
+  const expandLabel = labels?.expand || "Expand";
+  const collapseLabel = labels?.collapse || "Collapse";
+  const sync = () => {
+    const expanded = bodyEl.classList.contains("is-expanded");
+    bodyEl.classList.remove("is-expanded");
+    bodyEl.classList.add("is-clamped");
+    const needsToggle = bodyEl.scrollHeight > bodyEl.clientHeight + 1;
+    if (!needsToggle) {
+      bodyEl.classList.remove("is-clamped");
+      toggleEl.hidden = true;
+      return;
+    }
+    toggleEl.hidden = false;
+    if (expanded) {
+      bodyEl.classList.remove("is-clamped");
+      bodyEl.classList.add("is-expanded");
+      toggleEl.textContent = collapseLabel;
+    } else {
+      toggleEl.textContent = expandLabel;
+    }
+  };
+  toggleEl.addEventListener("click", () => {
+    const expanded = bodyEl.classList.toggle("is-expanded");
+    bodyEl.classList.toggle("is-clamped", !expanded);
+    toggleEl.textContent = expanded ? collapseLabel : expandLabel;
+  });
+  requestAnimationFrame(() => requestAnimationFrame(sync));
+}
+
 export function renderBubble(item, ctx) {
   const li = document.createElement("li");
   li.className = "comment-bubble";
-  li.innerHTML = `<p class="comment-meta"></p>
-<p class="comment-body"></p>
-<time class="comment-when"></time>`;
-  li.querySelector(".comment-meta").textContent = formatMeta(item, ctx);
-  li.querySelector(".comment-body").textContent = item.body;
-  const when = li.querySelector(".comment-when");
+
+  const meta = document.createElement("p");
+  meta.className = "comment-meta";
+  meta.textContent = formatMeta(item, ctx);
+
+  const body = document.createElement("p");
+  body.className = "comment-body";
+  body.textContent = item.body || "";
+
+  const toggle = document.createElement("button");
+  toggle.type = "button";
+  toggle.className = "comment-expand";
+  toggle.hidden = true;
+
+  const when = document.createElement("time");
+  when.className = "comment-when";
   when.dateTime = item.createdAt;
   when.textContent = formatRelative(item.createdAt, ctx.ui);
+
+  li.append(meta, body, toggle, when);
+  wireCommentBodyClamp(body, toggle, {
+    expand: ctx.ui("commentsExpandBody"),
+    collapse: ctx.ui("commentsCollapseBody"),
+  });
   return li;
 }
 

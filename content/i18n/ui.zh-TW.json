@@ -32,6 +32,8 @@
   "commentsLoadError": "無法載入回饋",
   "commentsRetry": "重試",
   "commentsLoadMore": "載入更多",
+  "commentsExpandBody": "展開",
+  "commentsCollapseBody": "收合",
   "commentsSummaryLoadError": "回饋 · 無法載入",
   "copyFailed": "無法複製",
   "metaDescription": "AprilThumb — ChatGPT·Gemini 提示詞，24 科系，6 種語言",

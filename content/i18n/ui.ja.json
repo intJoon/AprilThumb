@@ -32,6 +32,8 @@
   "commentsLoadError": "フィードバックを読み込めませんでした",
   "commentsRetry": "再試行",
   "commentsLoadMore": "もっと見る",
+  "commentsExpandBody": "展開",
+  "commentsCollapseBody": "閉じる",
   "commentsSummaryLoadError": "フィードバック · 読み込めませんでした",
   "copyFailed": "コピーできませんでした",
   "metaDescription": "AprilThumb — ChatGPT·Gemini プロンプト、24分野、6言語",
