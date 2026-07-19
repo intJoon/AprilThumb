@@ -356,6 +356,17 @@ async function init() {
   btnChangeTrack.addEventListener("click", () => openPicker("track"));
   btnCopyLink.addEventListener("click", () => copySiteLink());
 
+  document.addEventListener("pointerdown", (e) => {
+    if (!pickerMode) return;
+    const t = e.target;
+    if (!(t instanceof Node)) return;
+    if (picker.contains(t) || btnChangeLang.contains(t) || btnChangeTrack.contains(t)) return;
+    closePicker();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && pickerMode) closePicker();
+  });
+
   await tryLoadContent();
 }
 
