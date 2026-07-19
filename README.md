@@ -50,6 +50,5 @@ npx vercel --prod
 - `public/` — static site; `public/data/bundles/` — 144 JSON bundles (build output)
 - `api/`, `lib/`, `sql/` — feedback API, Neon access, and database migrations
 - `docs/` — methodology, sources, version, upgrades
-- `.cursor/rules/aprilthumb.mdc` — repository workflow and documentation rules
 
 Track list and counts: see [docs/버전.md](docs/버전.md) (SSOT).
