@@ -1,57 +1,46 @@
-# 약학과 친구용 AI 프롬프트 모음
+# AprilThumb content
 
-ChatGPT·Gemini **웹/앱**에서 복사·붙여넣기만으로 쓸 수 있는 프롬프트입니다. 별도 프로그램 설치나 로컬 파일은 필요 없습니다.
+This tree contains study and coursework prompts intended for copy-and-paste use in ChatGPT and Gemini. The current product scope is **24 tracks × 6 locales × 6 prompt roles**.
 
-## 빠른 시작
+## Quick start
 
-1. 아래 `prompts/` 폴더에서 **목적에 맞는 파일 하나**를 연다.
-2. 파일 **전체 내용**을 복사한다.
-3. ChatGPT 또는 Gemini **새 대화** 첫 메시지에 붙여넣는다.
-4. 이어서 과제·글·질문을 보낸다. (`templates/` 양식을 쓰면 더 안정적)
+1. Select a language and discipline at `https://aprilthumb.vercel.app`.
+2. Copy one prompt that matches the task.
+3. Paste it as the first message in a new ChatGPT or Gemini conversation.
+4. Send the assignment, draft, or question.
 
-**팁:** 한 대화에 역할을 여러 개 섞지 마세요. 채점(교수님)과 일상 상담(학습 동반자)은 **별도 대화**가 좋습니다.
+Keep different roles in separate conversations. For example, do not mix academic assessment with study-companion support.
 
-## ChatGPT에서 쓰는 방법
+## ChatGPT
 
-- **방법 A:** 새 채팅마다 해당 프롬프트 전체를 첫 메시지로 붙여넣기
-- **방법 B:** 자주 쓰는 프롬프트(예: 학습 동반자)는 Custom GPT **지시사항**에 고정
+- Paste the full prompt as the first message of each new chat.
+- For frequently used prompts, place the prompt in Custom GPT instructions.
 
-## Gemini에서 쓰는 방법
+## Gemini
 
-- **방법 A:** Gem(지시사항)에 프롬프트 전체 복사
-- **방법 B:** 대화 시작 시 「아래 규칙을 따라줘」+ 프롬프트 붙여넣기
+- Copy the full prompt into Gem instructions.
+- Alternatively, paste it at the start of a conversation and ask Gemini to follow it.
 
-## 어떤 프롬프트를 언제 쓸까?
+## Prompt roles
 
-| 상황 | 파일 | 설명 |
-|------|------|------|
-| 과제·레포트 제출 전 점검 | `prompts/학술-채점-교수님.md` | 루브릭 채점, AI 냄새·피상적 서술 잡기, 수정 제안 |
-| 참고문헌·URL이 주장을 뒷받침하는지 | `prompts/출처-검증.md` | 링크·초록·본문 인용 정합성 표로 점검 |
-| 시험 전 요약·개념 정리 (짧게) | `prompts/간결-모드.md` | 장황한 답을 압축, 기술 내용은 유지 |
-| 초안의 논리·근거 빈틈 한 줄씩 | `prompts/글-리뷰.md` | 보고서·케이스 스터디 리뷰 코멘트 |
-| 발표 PPT·포스터 구조·가독성 | `prompts/발표-구조-디자인.md` | 슬라이드/포스터 설계·체크리스트 |
-| 공부·시험·번아웃·일상 고민 | `prompts/학습-동반자.md` | 공감·학습 도움 (진단·처방 대체 아님) |
+| Role | Purpose |
+|---|---|
+| `academic-review` | Review coursework against a rubric before submission |
+| `source-check` | Check whether references and URLs support the stated claims |
+| `concise-mode` | Compress verbose answers without dropping technical content |
+| `writing-review` | Identify gaps in a draft's reasoning and evidence |
+| `presentation` | Plan presentation structure and readability |
+| `study-companion` | Support study planning and concept understanding |
 
-## 입력 양식 (`templates/`)
+## Safety
 
-- `과제-붙여넣기-양식.txt` — 과제 지시문 + 초안 + (선택) 루브릭
-- `출처-검증-양식.txt` — 참고문헌 목록 + 본문 주장
+- AI does not replace medical diagnosis or treatment. Seek professional or emergency help for urgent health or self-harm risks.
+- Source checking is a keyword- and abstract-level heuristic. Verify important figures and clinical claims against the original source.
+- Academic review can suggest iterative revisions for up to 10 rounds and must report uncertainty honestly.
 
-양식을 채운 뒤 해당 프롬프트 대화에 붙여넣으면 됩니다.
+## Generation rules
 
-## 주의
-
-- AI는 **의학적 진단·처방을 대체하지 않습니다.** 응급·자해 위기는 즉시 **전문가·응급 도움**을 받으세요.
-- 출처 검증은 **키워드·초록 수준** 휴리스틱입니다. 중요한 수치·임상 주장은 원문을 직접 확인하세요.
-- 채점 프롬프트는 **최대 10라운드**까지 같은 대화에서 반복 점검·수정을 제안합니다. 완벽하지 않으면 솔직히 알려 줍니다.
-
-## 폴더 구조
-
-```
-pharmacy-friend-prompts/
-  README.md          ← 지금 읽는 파일
-  prompts/           ← 6개 프롬프트
-  templates/         ← 붙여넣기 양식 2개
-```
-
-iCloud 바탕화면에 두면 Mac·iPhone에서도 같은 파일을 열 수 있습니다.
+- `content/manifest.json` defines tracks, locales, and prompt roles.
+- `content/i18n/` contains UI strings.
+- `content/tracks/{track}/{locale}/guide.md` and `prompts/*.md` are generated.
+- Do not edit generated files directly. Change the sources and generators under `scripts/lib/`, then run `npm run build`.

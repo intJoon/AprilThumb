@@ -1,28 +1,28 @@
-# Instagram 캐러셀
+# Instagram carousel
 
-## 구조
+## Structure
 
 ```
 docs/instagram-carousel/
-├── slide-content.mjs    # 문구 (ko / en / zh-TW)
-├── caption.txt          # 게시 캡션 (언어별 블록)
-├── qr.png               # CTA QR (export 시 재생성)
-├── slides.html          # ko 미리보기 (export 시 갱신)
+├── slide-content.mjs    # Copy for ko, en, and zh-TW
+├── caption.txt          # Per-locale caption blocks
+├── qr.png               # CTA QR, regenerated during export
+├── slides.html          # Korean preview, updated during export
 ├── slides-{ko,en,zh-TW}.html
 └── export/
-    ├── ko/              # 업로드용 6장
+    ├── ko/              # Six upload-ready slides
     ├── en/
     ├── zh-TW/
-    └── aprilthumb-carousel-01~06.png  # ko 복사본
+    └── aprilthumb-carousel-01~06.png  # Korean copies
 ```
 
-## 게시 방식
+## Publishing
 
-| 구분 | 권장 |
-|------|------|
-| **슬라이드** | 게시 1회 = 언어 1종 (`export/ko` · `en` · `zh-TW`) |
-| **캡션** | `caption.txt`에서 해당 언어 블록만 |
-| **5번** | 24 전공 + 6 언어 전체 pill 그리드 |
+| Item | Recommendation |
+|---|---|
+| **Slides** | Publish one locale per post from `export/ko`, `en`, or `zh-TW` |
+| **Caption** | Use only the matching locale block from `caption.txt` |
+| **Slide 5** | Show the complete 24-discipline and 6-locale pill grid |
 
 ## Export
 
@@ -30,7 +30,7 @@ docs/instagram-carousel/
 npm run instagram:export
 ```
 
-한 언어만:
+Export one locale:
 
 ```bash
 npm run instagram:export:ko
@@ -38,24 +38,24 @@ npm run instagram:export:en
 npm run instagram:export:zh
 ```
 
-## 슬라이드 역할 (중복 최소화)
+## Slide roles
 
-| # | 역할 | 핵심 정보 |
-|---|------|-----------|
-| 1 | 훅 | ChatGPT·Gemini · 한 줄 가치 |
-| 2 | 문제 | 3가지 pain point |
-| 3 | 솔루션 | 한 URL · perks 3종 (숫자 없음) |
-| 4 | Roles | 목적별 프롬프트 6종 |
-| 5 | Scope | 24전공 + 6언어 그리드 (숫자 SSOT) |
-| 6 | CTA | QR · URL · 저장 유도 |
+| # | Role | Key information |
+|---|---|---|
+| 1 | Hook | ChatGPT and Gemini with a one-line value proposition |
+| 2 | Problem | Three pain points |
+| 3 | Solution | One URL and three benefits, without scope numbers |
+| 4 | Roles | Six purpose-specific prompt roles |
+| 5 | Scope | 24 disciplines and 6 locales; numeric SSOT |
+| 6 | CTA | QR code, URL, and save prompt |
 
-**24×6×6** 같은 스펙 숫자는 **5번 그리드 + `caption.txt`** 에만 둡니다. 3번·워터마크 등 다른 슬라이드에 반복하지 않습니다.
+Keep scope figures such as **24×6×6** only in the **slide 5 grid and `caption.txt`**. Do not repeat them on slide 3, watermarks, or other slides.
 
-## 스타일
+## Style
 
-- **타이포**: ko/zh — IBM Plex Sans + Mono · en — Syne + DM Sans
-- **디자인**: deck-card 공통 · **과감(1·5)** · **정돈(2·3·4·6)**
+- **Typography:** ko/zh — IBM Plex Sans + Mono; en — Syne + DM Sans
+- **Design:** shared deck-card system; bold on slides 1 and 5, restrained on slides 2, 3, 4, and 6
 
-## 문구 수정
+## Editing copy
 
-`slide-content.mjs` 편집 후 `npm run instagram:export` 다시 실행.
+Edit `slide-content.mjs`, then rerun `npm run instagram:export`.

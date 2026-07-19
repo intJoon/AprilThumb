@@ -1,9 +1,11 @@
+import { createHmac } from "node:crypto";
 import { getSql } from "../lib/db.mjs";
 import { isValidLocale, isValidTrack } from "../lib/manifest.mjs";
 
 const MAX_BODY = 500;
 const DEFAULT_PAGE_SIZE = 10;
 const MAX_PAGE_SIZE = 100;
+const DAILY_POST_LIMIT = 2;
 
 function json(res, status, body) {
   res.statusCode = status;
@@ -29,6 +31,47 @@ async function readJsonBody(req) {
   const chunks = [];
   for await (const chunk of req) chunks.push(chunk);
   return parseBody(Buffer.concat(chunks).toString("utf8"));
+}
+
+function clientIp(req) {
+  const forwarded = req.headers["x-forwarded-for"];
+  if (Array.isArray(forwarded)) return forwarded[0] || "unknown";
+  return String(forwarded || req.socket?.remoteAddress || "unknown")
+    .split(",")[0]
+    .trim();
+}
+
+function dailyRateLimitIdentity(req) {
+  const secret = process.env.RATE_LIMIT_SECRET;
+  if (!secret) return null;
+  const day = new Date().toISOString().slice(0, 10);
+  const ipHash = createHmac("sha256", secret)
+    .update(`${day}\n${clientIp(req)}`)
+    .digest("hex");
+  return { day, ipHash };
+}
+
+async function insertComment(sql, req, track, lang, body) {
+  const identity = dailyRateLimitIdentity(req);
+  if (!identity) return null;
+  return sql`
+    WITH cleanup AS (
+      DELETE FROM feedback_rate_limits
+      WHERE day < CAST(${identity.day} AS date) - 7
+      RETURNING 1
+    ),
+    quota AS (
+      INSERT INTO feedback_rate_limits (day, ip_hash, post_count)
+      VALUES (${identity.day}, ${identity.ipHash}, 1)
+      ON CONFLICT (day, ip_hash) DO UPDATE
+      SET post_count = feedback_rate_limits.post_count + 1
+      WHERE feedback_rate_limits.post_count < ${DAILY_POST_LIMIT}
+      RETURNING 1
+    )
+    INSERT INTO comments (track_id, locale, body)
+    SELECT ${track}, ${lang}, ${body} FROM quota
+    RETURNING id, track_id AS "trackId", locale, body, created_at AS "createdAt"
+  `;
 }
 
 export default async function handler(req, res) {
@@ -122,11 +165,14 @@ export default async function handler(req, res) {
     }
 
     try {
-      const inserted = await sql`
-        INSERT INTO comments (track_id, locale, body)
-        VALUES (${track}, ${lang}, ${body})
-        RETURNING id, track_id AS "trackId", locale, body, created_at AS "createdAt"
-      `;
+      const inserted = await insertComment(sql, req, track, lang, body);
+      if (inserted === null) {
+        return json(res, 503, { error: "rate_limit_unavailable" });
+      }
+      if (!inserted.length) {
+        res.setHeader("Retry-After", "86400");
+        return json(res, 429, { error: "rate_limited" });
+      }
       return json(res, 201, { comment: inserted[0] });
     } catch {
       return json(res, 500, { error: "write_failed" });

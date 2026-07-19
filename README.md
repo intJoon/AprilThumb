@@ -33,6 +33,13 @@ npm run build
 npx vercel --prod
 ```
 
+## Feedback API
+
+- `GET/POST /api/comments` stores public feedback in Neon Postgres.
+- Accepted posts from the same public IP are limited to 2 per UTC day.
+- Raw IP addresses are not stored. The quota uses a daily HMAC-SHA256 identity in `feedback_rate_limits`.
+- Production requires `DATABASE_URL`, `RATE_LIMIT_SECRET`, `sql/001_comments.sql`, and `sql/002_daily_rate_limits.sql`. Missing quota configuration fails closed.
+
 ## Layout
 
 - `scripts/lib/` — generation SSOT (`fullGuideFor`, `fullPromptFor`, `ko-prompts`, `locale-packs`, overlays)
@@ -41,6 +48,8 @@ npx vercel --prod
 - `content/i18n/` — UI strings
 - `scripts/` — `generate-all-content.mjs`, `build-content.mjs`, verify, Instagram export
 - `public/` — static site; `public/data/bundles/` — 144 JSON bundles (build output)
+- `api/`, `lib/`, `sql/` — feedback API, Neon access, and database migrations
 - `docs/` — methodology, sources, version, upgrades
+- `.cursor/rules/aprilthumb.mdc` — repository workflow and documentation rules
 
 Track list and counts: see [docs/버전.md](docs/버전.md) (SSOT).
